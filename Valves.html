@@ -1,0 +1,2343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valves & Instrumentation - India Steel Industries</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.7;
+        color: #1a1a1a;
+        background: #fff;
+      }
+
+      /* Top Bar */
+      .top-bar {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        color: #fff;
+        padding: 12px 0;
+        font-size: 13px;
+      }
+
+      .top-bar .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .top-bar-left {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+      }
+
+      .top-bar-left span {
+        opacity: 0.9;
+        letter-spacing: 0.3px;
+      }
+
+      .top-bar-right a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 500;
+        transition: color 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .top-bar-right a:hover {
+        color: #f59e0b;
+      }
+
+      /* Header */
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 25px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .logo-icon {
+        background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-weight: 800;
+        font-size: 22px;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(0, 51, 102, 0.3);
+      }
+
+      .logo-text h1 {
+        font-size: 26px;
+        font-weight: 800;
+        color: #0a0a0a;
+        letter-spacing: -0.5px;
+      }
+
+      .logo-text p {
+        font-size: 11px;
+        color: #666;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+      }
+
+      nav ul li a {
+        color: #1a1a1a;
+        text-decoration: none;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        border-radius: 8px;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background: #003366;
+        color: #fff;
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        background: #fafafa;
+        padding: 18px 0;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .breadcrumb-nav {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-size: 13px;
+      }
+
+      .breadcrumb-nav a {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 500;
+      }
+
+      .breadcrumb-nav a:hover {
+        color: #003366;
+      }
+
+      .breadcrumb-nav span {
+        color: #0a0a0a;
+        font-weight: 600;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        padding: 80px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at 50% 0%,
+          rgba(0, 51, 102, 0.3),
+          transparent 70%
+        );
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        color: #ccc;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.8;
+      }
+
+      /* Filter Section */
+      .filter-section {
+        background: #fafafa;
+        padding: 30px 0;
+        border-bottom: 1px solid #e5e5e5;
+        position: sticky;
+        top: 86px;
+        z-index: 99;
+      }
+
+      .filter-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .filter-label {
+        font-weight: 700;
+        color: #0a0a0a;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-buttons {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        flex: 1;
+      }
+
+      .filter-btn {
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: #666;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-btn:hover {
+        border-color: #003366;
+        color: #003366;
+        background: #eff6ff;
+      }
+
+      .filter-btn.active {
+        background: #003366;
+        color: #fff;
+        border-color: #003366;
+      }
+
+      .search-box {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        border-radius: 50px;
+        padding: 8px 20px;
+        min-width: 250px;
+        transition: border-color 0.3s;
+      }
+
+      .search-box:focus-within {
+        border-color: #003366;
+      }
+
+      .search-box input {
+        border: none;
+        outline: none;
+        padding: 6px 10px;
+        font-size: 14px;
+        width: 100%;
+      }
+
+      .search-box span {
+        color: #999;
+      }
+
+      .results-count {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 30px;
+        font-weight: 500;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      /* Category Section */
+      .category-section {
+        padding: 80px 0;
+        background: #fff;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 42px;
+        font-weight: 800;
+        color: #0a0a0a;
+        margin-bottom: 15px;
+        letter-spacing: -0.5px;
+      }
+
+      .section-header p {
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+      }
+
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+      }
+
+      .category-item {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+
+      .category-item:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        border-color: #003366;
+      }
+
+      .category-item.selected {
+        border-color: #003366;
+        box-shadow: 0 20px 60px rgba(0, 51, 102, 0.25);
+      }
+
+      .category-image {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.4s;
+      }
+
+      .category-item:hover .category-image {
+        transform: scale(1.05);
+      }
+
+      .category-info {
+        padding: 35px;
+      }
+
+      .category-badge {
+        display: inline-block;
+        background: #003366;
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .category-info h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #0a0a0a;
+        margin-bottom: 12px;
+        letter-spacing: -0.3px;
+      }
+
+      .category-info p {
+        font-size: 15px;
+        color: #666;
+        line-height: 1.7;
+      }
+
+      /* Modal Styles */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1000;
+        overflow-y: auto;
+        animation: fadeInModal 0.4s ease;
+      }
+
+      .modal.active {
+        display: block;
+      }
+
+      @keyframes fadeInModal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -1000px 0;
+        }
+        100% {
+          background-position: 1000px 0;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+      }
+
+      .modal-header {
+        background: linear-gradient(135deg, #0c0c0c 0%, #012e5b 100%);
+        padding: 40px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 8px 40px rgba(0, 51, 102, 0.4);
+      }
+
+      .modal-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: slideUp 0.6s ease;
+      }
+
+      .modal-header h2 {
+        font-size: 38px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -0.5px;
+      }
+
+      .close-button {
+        background: #022875;
+        color: #f8f5f5;
+        border: none;
+        padding: 14px 32px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .close-button:hover {
+        background: #003366;
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      .modal-content {
+        padding: 60px 0 80px;
+        background: #ffffff;
+        position: relative;
+      }
+
+      .modal-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        background: radial-gradient(
+          ellipse at top,
+          rgba(0, 0, 0, 0.03),
+          transparent
+        );
+        pointer-events: none;
+      }
+
+      /* Content Sections with Scroll Animations */
+      .spec-section {
+        margin-bottom: 60px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .spec-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Specifications Content */
+      .spec-content {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 50px;
+        box-shadow: 0 10px 40px rgba(0, 51, 102, 0.08);
+        border-left: 5px solid #003366;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .spec-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 51, 102, 0.05),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .spec-content:hover::before {
+        left: 100%;
+      }
+
+      .spec-content:hover {
+        box-shadow: 0 15px 50px rgba(0, 51, 102, 0.15);
+        transform: translateX(5px);
+      }
+
+      .spec-content h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #f59e0b;
+        position: relative;
+        display: inline-block;
+      }
+
+      .spec-content h3::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: #003366;
+        transition: width 0.6s ease;
+      }
+
+      .spec-content:hover h3::after {
+        width: 100%;
+      }
+
+      .spec-content h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #003366;
+        margin: 25px 0 15px;
+        padding-left: 20px;
+        border-left: 4px solid #f59e0b;
+        position: relative;
+      }
+
+      .spec-content h4::before {
+        content: "⚙️";
+        position: absolute;
+        left: -30px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .spec-content p {
+        font-size: 17px;
+        line-height: 1.9;
+        color: #495057;
+        margin-bottom: 20px;
+        text-align: justify;
+        position: relative;
+        padding-left: 25px;
+      }
+
+      .spec-content p::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background: #f59e0b;
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .spec-content p strong {
+        color: #003366;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      /* Feature Highlights */
+      .features-section {
+        background: linear-gradient(135deg, #edeeef 0%, #f9fafb 100%);
+        border-radius: 25px;
+        padding: 50px;
+        margin: 50px 0;
+        color: #060606;
+        box-shadow: 0 20px 60px rgba(7, 7, 7, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .features-section::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(14, 13, 13, 0.1), transparent);
+        animation: float 8s ease-in-out infinite;
+      }
+
+      .features-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        color: #080808;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-box {
+        background: rgb(243, 242, 242);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        border: 2px solid rgba(10, 10, 10, 0.2);
+        transition: all 0.4s ease;
+      }
+
+      .feature-box:hover {
+        background: rgba(245, 158, 11, 0.2);
+        border-color: #f59e0b;
+        transform: translateY(-5px);
+      }
+
+      .feature-box h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #080808;
+      }
+
+      .feature-box h4::before {
+        content: attr(data-icon);
+        margin-right: 10px;
+      }
+
+      .feature-box p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(4, 4, 4, 0.9);
+      }
+
+      /* Applications Tags */
+      .applications-section {
+        margin: 50px 0;
+      }
+
+      .applications-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      /* Divider Line */
+      .divider {
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          #003366,
+          #f59e0b,
+          #003366,
+          transparent
+        );
+        margin: 50px 0;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .divider::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        animation: shimmer 3s infinite;
+      }
+
+      /* Scroll Progress Bar */
+      .scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, #003366, #f59e0b);
+        z-index: 1001;
+        transition: width 0.1s ease;
+      }
+
+      /* Applications Image Grid */
+      .app-images-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .app-image-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 280px;
+        cursor: pointer;
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.6s ease-out backwards;
+      }
+
+      .app-image-card:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .app-image-card:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .app-image-card:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .app-image-card:nth-child(4) {
+        animation-delay: 0.25s;
+      }
+      .app-image-card:nth-child(5) {
+        animation-delay: 0.3s;
+      }
+      .app-image-card:nth-child(6) {
+        animation-delay: 0.35s;
+      }
+      .app-image-card:nth-child(7) {
+        animation-delay: 0.4s;
+      }
+      .app-image-card:nth-child(8) {
+        animation-delay: 0.45s;
+      }
+
+      .app-image-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        border-color: #003366;
+      }
+
+      .app-image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .app-image-card:hover img {
+        transform: scale(1.1);
+      }
+
+      .app-image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.95) 0%,
+          rgba(0, 0, 0, 0.7) 60%,
+          transparent 100%
+        );
+        padding: 25px;
+        transform: translateY(0);
+        transition: all 0.4s ease;
+      }
+
+      .app-image-card:hover .app-image-overlay {
+        background: linear-gradient(
+          to top,
+          rgba(0, 51, 102, 0.95) 0%,
+          rgba(0, 51, 102, 0.8) 60%,
+          transparent 100%
+        );
+      }
+
+      .app-image-overlay h4 {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 0.5px;
+      }
+
+      /* Configuration Row Layout */
+      .config-row {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 40px;
+        align-items: center;
+        margin: 40px 0;
+        padding: 30px 0;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .config-row:last-of-type {
+        border-bottom: none;
+      }
+
+      .config-row.reverse {
+        grid-template-columns: 380px 1fr;
+      }
+
+      .config-text {
+        order: 1;
+      }
+
+      .config-row.reverse .config-text {
+        order: 2;
+      }
+
+      .config-image {
+        order: 2;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s ease;
+        height: 320px;
+      }
+
+      .config-row.reverse .config-image {
+        order: 1;
+      }
+
+      .config-image:hover {
+        border-color: #003366;
+        box-shadow: 0 15px 40px rgba(0, 51, 102, 0.25);
+        transform: translateY(-5px);
+      }
+
+      .config-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .config-image:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Footer */
+      footer {
+        background: #0a0a0a;
+        color: #ccc;
+        padding: 60px 0 30px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-col h3 {
+        color: #f59e0b;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .footer-col p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #999;
+      }
+
+      .footer-col ul {
+        list-style: none;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+        color: #999;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+
+      .footer-col ul li a:hover {
+        color: #f59e0b;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid #222;
+        color: #666;
+        font-size: 13px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .config-row,
+        .config-row.reverse {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .config-text,
+        .config-row.reverse .config-text {
+          order: 1;
+        }
+
+        .config-image,
+        .config-row.reverse .config-image {
+          order: 2;
+        }
+
+        .config-image {
+          height: 280px;
+        }
+
+        .app-images-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .category-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .app-images-grid,
+        .category-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .config-image {
+          height: 240px;
+        }
+
+        .hero h2 {
+          font-size: 36px;
+        }
+
+        nav ul {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .filter-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .search-box {
+          width: 100%;
+        }
+
+        .feature-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <span>📧 info@indiasteelind.com</span>
+          <span>📞 +91 22 4567 8900</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="#">Get Quote</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo-icon">ISI</div>
+            <div class="logo-text">
+              <h1>INDIA STEEL INDUSTRIES</h1>
+              <p>Quality Steel Solutions Since 1998</p>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="index.html#products" class="active">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <a href="index.html#products">Products</a>
+          <span>›</span>
+          <span>Valves & Instrumentation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>⚙️ Valves & Instrumentation</h2>
+          <p>
+            Industrial valves, gauges, and flow instruments for water, gas, and
+            process control systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Products</h2>
+          <p>Click on a product to view detailed specifications</p>
+        </div>
+        <div class="category-grid">
+          <!-- Industrial Valves -->
+          <div class="category-item" onclick="openModal('valves')">
+            <img
+              src="https://itcengco.com/wp-content/uploads/2017/01/Valves-manufacturers.jpg"
+              alt="Industrial Valves"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Valves</span>
+              <h3>Industrial Valves</h3>
+              <p>
+                Ball, Gate, Butterfly, Check, and Control Valves for diverse
+                industrial systems.
+              </p>
+            </div>
+          </div>
+
+          <!-- Instrumentation & Gauges -->
+          <div class="category-item" onclick="openModal('instruments')">
+            <img
+              src="https://tiimg.tistatic.com/fp/1/008/581/grey-electric-round-stainless-steel-instrumentation-control-gauge-834.jpg"
+              alt="Instrumentation & Gauges"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Instruments</span>
+              <h3>Instrumentation & Gauges</h3>
+              <p>
+                Precision pressure, temperature, and level gauges for monitoring
+                and control.
+              </p>
+            </div>
+          </div>
+
+          <!-- Flow & Pressure Devices -->
+          <div class="category-item" onclick="openModal('flow')">
+            <img
+              src="https://www.alicat.com/wp-content/uploads/2024/12/pressure-category-prod-1200px.webp"
+              alt="Flow & Pressure Devices"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Flow Devices</span>
+              <h3>Flow & Pressure Devices</h3>
+              <p>
+                Flow meters, transmitters, and pressure switches for industrial
+                automation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Valves Modal -->
+    <div class="modal" id="modal-valves">
+      <div class="scroll-progress" id="scrollProgress"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>⚙️ Industrial Valves</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Valve Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Valve Types & Configurations</h3>
+
+            <!-- Ball Valves with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Ball Valves</h4>
+                <p>
+                  <strong>Design:</strong> Quarter-turn rotary design with
+                  spherical disc offering rapid shut-off capability. Available
+                  in floating ball configuration for sizes DN15 to DN200, ideal
+                  for moderate pressure applications, and trunnion mounted
+                  design for larger sizes DN50 to DN600, engineered for
+                  high-pressure systems up to 2500 PSI.
+                </p>
+                <p>
+                  <strong>Flow Capacity:</strong> Flow coefficient (Cv) ranging
+                  from 2.0 for small process lines to 15,000 for large
+                  industrial pipelines. Full port design ensures minimal
+                  pressure drop across the valve, maintaining system efficiency
+                  and reducing energy costs.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/71ad5JoY7uL._AC_UF1000,1000_QL80_.jpg"
+                  alt="Ball Valve"
+                />
+              </div>
+            </div>
+
+            <!-- Gate Valves with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://trilliumflow.com/wp-content/uploads/2021/06/red-point-through-conduit-gate-valve-dn50-1500lbs.jpg"
+                  alt="Gate Valve"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Gate Valves</h4>
+                <p>
+                  <strong>Construction:</strong> Multi-turn linear motion valves
+                  featuring wedge, knife, or parallel slide gate designs. Full
+                  bore construction provides unrestricted flow path with minimal
+                  turbulence. Available in sizes from DN15 to DN1200 for diverse
+                  industrial applications.
+                </p>
+                <p>
+                  <strong>Stem Configuration:</strong> Rising stem (OS&Y -
+                  Outside Screw and Yoke) provides visual position indication,
+                  while non-rising stem design offers compact installation in
+                  space-constrained applications. Both configurations ensure
+                  reliable sealing and extended service life.
+                </p>
+              </div>
+            </div>
+
+            <!-- Butterfly Valves with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Butterfly Valves</h4>
+                <p>
+                  <strong>Design Variants:</strong> Concentric (wafer/lug type)
+                  for general service, double offset (high-performance) for
+                  tighter shut-off and reduced operating torque, and triple
+                  offset (metal-seated) for extreme temperature and pressure
+                  applications up to 600°C and 100 bar.
+                </p>
+                <p>
+                  <strong>Size Range:</strong> Compact, lightweight construction
+                  available from DN50 to DN3000, making them ideal for
+                  high-flow, low-pressure drop applications. 90-degree
+                  quarter-turn operation enables rapid on/off control with
+                  reduced actuator sizing requirements.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://punchlistzero.com/wp-content/uploads/2020/05/bvale.jpg"
+                  alt="Butterfly Valve"
+                />
+              </div>
+            </div>
+
+            <h4>Control Valves</h4>
+            <p>
+              <strong>Actuation:</strong> Pneumatic actuators (spring-return or
+              double-acting) for fail-safe operation, electric actuators (MOV)
+              for precise positioning with 0.1% resolution, and hydraulic
+              actuators for extreme force requirements. All configurations
+              available with digital positioners for enhanced control accuracy.
+            </p>
+            <p>
+              <strong>Rangeability:</strong> Exceptional 50:1 turndown ratio
+              with characterized flow curves including equal percentage
+              (logarithmic control), linear (proportional control), and quick
+              opening (on/off service). Smart positioners provide real-time
+              diagnostics and predictive maintenance capabilities.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Technical Specifications -->
+          <div class="spec-content spec-section">
+            <h3>Technical Specifications & Materials</h3>
+
+            <h4>Body Materials</h4>
+            <p>
+              <strong>Carbon Steel:</strong> ASTM A105 forged, A216 WCB cast,
+              and A350 LF2 low-temperature carbon steel for general industrial
+              service from -29°C to +400°C. Cost-effective solution for
+              non-corrosive applications including water, steam, and hydrocarbon
+              service.
+            </p>
+            <p>
+              <strong>Stainless Steel:</strong> SS304/304L for moderate
+              corrosive environments, SS316/316L for enhanced chloride
+              resistance in marine and chemical processing, SS321 stabilized
+              grade for high-temperature applications up to 815°C, and SS347 for
+              severe corrosive service. All grades available in cast or forged
+              construction.
+            </p>
+            <p>
+              <strong>Alloy Steel:</strong> ASTM A182 F11 (1.25Cr-0.5Mo) and F22
+              (2.25Cr-1Mo) for elevated temperature service in refinery and
+              power generation. Duplex stainless steels F51, F53, F55 provide
+              exceptional strength and corrosion resistance for offshore oil &
+              gas applications.
+            </p>
+            <p>
+              <strong>Exotic Alloys:</strong> Monel 400/K500 for hydrofluoric
+              acid and high-velocity seawater, Inconel 600/625 for extreme
+              temperatures above 900°C and oxidizing/corrosive environments,
+              Hastelloy C276 for severe chemical processing with chlorides and
+              acids, Titanium Grade 2/5 for seawater, brine, and chloride
+              solutions.
+            </p>
+
+            <h4>Pressure & Temperature Ratings</h4>
+            <p>
+              <strong>Pressure Classes:</strong> European standard PN10 to PN160
+              (10 to 160 bar), American ANSI Class 150 to 2500 (285 to 6170
+              PSI), and high-pressure designs up to 15,000 PSI for injection and
+              hydraulic systems. All ratings comply with ASME B16.34
+              pressure-temperature relationships.
+            </p>
+            <p>
+              <strong>Temperature Range:</strong> Standard service -29°C to
+              +400°C suitable for most process applications. Cryogenic service
+              down to -196°C with extended bonnet, special packing, and LF2/LF3
+              materials for LNG and liquid nitrogen. High-temperature designs up
+              to +815°C with graphite packing, cooling fins, and heat-resistant
+              alloys for steam superheaters and thermal oil systems.
+            </p>
+
+            <h4>Standards & Certifications</h4>
+            <p>
+              <strong>Design Standards:</strong> API 6D pipeline valves, API 600
+              gate valves, API 602 compact steel gate valves, API 609 butterfly
+              valves, ASME B16.34 pressure-temperature ratings, BS 5163
+              resilient-seated gate valves, ISO 5752 face-to-face dimensions
+              ensuring interchangeability.
+            </p>
+            <p>
+              <strong>Testing & Quality:</strong> Factory acceptance testing per
+              API 598 for pressure integrity and seat tightness, ISO 5208
+              leakage rate classifications, fire-safe testing per API 607 and
+              API 6FA with secondary metal seals. PED 2014/68/EU certified for
+              European markets, ATEX explosive atmosphere certification, SIL
+              2/SIL 3 per IEC 61508 for safety-instrumented systems, NACE
+              MR0175/ISO 15156 for sour service environments.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4>🔒 Zero Leakage Design</h4>
+                <p>
+                  ANSI Class VI bubble-tight shut-off with less than 0.01%
+                  leakage of rated Cv ensures process integrity and
+                  environmental compliance. Fire-safe API 607/6FA certified
+                  designs feature metal backup seals that engage when soft seals
+                  are compromised by fire. Anti-blowout stem construction
+                  prevents catastrophic stem ejection under full pressure,
+                  ensuring operator safety.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4>🌡️ Extreme Condition Performance</h4>
+                <p>
+                  Engineered for demanding environments from cryogenic LNG
+                  service at -196°C with extended bonnets and vapor barriers, to
+                  high-temperature steam superheat applications at +815°C using
+                  specialized graphite packing and heat dissipation features.
+                  Low-temperature -46°C designs utilize impact-tested LF2/LF3
+                  materials preventing brittle fracture.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4>⚡ Rapid Operation & Low Torque</h4>
+                <p>
+                  Quarter-turn ball and butterfly valves achieve full 0-90°
+                  actuation in under 3 seconds for emergency shut-off
+                  applications. Advanced bearing designs with PTFE/graphite
+                  self-lubricating materials reduce operating torque by 30-50%,
+                  enabling smaller actuator sizing and reduced operational
+                  costs. Ideal for automated systems requiring fast response
+                  times.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4>🔧 Maintenance-Friendly Design</h4>
+                <p>
+                  Top-entry ball valve construction allows complete internal
+                  component removal and replacement without pipeline removal,
+                  reducing maintenance downtime by 80%. Replaceable seat rings,
+                  stem seals, and packing enable in-situ refurbishment. Modular
+                  trim design with interchangeable components minimizes spare
+                  parts inventory and accelerates repairs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://eco-cdn.iqpc.com/eco/images/channel_content/images/id_featured_boxes__38_W5Ycqe1BBlH3gTChzLWLP38QyfHdkqePIY1w5Tac.png"
+                  alt="Oil & Gas Processing"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Oil & Gas Processing</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.planete-energies.com/sites/default/files/styles/1200x630/public/migrated_files/images/thumbnails/image/gettyimages-1065783020.jpg?itok=2KC_IF9v"
+                  alt="Power Generation"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚡ Power Generation</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://cdn.seko-industrial.com/f/b503b34b-74b5-4815-9307-2bfa2ecaa404/0150001000mocc/source.jpg"
+                  alt="Chemical & Petrochemical"
+                />
+                <div class="app-image-overlay">
+                  <h4>🧪 Chemical & Petrochemical</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://chemtech-us.com/wp-content/uploads/2024/04/AdobeStock_160627663-scaled.jpeg"
+                  alt="Water & Wastewater"
+                />
+                <div class="app-image-overlay">
+                  <h4>💧 Water & Wastewater</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://ctcosa.com/wp-content/uploads/2023/12/%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%88-%D8%AA%D9%88%D8%B1%D9%8A%D8%AF-%D9%88%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D9%88%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D8%A7%D9%84%D8%AA%D9%83%D9%8A%D9%8A%D9%81-%D9%88-%D8%A7%D9%84%D8%AA%D9%87%D9%88%D9%8A%D8%A9.jpeg"
+                  alt="Construction & HVAC"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏗️ Construction & HVAC</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.leadec-services.com/fileadmin/_processed_/d/3/csm_2023_header_beverage_3ab1401edf.jpg"
+                  alt="Food & Beverage"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍽️ Food & Beverage</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.compliancequest.com/wp-content/uploads/2023/11/qa-and-qc-in-pharmaceutical-industry.jpg"
+                  alt="Pharmaceutical"
+                />
+                <div class="app-image-overlay">
+                  <h4>💊 Pharmaceutical</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.abs-group.com/content/inline-images/Markets_We_Serve/marine-and-offshore/OffshoreSolutions.png"
+                  alt="Marine & Offshore"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚢 Marine & Offshore</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instruments Modal -->
+    <!-- Instruments Modal -->
+    <div class="modal" id="modal-instruments">
+      <div class="scroll-progress" id="scrollProgress2"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>📊 Instrumentation & Gauges</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Pressure Gauges Section -->
+          <div class="spec-content spec-section">
+            <h3>Pressure Gauges & Measurement Systems</h3>
+
+            <!-- Analog Pressure Gauges with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Analog Pressure Gauges</h4>
+                <p>
+                  <strong>Dial Sizes:</strong> Comprehensive range from 40mm
+                  (1.5") compact panel mount gauges ideal for tight
+                  installations, 63mm (2.5") and 100mm (4") general purpose
+                  field instruments, to 160mm and 200mm (6"-8") large display
+                  gauges for remote viewing and critical monitoring
+                  applications. Available in bottom, back, and center-back
+                  connection orientations.
+                </p>
+                <p>
+                  <strong>Pressure Ranges:</strong> Vacuum -1 to 0 bar for
+                  process vessels, compound -1 to +15 bar for dual-phase
+                  systems, low pressure 0-60 PSI for air and pneumatic circuits,
+                  medium pressure 0-3000 PSI for hydraulic and process
+                  applications, high pressure 0-15,000 PSI for extreme service
+                  including hydraulic power units and injection systems.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://tiimg.tistatic.com/fp/1/008/581/grey-electric-round-stainless-steel-instrumentation-control-gauge-834.jpg"
+                  alt="Analog Pressure Gauge"
+                />
+              </div>
+            </div>
+
+            <!-- Digital Pressure Gauges with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://www.wika.com/media/Images/Header_Teaser_MM_738x410/Products/Pressure/digitalpressuregauges_en_co.png"
+                  alt="Digital Pressure Gauge"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Digital Pressure Gauges</h4>
+                <p>
+                  <strong>Display Technology:</strong> High-contrast LCD
+                  displays with 5-digit resolution providing 0.01% readout
+                  precision, backlit LED displays for low-light environments,
+                  dual-line displays showing pressure and temperature
+                  simultaneously, and large 25mm character height for visibility
+                  up to 10 meters. Configurable engineering units (bar, PSI,
+                  kPa, MPa, kg/cm²).
+                </p>
+                <p>
+                  <strong>Smart Features:</strong> Min/max/average recording
+                  with timestamp, programmable dual setpoint alarms with relay
+                  outputs, data logging capability storing up to 10,000
+                  readings, USB and Bluetooth connectivity for remote monitoring
+                  and configuration. Battery life up to 3 years on single
+                  lithium cell with auto-shutoff feature.
+                </p>
+              </div>
+            </div>
+
+            <!-- Precision Test Gauges with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Precision Test Gauges</h4>
+                <p>
+                  <strong>Accuracy Standards:</strong> EN 837-1 Class 0.1
+                  providing ±0.1% full-scale accuracy for calibration
+                  laboratories, Class 0.6 (±0.6%) for field reference standards,
+                  and Class 1.0-2.5 for general industrial use. ASME B40.100
+                  Grade 4A (±0.1% span) and Grade A (±0.5% span) master test
+                  gauges with mirror scale and knife-edge pointer for
+                  parallax-free reading.
+                </p>
+                <p>
+                  <strong>Calibration:</strong> NIST traceable calibration
+                  certificates with 11-point verification across full range.
+                  ISO/IEC 17025 accredited laboratory calibration available.
+                  Recalibration intervals of 12-24 months depending on
+                  application severity. Temperature-compensated designs maintain
+                  accuracy from -20°C to +60°C ambient.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://2.imimg.com/data2/CK/KM/MY-1900464/precision-test-pressure-gau-500x500.jpg"
+                  alt="Precision Test Gauge"
+                />
+              </div>
+            </div>
+
+            <h4>Construction & Materials</h4>
+            <p>
+              <strong>Case Materials:</strong> Painted steel for cost-effective
+              general purpose applications, SS304 polished stainless for
+              hygienic food/pharma use, SS316L for marine and corrosive
+              environments, phenolic and polycarbonate for electrical isolation
+              and lightweight applications. IP65/IP67/IP68 sealed cases protect
+              against dust, water jets, and temporary immersion.
+            </p>
+            <p>
+              <strong>Wetted Components:</strong> Brass bourdon tubes for water,
+              air, and non-corrosive gases up to 40 bar, SS316L for chemical
+              compatibility and pressures to 1000 bar, Monel for HF acid and
+              high-velocity seawater service, Hastelloy C276 for severe
+              corrosive applications. Diaphragm seals with chemical-resistant
+              fill fluids isolate gauge from process.
+            </p>
+            <p>
+              <strong>Vibration Protection:</strong> Glycerin or silicone
+              liquid-filled cases dampen pointer oscillation in high-vibration
+              environments such as compressors and pumps. Solid-front design
+              protects dial and movement from external damage. Restrictor screws
+              in connection limit pressure surges to extend service life. Panel
+              mounting bezels with dampening rings isolate gauge from panel
+              vibration.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Temperature Instrumentation -->
+          <div class="spec-content spec-section">
+            <h3>Temperature Measurement & Control</h3>
+
+            <!-- Bimetallic Thermometers with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://apureinstrument.com/wp-content/uploads/2021/11/Bimetallic-thermometer-01-min.jpg"
+                  alt="Bimetallic Thermometer"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Bimetallic Thermometers</h4>
+                <p>
+                  <strong>Dial Configuration:</strong> 63mm (2.5"), 100mm (4"),
+                  and 150mm (6") dial sizes with dual-scale °C/°F markings.
+                  Temperature ranges from -50°C to +600°C with multiple span
+                  options. Accuracy Class 1 (±1% span) for process control,
+                  Class 2 (±2%) for indication. Adjustable angle connection
+                  heads (0°, 45°, 90°, 135°) for optimal viewing position.
+                </p>
+                <p>
+                  <strong>Stem Design:</strong> Straight and bent stems in
+                  lengths from 50mm to 1000mm (2"-40"). Stem diameters 6mm, 8mm,
+                  and 10mm for varying thermal response and mechanical strength.
+                  Lagged stems for applications requiring insulation
+                  penetration. Separable socket design allows stem/dial
+                  replacement without process shutdown. Thermowell-compatible
+                  designs for corrosive or high-pressure service.
+                </p>
+              </div>
+            </div>
+
+            <!-- RTD Sensors with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>RTD Temperature Sensors</h4>
+                <p>
+                  <strong>Sensor Elements:</strong> PT100 (100Ω at 0°C) and
+                  PT1000 (1000Ω at 0°C) platinum resistance elements conforming
+                  to IEC 60751 Class A (±0.15°C at 0°C) and Class AA (±0.1°C at
+                  0°C) for precision measurement from -200°C to +600°C.
+                  Thin-film and wire-wound constructions balance response time
+                  and stability. 2-wire, 3-wire, and 4-wire configurations
+                  compensate for lead resistance.
+                </p>
+                <p>
+                  <strong>Probe Construction:</strong> Rigid simplex/duplex
+                  probes in 3mm, 6mm, and 8mm diameters with adjustable
+                  insertion lengths 50mm-1000mm. Flexible cable probes for
+                  surface measurement. Spring-loaded compression fittings
+                  maintain thermal contact. Connection heads in die-cast
+                  aluminum, stainless steel, or polycarbonate with IP65-IP68
+                  ratings and optional LCD displays.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.subhotheater.com/images/products/RTD1.png"
+                  alt="RTD Temperature Sensor"
+                />
+              </div>
+            </div>
+
+            <h4>Thermocouple Systems</h4>
+            <p>
+              <strong>Thermocouple Types:</strong> Type K (Chromel-Alumel)
+              -200°C to +1260°C general purpose with ±1.5°C accuracy, Type J
+              (Iron-Constantan) -40°C to +750°C for reducing atmospheres, Type T
+              (Copper-Constantan) -200°C to +350°C for cryogenic and
+              low-temperature precision, Type E (Chromel-Constantan) -200°C to
+              +900°C with highest EMF output, Type R/S (Platinum-Rhodium) +600°C
+              to +1600°C for high-temperature furnaces, Type N (Nicrosil-Nisil)
+              -200°C to +1260°C with improved oxidation resistance.
+            </p>
+            <p>
+              <strong>Construction Options:</strong> Mineral-insulated (MI)
+              cable with compacted MgO insulation providing fast response (1-3
+              seconds) and mechanical protection, ceramic tube assemblies for
+              high-temperature applications up to 1800°C, bare-wire for
+              ultra-fast response in non-corrosive gases. Thermowells in drilled
+              bar stock (SS316L, Inconel 600, ceramic) protect thermocouples in
+              corrosive or high-velocity fluids while maintaining response time
+              under 30 seconds.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Level Instrumentation -->
+          <div class="spec-content spec-section">
+            <h3>Level Measurement Technologies</h3>
+
+            <!-- Magnetic Level Indicators with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Magnetic Level Indicators</h4>
+                <p>
+                  <strong>Operating Principle:</strong> Float with permanent
+                  magnets drives external indicator flags through non-magnetic
+                  chamber wall, providing fail-safe visual indication without
+                  process penetration. Suitable for pressures to 100 bar and
+                  temperatures from -196°C (cryogenic) to +450°C
+                  (high-temperature process).
+                </p>
+                <p>
+                  <strong>Specifications:</strong> Chamber lengths from 500mm to
+                  6000mm (20"-236") with bi-color flip indicators (red/white or
+                  red/green) providing high-visibility indication up to 50
+                  meters distance. Available with top/side/bottom mounting,
+                  optional magnetic switches for alarm/control, and transmitters
+                  with 4-20mA HART output for remote monitoring.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://image.made-in-china.com/2f0j00JKUbGCwdltqr/Uhz-511z-Magnetic-Float-Digital-Output-Level-Indicator-Magnetic-Flip-Level-Gauge-with-Transmitter-Water-Level-Sensor.webp"
+                  alt="Magnetic Level Indicator"
+                />
+              </div>
+            </div>
+
+            <!-- Radar & Ultrasonic with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://iconprocon.com/wp-content/uploads/2024/12/proscan3_new-version.webp"
+                  alt="Radar Level Transmitter"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Radar & Ultrasonic Level Transmitters</h4>
+                <p>
+                  <strong>Radar Technology:</strong> 26 GHz or 80 GHz FMCW
+                  (Frequency Modulated Continuous Wave) radar providing
+                  non-contact measurement with ±2mm accuracy over ranges to 70
+                  meters. Unaffected by vapor, foam, dust, or temperature
+                  variations. Process seal ratings to 100 bar and +400°C.
+                  Two-wire loop-powered 4-20mA HART communication.
+                </p>
+                <p>
+                  <strong>Ultrasonic Technology:</strong> Piezoelectric
+                  transducers emit 40-70 kHz sound pulses with time-of-flight
+                  measurement providing ±0.25% accuracy over 0.3-15 meter
+                  ranges. Temperature-compensated for varying speed of sound.
+                  Four-wire 24VDC or two-wire 4-20mA outputs. Ideal for
+                  atmospheric tanks with minimal foam and vapor. Blind zone
+                  150-500mm depending on model.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Advanced Features & Certifications</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="📱">Smart Diagnostics & Connectivity</h4>
+                <p>
+                  Self-diagnostics per NAMUR NE 107 standards detect sensor
+                  drift, wiring faults, and out-of-range conditions with
+                  diagnostic alerts. Remote configuration via HART
+                  communicators, smartphone apps with Bluetooth interface, and
+                  FDT/DTM software for asset management. Predictive maintenance
+                  algorithms analyze trends to forecast calibration needs and
+                  prevent failures.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🌡️">Extreme Temperature Performance</h4>
+                <p>
+                  Ambient operating range -55°C to +85°C for outdoor
+                  installations in harsh climates. Process measurement from
+                  cryogenic -196°C (LNG, liquid nitrogen) using extended length
+                  RTDs and special low-temperature materials, to extreme
+                  high-temperature +1800°C with Type S thermocouples and ceramic
+                  protection tubes. Heated enclosures maintain electronics at
+                  optimal temperature in arctic conditions.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💪">Industrial-Grade Construction</h4>
+                <p>
+                  Vibration resistant to 50g continuous, 100g shock per IEC
+                  60068-2-6/27 for pump and compressor mounting. IP65/IP67/IP68
+                  weatherproof ratings protect against dust, high-pressure water
+                  jets, and temporary immersion. NEMA 4X corrosion-resistant
+                  stainless steel or polycarbonate enclosures for marine and
+                  chemical plant environments.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="⚡">Hazardous Area Certifications</h4>
+                <p>
+                  ATEX, IECEx, FM, and CSA certified for explosive atmospheres.
+                  Exd flameproof, Exe increased safety, and Exia/Exib
+                  intrinsically safe designs for Zone 0/1/2 gas atmospheres and
+                  Zone 20/21/22 dust environments. Class I Division 1/2 and
+                  Class II/III North American certifications. SIL 2/SIL 3
+                  functional safety per IEC 61508 for safety instrumented
+                  systems.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://electrical-engineering-portal.com/wp-content/uploads/2017/09/automation-control-practice-theory.jpg"
+                  alt="Process Control"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Process Control & Automation</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://cdn.seko-industrial.com/f/b503b34b-74b5-4815-9307-2bfa2ecaa404/0150001000mocc/source.jpg"
+                  alt="Chemical Processing"
+                />
+                <div class="app-image-overlay">
+                  <h4>🧪 Chemical Processing Plants</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.compliancequest.com/wp-content/uploads/2023/11/qa-and-qc-in-pharmaceutical-industry.jpg"
+                  alt="Pharmaceutical"
+                />
+                <div class="app-image-overlay">
+                  <h4>💊 Pharmaceutical Manufacturing</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.leadec-services.com/fileadmin/_processed_/d/3/csm_2023_header_beverage_3ab1401edf.jpg"
+                  alt="Food & Beverage"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍺 Food & Beverage Production</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://chemtech-us.com/wp-content/uploads/2024/04/AdobeStock_160627663-scaled.jpeg"
+                  alt="Water Treatment"
+                />
+                <div class="app-image-overlay">
+                  <h4>💧 Water & Wastewater Treatment</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://eco-cdn.iqpc.com/eco/images/channel_content/images/id_featured_boxes__38_W5Ycqe1BBlH3gTChzLWLP38QyfHdkqePIY1w5Tac.png"
+                  alt="Refineries"
+                />
+                <div class="app-image-overlay">
+                  <h4>🛢️ Refineries & Petrochemical</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.planete-energies.com/sites/default/files/styles/1200x630/public/migrated_files/images/thumbnails/image/gettyimages-1065783020.jpg?itok=2KC_IF9v"
+                  alt="Power Plants"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚡ Power Generation Plants</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.sssihl.edu.in/wp-content/uploads/2020/03/SSSIHL-Research-CRL-Wet-Chemistry-Laboratory.jpg"
+                  alt="Laboratories"
+                />
+                <div class="app-image-overlay">
+                  <h4>🔬 Research Laboratories</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flow Modal -->
+    <!-- Flow Meters Modal -->
+    <div class="modal" id="modal-flow">
+      <div class="scroll-progress" id="scrollProgressFlow"></div>
+
+      <div class="modal-header">
+        <div class="container">
+          <h2>🌡️ Industrial Flow Meters</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Flow Meter Types -->
+          <div class="spec-content spec-section">
+            <h3>Flow Meter Technologies & Configurations</h3>
+
+            <!-- Electromagnetic Flow Meter -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Electromagnetic Flow Meters (Magflow)</h4>
+                <p>
+                  <strong>Working Principle:</strong> Based on Faraday’s Law of
+                  Electromagnetic Induction, suitable for conductive liquids
+                  such as water, wastewater, slurries, chemicals, and food-grade
+                  liquids.
+                </p>
+                <p>
+                  <strong>Accuracy:</strong> ±0.2% of reading, ideal for
+                  billing, batching, and custody-transfer applications.
+                </p>
+                <p>
+                  <strong>Lining Options:</strong> PTFE, PFA, Neoprene, and
+                  Rubber to withstand corrosive and abrasive media.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://iconprocon.com/wp-content/uploads/2022/12/magnetic-flow-meter-magmeter-7-1.jpg"
+                  alt="Electromagnetic Flow Meter"
+                />
+              </div>
+            </div>
+
+            <!-- Ultrasonic Flow Meter -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxdhiZk5iYkVaeXnDEKRUTaq5qaA4573x-4Q&s"
+                  alt="Ultrasonic Flow Meter"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Ultrasonic Flow Meters</h4>
+                <p>
+                  <strong>Design Variants:</strong> Transit-time, Doppler, and
+                  Clamp-on for non-invasive measurement on metal or PVC pipes.
+                </p>
+                <p>
+                  <strong>Applications:</strong> HVAC monitoring, chilled water,
+                  large pipelines, non-contact measurement, and harsh or
+                  contaminated fluids.
+                </p>
+                <p>
+                  <strong>Benefits:</strong> Zero pressure drop, leak-proof, and
+                  ideal for temporary survey installations.
+                </p>
+              </div>
+            </div>
+
+            <!-- Turbine Flow Meter -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Turbine Flow Meters</h4>
+                <p>
+                  <strong>Construction:</strong> Precision-machined rotor with
+                  stainless steel bearings delivering high repeatability and
+                  linearity.
+                </p>
+                <p>
+                  <strong>Flow Range:</strong> Suitable for low-viscosity
+                  liquids such as fuels, solvents, and chemicals.
+                </p>
+                <p>
+                  <strong>Features:</strong> Fast response time, high accuracy
+                  (±0.5%), and customizable pulse output for PLC/SCADA
+                  integration.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://zeroinstrument.com/wp-content/uploads/2018/10/gas-turbine-flow-meter-G-flange-1200x1359-1.png"
+                  alt="Turbine Flow Meter"
+                />
+              </div>
+            </div>
+
+            <h4>Rotameters (Variable Area Flow Meters)</h4>
+            <p>
+              <strong>Working:</strong> Float rises with flow rate, providing
+              direct visual indication on a calibrated scale. Available in
+              glass, acrylic, and metal tube designs.
+            </p>
+            <p>
+              <strong>Advantages:</strong> Cost-effective, no power supply
+              required, ideal for industrial gas and liquid distribution lines.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Technical Specifications -->
+          <div class="spec-content spec-section">
+            <h3>Technical Specifications & Materials</h3>
+
+            <h4>Body & Wetted Materials</h4>
+            <p>
+              <strong>Stainless Steel:</strong> SS304/SS316 for corrosive
+              liquids and sanitary applications including food & pharma.
+            </p>
+            <p>
+              <strong>Engineering Plastics:</strong> PP, PVC, PVDF for
+              chemical-resistant flow measurement.
+            </p>
+            <p>
+              <strong>Alloys:</strong> Hastelloy, Titanium, Duplex for
+              aggressive media in oil & gas and marine environments.
+            </p>
+
+            <h4>Measuring Range & Operating Conditions</h4>
+            <p>
+              <strong>Flow Range:</strong> 0.1 LPM to 10,000 LPM depending on
+              meter type and pipe size (DN10 to DN600).
+            </p>
+            <p>
+              <strong>Pressure Rating:</strong> Upto 40 bar for industrial-grade
+              models, 100 bar for turbine meters.
+            </p>
+            <p>
+              <strong>Temperature:</strong> -40°C to +180°C with
+              high-temperature linings and sensors for steam and thermal fluids.
+            </p>
+
+            <h4>Output & Communication Protocols</h4>
+            <p>
+              <strong>Signal Outputs:</strong> 4–20 mA, Pulse, Frequency, Relay.
+            </p>
+            <p>
+              <strong>Digital Options:</strong> Modbus RTU, HART, Profibus,
+              RS-485.
+            </p>
+            <p>
+              <strong>Smart Diagnostics:</strong> Self-cleaning electrodes,
+              empty pipe detection, digital drift correction, and tamper alarms.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Enhancements</h3>
+
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4>📈 High Accuracy Measurement</h4>
+                <p>
+                  Flow meters provide ±0.2% to ±1% accuracy with quick response
+                  output, ideal for high-precision batching, dosing, and billing
+                  systems.
+                </p>
+              </div>
+
+              <div class="feature-box">
+                <h4>💧 Zero Pressure Loss Designs</h4>
+                <p>
+                  Ultrasonic and electromagnetic flow meters ensure no
+                  obstruction in the pipe and maintain the full bore for
+                  frictionless flow.
+                </p>
+              </div>
+
+              <div class="feature-box">
+                <h4>⚡ Smart Digital Communication</h4>
+                <p>
+                  HART/Modbus-enabled transmitters allow integration with SCADA,
+                  DCS, BMS, and IIoT platforms, improving plant automation.
+                </p>
+              </div>
+
+              <div class="feature-box">
+                <h4>🔧 Easy Installation & Maintenance</h4>
+                <p>
+                  Clamp-on ultrasonic meters require no pipe cutting, offering
+                  easy servicing and installation even on live pipelines.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://evreka.co/wp-content/uploads/2022/04/Wastewater-treatment-and-disposal-evreka-scaled.jpg"
+                />
+                <div class="app-image-overlay"><h4>💧 Water Treatment</h4></div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://arrowwingsacademy.com/wp-content/uploads/2022/07/Importance-Of-Technology-In-Oil-And-Gas-Industry.jpg"
+                />
+                <div class="app-image-overlay"><h4>🏭 Oil & Gas</h4></div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://dc-mkt-prod.cloud.bosch.tech/xrm/media/global/industries_1/chemical_processing/stage-chemical-processing-industry.jpg"
+                />
+                <div class="app-image-overlay">
+                  <h4>🧪 Chemical Processing</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://top10erp.imgix.net/blog-featured/the-history-of-food-and-beverage-manufacturing.jpeg?auto=format&crop=focalpoint&domain=top10erp.imgix.net&fit=crop&fp-x=0.5&fp-y=0.5&h=630&ixlib=php-3.3.1&q=82&w=1200&s=8aebaf88a6d9b6bd726ece1132809d82"
+                />
+                <div class="app-image-overlay"><h4>🍽️ Food & Beverage</h4></div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://www.compliancequest.com/wp-content/uploads/2023/11/qa-and-qc-in-pharmaceutical-industry.jpg"
+                />
+                <div class="app-image-overlay"><h4>💊 Pharmaceutical</h4></div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://fieldedge.com/wp-content/uploads/2022/02/solar-wind-energy.jpeg"
+                />
+                <div class="app-image-overlay"><h4>🔥 HVAC & Energy</h4></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>About India Steel</h3>
+            <p>
+              Leading supplier of quality steel products in India. We provide
+              comprehensive steel solutions with international standard
+              compliance.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Thread Cutting</a></li>
+              <li><a href="#">Welding Services</a></li>
+              <li><a href="#">Galvanizing</a></li>
+              <li><a href="#">Assembly</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Standards</h3>
+            <ul>
+              <li>ASTM Standards</li>
+              <li>API Specifications</li>
+              <li>IS Standards</li>
+              <li>BS Standards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 India Steel Industries. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function openModal(id) {
+        const modal = document.getElementById("modal-" + id);
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+
+        // Initialize scroll animations
+        setTimeout(() => {
+          observeElements();
+          updateScrollProgress();
+        }, 100);
+      }
+
+      function closeModal() {
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.remove("active"));
+        document.body.style.overflow = "auto";
+      }
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeModal();
+        }
+      });
+
+      // Scroll Animation Observer
+      function observeElements() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px",
+          }
+        );
+
+        document.querySelectorAll(".spec-section").forEach((el) => {
+          observer.observe(el);
+        });
+      }
+
+      // Scroll Progress Bar
+      function updateScrollProgress() {
+        const modal = document.querySelector(".modal.active");
+        if (!modal) return;
+
+        modal.addEventListener("scroll", function () {
+          const scrollProgress = modal.querySelector(".scroll-progress");
+          if (!scrollProgress) return;
+
+          const scrollTop = modal.scrollTop;
+          const scrollHeight = modal.scrollHeight - modal.clientHeight;
+          const progress = (scrollTop / scrollHeight) * 100;
+          scrollProgress.style.width = progress + "%";
+        });
+      }
+
+      // Smooth scroll for modal
+      document.querySelectorAll(".modal").forEach((modal) => {
+        modal.style.scrollBehavior = "smooth";
+      });
+    </script>
+  </body>
+</html>

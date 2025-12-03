@@ -1,0 +1,2126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stainless Steel Products & Sanitary - India Steel Industries</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.7;
+        color: #1a1a1a;
+        background: #fff;
+      }
+
+      /* Top Bar */
+      .top-bar {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        color: #fff;
+        padding: 12px 0;
+        font-size: 13px;
+      }
+
+      .top-bar .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .top-bar-left {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+      }
+
+      .top-bar-left span {
+        opacity: 0.9;
+        letter-spacing: 0.3px;
+      }
+
+      .top-bar-right a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 500;
+        transition: color 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .top-bar-right a:hover {
+        color: #f59e0b;
+      }
+
+      /* Header */
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 25px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .logo-icon {
+        background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-weight: 800;
+        font-size: 22px;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(0, 51, 102, 0.3);
+      }
+
+      .logo-text h1 {
+        font-size: 26px;
+        font-weight: 800;
+        color: #0a0a0a;
+        letter-spacing: -0.5px;
+      }
+
+      .logo-text p {
+        font-size: 11px;
+        color: #666;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+      }
+
+      nav ul li a {
+        color: #1a1a1a;
+        text-decoration: none;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        border-radius: 8px;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background: #003366;
+        color: #fff;
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        background: #fafafa;
+        padding: 18px 0;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .breadcrumb-nav {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-size: 13px;
+      }
+
+      .breadcrumb-nav a {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 500;
+      }
+
+      .breadcrumb-nav a:hover {
+        color: #003366;
+      }
+
+      .breadcrumb-nav span {
+        color: #0a0a0a;
+        font-weight: 600;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        padding: 80px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at 50% 0%,
+          rgba(0, 51, 102, 0.3),
+          transparent 70%
+        );
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        color: #ccc;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.8;
+      }
+
+      /* Filter Section */
+      .filter-section {
+        background: #fafafa;
+        padding: 30px 0;
+        border-bottom: 1px solid #e5e5e5;
+        position: sticky;
+        top: 86px;
+        z-index: 99;
+      }
+
+      .filter-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .filter-label {
+        font-weight: 700;
+        color: #0a0a0a;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-buttons {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        flex: 1;
+      }
+
+      .filter-btn {
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: #666;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-btn:hover {
+        border-color: #003366;
+        color: #003366;
+        background: #eff6ff;
+      }
+
+      .filter-btn.active {
+        background: #003366;
+        color: #fff;
+        border-color: #003366;
+      }
+
+      .search-box {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        border-radius: 50px;
+        padding: 8px 20px;
+        min-width: 250px;
+        transition: border-color 0.3s;
+      }
+
+      .search-box:focus-within {
+        border-color: #003366;
+      }
+
+      .search-box input {
+        border: none;
+        outline: none;
+        padding: 6px 10px;
+        font-size: 14px;
+        width: 100%;
+      }
+
+      .search-box span {
+        color: #999;
+      }
+
+      .results-count {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 30px;
+        font-weight: 500;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      /* Category Section */
+      .category-section {
+        padding: 80px 0;
+        background: #fff;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 42px;
+        font-weight: 800;
+        color: #0a0a0a;
+        margin-bottom: 15px;
+        letter-spacing: -0.5px;
+      }
+
+      .section-header p {
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+      }
+
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+      }
+
+      .category-item {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+
+      .category-item:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        border-color: #003366;
+      }
+
+      .category-item.selected {
+        border-color: #003366;
+        box-shadow: 0 20px 60px rgba(0, 51, 102, 0.25);
+      }
+
+      .category-image {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.4s;
+      }
+
+      .category-item:hover .category-image {
+        transform: scale(1.05);
+      }
+
+      .category-info {
+        padding: 35px;
+      }
+
+      .category-badge {
+        display: inline-block;
+        background: #003366;
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .category-info h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #0a0a0a;
+        margin-bottom: 12px;
+        letter-spacing: -0.3px;
+      }
+
+      .category-info p {
+        font-size: 15px;
+        color: #666;
+        line-height: 1.7;
+      }
+
+      /* Modal Styles */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1000;
+        overflow-y: auto;
+        animation: fadeInModal 0.4s ease;
+      }
+
+      .modal.active {
+        display: block;
+      }
+
+      @keyframes fadeInModal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -1000px 0;
+        }
+        100% {
+          background-position: 1000px 0;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+      }
+
+      .modal-header {
+        background: linear-gradient(135deg, #0c0c0c 0%, #012e5b 100%);
+        padding: 40px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 8px 40px rgba(0, 51, 102, 0.4);
+      }
+
+      .modal-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: slideUp 0.6s ease;
+      }
+
+      .modal-header h2 {
+        font-size: 38px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -0.5px;
+      }
+
+      .close-button {
+        background: #022875;
+        color: #f8f5f5;
+        border: none;
+        padding: 14px 32px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .close-button:hover {
+        background: #003366;
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      .modal-content {
+        padding: 60px 0 80px;
+        background: #ffffff;
+        position: relative;
+      }
+
+      .modal-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        background: radial-gradient(
+          ellipse at top,
+          rgba(0, 0, 0, 0.03),
+          transparent
+        );
+        pointer-events: none;
+      }
+
+      /* Content Sections with Scroll Animations */
+      .spec-section {
+        margin-bottom: 60px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .spec-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Specifications Content */
+      .spec-content {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 50px;
+        box-shadow: 0 10px 40px rgba(0, 51, 102, 0.08);
+        border-left: 5px solid #003366;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .spec-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 51, 102, 0.05),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .spec-content:hover::before {
+        left: 100%;
+      }
+
+      .spec-content:hover {
+        box-shadow: 0 15px 50px rgba(0, 51, 102, 0.15);
+        transform: translateX(5px);
+      }
+
+      .spec-content h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #f59e0b;
+        position: relative;
+        display: inline-block;
+      }
+
+      .spec-content h3::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: #003366;
+        transition: width 0.6s ease;
+      }
+
+      .spec-content:hover h3::after {
+        width: 100%;
+      }
+
+      .spec-content h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #003366;
+        margin: 25px 0 15px;
+        padding-left: 20px;
+        border-left: 4px solid #f59e0b;
+        position: relative;
+      }
+
+      .spec-content h4::before {
+        content: "⚙️";
+        position: absolute;
+        left: -30px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .spec-content p {
+        font-size: 17px;
+        line-height: 1.9;
+        color: #495057;
+        margin-bottom: 20px;
+        text-align: justify;
+        position: relative;
+        padding-left: 25px;
+      }
+
+      .spec-content p::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background: #f59e0b;
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .spec-content p strong {
+        color: #003366;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      /* Feature Highlights */
+      .features-section {
+        background: linear-gradient(135deg, #edeeef 0%, #f9fafb 100%);
+        border-radius: 25px;
+        padding: 50px;
+        margin: 50px 0;
+        color: #060606;
+        box-shadow: 0 20px 60px rgba(7, 7, 7, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .features-section::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(14, 13, 13, 0.1), transparent);
+        animation: float 8s ease-in-out infinite;
+      }
+
+      .features-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        color: #080808;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-box {
+        background: rgb(243, 242, 242);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        border: 2px solid rgba(10, 10, 10, 0.2);
+        transition: all 0.4s ease;
+      }
+
+      .feature-box:hover {
+        background: rgba(245, 158, 11, 0.2);
+        border-color: #f59e0b;
+        transform: translateY(-5px);
+      }
+
+      .feature-box h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #080808;
+      }
+
+      .feature-box h4::before {
+        content: attr(data-icon);
+        margin-right: 10px;
+      }
+
+      .feature-box p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(4, 4, 4, 0.9);
+      }
+
+      /* Applications Tags */
+      .applications-section {
+        margin: 50px 0;
+      }
+
+      .applications-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      /* Divider Line */
+      .divider {
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          #003366,
+          #f59e0b,
+          #003366,
+          transparent
+        );
+        margin: 50px 0;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .divider::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        animation: shimmer 3s infinite;
+      }
+
+      /* Scroll Progress Bar */
+      .scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, #003366, #f59e0b);
+        z-index: 1001;
+        transition: width 0.1s ease;
+      }
+
+      /* Applications Image Grid */
+      .app-images-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .app-image-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 280px;
+        cursor: pointer;
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.6s ease-out backwards;
+      }
+
+      .app-image-card:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .app-image-card:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .app-image-card:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .app-image-card:nth-child(4) {
+        animation-delay: 0.25s;
+      }
+      .app-image-card:nth-child(5) {
+        animation-delay: 0.3s;
+      }
+      .app-image-card:nth-child(6) {
+        animation-delay: 0.35s;
+      }
+      .app-image-card:nth-child(7) {
+        animation-delay: 0.4s;
+      }
+      .app-image-card:nth-child(8) {
+        animation-delay: 0.45s;
+      }
+
+      .app-image-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        border-color: #003366;
+      }
+
+      .app-image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .app-image-card:hover img {
+        transform: scale(1.1);
+      }
+
+      .app-image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.95) 0%,
+          rgba(0, 0, 0, 0.7) 60%,
+          transparent 100%
+        );
+        padding: 25px;
+        transform: translateY(0);
+        transition: all 0.4s ease;
+      }
+
+      .app-image-card:hover .app-image-overlay {
+        background: linear-gradient(
+          to top,
+          rgba(0, 51, 102, 0.95) 0%,
+          rgba(0, 51, 102, 0.8) 60%,
+          transparent 100%
+        );
+      }
+
+      .app-image-overlay h4 {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 0.5px;
+      }
+
+      /* Configuration Row Layout */
+      .config-row {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 40px;
+        align-items: center;
+        margin: 40px 0;
+        padding: 30px 0;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .config-row:last-of-type {
+        border-bottom: none;
+      }
+
+      .config-row.reverse {
+        grid-template-columns: 380px 1fr;
+      }
+
+      .config-text {
+        order: 1;
+      }
+
+      .config-row.reverse .config-text {
+        order: 2;
+      }
+
+      .config-image {
+        order: 2;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s ease;
+        height: 320px;
+      }
+
+      .config-row.reverse .config-image {
+        order: 1;
+      }
+
+      .config-image:hover {
+        border-color: #003366;
+        box-shadow: 0 15px 40px rgba(0, 51, 102, 0.25);
+        transform: translateY(-5px);
+      }
+
+      .config-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .config-image:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Footer */
+      footer {
+        background: #0a0a0a;
+        color: #ccc;
+        padding: 60px 0 30px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-col h3 {
+        color: #f59e0b;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .footer-col p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #999;
+      }
+
+      .footer-col ul {
+        list-style: none;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+        color: #999;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+
+      .footer-col ul li a:hover {
+        color: #f59e0b;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid #222;
+        color: #666;
+        font-size: 13px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .config-row,
+        .config-row.reverse {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .config-text,
+        .config-row.reverse .config-text {
+          order: 1;
+        }
+
+        .config-image,
+        .config-row.reverse .config-image {
+          order: 2;
+        }
+
+        .config-image {
+          height: 280px;
+        }
+
+        .app-images-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .category-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .app-images-grid,
+        .category-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .config-image {
+          height: 240px;
+        }
+
+        .hero h2 {
+          font-size: 36px;
+        }
+
+        nav ul {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .filter-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .search-box {
+          width: 100%;
+        }
+
+        .feature-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <span>📧 info@indiasteelind.com</span>
+          <span>📞 +91 22 4567 8900</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="#">Get Quote</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo-icon">ISI</div>
+            <div class="logo-text">
+              <h1>INDIA STEEL INDUSTRIES</h1>
+              <p>Quality Steel Solutions Since 1998</p>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="index.html#products" class="active">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <a href="index.html#products">Products</a>
+          <span>›</span>
+          <span>Stainless Steel Products & Sanitary</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>✨ Stainless Steel Products & Sanitary</h2>
+          <p>
+            Explore our high-quality stainless steel products, pipes, fittings,
+            and sheets designed for industrial, architectural, and sanitary
+            applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-container">
+          <span class="filter-label">Filter By:</span>
+          <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProducts('all')">
+              All Products
+            </button>
+            <button class="filter-btn" onclick="filterProducts('pipes')">
+              Pipes & Tubes
+            </button>
+            <button class="filter-btn" onclick="filterProducts('fittings')">
+              Fittings
+            </button>
+            <button class="filter-btn" onclick="filterProducts('sheets')">
+              Sheets
+            </button>
+          </div>
+          <div class="search-box">
+            <span>🔍</span>
+            <input
+              type="text"
+              placeholder="Search products..."
+              oninput="searchProducts(this.value)"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Products</h2>
+          <p>Click on a product to view detailed specifications</p>
+        </div>
+        <p class="results-count" id="resultsCount">Showing 3 products</p>
+        <div class="category-grid" id="productGrid">
+          <!-- SS Pipes & Tubes -->
+          <div
+            class="category-item"
+            data-category="pipes"
+            data-name="SS Pipes Tubes 304 316"
+            onclick="openModal('ss-pipes-tubes', this)"
+          >
+            <img
+              src="https://www.octalsteel.com/wp-content/uploads/2017/07/ASTM-A312-A213-seamless-and-welded-stainless-steel-pipe.jpg"
+              alt="SS Pipes & Tubes (304/316)"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Pipes</span>
+              <h3>SS Pipes & Tubes (304 / 316)</h3>
+              <p>
+                Durable stainless steel pipes and tubes for plumbing and
+                industrial use
+              </p>
+            </div>
+          </div>
+
+          <!-- SS Fittings & Flanges -->
+          <div
+            class="category-item"
+            data-category="fittings"
+            data-name="SS Fittings Flanges"
+            onclick="openModal('ss-fittings-flanges', this)"
+          >
+            <img
+              src="https://www.metline-pipefittings.in/wp-content/uploads/2014/07/stainless-steel-pipe-fittings-manufacturer-supplier-1024x574.jpg"
+              alt="SS Fittings & Flanges"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Fittings</span>
+              <h3>SS Fittings & Flanges</h3>
+              <p>
+                Precision stainless fittings, elbows, and flanges for secure
+                pipeline connections
+              </p>
+            </div>
+          </div>
+
+          <!-- SS Sheets -->
+          <div
+            class="category-item"
+            data-category="sheets"
+            data-name="SS Sheets Plates"
+            onclick="openModal('ss-sheets', this)"
+          >
+            <img
+              src="https://5.imimg.com/data5/SELLER/Default/2025/6/518464107/QP/DE/IR/189182550/hot-rolled-stainless-steel-sheet-1000x1000.jpg"
+              alt="SS Sheets"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Sheets</span>
+              <h3>SS Sheets</h3>
+              <p>
+                High-quality stainless steel sheets with superior corrosion
+                resistance
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- Modal 1: SS Pipes & Tubes -->
+    <div class="modal" id="modal-ss-pipes-tubes">
+      <div class="scroll-progress" id="scrollProgressSSPipes"></div>
+
+      <div class="modal-header">
+        <div class="container">
+          <h2>🛠️ Stainless Steel Pipes & Tubes (304 / 316 / 321 / 202)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Section: Pipe Types -->
+          <div class="spec-content spec-section">
+            <h3>SS Pipe & Tube Types</h3>
+
+            <!-- Seamless Pipes -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Seamless Stainless Steel Pipes</h4>
+                <p>
+                  <strong>Manufacturing:</strong> Produced using hot extrusion
+                  or rotary piercing, offering uniform grain structure and high
+                  strength. Conforming to ASTM A312, A213, and A269 for seamless
+                  applications in high-pressure, high-temperature operations.
+                </p>
+                <p>
+                  <strong>Advantages:</strong> Zero weld seam, excellent
+                  corrosion resistance, superior pressure handling, and uniform
+                  wall thickness. Ideal for chemical plants, boilers, heat
+                  exchangers, and refineries.
+                </p>
+                <p>
+                  <strong>Sizes:</strong> ½” to 12” NB, schedules SCH 10 / 40 /
+                  80 / 160.
+                </p>
+              </div>
+
+              <div class="config-image">
+                <img
+                  src="https://www.mbmtubes.com/blog/wp-content/uploads/2022/05/Stainless-Steel-Welded-Tubes.png"
+                  alt="Seamless SS Pipes"
+                />
+              </div>
+            </div>
+
+            <!-- Welded Pipes -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://www.ricostainless.com/images/ss-welded-pipes.jpg"
+                  alt="SS Welded Pipes"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Welded Stainless Steel Pipes</h4>
+                <p>
+                  <strong>Construction:</strong> Manufactured using TIG/MIG
+                  welding techniques with annealed finishing for excellent
+                  formability. Available per ASTM A312, A358, and A269 for
+                  structural, decorative, and fluid transport.
+                </p>
+                <p>
+                  <strong>Finishes:</strong> 2B matte finish, BA mirror finish,
+                  hairline, and polish levels up to #600/#800 for architectural
+                  use.
+                </p>
+                <p>
+                  <strong>Applications:</strong> Water lines, general
+                  fabrication, furniture, pharma equipment, exhaust systems.
+                </p>
+              </div>
+            </div>
+
+            <!-- Square / Rectangular Tubes -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Square & Rectangular Tubes</h4>
+                <p>
+                  <strong>Types:</strong> Hot rolled, cold drawn,
+                  bright-annealed tubes conforming to ASTM A554 for structural &
+                  ornamental applications. Manufactured with tight tolerance
+                  control for precision assembly.
+                </p>
+                <p>
+                  <strong>Grades Available:</strong> SS 202, 304, 316, 316L,
+                  409.
+                </p>
+                <p>
+                  <strong>Uses:</strong> Railings, gates, architectural
+                  structures, machinery frames.
+                </p>
+              </div>
+
+              <div class="config-image">
+                <img
+                  src="https://www.tubos.in/imgg/stainless-steel/ss-square-pipe.jpg"
+                  alt="SS Square Rectangular Tubes"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Materials & Grades -->
+          <div class="spec-content spec-section">
+            <h3>Material Grades & Corrosion Performance</h3>
+
+            <h4>SS 304 / 304L</h4>
+            <p>
+              General-purpose austenitic steel with 18% chromium & 8% nickel.
+              Excellent corrosion resistance for food, water, and mild
+              chemicals.
+            </p>
+
+            <h4>SS 316 / 316L</h4>
+            <p>
+              Molybdenum added for superior chloride resistance. Ideal for
+              marine, chemical, and pharmaceutical applications.
+            </p>
+
+            <h4>SS 202</h4>
+            <p>
+              Cost-effective manganese-based grade suitable for architectural,
+              structural, and indoor applications.
+            </p>
+
+            <h4>SS 321</h4>
+            <p>
+              Titanium-stabilized stainless steel for high-temperature service
+              up to 900°C.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Technical Benefits</h3>
+
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🛡️">Corrosion Resistant</h4>
+                <p>
+                  Stainless steel forms a self-healing chromium oxide layer
+                  providing long-term protection against rust, acids, moisture,
+                  and chemicals.
+                </p>
+              </div>
+
+              <div class="feature-box">
+                <h4 data-icon="🔥">High Temperature Strength</h4>
+                <p>
+                  Operates safely from -196°C to +800°C. SS 316/321 perform
+                  exceptionally well in boilers, heat exchangers, and thermal
+                  processing.
+                </p>
+              </div>
+
+              <div class="feature-box">
+                <h4 data-icon="📏">Precision Tolerance Control</h4>
+                <p>
+                  Cold-drawn tubes provide tight dimensional control suitable
+                  for precision instruments, hydraulic lines, and pharma
+                  machinery.
+                </p>
+              </div>
+
+              <div class="feature-box">
+                <h4 data-icon="⚙️">High Formability</h4>
+                <p>
+                  Stainless tubes can be bent, welded, polished, and fabricated
+                  with ease without losing mechanical properties.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://www.metafab.com/wp-content/uploads/2022/04/Saw-Cutting.jpg"
+                  alt="Fabrication & Engineering"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚙️ Industrial Fabrication</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://www.techadroitdesign.com/images/pages/9.jpg"
+                  alt="Food Pharma Industry"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍽️ Food & Pharma Equipment</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://www.mcucoatings.com/images/chemical-plants-big.jpg"
+                  alt="Marine Offshore"
+                />
+                <div class="app-image-overlay">
+                  <h4>🌊 Marine & Chemical Plants</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://www.petrosync.com/blog/wp-content/uploads/2024/01/oil-refinery-in-oil-and-gas-industry.png"
+                  alt="Oil Gas Refinery"
+                />
+                <div class="app-image-overlay">
+                  <h4>🛢️ Oil & Gas Refineries</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://www.tbkmetal.com/wp-content/uploads/2022/03/Stainless-Steel-Balcony-Railing.jpg"
+                  alt="SS railings"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏢 Architectural SS Railings</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: SS Fittings & Flanges -->
+    <div class="modal" id="modal-ss-fittings-flanges">
+      <div class="scroll-progress" id="scrollProgressSSFittings"></div>
+
+      <div class="modal-header">
+        <div class="container">
+          <h2>🔩 Stainless Steel Fittings & Flanges (304 / 316 / 321 / 202)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Section: Fittings Types -->
+          <div class="spec-content spec-section">
+            <h3>Types of Stainless Steel Fittings</h3>
+
+            <!-- Butt-Weld Fittings -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Butt-Weld Pipe Fittings</h4>
+                <p>
+                  Manufactured as per ASME B16.9 standards for high-pressure
+                  pipelines. Seamless or welded construction ensures leak-proof
+                  flow and long service life.
+                </p>
+                <p>
+                  <strong>Available Types:</strong> Elbows (45°/90°), Tees,
+                  Reducers, Caps, Stub Ends.
+                </p>
+                <p>
+                  <strong>Sizes:</strong> ½” to 48”, SCH 10 / 40 / 80 / XXS.
+                </p>
+                <p>
+                  <strong>Applications:</strong> Petrochemical plants, boilers,
+                  power stations, chemical transfer lines.
+                </p>
+              </div>
+
+              <div class="config-image">
+                <img
+                  src="https://www.simplexfittings.com/blog/wp-content/uploads/2024/12/Stainless-Steel-Buttweld-Fittings1.jpg"
+                  alt="SS Butt Weld Fittings"
+                />
+              </div>
+            </div>
+
+            <!-- Socket-Weld / Threaded Fittings -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/F4992903-01"
+                  alt="SS Socket & Threaded Fittings"
+                />
+              </div>
+
+              <div class="config-text">
+                <h4>Socket-Weld & Threaded Fittings</h4>
+                <p>
+                  Complying with ASME B16.11, these fittings are used for small
+                  bore piping systems where high mechanical strength and
+                  vibration resistance are required.
+                </p>
+                <p>
+                  <strong>Types:</strong> Couplings, Unions, Bushings, Threaded
+                  Elbows, Hex Nipples.
+                </p>
+                <p>
+                  <strong>Standards:</strong> NPT / BSP threading available.
+                </p>
+              </div>
+            </div>
+
+            <!-- Ferrule Compression Fittings -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Ferrule / Compression Tube Fittings</h4>
+                <p>
+                  Double-ferrule tube fittings designed as per ASTM A479 for
+                  leak free connections. Precision engineered for hydraulic,
+                  pneumatic and instrumentation use.
+                </p>
+                <p>
+                  <strong>Uses:</strong> Gas lines, pharma equipment, analyzer
+                  systems.
+                </p>
+                <p>
+                  <strong>Brands Supported:</strong> Swagelok type / Parker type
+                  designs.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/51piT18w+2L._AC_UF1000,1000_QL80_.jpg"
+                  alt="Compression Tube Fittings"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Section: Flanges -->
+          <div class="spec-content spec-section">
+            <h3>Flange Types & Standards</h3>
+
+            <!-- Flange Types -->
+            <h4>Common SS Flange Types</h4>
+            <ul>
+              <li>
+                Weld Neck Flanges (WNRF) – High pressure, smooth stress
+                distribution
+              </li>
+              <li>Slip-On Flanges (SORF) – Easy installation & alignment</li>
+              <li>
+                Blind Flanges – Line termination and high-pressure sealing
+              </li>
+              <li>Socket-Weld Flanges – Small pipe diameter systems</li>
+              <li>
+                Lap Joint Flanges – Paired with stub ends for easy dismantling
+              </li>
+              <li>
+                Threaded/NPT Flanges – No welding required for flammable lines
+              </li>
+            </ul>
+
+            <h4>Standards</h4>
+            <p>ANSI/ASME B16.5, B16.47, DIN, JIS, BS 4504, EN 1092.</p>
+
+            <h4>Material Grades</h4>
+            <p>SS 304 / 304L, SS 316 / 316L, SS 321, Duplex, 310.</p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features -->
+          <div class="features-section spec-section">
+            <h3>Key Features</h3>
+
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🧲">High Strength Design</h4>
+                <p>
+                  Suitable for pressures up to 2500 class depending on flange
+                  rating.
+                </p>
+              </div>
+
+              <div class="feature-box">
+                <h4 data-icon="🔧">Leak-Proof Joint Integrity</h4>
+                <p>
+                  Precision machined surfaces ensure accurate gasket
+                  compression.
+                </p>
+              </div>
+
+              <div class="feature-box">
+                <h4 data-icon="🛡️">Superior Corrosion Resistance</h4>
+                <p>
+                  Excellent performance against steam, chemicals, water, gases,
+                  fuels.
+                </p>
+              </div>
+
+              <div class="feature-box">
+                <h4 data-icon="⚙️">Versatile Compatibility</h4>
+                <p>
+                  Used across pipelines handling chemicals, oil, gas, steam,
+                  air, and fluids.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://pinnacleinfotech.com/wp-content/uploads/2024/09/Process-Piping-System-of-a-Manufacturing-Facility.jpg"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚙️ Process Piping Systems</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/d/d2/TASNEE_001.jpg"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Chemical & Petrochemical</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://www.gfps.com/com/en/industries/marine/_jcr_content/content/teaserpanel/tile.coreimg.jpeg/1724256082373/gfps-reference-mecship-pesystem.jpeg"
+                />
+                <div class="app-image-overlay">
+                  <h4>🌊 Marine Piping</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://adinathmachines.com/wp-content/uploads/2020/04/food-machinery.jpg"
+                />
+                <div class="app-image-overlay">
+                  <h4>🧴 Pharma & Food Lines</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: SS Sheets, Plates & Coils -->
+    <div class="modal" id="modal-ss-sheets">
+      <div class="scroll-progress" id="scrollProgressSSSheets"></div>
+
+      <div class="modal-header">
+        <div class="container">
+          <h2>📄 Stainless Steel Sheets, Plates & Coils</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Sheet Types -->
+          <div class="spec-content spec-section">
+            <h3>Types of SS Sheets, Plates & Coils</h3>
+
+            <!-- Cold Rolled (CR) -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Cold Rolled (CR) Stainless Steel Sheets</h4>
+                <p>
+                  Precision-made CR sheets with smooth surface finish, tight
+                  thickness tolerance and excellent flatness. Manufactured as
+                  per ASTM A240.
+                </p>
+                <p>
+                  <strong>Finishes:</strong> 2B, BA mirror, No.4 satin, Hairline
+                  (HL).
+                </p>
+                <p><strong>Thickness:</strong> 0.5mm – 3mm.</p>
+                <p>
+                  <strong>Applications:</strong> Elevators, kitchen equipment,
+                  décor, furniture.
+                </p>
+              </div>
+
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2023/12/365590700/EF/AT/BW/406070/cr-sheets-500x500.png"
+                />
+              </div>
+            </div>
+
+            <!-- Hot Rolled (HR) -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://www.amns.in/stallion/assets/images/Hot-Rolled-vs-Cold-Rolled-Steel-Understanding-the-Differences.jpg"
+                />
+              </div>
+
+              <div class="config-text">
+                <h4>Hot Rolled (HR) Plates</h4>
+                <p>
+                  Heavy-duty plates designed for structural and industrial
+                  applications requiring high strength and durability. As per
+                  ASTM A240 / A480.
+                </p>
+                <p><strong>Thickness:</strong> 3mm – 50mm+</p>
+                <p>
+                  <strong>Uses:</strong> Fabrication, boilers, pressure vessels,
+                  heavy engineering.
+                </p>
+              </div>
+            </div>
+
+            <!-- SS Coils -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Stainless Steel Coils</h4>
+                <p>
+                  Slit & mother coils supplied in various hardnesses — soft,
+                  half hard, full hard.
+                </p>
+                <p><strong>Widths:</strong> 20mm to 1500mm</p>
+                <p><strong>Grades:</strong> 202 / 304 / 316 / 409 / 430</p>
+                <p>
+                  <strong>Applications:</strong> Strip manufacturing, stamping,
+                  gaskets, utensils.
+                </p>
+              </div>
+
+              <div class="config-image">
+                <img
+                  src="https://image.made-in-china.com/318f0j00aEAYfvQcVWkH/MIC-SSCOIL-mp4.webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Grades Section -->
+          <div class="spec-content spec-section">
+            <h3>Material Grades & Properties</h3>
+
+            <h4>SS 304</h4>
+            <p>
+              Excellent corrosion resistance, widely used for household &
+              industrial fabrication.
+            </p>
+
+            <h4>SS 316</h4>
+            <p>Marine grade with molybdenum for chloride-rich environments.</p>
+
+            <h4>SS 202</h4>
+            <p>
+              Cost-effective grade used for railings, interiors, general
+              fabrication.
+            </p>
+
+            <h4>SS 409 & 430</h4>
+            <p>
+              Ferritic stainless steel used for automotive exhausts &
+              kitchenware.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features -->
+          <div class="features-section spec-section">
+            <h3>Key Features</h3>
+
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="✨">Premium Surface Finish</h4>
+                <p>Mirror, matte, satin & decorative finishes available.</p>
+              </div>
+
+              <div class="feature-box">
+                <h4 data-icon="📏">High Dimensional Accuracy</h4>
+                <p>
+                  Perfect flatness for laser cutting, bending & CNC fabrication.
+                </p>
+              </div>
+
+              <div class="feature-box">
+                <h4 data-icon="🔥">Heat & Chemical Resistant</h4>
+                <p>Ideal for boilers, chemical tanks, marine structures.</p>
+              </div>
+
+              <div class="feature-box">
+                <h4 data-icon="🔩">Excellent Fabricability</h4>
+                <p>
+                  Can be sheared, welded, bent, stamped, or polished
+                  effortlessly.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://www.avanticorporate.com/wp-content/uploads/2022/01/commercial-kitchen-size-blog-header-scaled-e1645764462148.jpeg"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍽️ Commercial Kitchens</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://architectureideas.info/wp-content/uploads/2008/08/ARCHITECTURE-1024x682.jpeg"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏢 Building & Architecture</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://www.general-steel.com/wp-content/uploads/2024/06/laser-cutting-machine-services.jpg"
+                />
+                <div class="app-image-overlay">
+                  <h4>🛠️ Laser Cutting Fabrication</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSKjqSduX8lsI55eEvd-dxfbMdvooZViaRw&s"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚙️ Industrial Machinery</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>About India Steel</h3>
+            <p>
+              Leading supplier of quality steel products in India. We provide
+              comprehensive steel solutions with international standard
+              compliance.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Service Categories</h3>
+            <ul>
+              <li><a href="#">Thread Cutting</a></li>
+              <li><a href="#">Welding Services</a></li>
+              <li><a href="#">Galvanizing</a></li>
+              <li><a href="#">Assembly & Spools</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Standards We Follow</h3>
+            <ul>
+              <li>ASTM Standards</li>
+              <li>API Specifications</li>
+              <li>IS Standards</li>
+              <li>BS Standards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 India Steel Industries. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Filter Products
+      function filterProducts(category) {
+        const items = document.querySelectorAll(".category-item");
+        const buttons = document.querySelectorAll(".filter-btn");
+        let visibleCount = 0;
+
+        // Update active button
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        event.target.classList.add("active");
+
+        // Clear search box
+        document.querySelector(".search-box input").value = "";
+
+        // Filter items
+        items.forEach((item) => {
+          if (category === "all" || item.dataset.category === category) {
+            item.classList.remove("hidden");
+            visibleCount++;
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+
+        // Update count
+        updateResultsCount(visibleCount);
+      }
+
+      // Search Products
+      function searchProducts(query) {
+        const items = document.querySelectorAll(".category-item");
+        const searchTerm = query.toLowerCase();
+        let visibleCount = 0;
+
+        // Reset filter buttons when searching
+        if (query.length > 0) {
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((btn) => btn.classList.remove("active"));
+        }
+
+        items.forEach((item) => {
+          const name = item.dataset.name.toLowerCase();
+          if (name.includes(searchTerm)) {
+            item.classList.remove("hidden");
+            visibleCount++;
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+
+        updateResultsCount(visibleCount);
+      }
+
+      // Update Results Count
+      function updateResultsCount(count) {
+        const resultsCount = document.getElementById("resultsCount");
+        resultsCount.textContent = `Showing ${count} product${
+          count !== 1 ? "s" : ""
+        }`;
+      }
+
+      // Open Modal with Scroll Animations
+      function openModal(id, card) {
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.remove("active"));
+        document
+          .querySelectorAll(".category-item")
+          .forEach((c) => c.classList.remove("selected"));
+
+        const modal = document.getElementById("modal-" + id);
+        modal.classList.add("active");
+        card.classList.add("selected");
+        document.body.style.overflow = "hidden";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+
+        // Initialize scroll animations
+        setTimeout(() => {
+          observeElements();
+
+          // Update scroll progress for the specific modal
+          if (id === "bolts") {
+            updateScrollProgress("scrollProgressBolts");
+          } else if (id === "rods") {
+            updateScrollProgress("scrollProgressRods");
+          } else if (id === "u-bolts") {
+            updateScrollProgress("scrollProgressUBolts");
+          }
+        }, 100);
+      }
+
+      // Close Modal
+      function closeModal() {
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.remove("active"));
+        document
+          .querySelectorAll(".category-item")
+          .forEach((c) => c.classList.remove("selected"));
+        document.body.style.overflow = "auto";
+      }
+
+      // Escape key to close modal
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeModal();
+        }
+      });
+
+      // Scroll Animation Observer
+      function observeElements() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px",
+          }
+        );
+
+        document.querySelectorAll(".spec-section").forEach((el) => {
+          observer.observe(el);
+        });
+      }
+
+      // Scroll Progress Bar
+      function updateScrollProgress(progressId) {
+        const modal = document.querySelector(".modal.active");
+        if (!modal) return;
+
+        modal.addEventListener("scroll", function () {
+          const scrollProgress = document.getElementById(progressId);
+          if (!scrollProgress) return;
+
+          const scrollTop = modal.scrollTop;
+          const scrollHeight = modal.scrollHeight - modal.clientHeight;
+          const progress = (scrollTop / scrollHeight) * 100;
+          scrollProgress.style.width = progress + "%";
+        });
+      }
+
+      // Smooth scroll for modals
+      document.querySelectorAll(".modal").forEach((modal) => {
+        modal.style.scrollBehavior = "smooth";
+      });
+    </script>
+  </body>
+</html>

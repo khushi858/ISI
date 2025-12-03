@@ -1,0 +1,3761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structural Steel Sections - India Steel Industries</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.7;
+        color: #1a1a1a;
+        background: #fff;
+      }
+
+      /* Top Bar */
+      .top-bar {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        color: #fff;
+        padding: 12px 0;
+        font-size: 13px;
+      }
+
+      .top-bar .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .top-bar-left {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+      }
+
+      .top-bar-left span {
+        opacity: 0.9;
+        letter-spacing: 0.3px;
+      }
+
+      .top-bar-right a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 500;
+        transition: color 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .top-bar-right a:hover {
+        color: #f59e0b;
+      }
+
+      /* Header */
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 25px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .logo-icon {
+        background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-weight: 800;
+        font-size: 22px;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(0, 51, 102, 0.3);
+      }
+
+      .logo-text h1 {
+        font-size: 26px;
+        font-weight: 800;
+        color: #0a0a0a;
+        letter-spacing: -0.5px;
+      }
+
+      .logo-text p {
+        font-size: 11px;
+        color: #666;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+      }
+
+      nav ul li a {
+        color: #1a1a1a;
+        text-decoration: none;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        border-radius: 8px;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background: #003366;
+        color: #fff;
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        background: #fafafa;
+        padding: 18px 0;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .breadcrumb-nav {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-size: 13px;
+      }
+
+      .breadcrumb-nav a {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 500;
+      }
+
+      .breadcrumb-nav a:hover {
+        color: #003366;
+      }
+
+      .breadcrumb-nav span {
+        color: #0a0a0a;
+        font-weight: 600;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        padding: 80px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at 50% 0%,
+          rgba(0, 51, 102, 0.3),
+          transparent 70%
+        );
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        color: #ccc;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.8;
+      }
+
+      /* Filter Section */
+      .filter-section {
+        background: #fafafa;
+        padding: 30px 0;
+        border-bottom: 1px solid #e5e5e5;
+        position: sticky;
+        top: 86px;
+        z-index: 99;
+      }
+
+      .filter-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .filter-label {
+        font-weight: 700;
+        color: #0a0a0a;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-buttons {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        flex: 1;
+      }
+
+      .filter-btn {
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: #666;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-btn:hover {
+        border-color: #003366;
+        color: #003366;
+        background: #eff6ff;
+      }
+
+      .filter-btn.active {
+        background: #003366;
+        color: #fff;
+        border-color: #003366;
+      }
+
+      .search-box {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        border-radius: 50px;
+        padding: 8px 20px;
+        min-width: 250px;
+        transition: border-color 0.3s;
+      }
+
+      .search-box:focus-within {
+        border-color: #003366;
+      }
+
+      .search-box input {
+        border: none;
+        outline: none;
+        padding: 6px 10px;
+        font-size: 14px;
+        width: 100%;
+      }
+
+      .search-box span {
+        color: #999;
+      }
+
+      .results-count {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 30px;
+        font-weight: 500;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      /* Category Section */
+      .category-section {
+        padding: 80px 0;
+        background: #fff;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 42px;
+        font-weight: 800;
+        color: #0a0a0a;
+        margin-bottom: 15px;
+        letter-spacing: -0.5px;
+      }
+
+      .section-header p {
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+      }
+
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+      }
+
+      .category-item {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+
+      .category-item:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        border-color: #003366;
+      }
+
+      .category-item.selected {
+        border-color: #003366;
+        box-shadow: 0 20px 60px rgba(0, 51, 102, 0.25);
+      }
+
+      .category-image {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.4s;
+      }
+
+      .category-item:hover .category-image {
+        transform: scale(1.05);
+      }
+
+      .category-info {
+        padding: 35px;
+      }
+
+      .category-badge {
+        display: inline-block;
+        background: #003366;
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .category-info h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #0a0a0a;
+        margin-bottom: 12px;
+        letter-spacing: -0.3px;
+      }
+
+      .category-info p {
+        font-size: 15px;
+        color: #666;
+        line-height: 1.7;
+      }
+
+      /* Modal Styles */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1000;
+        overflow-y: auto;
+        animation: fadeInModal 0.4s ease;
+      }
+
+      .modal.active {
+        display: block;
+      }
+
+      @keyframes fadeInModal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -1000px 0;
+        }
+        100% {
+          background-position: 1000px 0;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+      }
+
+      .modal-header {
+        background: linear-gradient(135deg, #0c0c0c 0%, #012e5b 100%);
+        padding: 40px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 8px 40px rgba(0, 51, 102, 0.4);
+      }
+
+      .modal-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: slideUp 0.6s ease;
+      }
+
+      .modal-header h2 {
+        font-size: 38px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -0.5px;
+      }
+
+      .close-button {
+        background: #022875;
+        color: #f8f5f5;
+        border: none;
+        padding: 14px 32px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .close-button:hover {
+        background: #003366;
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      .modal-content {
+        padding: 60px 0 80px;
+        background: #ffffff;
+        position: relative;
+      }
+
+      .modal-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        background: radial-gradient(
+          ellipse at top,
+          rgba(0, 0, 0, 0.03),
+          transparent
+        );
+        pointer-events: none;
+      }
+
+      /* Content Sections with Scroll Animations */
+      .spec-section {
+        margin-bottom: 60px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .spec-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Specifications Content */
+      .spec-content {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 50px;
+        box-shadow: 0 10px 40px rgba(0, 51, 102, 0.08);
+        border-left: 5px solid #003366;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .spec-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 51, 102, 0.05),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .spec-content:hover::before {
+        left: 100%;
+      }
+
+      .spec-content:hover {
+        box-shadow: 0 15px 50px rgba(0, 51, 102, 0.15);
+        transform: translateX(5px);
+      }
+
+      .spec-content h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #f59e0b;
+        position: relative;
+        display: inline-block;
+      }
+
+      .spec-content h3::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: #003366;
+        transition: width 0.6s ease;
+      }
+
+      .spec-content:hover h3::after {
+        width: 100%;
+      }
+
+      .spec-content h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #003366;
+        margin: 25px 0 15px;
+        padding-left: 20px;
+        border-left: 4px solid #f59e0b;
+        position: relative;
+      }
+
+      .spec-content h4::before {
+        content: "⚙️";
+        position: absolute;
+        left: -30px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .spec-content p {
+        font-size: 17px;
+        line-height: 1.9;
+        color: #495057;
+        margin-bottom: 20px;
+        text-align: justify;
+        position: relative;
+        padding-left: 25px;
+      }
+
+      .spec-content p::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background: #f59e0b;
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .spec-content p strong {
+        color: #003366;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      /* Feature Highlights */
+      .features-section {
+        background: linear-gradient(135deg, #edeeef 0%, #f9fafb 100%);
+        border-radius: 25px;
+        padding: 50px;
+        margin: 50px 0;
+        color: #060606;
+        box-shadow: 0 20px 60px rgba(7, 7, 7, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .features-section::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(14, 13, 13, 0.1), transparent);
+        animation: float 8s ease-in-out infinite;
+      }
+
+      .features-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        color: #080808;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-box {
+        background: rgb(243, 242, 242);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        border: 2px solid rgba(10, 10, 10, 0.2);
+        transition: all 0.4s ease;
+      }
+
+      .feature-box:hover {
+        background: rgba(245, 158, 11, 0.2);
+        border-color: #f59e0b;
+        transform: translateY(-5px);
+      }
+
+      .feature-box h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #080808;
+      }
+
+      .feature-box h4::before {
+        content: attr(data-icon);
+        margin-right: 10px;
+      }
+
+      .feature-box p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(4, 4, 4, 0.9);
+      }
+
+      /* Applications Tags */
+      .applications-section {
+        margin: 50px 0;
+      }
+
+      .applications-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      /* Divider Line */
+      .divider {
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          #003366,
+          #f59e0b,
+          #003366,
+          transparent
+        );
+        margin: 50px 0;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .divider::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        animation: shimmer 3s infinite;
+      }
+
+      /* Scroll Progress Bar */
+      .scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, #003366, #f59e0b);
+        z-index: 1001;
+        transition: width 0.1s ease;
+      }
+
+      /* Applications Image Grid */
+      .app-images-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .app-image-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 280px;
+        cursor: pointer;
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.6s ease-out backwards;
+      }
+
+      .app-image-card:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .app-image-card:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .app-image-card:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .app-image-card:nth-child(4) {
+        animation-delay: 0.25s;
+      }
+      .app-image-card:nth-child(5) {
+        animation-delay: 0.3s;
+      }
+      .app-image-card:nth-child(6) {
+        animation-delay: 0.35s;
+      }
+      .app-image-card:nth-child(7) {
+        animation-delay: 0.4s;
+      }
+      .app-image-card:nth-child(8) {
+        animation-delay: 0.45s;
+      }
+
+      .app-image-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        border-color: #003366;
+      }
+
+      .app-image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .app-image-card:hover img {
+        transform: scale(1.1);
+      }
+
+      .app-image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.95) 0%,
+          rgba(0, 0, 0, 0.7) 60%,
+          transparent 100%
+        );
+        padding: 25px;
+        transform: translateY(0);
+        transition: all 0.4s ease;
+      }
+
+      .app-image-card:hover .app-image-overlay {
+        background: linear-gradient(
+          to top,
+          rgba(0, 51, 102, 0.95) 0%,
+          rgba(0, 51, 102, 0.8) 60%,
+          transparent 100%
+        );
+      }
+
+      .app-image-overlay h4 {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 0.5px;
+      }
+
+      /* Configuration Row Layout */
+      .config-row {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 40px;
+        align-items: center;
+        margin: 40px 0;
+        padding: 30px 0;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .config-row:last-of-type {
+        border-bottom: none;
+      }
+
+      .config-row.reverse {
+        grid-template-columns: 380px 1fr;
+      }
+
+      .config-text {
+        order: 1;
+      }
+
+      .config-row.reverse .config-text {
+        order: 2;
+      }
+
+      .config-image {
+        order: 2;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s ease;
+        height: 320px;
+      }
+
+      .config-row.reverse .config-image {
+        order: 1;
+      }
+
+      .config-image:hover {
+        border-color: #003366;
+        box-shadow: 0 15px 40px rgba(0, 51, 102, 0.25);
+        transform: translateY(-5px);
+      }
+
+      .config-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .config-image:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Footer */
+      footer {
+        background: #0a0a0a;
+        color: #ccc;
+        padding: 60px 0 30px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-col h3 {
+        color: #f59e0b;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .footer-col p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #999;
+      }
+
+      .footer-col ul {
+        list-style: none;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+        color: #999;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+
+      .footer-col ul li a:hover {
+        color: #f59e0b;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid #222;
+        color: #666;
+        font-size: 13px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .config-row,
+        .config-row.reverse {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .config-text,
+        .config-row.reverse .config-text {
+          order: 1;
+        }
+
+        .config-image,
+        .config-row.reverse .config-image {
+          order: 2;
+        }
+
+        .config-image {
+          height: 280px;
+        }
+
+        .app-images-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .category-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .app-images-grid,
+        .category-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .config-image {
+          height: 240px;
+        }
+
+        .hero h2 {
+          font-size: 36px;
+        }
+
+        nav ul {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .filter-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .search-box {
+          width: 100%;
+        }
+
+        .feature-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <span>📧 info@indiasteelind.com</span>
+          <span>📞 +91 22 4567 8900</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="#">Get Quote</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo-icon">ISI</div>
+            <div class="logo-text">
+              <h1>INDIA STEEL INDUSTRIES</h1>
+              <p>Quality Steel Solutions Since 1998</p>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="index.html#products" class="active">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <a href="index.html#products">Products</a>
+          <span>›</span>
+          <span>Structural Steel Sections</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>🏗️ Structural Steel Sections</h2>
+          <p>
+            Comprehensive range of structural steel profiles for construction,
+            infrastructure, and industrial applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-container">
+          <span class="filter-label">Filter By:</span>
+          <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProducts('all')">
+              All Products
+            </button>
+            <button class="filter-btn" onclick="filterProducts('angles')">
+              Angles
+            </button>
+            <button class="filter-btn" onclick="filterProducts('channels')">
+              Channels
+            </button>
+            <button class="filter-btn" onclick="filterProducts('beams')">
+              Beams
+            </button>
+            <button class="filter-btn" onclick="filterProducts('bars')">
+              Bars
+            </button>
+            <button class="filter-btn" onclick="filterProducts('tmt')">
+              TMT Bars
+            </button>
+            <button class="filter-btn" onclick="filterProducts('chequered')">
+              Chequered Plates
+            </button>
+          </div>
+          <div class="search-box">
+            <span>🔍</span>
+            <input
+              type="text"
+              placeholder="Search products..."
+              oninput="searchProducts(this.value)"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Products</h2>
+          <p>Click on a product to view detailed specifications</p>
+        </div>
+        <p class="results-count" id="resultsCount">Showing 6 products</p>
+        <div class="category-grid" id="productGrid">
+          <div
+            class="category-item"
+            data-category="angles"
+            data-name="Angles Equal Unequal Structural"
+            onclick="openModal('angles', this)"
+          >
+            <img
+              src="https://5.imimg.com/data5/SELLER/Default/2023/6/318132732/VZ/PH/LV/6242910/ms-angle-500x500.jpg"
+              alt="Angles"
+              class="category-image"
+              onerror="this.src='https://www.shivshaktisteelmetals.com/wp-content/uploads/2024/01/angle-bar.png'"
+            />
+            <div class="category-info">
+              <span class="category-badge">Structural</span>
+              <h3>Angles (Equal / Unequal)</h3>
+              <p>L-shaped structural profiles for framework and support</p>
+            </div>
+          </div>
+
+          <div
+            class="category-item"
+            data-category="channels"
+            data-name="Channels C U Section ISMC ISLC"
+            onclick="openModal('channels', this)"
+          >
+            <img
+              src="https://cdn-haoob.nitrocdn.com/DSNuMdcXsYBrEWHsQCEyKvmsrgktJPmJ/assets/images/optimized/rev-4fba6ef/www.montanstahl.com/wp-content/uploads/2017/07/U-Mix.jpg"
+              alt="Channels"
+              class="category-image"
+              onerror="this.src='https://cpimg.tistatic.com/08073525/b/4/Channel.jpg'"
+            />
+            <div class="category-info">
+              <span class="category-badge">Structural</span>
+              <h3>Channels (C / U)</h3>
+              <p>C and U-section channels for structural applications</p>
+            </div>
+          </div>
+
+          <div
+            class="category-item"
+            data-category="beams"
+            data-name="Beams I-beam H-beam ISMB ISWB"
+            onclick="openModal('beams', this)"
+          >
+            <img
+              src="https://cdn-cbpfc.nitrocdn.com/aUNzEupCvhBohxjguaoOPmlVOeQZXUgt/assets/images/optimized/rev-8224372/www.bakersteeltrading.co.uk/wp-content/uploads/2020/04/steel-beam-1024x577.jpg"
+              alt="Beams"
+              class="category-image"
+              onerror="this.src='https://cpimg.tistatic.com/08073525/b/4/I-Beam.jpg'"
+            />
+            <div class="category-info">
+              <span class="category-badge">Load Bearing</span>
+              <h3>Beams (I-beam / H-beam)</h3>
+              <p>Heavy-duty load-bearing beams for construction</p>
+            </div>
+          </div>
+
+          <div
+            class="category-item"
+            data-category="bars"
+            data-name="Bars Flats Rounds Squares MS"
+            onclick="openModal('bars', this)"
+          >
+            <img
+              src="https://5.imimg.com/data5/SELLER/Default/2023/3/293621442/KY/KS/SI/6242910/ms-round-bar-500x500.jpg"
+              alt="MS Bars"
+              class="category-image"
+              onerror="this.src='https://www.skytechrolling.com/blog/wp-content/uploads/2022/01/Square-Bar-And-Round-Bars-1.jpg'"
+            />
+            <div class="category-info">
+              <span class="category-badge">Versatile</span>
+              <h3>Flats / Rounds / Squares</h3>
+              <p>Versatile solid bars in multiple cross-sections</p>
+            </div>
+          </div>
+
+          <div
+            class="category-item"
+            data-category="tmt"
+            data-name="TMT Bars Fe 500 Fe 550 Reinforcement"
+            onclick="openModal('tmt', this)"
+          >
+            <img
+              src="https://5.imimg.com/data5/SELLER/Default/2023/11/359878742/RI/BG/EH/6242910/tmt-bars-500x500.jpg"
+              alt="TMT Bars"
+              class="category-image"
+              onerror="this.src='https://5.imimg.com/data5/SELLER/Default/2022/4/RY/IC/WW/3129787/tmt-steel-bars-500x500.jpg'"
+            />
+            <div class="category-info">
+              <span class="category-badge">Reinforcement</span>
+              <h3>TMT Bars (Fe 500 / Fe 550)</h3>
+              <p>Thermo-mechanically treated reinforcement bars</p>
+            </div>
+          </div>
+
+          <div
+            class="category-item"
+            data-category="chequered"
+            data-name="Chequered Plates Anti-Slip Diamond Pattern"
+            onclick="openModal('chequered', this)"
+          >
+            <img
+              src="https://5.imimg.com/data5/SELLER/Default/2023/9/343892341/RN/EC/EE/6242910/chequered-plate-500x500.jpg"
+              alt="Chequered Plates"
+              class="category-image"
+              onerror="this.src='https://hhironandsteel.com/images/ms-chequered-plates.webp'"
+            />
+            <div class="category-info">
+              <span class="category-badge">Anti-Slip</span>
+              <h3>Chequered Plates</h3>
+              <p>Anti-slip steel plates with raised patterns</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Angles Modal -->
+    <div class="modal" id="modal-angles">
+      <div class="scroll-progress" id="scrollProgressAngles"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>📐 Angles (Equal / Unequal)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Angle Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Angle Types & Configurations</h3>
+
+            <!-- Equal Angles with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Equal Leg Angles (L-Sections)</h4>
+                <p>
+                  <strong>Design:</strong> L-shaped structural profiles with
+                  legs of equal length forming 90° angle per IS 808 (Indian
+                  Standard Medium Angles) and BS EN 10056-1 specifications.
+                  Available in sizes from 25×25mm to 200×200mm with leg
+                  thickness ranging from 3mm to 25mm. Manufacturing through
+                  hot-rolling process ensures consistent dimensional accuracy
+                  and superior mechanical properties.
+                </p>
+                <p>
+                  <strong>Dimensional Standards:</strong> Leg width tolerance
+                  ±1.5mm for sizes up to 100mm, ±2mm for larger sections per IS
+                  1852. Root radius typically 3.5-7mm depending on size,
+                  providing smooth stress transition at the junction. Squareness
+                  of legs maintained within 1° tolerance ensuring proper fit-up
+                  in bolted and welded connections. Surface finish as-rolled
+                  with mill scale for standard applications or shot-blasted for
+                  painted finishes.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://cpimg.tistatic.com/02179965/b/4/MS-Equal-Angles.jpg"
+                  alt="Equal Angles"
+                />
+              </div>
+            </div>
+
+            <!-- Unequal Angles with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKKjIN74As7e9wdC8cqnMmThcvlrIDDgmXVQ&s"
+                  alt="Unequal Angles"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Unequal Leg Angles</h4>
+                <p>
+                  <strong>Construction:</strong> Asymmetric L-sections with
+                  different leg lengths optimized for directional loading
+                  conditions per IS 808 Part 2. Common sizes include 40×25mm,
+                  50×30mm, 65×45mm, 75×50mm, 100×65mm, 125×75mm, 150×100mm, and
+                  200×100mm. Longer leg typically oriented vertically in
+                  vertical applications providing greater bending resistance in
+                  the primary load direction.
+                </p>
+                <p>
+                  <strong>Structural Properties:</strong> Centroidal axis
+                  location offset from geometric center requiring careful
+                  consideration in design calculations. Section properties
+                  (moment of inertia, radius of gyration) calculated about
+                  principal axes rather than leg axes. Design per IS 800
+                  accounts for unsymmetrical bending and torsional effects.
+                  Eccentric loading common in truss chord members and unequal
+                  support conditions.
+                </p>
+              </div>
+            </div>
+
+            <!-- Structural Grade Angles with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>High-Strength & Special Grade Angles</h4>
+                <p>
+                  <strong>Material Grades:</strong> IS 2062 Grade A (minimum 250
+                  MPa yield) for general structural use, Grade B (260 MPa) for
+                  improved weldability and toughness, Grade C with Charpy
+                  V-notch impact testing for low-temperature service. ASTM A36
+                  (250 MPa yield) provides equivalent North American standard.
+                  High-strength low-alloy (HSLA) steels A572 Grade 50 (345 MPa)
+                  and Grade 60 (415 MPa) enable weight-optimized designs.
+                </p>
+                <p>
+                  <strong>Special Applications:</strong> Weathering steel (IS
+                  2062 Grade E) develops stable protective rust patina
+                  eliminating painting requirement in exposed structures.
+                  Stainless steel angles 304/316 grade for corrosive
+                  environments, food processing, and architectural applications
+                  requiring maintenance-free service. Galvanized angles per ASTM
+                  A123 with minimum 610 g/m² zinc coating for 25-30 year
+                  corrosion protection in outdoor exposure.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://images.jdmagicbox.com/quickquotes/images_main/structural-steel-m-s-channels-150-x-75-x-5-7-377477390-xauls.jpg"
+                  alt="Structural Grade Angles"
+                />
+              </div>
+            </div>
+
+            <h4>Manufacturing & Quality Standards</h4>
+            <p>
+              <strong>Rolling Process:</strong> Hot-rolled from continuously
+              cast steel billets at temperatures 1100-1250°C through progressive
+              roll stands achieving final section geometry. Controlled cooling
+              on cooling beds normalizes microstructure ensuring uniform
+              mechanical properties throughout cross-section. Straightening
+              operation removes longitudinal bow to within 3mm per 3 meters
+              length. Cut to standard 6m, 9m, or 12m lengths with square-cut
+              ends.
+            </p>
+            <p>
+              <strong>Testing & Certification:</strong> Tensile testing per IS
+              1608 verifying yield strength, ultimate tensile strength, and
+              elongation meet specification minimums. Chemical composition
+              analysis via optical emission spectroscopy (OES) ensures carbon
+              equivalent (CE) remains below weldability limits. Mill test
+              certificates (MTC) per EN 10204 3.1 document batch chemical and
+              mechanical properties. Dimensional inspection with calibrated
+              gauges confirms compliance to IS 808 tolerances.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Connection Methods Section -->
+          <div class="spec-content spec-section">
+            <h3>Connection Methods & Joining Techniques</h3>
+
+            <!-- Bolted Connections with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://www.steelconstruction.info/images/thumb/9/94/Bolted_connection.jpg/400px-Bolted_connection.jpg"
+                  alt="Bolted Connections"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Bolted Connections</h4>
+                <p>
+                  <strong>Fastener Selection:</strong> High-strength structural
+                  bolts Grade 8.8 or 10.9 per IS 1367 provide superior clamping
+                  force and shear/tensile capacity. Bolt diameters M12, M16,
+                  M20, M24 most common with holes drilled or punched 2mm
+                  oversized allowing assembly tolerance. Minimum edge distance
+                  1.5d and spacing 2.5d (d=bolt diameter) prevents splitting and
+                  ensures load distribution per IS 800 design code.
+                </p>
+                <p>
+                  <strong>Connection Types:</strong> Simple shear connections
+                  with single or double angles as web cleats transfer vertical
+                  shear loads while allowing member end rotation. Moment
+                  connections with bolted end plates provide rotational
+                  restraint for rigid frame action. Bracket connections using
+                  angles with stiffeners support concentrated loads from beams
+                  or equipment. Friction-grip bolts (HSFG) develop clamping
+                  force preventing slip under service loads in seismic and
+                  fatigue-critical applications.
+                </p>
+              </div>
+            </div>
+
+            <!-- Welded Connections with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Welded Connections</h4>
+                <p>
+                  <strong>Weld Types:</strong> Fillet welds along angle legs
+                  most economical joining method with throat thickness
+                  calculated per IS 816 to develop required strength. Full
+                  penetration groove welds for moment-resisting connections
+                  provide 100% base metal strength. Slot and plug welds connect
+                  overlapping angle legs in built-up sections. Minimum weld size
+                  3mm for leg thickness <10mm, 5mm for 10-20mm thickness
+                  preventing rapid cooling and cracking.
+                </p>
+                <p>
+                  <strong>Welding Standards:</strong> AWS D1.1 Structural
+                  Welding Code specifies prequalified joint geometries, filler
+                  metal requirements (E7018 electrodes or ER70S-6 wire), and
+                  inspection criteria. Welding procedure specifications (WPS)
+                  document voltage, amperage, travel speed, and interpass
+                  temperature controlling heat input and preventing distortion.
+                  Visual inspection identifies surface discontinuities while
+                  ultrasonic testing (UT) reveals internal defects in critical
+                  connections. Certified welders per AWS QC-1 ensure consistent
+                  quality.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.ibeehivesteelstructures.com/wp-content/uploads/2023/03/Steel-bolted-connection.webp"
+                  alt="Welded Connections"
+                />
+              </div>
+            </div>
+
+            <h4>Design Considerations</h4>
+            <p>
+              <strong>Load Analysis:</strong> Angles subject to axial tension in
+              truss bottom chords, axial compression in top chords and bracing
+              members, and combined bending plus axial loads in girts and
+              purlins. Eccentric loading from single-leg connections induces
+              torsion requiring effective length adjustment per IS 800 Clause
+              8.4. Buckling about minor axis critical for slender members with
+              length-to-radius ratio (L/r) exceeding 180 for compression members
+              or 250 for tension members.
+            </p>
+            <p>
+              <strong>Connection Eccentricity:</strong> Single angle connections
+              with single row of fasteners create eccentricity between shear
+              plane and angle centroid inducing secondary bending moment. IS 800
+              requires reduction in effective area for connected leg only,
+              assuming outstanding leg ineffective in tension. Double angle
+              connections back-to-back with separator plates distribute loads
+              symmetrically eliminating eccentricity. Gusset plate thickness and
+              edge distances designed to prevent prying action and local
+              buckling.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Structural Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="💪">High Strength-to-Weight Ratio</h4>
+                <p>
+                  Angle sections provide efficient structural performance
+                  through geometric shape optimizing material distribution away
+                  from neutral axis. Typical weight 2.5-38 kg/m depending on
+                  size enables lightweight framing systems reducing foundation
+                  loads and seismic mass. Radius of gyration 10-60mm about minor
+                  axis suitable for bracing members with slenderness ratios up
+                  to 200. Design capacities range from 50 kN (small angles in
+                  lateral bracing) to 1000+ kN (large angles in truss chords).
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🔧">Versatile Connection Options</h4>
+                <p>
+                  90° leg orientation naturally accommodates bolted and welded
+                  connections to perpendicular members (beams, columns, gusset
+                  plates). Single angle or double angle configurations adapt to
+                  varying load magnitudes and connection geometry constraints.
+                  Outstanding leg provides convenient attachment surface for
+                  cladding, decking, or secondary framing. Pre-punched holes in
+                  shop-fabricated angles accelerate field erection and ensure
+                  accurate bolt spacing. Multiple connection options facilitate
+                  repairs, modifications, and additions to existing structures.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="⚡">Cost-Effective Structural Solution</h4>
+                <p>
+                  Hot-rolled production process achieves economies of scale
+                  making angles most economical structural section per kilogram.
+                  Standard 6m, 9m, 12m lengths minimize cutting waste in typical
+                  bay spacing. Simple geometry enables rapid fabrication with
+                  basic shop equipment (saws, drills, welders) versus complex
+                  machining for other shapes. Bolted connections permit
+                  prefabrication and modular assembly reducing field labor
+                  costs. Reusability in temporary works (falsework, scaffolding)
+                  and ease of demolition/recycling enhance lifecycle value.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🌍">Wide Availability & Standardization</h4>
+                <p>
+                  Global standards (IS, BS, ASTM, JIS) ensure dimensional
+                  interchangeability across suppliers and geographic regions.
+                  Extensive size range from 25×25mm to 200×200mm covers 95% of
+                  structural applications in buildings, bridges, towers, and
+                  industrial facilities. Local steel mills maintain inventory of
+                  common sizes enabling short lead times (1-2 weeks) versus
+                  long-lead specialty sections. Multiple material grades (mild
+                  steel, HSLA, weathering, galvanized, stainless) accommodate
+                  diverse performance requirements without custom rolling.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://havitsteelstructure.com/wp-content/uploads/2020/08/steel-structure-detail-4.jpg"
+                  alt="Truss Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏗️ Roof & Bridge Truss Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://utkarshindia.in/assets/upload/cmsimgg/775.jpg"
+                  alt="Transmission Towers"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚡ Transmission & Communication Towers</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://indianinfrastructure.com/wp-content/uploads/2024/06/26_1-1024x537.jpg"
+                  alt="Building Frames"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏢 Building Frames & Bracing</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://mecaluxcom.cdnwm.com/img/pallet-racking/selective-pallet-racking.1.16.jpg?imwidth=1024&imdensity=1"
+                  alt="Racking Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>📦 Industrial Racking & Shelving</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.stratco.com.au/globalassets/catalog/gallery/steel-framing-purlins-girts-c-z-section-51.jpg"
+                  alt="Purlins & Girts"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Purlins, Girts & Cladding Rails</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8dmu3fDMZvzEmixeemhI2-pPH2_dtYZF-UQ&s"
+                  alt="Stairs & Platforms"
+                />
+                <div class="app-image-overlay">
+                  <h4>🪜 Stairs, Platforms & Walkways</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Channels Modal -->
+    <div class="modal" id="modal-channels">
+      <div class="scroll-progress" id="scrollProgressChannels"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>⚙️ Channels (C / U)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Channel Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Channel Types & Structural Properties</h3>
+
+            <!-- ISMC Channels with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>ISMC - Indian Standard Medium Channels</h4>
+                <p>
+                  <strong>Specification:</strong> C-shaped sections per IS 808
+                  with parallel flanges and tapered inner flange faces providing
+                  2-5° slope for hot rolling process. Standard designation
+                  format: ISMC 75 indicates 75mm depth. Size range 75mm to 400mm
+                  depth with weights from 6.85 kg/m (ISMC 75) to 61.5 kg/m (ISMC
+                  400). Flange width approximately 40-100mm, web thickness
+                  4.4-15.3mm, flange thickness 7.2-16.5mm depending on section
+                  size.
+                </p>
+                <p>
+                  <strong>Section Properties:</strong> Moment of inertia about
+                  major axis (I_xx) ranges 51.7 cm⁴ (ISMC 75) to 20556 cm⁴ (ISMC
+                  400) providing bending resistance. Centroidal axis location
+                  approximately 40-45% of flange width from web enabling
+                  efficient flexural member design. Section modulus Z_xx
+                  13.8-1026 cm³ determines allowable bending moment capacity.
+                  Radius of gyration r_xx 28-159mm and r_yy 14-28mm govern
+                  buckling resistance in compression members.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://cpimg.tistatic.com/5937931/b/4/ismc-150-ms-channel.jpg"
+                  alt="ISMC Channels"
+                />
+              </div>
+            </div>
+
+            <!-- ISLC Channels with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl3ADr_MAyYy5Rt1TnShd4rOTCudZqkc8M2w&s"
+                  alt="ISLC Channels"
+                />
+              </div>
+              <div class="config-text">
+                <h4>ISLC - Indian Standard Light Channels</h4>
+                <p>
+                  <strong>Design:</strong> Lighter-weight alternative to ISMC
+                  with reduced web and flange thickness optimizing material
+                  usage in lightly loaded applications. Sizes 75mm to 400mm
+                  depth with weights 30-40% less than equivalent ISMC sections.
+                  ISLC 100 weighs 7.14 kg/m versus ISMC 100 at 9.56 kg/m
+                  representing 25% weight savings. Similar geometry to ISMC but
+                  thinner elements throughout cross-section.
+                </p>
+                <p>
+                  <strong>Applications:</strong> Ideal for purlins, girts, eave
+                  struts, and door/window frames in metal buildings where
+                  gravity and wind loads are moderate. Secondary framing members
+                  supporting roof and wall cladding. Non-load-bearing partition
+                  framing in residential and commercial construction.
+                  Cost-effective solution when full ISMC capacity not required
+                  but channel geometry preferred over angles. Local buckling
+                  considerations require design checks per IS 800 Clause 8.6 for
+                  thin-walled sections.
+                </p>
+              </div>
+            </div>
+
+            <!-- PFC & UPN Channels with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>PFC & UPN European Channels</h4>
+                <p>
+                  <strong>PFC (Parallel Flange Channel):</strong> European
+                  equivalent to ISMC with parallel inner and outer flange faces
+                  per BS 4-1 and EN 10279 standards. Flange thickness constant
+                  across width unlike tapered ISMC flanges. Sizes 80mm to 430mm
+                  depth designated as PFC 80 to PFC 430. Tighter dimensional
+                  tolerances and surface finish versus IS sections. Preferred in
+                  architectural exposed-steel applications and where precise
+                  connections required.
+                </p>
+                <p>
+                  <strong>UPN (U-Profile Normal):</strong> European C-channel
+                  per DIN 1026-1 and EN 10365 with tapered flanges similar to
+                  ISMC geometry. Common in Continental European markets. Sizes
+                  range 80mm to 400mm depth. Interchangeability with ISMC
+                  limited due to subtle dimensional differences in flange width,
+                  thickness, and root radius. Selection depends on project
+                  specification requirements, supplier availability, and
+                  connection detail compatibility.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://cdn-haoob.nitrocdn.com/DSNuMdcXsYBrEWHsQCEyKvmsrgktJPmJ/assets/images/optimized/rev-4fba6ef/www.montanstahl.com/wp-content/uploads/2017/05/Stainless-UNP-UPN.jpg"
+                  alt="PFC & UPN Channels"
+                />
+              </div>
+            </div>
+
+            <h4>Material Grades & Properties</h4>
+            <p>
+              <strong>Structural Carbon Steel:</strong> IS 2062 Grade A/B/C
+              hot-rolled steel with minimum 250-260 MPa yield strength and 410
+              MPa ultimate tensile strength. Carbon content 0.23% maximum
+              ensures adequate weldability (carbon equivalent CE <0.42%) without
+              preheat requirements for typical section thicknesses. Manganese
+              1.5% maximum, phosphorus and sulfur <0.05% each for ductility and
+              impact toughness. Elongation minimum 23% in 50mm gauge length
+              demonstrates ductile behavior under overload.
+            </p>
+            <p>
+              <strong>High-Strength & Special Steels:</strong> ASTM A572 Grade
+              50 (345 MPa yield) and Grade 60 (415 MPa) high-strength low-alloy
+              steel reduces weight 30-40% versus mild steel in strength-governed
+              designs. Weathering steel ASTM A588/A847 develops protective rust
+              patina eliminating painting for exposed applications (bridges,
+              transmission structures, architectural features). Stainless steel
+              channels 304/316 grade for corrosive environments, clean rooms,
+              food processing. Material certificates per EN 10204 3.1 or 3.2
+              document conformance.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Design & Application Section -->
+          <div class="spec-content spec-section">
+            <h3>Structural Design & Load-Carrying Capacity</h3>
+
+            <!-- Flexural Members with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-662-48565-1_5/MediaObjects/340495_1_En_5_Fig6_HTML.gif"
+                  alt="Flexural Behavior"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Flexural Members (Beams & Joists)</h4>
+                <p>
+                  <strong>Bending Capacity:</strong> Channels used as
+                  simply-supported or continuous beams with major-axis bending
+                  (web vertical). Plastic moment capacity M_p = Z_p × f_y where
+                  Z_p is plastic section modulus and f_y is yield strength.
+                  Lateral-torsional buckling critical for unbraced compression
+                  flange requiring analysis per IS 800 Clause 8.2. Effective
+                  length L_LT depends on unbraced length between purlins,
+                  bracing, or diaphragms. ISMC 150 Grade 250 spans approximately
+                  4-5 meters for typical gravity loads.
+                </p>
+                <p>
+                  <strong>Shear & Deflection:</strong> Shear capacity V_d =
+                  V_n/γ_m0 where V_n = A_v × f_y/√3 and A_v is shear area (depth
+                  × web thickness). Web crippling and local buckling at
+                  concentrated loads require bearing stiffeners when reaction
+                  exceeds web capacity. Deflection limited to L/240 for
+                  plastered ceilings, L/180 for roofs, L/325 for floors per IS
+                  800 serviceability criteria. Camber specified 25-50mm for long
+                  spans compensating dead load deflection.
+                </p>
+              </div>
+            </div>
+
+            <!-- Compression Members with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Compression Members (Columns & Struts)</h4>
+                <p>
+                  <strong>Axial Capacity:</strong> Design compressive strength
+                  P_d = A_e × f_cd where A_e is effective area and f_cd is
+                  design compressive stress from IS 800 buckling curves.
+                  Non-dimensional slenderness ratio λ = (L_eff/r) × √(f_y/250)
+                  where L_eff is effective length (K×L) and r is radius of
+                  gyration. Buckling about minor axis (y-y) typically governs
+                  due to r_yy < r_xx. ISMC 200 Grade 250 with K×L = 3.5m
+                  provides ~500 kN capacity.
+                </p>
+                <p>
+                  <strong>Effective Length:</strong> K-factor depends on end
+                  restraint conditions: K=0.65 for fixed-fixed, K=0.80 for
+                  fixed-pinned, K=1.0 for pinned-pinned, K=2.0 for fixed-free
+                  per IS 800 Table 11. Built-up sections with intermittent
+                  connections (lacing, battens, tie plates) require modified
+                  slenderness accounting for shear flexibility. Single channels
+                  used as compression members in light trusses with K×L < 2
+                  meters. Back-to-back double channels with spacers increase
+                  buckling resistance and torsional rigidity.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvRq0DZ4oixCI3SsPQSYQWZAjXXk4eER5PCQ&s"
+                  alt="Compression Behavior"
+                />
+              </div>
+            </div>
+
+            <h4>Connection Design</h4>
+            <p>
+              <strong>Bolted Connections:</strong> Bolt holes in web and flanges
+              accommodate shear connections to supporting members. Standard hole
+              diameter 2mm larger than bolt diameter (22mm hole for M20 bolt).
+              Edge distance from hole center to plate edge minimum 1.5d, spacing
+              between holes 2.5d to 3.5d. Bearing capacity on connected plate
+              governs thin-walled sections. Packing plates required when
+              connecting channels of different depths to maintain load
+              alignment. End plate connections with multiple bolt rows develop
+              moment resistance for rigid frames.
+            </p>
+            <p>
+              <strong>Welded Connections:</strong> Fillet welds along
+              web-to-flange junction in built-up sections or connecting channels
+              to other members. Weld size selection based on effective throat
+              dimension and allowable shear stress per IS 816. Full-penetration
+              groove welds develop 100% base metal strength in moment
+              connections. Cope (notch) flanges at beam-column connections
+              providing clearance for column flange while maintaining web
+              continuity for shear transfer. Weld access holes ease electrode
+              positioning preventing incomplete fusion defects.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="📏">Optimal Bending Efficiency</h4>
+                <p>
+                  C-shaped cross-section concentrates material in flanges away
+                  from neutral axis maximizing moment of inertia for given
+                  weight. Approximately 2-3x more efficient in bending than
+                  equivalent weight solid rectangular bar. Web depth provides
+                  shear resistance while flanges resist flexural tension and
+                  compression. Ideal for beams, purlins, girts, and joists
+                  spanning 3-10 meters in buildings. Section modulus ranges 13.8
+                  to 1026 cm³ covering wide range of loading conditions from
+                  light roof purlins to heavy floor beams.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🔄">Versatile Orientation Options</h4>
+                <p>
+                  Can be oriented with flanges horizontal (toes out) for maximum
+                  major-axis bending resistance, or rotated for minor-axis
+                  bending where shallower depth required. Back-to-back double
+                  channels form I-section approximation increasing capacity and
+                  providing two webs for shear. Toe-to-toe configuration creates
+                  box section with high torsional rigidity. Nested channels in
+                  varying sizes optimize material usage in tapered members.
+                  Single channels economical for light loads, doubled or
+                  built-up sections for heavy structural applications.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🛠️">Easy Fabrication & Erection</h4>
+                <p>
+                  Flat web and flanges accommodate straightforward drilling,
+                  coping, and welding using standard fabrication equipment. Web
+                  provides convenient surface for connecting gusset plates,
+                  stiffeners, and clip angles. Flanges permit direct attachment
+                  of decking, purlins, or cladding with self-drilling screws or
+                  welds eliminating separate cleat angles. Pre-engineered
+                  building systems utilize channels for secondary framing
+                  enabling rapid bolt-together assembly. Standard lengths 6m,
+                  9m, 12m minimize field splicing and cutting waste.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💰">Cost-Effective Structural Solution</h4>
+                <p>
+                  Hot-rolled production achieves economies making channels
+                  economical per kilogram compared to built-up sections
+                  requiring additional fabrication. ISLC light channels provide
+                  25-35% material savings versus ISMC where full capacity not
+                  required. Single channels sufficient for many applications
+                  versus paired angles requiring connection hardware.
+                  Standardized sizes ensure ready availability from multiple
+                  suppliers with typical 1-2 week delivery. Reusability in
+                  temporary structures and simple demolition/recycling
+                  contribute to lifecycle cost-effectiveness and sustainability.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://tatabluescopesteel.com/wp-content/uploads/2021/06/purlin1.jpg"
+                  alt="Purlins & Girts"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Roof Purlins & Wall Girts</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKn0xiKAHLmrSY9Xx9VdYi-QXfQWlWH2MaVA&s"
+                  alt="Building Frames"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏗️ Pre-Engineered Building Frames</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://indianinfrastructure.com/wp-content/uploads/2024/06/26_1-1024x537.jpg"
+                  alt="Bridge Construction"
+                />
+                <div class="app-image-overlay">
+                  <h4>🌉 Bridge Stringers & Cross Beams</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://images.jdmagicbox.com/quickquotes/images_main/white-2-track-gi-window-frame-382103065-0bqmi.png"
+                  alt="Door & Window Frames"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚪 Industrial Door & Window Frames</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beams Modal -->
+    <div class="modal" id="modal-beams">
+      <div class="scroll-progress" id="scrollProgressBeams"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>🏗️ Beams (I-beam / H-beam)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Beam Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Beam Types & Structural Configurations</h3>
+
+            <!-- ISMB Beams with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>ISMB - Indian Standard Medium Beams</h4>
+                <p>
+                  <strong>Specification:</strong> I-shaped hot-rolled sections
+                  per IS 808 with parallel flanges and tapered inner flange
+                  faces. Standard designation ISMB 100 to ISMB 600 indicates
+                  nominal depth in millimeters. Weight range 11.5 kg/m (ISMB
+                  100) to 122.6 kg/m (ISMB 600). Flange width 75-250mm, web
+                  thickness 4.0-12.0mm, flange thickness 7.2-20.8mm. Root radius
+                  9-20mm provides smooth stress transition at web-flange
+                  junction minimizing stress concentration.
+                </p>
+                <p>
+                  <strong>Section Properties:</strong> Moment of inertia I_xx
+                  ranges 206 cm⁴ (ISMB 100) to 91745 cm⁴ (ISMB 600) providing
+                  exceptional bending resistance. Section modulus Z_xx 41.2-3059
+                  cm³ determines allowable moment capacity M = Z × f_y. Radius
+                  of gyration r_xx 41-217mm and r_yy 21-52mm govern buckling in
+                  compression applications. Plastic section modulus Z_p
+                  typically 10-15% higher than elastic value enabling plastic
+                  design per IS 800.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/NZ/ML/BK/SELLER-3837880/mild-steel-beam-ismb.jpg"
+                  alt="ISMB Beams"
+                />
+              </div>
+            </div>
+
+            <!-- ISWB Beams with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://images.jdmagicbox.com/quickquotes/images_main/h-beam-iswb-indian-standard-wide-flange-beams-2229801066-92bkp6ib.jpg"
+                  alt="ISWB Beams"
+                />
+              </div>
+              <div class="config-text">
+                <h4>ISWB - Indian Standard Wide Flange Beams</h4>
+                <p>
+                  <strong>Design:</strong> Wide flange I-sections per IS 12778
+                  with flange width approaching section depth creating nearly
+                  square profile. Sizes ISWB 150 to ISWB 600 with weights
+                  18.3-171.0 kg/m. Flange width 100-300mm provides 30-50%
+                  greater lateral stability versus equivalent ISMB depth.
+                  Reduced height-to-width ratio improves torsional rigidity and
+                  lateral-torsional buckling resistance particularly valuable
+                  for unbraced beam applications.
+                </p>
+                <p>
+                  <strong>Structural Advantages:</strong> Wide flanges
+                  accommodate larger bolted connections with multiple bolt rows
+                  in moment connections. Greater flange area increases local
+                  buckling resistance under concentrated loads eliminating
+                  bearing stiffeners in many cases. Improved stability during
+                  erection and transportation due to wider base. Architectural
+                  applications benefit from reduced depth while maintaining
+                  strength. Composite action with concrete slabs enhanced by
+                  wider flange providing greater shear connector spacing
+                  options.
+                </p>
+              </div>
+            </div>
+
+            <!-- H-Beams with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Universal Beams (UB) & Universal Columns (UC)</h4>
+                <p>
+                  <strong>Universal Beams (UB):</strong> British/European
+                  standard per BS 4-1 and EN 10365 with parallel flanges both
+                  faces. Designation format: 305×165×40 UB indicates 305mm
+                  depth, 165mm flange width, 40 kg/m weight. Size range 127×76
+                  to 914×419 with weights 13-388 kg/m. Tighter tolerances and
+                  superior surface finish versus IS sections. Root radius and
+                  flange-web transitions optimized through advanced rolling
+                  technology providing 5-10% material savings for equivalent
+                  capacity.
+                </p>
+                <p>
+                  <strong>Universal Columns (UC):</strong> Heavy H-sections with
+                  flange width equal to or exceeding depth per BS 4-1. Sizes
+                  152×152 to 356×406 with weights 23-634 kg/m designed primarily
+                  for compression members (columns). Thick flanges and webs
+                  provide high buckling resistance about both axes. Moment of
+                  inertia I_yy approaches I_xx creating near-symmetrical bending
+                  capacity. Ideal for building columns, bridge piers, and crane
+                  columns where biaxial bending and torsion critical.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://stavianmetal.com/wp-content/uploads/2024/04/h-beam-6.jpg"
+                  alt="H-Beams in Construction"
+                />
+              </div>
+            </div>
+
+            <h4>Material Standards & Heat Treatment</h4>
+            <p>
+              <strong>Structural Steel Grades:</strong> IS 2062 Grade A/B/C
+              provides yield strength 250-260 MPa for general construction. ASTM
+              A992 (345 MPa yield) standard specification for structural steel
+              shapes used in building framing in North America. High-strength
+              grades A572 Gr.50/60 (345-415 MPa) enable 30-40% weight reduction
+              in strength-governed designs. Maximum carbon 0.23%, carbon
+              equivalent CE ≤0.45% ensures weldability without preheat for
+              sections up to 40mm thickness.
+            </p>
+            <p>
+              <strong>Quality Assurance:</strong> Continuous casting and
+              controlled rolling produce fine-grain microstructure with superior
+              toughness and ductility. Straightening operation removes residual
+              stresses and achieves straightness tolerance 3mm per 3m length.
+              Tensile testing per IS 1608 on sample coupons verifies yield
+              strength, tensile strength, and elongation. Chemical analysis via
+              OES confirms composition. Mill test certificates EN 10204 3.1
+              document compliance. Ultrasonic testing available for heavy
+              sections detecting internal defects.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Design & Analysis Section -->
+          <div class="spec-content spec-section">
+            <h3>Structural Design & Load Analysis</h3>
+
+            <!-- Flexural Design with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/0b/I_beam_bending0.png"
+                  alt="Beam Bending"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Flexural Design (Bending Strength)</h4>
+                <p>
+                  <strong>Moment Capacity:</strong> Design bending strength M_d
+                  = β_b × Z_p × f_y / γ_m0 where β_b accounts for section
+                  classification (1.0 for plastic, 0.9 for compact, effective Z
+                  for slender per IS 800 Clause 8.2). ISMB 300 Grade 250
+                  provides M_d ≈ 90 kN-m enabling 7-8m spans for typical
+                  building floor loads. Lateral-torsional buckling critical when
+                  compression flange unbraced. Effective length L_LT depends on
+                  loading (destabilizing vs stabilizing), bracing type
+                  (continuous, discrete points), and end restraint conditions.
+                </p>
+                <p>
+                  <strong>Design Checks:</strong> Section classification per IS
+                  800 Table 2 based on flange outstand-to-thickness (b/t_f) and
+                  web depth-to-thickness (d/t_w) ratios determines plastic,
+                  compact, semi-compact, or slender behavior. Local buckling of
+                  compression flange or web requires reduced capacity using
+                  effective section properties. Shear capacity V_d = V_n / γ_m0
+                  where V_n = 0.6 × A_v × f_y with shear area A_v = depth × web
+                  thickness. Interaction of high shear and moment near supports
+                  requires combined capacity check per IS 800 Clause 9.2.2.
+                </p>
+              </div>
+            </div>
+
+            <!-- Deflection Control with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Deflection & Serviceability Limits</h4>
+                <p>
+                  <strong>Deflection Criteria:</strong> IS 800 Table 6 specifies
+                  maximum vertical deflection limits: span/240 (L/240) for
+                  plastered ceilings preventing cracking, span/180 for roofs
+                  without fragile finishes, span/325 for floors supporting
+                  brittle finishes. Horizontal deflection (sway) of columns
+                  limited to height/300 preventing cladding damage. Live load
+                  deflection often more restrictive than strength for long
+                  spans. Camber of 25-75mm specified for spans >12m compensating
+                  for dead load deflection.
+                </p>
+                <p>
+                  <strong>Calculation Methods:</strong> Elastic deflection δ =
+                  5wL⁴/384EI for uniformly loaded simply-supported beam where w
+                  is load per unit length, L is span, E is elastic modulus
+                  (200,000 MPa for steel), I is moment of inertia. Moment-area
+                  method and conjugate beam method handle complex loading and
+                  support conditions. Second-order P-Δ effects amplify
+                  deflections in frames when axial loads present. Composite beam
+                  deflections calculated using transformed section accounting
+                  for concrete slab stiffness and shear connector slip.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://oberbeton.ua/wp-content/uploads/2017/03/mostovie-balki_photo1.jpg"
+                  alt="Bridge Beams"
+                />
+              </div>
+            </div>
+
+            <h4>Connection Design Principles</h4>
+            <p>
+              <strong>Beam-to-Column Connections:</strong> Simple shear
+              connections using web clip angles or end plates transfer vertical
+              reaction while permitting rotation. Double-angle cleats bolted to
+              beam web and column flange provide 50-200 kN shear capacity
+              depending on angle size and bolt grade. Moment connections with
+              extended end plates and multiple bolt rows develop full plastic
+              moment capacity for rigid frame action. Flange and web continuity
+              plates in columns ensure force transfer without local yielding or
+              crippling.
+            </p>
+            <p>
+              <strong>Splices & Stiffeners:</strong> Beam splices at 40-50% of
+              span length where moments lower than maximum reduce splice plate
+              thickness and bolt requirements. Full-penetration groove welds
+              develop 100% base metal capacity for critical splices. Bearing
+              stiffeners at concentrated loads when bearing stress exceeds 0.75
+              × f_y prevent web buckling and yielding. Load length 100-300mm
+              depending on reaction magnitude. Stiffener thickness typically
+              equal to flange thickness, welded to flanges and web.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Structural Performance</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="💪">Maximum Bending Efficiency</h4>
+                <p>
+                  I-shaped cross-section optimizes material distribution
+                  concentrating flanges at maximum distance from neutral axis.
+                  Moment of inertia 50-100x greater than equivalent weight solid
+                  rectangular section. Typical ISMB 400 (61.6 kg/m) provides
+                  moment capacity 180 kN-m spanning 10-12m for building floors.
+                  Web carries shear while flanges resist pure bending enabling
+                  efficient load transfer. Section depth governs stiffness -
+                  doubling depth increases stiffness 8x while only doubling
+                  weight.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🏗️">Versatile Structural Applications</h4>
+                <p>
+                  Primary framing members in steel buildings carrying floor and
+                  roof loads spanning 5-20 meters between columns. Bridge
+                  girders in highway and railway overpasses up to 40m span for
+                  medium-traffic roads. Crane runway beams supporting traveling
+                  hoists in industrial facilities with repeated load cycles.
+                  Portal frame rafters and columns in clear-span warehouses and
+                  manufacturing buildings. Composite construction with concrete
+                  slabs doubling capacity through shear connectors developing
+                  full structural interaction.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🔩">Efficient Connection Details</h4>
+                <p>
+                  Flat flanges provide large bearing surface for bolted end
+                  plates eliminating prying action and stress concentrations.
+                  Web accommodates clip angles, fin plates, or header plates for
+                  shear connections. Parallel flanges permit direct welding
+                  without complex joint preparation. Standardized connection
+                  details reduce engineering time and fabrication costs. Holes
+                  in web for services (HVAC, electrical, plumbing) permitted per
+                  IS 800 guidelines when not exceeding 0.6× web depth and
+                  properly reinforced if required.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="⚖️">Optimized Weight-to-Strength Ratio</h4>
+                <p>
+                  High-strength steel grades (345-415 MPa) reduce beam weight
+                  30-40% versus mild steel for same capacity enabling longer
+                  spans and reduced foundation loads. Wide flange sections
+                  provide 20-30% greater capacity than narrow flange equivalent
+                  weight through improved buckling resistance. Built-up plate
+                  girders from welded plates exceed rolled section depths for
+                  spans 15-30+ meters. Cellular beams with web openings reduce
+                  weight 30-50% while maintaining structural capacity creating
+                  space for building services.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://havitsteelstructure.com/wp-content/uploads/2020/08/steel-structure-detail-4.jpg"
+                  alt="Building Construction"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏗️ Commercial Building Frames</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://indianinfrastructure.com/wp-content/uploads/2024/06/26_1-1024x537.jpg"
+                  alt="Bridge Construction"
+                />
+                <div class="app-image-overlay">
+                  <h4>🌉 Highway & Railway Bridges</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://gates.scene7.com/is/image/gates/india-heavy-machinery?$Image_Responsive_Preset$&scl=1"
+                  alt="Industrial Facilities"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Industrial Crane Runways</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://anglelock.com/hubfs/Machine-Base-Frame-Design-Guidelines_solar-cell-production.webp"
+                  alt="Equipment Support"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚙️ Heavy Equipment Support Frames</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.ibeehivesteelstructures.com/wp-content/uploads/2022/04/Portal-Frame-Advantages%E2%80%8B.jpg"
+                  alt="Portal Frames"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏢 Portal Frame Warehouses</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://techlineint.com/wp-content/uploads/2022/09/industries_shipbuilding-and-marine.jpg"
+                  alt="Marine Structures"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚢 Ship Framing & Marine Structures</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bars Modal -->
+    <div class="modal" id="modal-bars">
+      <div class="scroll-progress" id="scrollProgressBars"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>⚙️ Bars (Flats / Rounds / Squares)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Bar Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Bar Types & Cross-Sectional Profiles</h3>
+
+            <!-- Flat Bars with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Flat Bars (MS Flats)</h4>
+                <p>
+                  <strong>Dimensions & Standards:</strong> Rectangular
+                  cross-section solid bars per IS 1730 with width 10-150mm and
+                  thickness 3-50mm. Common sizes include 25×6mm, 40×8mm,
+                  50×10mm, 75×12mm, 100×16mm. Standard length 6 meters with
+                  tolerance ±5mm. Width tolerance ±0.5mm for sizes up to 50mm,
+                  ±1.0mm for larger sections. Thickness tolerance ±0.2mm
+                  ensuring consistent cross-sectional area for strength
+                  calculations. Edges typically as-rolled sharp or rounded
+                  radius 1-2mm depending on application.
+                </p>
+                <p>
+                  <strong>Manufacturing Process:</strong> Hot-rolled from steel
+                  billets through series of grooved rolls progressively reducing
+                  cross-section to final dimensions. Controlled cooling on
+                  runout table normalizes microstructure ensuring uniform
+                  mechanical properties. Cold-rolled flats provide tighter
+                  dimensional tolerances (±0.1mm) and superior surface finish
+                  for precision applications. Cold finishing increases yield
+                  strength 15-25% through work hardening. Straightness tolerance
+                  3mm per meter length for hot-rolled, 1mm per meter for
+                  cold-rolled material.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwyPr97ojbBK_Px4CLCaWLjalqhjfZa7bQaw&s"
+                  alt="Flat Bars"
+                />
+              </div>
+            </div>
+
+            <!-- Round Bars with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://dhandsteels.com/wp-content/uploads/2020/12/i7h9dfdsej8j.jpg"
+                  alt="Round Bars"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Round Bars (MS Rounds)</h4>
+                <p>
+                  <strong>Size Range & Properties:</strong> Circular solid bars
+                  per IS 1731 with diameters 6-150mm. Common sizes 10mm, 12mm,
+                  16mm, 20mm, 25mm, 32mm, 40mm, 50mm. Cross-sectional area A =
+                  πd²/4 where d is diameter. Moment of inertia I = πd⁴/64
+                  provides torsional rigidity for shafts and axles. Polar moment
+                  of inertia J = πd⁴/32 governs torsional strength. Surface area
+                  per unit length = πd enables heat transfer and corrosion
+                  calculations.
+                </p>
+                <p>
+                  <strong>Machining Allowances:</strong> As-rolled (black) bars
+                  include mill scale with diameter tolerance ±1-2% requiring
+                  machining for precision fits. Peeled or turned bars with
+                  machined surface provide diameter tolerance ±0.5mm and surface
+                  roughness Ra 3.2-6.3 microns. Ground bars achieve tolerance
+                  ±0.1mm and Ra 0.8-1.6 for bearing surfaces and sliding fits.
+                  Centerless grinding produces precise diameter and
+                  concentricity ±0.05mm for high-speed rotating shafts.
+                  Cold-drawn wire available in diameters 1-25mm for springs,
+                  fasteners, and wire products.
+                </p>
+              </div>
+            </div>
+
+            <!-- Square Bars with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Square Bars (MS Squares)</h4>
+                <p>
+                  <strong>Specifications:</strong> Square cross-section solid
+                  bars per IS 1732 with side dimensions 10-150mm. Standard sizes
+                  10×10mm, 16×16mm, 20×20mm, 25×25mm, 32×32mm, 40×40mm, 50×50mm.
+                  Side tolerance ±1.0mm for sizes up to 50mm, ±1.5mm for larger
+                  sections. Squareness tolerance (deviation from 90°) within 1°
+                  ensuring proper mating in fabricated assemblies. Corner radius
+                  typically 2-3mm from rolling process providing stress relief
+                  versus sharp corners.
+                </p>
+                <p>
+                  <strong>Structural Characteristics:</strong> Square bars
+                  combine advantages of flat bars (flat faces for
+                  bearing/connection) and round bars (axial symmetry). Moment of
+                  inertia about either axis I = a⁴/12 where a is side dimension.
+                  Torsional constant J = 0.1406×a⁴ approximately 30% greater
+                  than equivalent diameter round bar providing superior
+                  torsional rigidity. Used as compression struts, torsion
+                  members, ornamental grilles, and forging stock. Diagonal
+                  dimension √2 × side length important for drilling clearances
+                  and wrench access.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.skytechrolling.com/blog/wp-content/uploads/2022/01/Square-Bar-And-Round-Bars-1.jpg"
+                  alt="Square Bars"
+                />
+              </div>
+            </div>
+
+            <h4>Material Grades & Chemical Composition</h4>
+            <p>
+              <strong>Mild Steel (Low Carbon):</strong> IS 2062 Grade A/B most
+              common material with 0.17-0.23% carbon, 0.60-0.90% manganese,
+              0.05% max phosphorus and sulfur. Yield strength 250-260 MPa,
+              tensile strength 410-540 MPa, elongation 23% minimum ensuring
+              ductile behavior. Excellent weldability without preheat for
+              thickness up to 25mm. Good machinability with 60-75% relative
+              rating versus free-cutting steel. Cost-effective general-purpose
+              material for fabrication, machining, and welding applications.
+            </p>
+            <p>
+              <strong>Specialized Grades:</strong> Free-cutting steel (EN 1A
+              with 0.1% sulfur) provides 125% machinability versus mild steel
+              reducing machining time and tool wear. High-tensile steel grades
+              (IS 8500 with 345-485 MPa yield) reduce section size 30-40% in
+              strength-limited designs. Case-hardening steels (EN 8, EN 9,
+              16MnCr5) carburized to 50-60 HRC surface hardness for
+              wear-resistant components. Stainless steel 304/316 grades for
+              corrosion resistance in chemical, food processing, and marine
+              environments. Tool steels (EN 31, D2, H13) heat-treated to 55-65
+              HRC for dies, punches, cutting tools.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Fabrication & Processing Section -->
+          <div class="spec-content spec-section">
+            <h3>Fabrication Methods & Processing Techniques</h3>
+
+            <!-- Cutting & Shearing with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://anglelock.com/hubfs/Machine-Base-Frame-Design-Guidelines_solar-cell-production.webp"
+                  alt="Fabrication Process"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Cutting & Shearing Operations</h4>
+                <p>
+                  <strong>Mechanical Cutting:</strong> Power hacksaws provide
+                  economical straight cuts with blade speed 40-80 strokes/minute
+                  and cutting pressure adjusted for material hardness. Band saws
+                  with bi-metal blades cut complex profiles and angles up to 60°
+                  with minimal material waste. Abrasive cut-off wheels (alumina
+                  oxide or silicon carbide) generate high heat requiring cooling
+                  fluids preventing metallurgical changes. Guillotine shears for
+                  flat bars up to 20mm thickness provide clean square edges
+                  within ±0.5mm tolerance.
+                </p>
+                <p>
+                  <strong>Thermal Cutting:</strong> Oxy-fuel cutting with
+                  acetylene/oxygen flame cuts steel 6-300mm thickness producing
+                  rough edge requiring grinding. Plasma arc cutting achieves
+                  higher speed and precision (±1mm) for thickness 0.5-40mm with
+                  cleaner edge finish. Laser cutting provides exceptional
+                  precision ±0.1mm with minimal heat-affected zone and smooth
+                  edge finish requiring no secondary operations. Waterjet
+                  cutting for materials sensitive to heat (stainless, hardened
+                  steels) eliminates thermal distortion and oxidation.
+                </p>
+              </div>
+            </div>
+
+            <!-- Forming & Bending with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Forming, Bending & Straightening</h4>
+                <p>
+                  <strong>Hot & Cold Bending:</strong> Cold bending at room
+                  temperature suitable for small cross-sections (flats up to
+                  12mm, rounds up to 25mm) with minimum bend radius 3-5×
+                  thickness preventing cracking. Press brake bending for flat
+                  bars forms angles and channels with inside radius 1-3×
+                  thickness. Hot bending at 900-1000°C for heavy sections and
+                  tight radii reduces required force and prevents cracking. Ring
+                  rolling forms circular bars into rings and flanges for
+                  pressure vessels, gear blanks, and bearing races.
+                </p>
+                <p>
+                  <strong>Straightening & Leveling:</strong> Rotary straightener
+                  with offset rolls progressively reverse-bends bars removing
+                  bow and twist to within 1mm per meter. Stretch straightening
+                  applies tension exceeding yield strength (110% of yield)
+                  permanently elongating material 0.5-1.5% and eliminating
+                  residual stresses. Press straightening for heavy sections
+                  applies localized bending force at bow locations. Flame
+                  straightening heats localized areas inducing compressive
+                  yielding upon cooling to counteract distortion from welding or
+                  machining.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.shutterstock.com/image-photo/car-chassis-frame-automobile-manufacturing-600nw-2151565909.jpg"
+                  alt="Metal Forming"
+                />
+              </div>
+            </div>
+
+            <h4>Machining & Surface Treatment</h4>
+            <p>
+              <strong>Material Removal Processes:</strong> Turning on lathe
+              machines bars to precise diameters with tolerances ±0.01-0.05mm
+              and surface finishes 0.8-3.2 Ra. Milling creates flats, slots,
+              keyways with ±0.05mm accuracy using carbide or HSS cutters.
+              Drilling holes with twist drills, reamers provide H7-H8 tolerance
+              fits for pins and fasteners. Grinding achieves tolerances ±0.005mm
+              and surface finish 0.2-0.8 Ra for bearing surfaces and gauge
+              blocks. CNC machining enables complex 3D geometries from bar stock
+              with repeatability ±0.01mm.
+            </p>
+            <p>
+              <strong>Surface Finishing:</strong> Shot blasting removes mill
+              scale and rust creating uniform matte surface Sa 2.5 cleanliness
+              preparing for painting or coating. Pickling in acid bath (HCl or
+              H2SO4) removes oxide scale chemically leaving bright surface.
+              Phosphating forms conversion coating providing corrosion
+              resistance and paint adhesion. Hot-dip galvanizing applies zinc
+              coating 45-85 microns thickness providing 20-40 years corrosion
+              protection outdoors. Electroplating (chrome, nickel, zinc)
+              deposits thin metallic coatings 5-25 microns for decorative and
+              corrosion resistance.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Versatile Applications</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🔧">Universal Fabrication Material</h4>
+                <p>
+                  Simple geometric profiles enable cutting, drilling, welding,
+                  and machining with basic shop equipment minimizing specialized
+                  tooling requirements. Solid cross-sections provide material
+                  for removal in subtractive manufacturing (milling, turning,
+                  grinding) creating custom components. Flat bars bend, twist,
+                  and form into brackets, clips, and hangers. Round bars machine
+                  into shafts, pins, fasteners, and axles. Square bars forge
+                  into tools, ornamental ironwork, and structural connections.
+                  Standardized sizes ensure global availability and supply chain
+                  reliability.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="⚡">Cost-Effective Raw Material</h4>
+                <p>
+                  Hot-rolled production achieves lowest cost per kilogram among
+                  structural steel products through high-volume automated
+                  manufacturing. Simple rolling process requires minimal tooling
+                  changes enabling rapid size transitions. Standard 6-meter
+                  lengths minimize cutting waste in typical fabrication. Solid
+                  cross-sections eliminate inspection for internal defects
+                  (voids, inclusions) required in hollow sections. Reusability
+                  and recyclability maintain material value through multiple
+                  lifecycle uses. Local availability from regional steel mills
+                  reduces transportation costs and lead times to 1-2 weeks.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💪">Reliable Mechanical Properties</h4>
+                <p>
+                  Solid homogeneous cross-section ensures uniform strength
+                  throughout member versus hollow sections with potential wall
+                  thickness variations. Predictable yield strength, tensile
+                  strength, and elongation enable accurate structural
+                  calculations per IS 800 and AISC 360. Ductile behavior with
+                  20-30% elongation provides warning before failure through
+                  visible deformation. Isotropic material properties (same in
+                  all directions) simplify stress analysis. Consistent
+                  weldability across all dimensions and grades using standard
+                  welding procedures (SMAW, GMAW, FCAW) without special
+                  precautions.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🌍">Wide Application Spectrum</h4>
+                <p>
+                  Construction industry uses flats for bracing, gusset plates,
+                  and connection plates in steel structures. Automotive sector
+                  forms flats into body brackets, suspension components, and
+                  frame reinforcements. Machinery manufacturing turns rounds
+                  into shafts, pins, and wear parts. Electrical industry
+                  fabricates bus bars and grounding electrodes from flats and
+                  rounds. Agricultural equipment uses rounds for PTO shafts,
+                  linkage pins, and implement frames. Decorative metalwork
+                  shapes squares and flats into railings, gates, furniture, and
+                  architectural elements.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://havitsteelstructure.com/wp-content/uploads/2020/08/steel-structure-detail-4.jpg"
+                  alt="Structural Fabrication"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏗️ Structural Bracing & Gusset Plates</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://anglelock.com/hubfs/Machine-Base-Frame-Design-Guidelines_solar-cell-production.webp"
+                  alt="Machinery Parts"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚙️ Machine Shafts & Components</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.shutterstock.com/image-photo/car-chassis-frame-automobile-manufacturing-600nw-2151565909.jpg"
+                  alt="Automotive"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚗 Automotive Chassis & Brackets</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTiz64rgqnxZ7bqqNz8h9-dEtLqssiZSI51Q&s"
+                  alt="Electrical Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚡ Electrical Bus Bars & Grounding</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://gates.scene7.com/is/image/gates/india-heavy-machinery?$Image_Responsive_Preset$&scl=1"
+                  alt="Heavy Equipment"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Industrial Shafts & Wear Parts</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8MOpjw_tngnZfLoZYucrORN6SopXTYR2Ew&s"
+                  alt="Architectural"
+                />
+                <div class="app-image-overlay">
+                  <h4>🎨 Ornamental Ironwork & Railings</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TMT Bars Modal -->
+    <div class="modal" id="modal-tmt">
+      <div class="scroll-progress" id="scrollProgressTMT"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>🏗️ TMT Bars (Fe 500 / Fe 550)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+          <!-- TMT Technology Section -->
+          <div class="spec-content spec-section">
+            <h3>Thermo-Mechanical Treatment Process</h3>
+
+            <!-- TMT Manufacturing with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>TMT Manufacturing Technology</h4>
+                <p>
+                  <strong>Three-Stage Process:</strong> Stage 1 - Hot rolling at
+                  1000-1100°C through continuous mill train produces ribbed bar
+                  to final diameter. Stage 2 - Rapid water quenching (Tempcore
+                  process) immediately after final stand cools outer surface to
+                  100-150°C forming hardened martensitic rim while core remains
+                  austenitic at 800-900°C. Stage 3 - Self-tempering as core heat
+                  conducts outward transforms martensite to tempered martensite
+                  and core transforms to ferrite-pearlite creating optimal
+                  microstructure gradient. Total process time 45-90 seconds from
+                  rolling to cooling bed.
+                </p>
+                <p>
+                  <strong>Microstructural Gradient:</strong> Outer layer
+                  (thickness 1-3mm) contains tempered martensite with 500-600 HV
+                  hardness providing high strength and wear resistance.
+                  Intermediate zone with fine bainitic structure transitions
+                  strength gradually preventing brittle interface. Core region
+                  contains ductile ferrite-pearlite with 150-200 HV hardness
+                  maintaining elongation and bend properties. This metallurgical
+                  gradient combines strength of hardened steel with ductility of
+                  mild steel in single bar impossible through conventional heat
+                  treatment.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://images.jdmagicbox.com/quickquotes/images_main/mild-steel-tmt-bar-for-construction-25-mm-grey-2222502392-7hx309lm.jpg"
+                  alt="TMT Bars"
+                />
+              </div>
+            </div>
+
+            <!-- Grade Classification with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2022/4/RY/IC/WW/3129787/tmt-steel-bars-500x500.jpg"
+                  alt="TMT Bar Grades"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Grade Classification & Standards</h4>
+                <p>
+                  <strong>Fe 500 Grade:</strong> Minimum yield strength 500 MPa
+                  per IS 1786:2008, tensile strength 545 MPa minimum, yield
+                  ratio (YS/TS) ≤0.92 ensuring adequate strain hardening.
+                  Elongation minimum 12% for sizes ≤10mm, 14.5% for 10-16mm, 16%
+                  for >16mm providing ductile behavior. Total elongation at
+                  maximum force (Agt) ≥5% indicates good formability for bending
+                  and stirrup making. Carbon equivalent CE = C + Mn/6 +
+                  (Cr+Mo+V)/5 + (Cu+Ni)/15 ≤0.54% ensures weldability without
+                  preheat up to 32mm diameter.
+                </p>
+                <p>
+                  <strong>Fe 550 Grade:</strong> Higher strength with minimum
+                  yield 550 MPa and tensile strength 600 MPa enabling 10-15%
+                  reinforcement reduction versus Fe 500. Elongation slightly
+                  lower (10-14%) but adequate for typical concrete applications.
+                  Primarily used in high-rise buildings, long-span structures,
+                  and earthquake-resistant designs where steel quantity
+                  optimization critical. Carbon equivalent ≤0.56% maintains good
+                  weldability. Fe 600 grade (600 MPa yield) emerging for
+                  specialized applications but limited availability. IS 16482
+                  covers corrosion-resistant TMT bars with minimum 0.10% copper.
+                </p>
+              </div>
+            </div>
+
+            <!-- Surface Features with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Rib Pattern & Surface Characteristics</h4>
+                <p>
+                  <strong>Deformation Pattern:</strong> Ribs (lugs) rolled onto
+                  bar surface during final pass provide mechanical interlocking
+                  with concrete preventing slippage under load. Two longitudinal
+                  ribs parallel to axis plus transverse ribs at 45-70° angle
+                  spaced at 0.6-0.8× diameter. Rib height 0.04-0.10× diameter
+                  (4-10% of diameter) and width at root 0.125× spacing minimum
+                  per IS 1786 requirements. Rib pattern increases surface area
+                  20-35% versus plain bars enhancing bond strength 40-80% in
+                  concrete.
+                </p>
+                <p>
+                  <strong>Bond Strength:</strong> Bond stress between steel and
+                  concrete governs development length and anchorage requirements
+                  per IS 456:2000. Design bond stress for Fe 500 TMT bars in M25
+                  concrete is 2.24 MPa versus 1.92 MPa for Fe 415 enabling 15%
+                  shorter anchorage lengths. Adequate cover (40mm for moderate
+                  exposure, 50mm for severe) and bar spacing (≥25mm or bar
+                  diameter) ensures concrete flows between ribs achieving full
+                  bond capacity. Rust on surface forms iron oxide layer slightly
+                  increasing bond but excessive corrosion reduces effective area
+                  requiring removal before placement.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://cpimg.tistatic.com/08073525/b/4/TMT-Bar-Ribs.jpg"
+                  alt="TMT Bar Ribs"
+                />
+              </div>
+            </div>
+
+            <h4>Quality Standards & Testing</h4>
+            <p>
+              <strong>Mechanical Testing:</strong> Tensile test per IS 1608 on
+              samples verifies yield strength (0.2% offset method), tensile
+              strength, and elongation (gauge length 5.65√A where A is
+              cross-sectional area). Bend test wraps bar 180° around mandrel
+              with diameter 4× bar diameter for Fe 500 checking for cracks
+              indicating brittle behavior. Re-bend test (bend-unbend-bend)
+              demonstrates strain-aging resistance and ductility under repeated
+              deformation. Test frequency minimum 1 per 50 tonnes or heat batch
+              per IS 1786 requirements.
+            </p>
+            <p>
+              <strong>Chemical Analysis:</strong> Carbon 0.25% maximum
+              (typically 0.15-0.22%), manganese 0.60% minimum, sulphur 0.055%
+              maximum, phosphorus 0.055% maximum per IS 1786. Copper 0.60%
+              minimum for corrosion-resistant grades per IS 16482. Carbon
+              equivalent calculation verifies weldability - CE ≤0.54% for Fe 500
+              prevents cracking in welded connections without preheat. Optical
+              emission spectroscopy (OES) on molten metal and finished bars
+              ensures consistency. Mill test certificates per EN 10204 Type 3.1
+              document compliance for each batch.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Design & Application Section -->
+          <div class="spec-content spec-section">
+            <h3>Structural Design & Concrete Reinforcement</h3>
+
+            <!-- Flexural Reinforcement with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://indianinfrastructure.com/wp-content/uploads/2024/06/26_1-1024x537.jpg"
+                  alt="Reinforced Concrete"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Flexural Reinforcement in Beams & Slabs</h4>
+                <p>
+                  <strong>Tension Reinforcement:</strong> TMT bars placed in
+                  tension zone of beams and slabs resist tensile stresses
+                  exceeding concrete tensile capacity (0.7√f_ck typically 2-3
+                  MPa). Minimum tension reinforcement A_st,min = 0.85×b×d/f_y
+                  prevents brittle failure and controls cracking per IS 456
+                  Clause 26.5.1.1. Maximum reinforcement limited to 4% gross
+                  area preventing congestion and ensuring adequate concrete
+                  compaction. Cover to reinforcement protects against corrosion
+                  and fire - 25mm for mild exposure, 40mm for moderate, 50mm for
+                  severe per IS 456 Table 16.
+                </p>
+                <p>
+                  <strong>Development Length:</strong> Length required to
+                  develop full yield strength of bar through bond stress L_d =
+                  φ×σ_s/4×τ_bd where φ is bar diameter, σ_s is stress (0.87f_y),
+                  τ_bd is design bond stress. For Fe 500 in M25 concrete, L_d =
+                  47φ. Hooks and bends at bar ends reduce required straight
+                  length by 30-50% through mechanical anchorage. Lap splices
+                  minimum 1.3L_d ensuring strength continuity where bars change.
+                  Detailing per IS 13920 for seismic regions requires increased
+                  lap lengths and special anchorage details.
+                </p>
+              </div>
+            </div>
+
+            <!-- Column Reinforcement with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Column & Compression Reinforcement</h4>
+                <p>
+                  <strong>Longitudinal Bars:</strong> Minimum 4 bars in
+                  rectangular columns, 6 bars in circular providing compression
+                  reinforcement and restraining lateral ties. Reinforcement
+                  percentage 0.8-6% gross area with 1-2% typical enabling
+                  optimized section sizing. Bars work compositely with concrete
+                  carrying 10-30% of axial load depending on slenderness.
+                  High-strength Fe 550 grade enables 10-15% area reduction
+                  versus Fe 415 in compression-governed columns. Bar diameter
+                  typically 16-40mm with larger sizes in ground floor columns of
+                  high-rises carrying maximum gravity loads.
+                </p>
+                <p>
+                  <strong>Lateral Ties & Spacing:</strong> Lateral ties
+                  (stirrups) minimum 6mm diameter or 1/4 main bar diameter
+                  prevent buckling of longitudinal bars and confine concrete
+                  core. Spacing along column height ≤least of: 16× main bar
+                  diameter, 48× tie diameter, or least column dimension per IS
+                  456. Closer spacing 100-150mm in potential plastic hinge
+                  regions (beam-column joints, column ends) per IS 13920 seismic
+                  detailing. Spiral reinforcement in circular columns provides
+                  superior confinement and ductility versus rectangular ties
+                  increasing load capacity 5-10%.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://havitsteelstructure.com/wp-content/uploads/2020/08/steel-structure-detail-4.jpg"
+                  alt="Column Reinforcement"
+                />
+              </div>
+            </div>
+
+            <h4>Shear & Torsion Reinforcement</h4>
+            <p>
+              <strong>Stirrups & Links:</strong> Closed rectangular or circular
+              links resist shear and torsional stresses in beams preventing
+              diagonal tension cracking at 45° angle to beam axis. Minimum shear
+              reinforcement A_sv/s×b = 0.4/f_y ensures ductile shear behavior
+              even when calculated requirement lower per IS 456 Clause 26.5.1.6.
+              Spacing ≤0.75d for vertical shear or ≤300mm whichever less. Closer
+              spacing d/4 in high-shear regions near supports. Two-legged,
+              four-legged, or multi-legged stirrups depending on beam width and
+              bar arrangement.
+            </p>
+            <p>
+              <strong>Anchorage & Hooks:</strong> Stirrup ends anchored with
+              135° or 180° hooks around longitudinal bars with extension 10×
+              stirrup diameter (minimum 75mm) into concrete. Anchorage prevents
+              stirrup ends pulling out under diagonal tension. Welded closed
+              stirrups eliminate hooks but require quality control. Properly
+              anchored stirrups change failure mode from brittle shear to
+              ductile flexure increasing safety. Lapped stirrups (continuous
+              U-bar plus separate U-bar) less effective than closed stirrups but
+              acceptable for low-shear members.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Advantages</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="💪">Superior Strength & Ductility</h4>
+                <p>
+                  500-550 MPa yield strength provides 20-30% higher capacity
+                  versus Fe 415 reducing reinforcement quantity and congestion.
+                  Unique microstructure combines hardened outer layer (strength)
+                  with ductile core (elongation) impossible in conventional
+                  steel. Elongation 12-16% ensures ductile failure mode with
+                  visible warning before collapse. Better seismic performance
+                  through energy dissipation in plastic hinges during earthquake
+                  loading. Strain hardening evident from tensile curve with
+                  yield ratio ≤0.92 providing reserve capacity beyond yield
+                  point.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🔥">Enhanced Fire & Corrosion Resistance</h4>
+                <p>
+                  Soft ferrite-pearlite core retains ductility at elevated
+                  temperatures (400-600°C during fire) better than fully
+                  hardened steel preventing premature collapse. Tempered
+                  martensite outer layer more stable than work-hardened steel
+                  maintaining properties through thermal cycles.
+                  Corrosion-resistant grades with 0.10% copper form protective
+                  oxide patina reducing corrosion rate 30-40% versus plain
+                  carbon steel in marine and industrial atmospheres. Adequate
+                  concrete cover and quality concrete (low permeability) provide
+                  primary corrosion protection - TMT bars not rust-proof but
+                  rust-resistant.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🔧">Excellent Weldability & Bendability</h4>
+                <p>
+                  Low carbon equivalent (CE ≤0.54%) enables welding without
+                  preheat using standard electrodes (E7018) for diameters up to
+                  32mm. Welded splices and connections develop full bar capacity
+                  when properly executed per IS 2751 welding code. Soft core
+                  allows cold bending for stirrups, hooks, and anchorage details
+                  without cracking even after exposure to heat during welding.
+                  Bending radius 4× diameter for Fe 500 tighter than
+                  conventional high-strength steel (typically 6-8× diameter).
+                  Re-bending possible within 48 hours of initial bending unlike
+                  work-hardened steel showing strain aging embrittlement.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💰">Cost-Effectiveness & Sustainability</h4>
+                <p>
+                  In-line quenching during hot rolling eliminates separate heat
+                  treatment reducing manufacturing cost versus conventional
+                  high-strength steel. Higher strength reduces steel quantity
+                  10-20% cutting material costs, transportation, and handling
+                  expenses. Reduced reinforcement congestion accelerates
+                  construction through easier bar placement and concrete
+                  pouring. Lower carbon content (0.15-0.22% vs 0.30-0.40% in
+                  micro-alloyed steel) reduces embodied energy and carbon
+                  footprint. 100% recyclable maintaining full properties through
+                  repeated melting/rolling cycles unlike polymeric materials
+                  degrading with recycling.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://havitsteelstructure.com/wp-content/uploads/2020/08/steel-structure-detail-4.jpg"
+                  alt="High-Rise Buildings"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏢 High-Rise Building Structures</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://indianinfrastructure.com/wp-content/uploads/2024/06/26_1-1024x537.jpg"
+                  alt="Bridges"
+                />
+                <div class="app-image-overlay">
+                  <h4>🌉 Highway & Railway Bridge Decks</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.teknoflow.co/wp-content/uploads/2023/03/IMG_1403.jpg"
+                  alt="Dams"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏔️ Dam & Hydro Structures</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://gates.scene7.com/is/image/gates/india-heavy-machinery?$Image_Responsive_Preset$&scl=1"
+                  alt="Industrial Buildings"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Industrial Buildings & Warehouses</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://techlineint.com/wp-content/uploads/2022/09/industries_shipbuilding-and-marine.jpg"
+                  alt="Marine Structures"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚓ Ports & Marine Structures</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://anglelock.com/hubfs/Machine-Base-Frame-Design-Guidelines_solar-cell-production.webp"
+                  alt="Power Plants"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚡ Power Plant Foundations</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Chequered Plates Modal -->
+    <div class="modal" id="modal-chequered">
+      <div class="scroll-progress" id="scrollProgressChequered"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>⬛ Chequered Plates</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+          <!-- Pattern Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Pattern Types & Surface Designs</h3>
+
+            <!-- Diamond Pattern with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Diamond (Durbar) Pattern</h4>
+                <p>
+                  <strong>Pattern Geometry:</strong> Raised diamond-shaped
+                  protrusions arranged at 45° angle to plate edges creating
+                  multi-directional slip resistance. Pattern pitch
+                  (center-to-center spacing) typically 25-40mm with lug height
+                  0.15-0.25× base thickness. Minimum lug height 0.6mm for 3mm
+                  plate increasing to 1.5mm for 8mm plate per IS 3502. Diamond
+                  orientation prevents directional slippage unlike linear
+                  patterns effective in only one direction. Pattern covers
+                  60-75% of surface area leaving flat valleys between lugs.
+                </p>
+                <p>
+                  <strong>Manufacturing Process:</strong> Hot-rolled from steel
+                  slabs through special grooved rolls embossing pattern during
+                  final pass at 900-1000°C. Pattern depth limited by rolling
+                  pressure and plate thickness - deeper patterns require thicker
+                  base material. Cold rolling for stainless steel chequered
+                  plates provides tighter tolerances and sharper pattern
+                  definition but limited to thinner gauges (<6mm). Pattern may
+                  fade slightly near plate edges where rolling pressure lower.
+                  Quality plates maintain consistent lug height across full
+                  width within ±15% variation.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2024/3/404827882/HF/VX/MR/146895368/aluminium-diamond-chequered-plate.jpg"
+                  alt="Diamond Chequered Plate"
+                />
+              </div>
+            </div>
+
+            <!-- Linear & Specialty Patterns with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://hhironandsteel.com/images/ms-chequered-plates.webp"
+                  alt="Chequered Plate Patterns"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Linear, Teardrop & Specialty Patterns</h4>
+                <p>
+                  <strong>Linear Rib Pattern:</strong> Parallel raised ribs
+                  running lengthwise or across width providing slip resistance
+                  in single direction. Rib spacing 15-25mm with height 1-2mm.
+                  Used where traffic flow predominantly one direction (stairs,
+                  ramps) enabling easier cleaning versus diamond pattern.
+                  Perforated rib patterns combine slip resistance with drainage
+                  and weight reduction. Orientation specified during ordering -
+                  ribs typically run across traffic direction for maximum grip.
+                </p>
+                <p>
+                  <strong>Teardrop & Custom Patterns:</strong> Teardrop (coin)
+                  pattern with circular or elliptical raised dots arranged in
+                  staggered array. Aesthetic appeal for architectural
+                  applications (wall cladding, elevator interiors, vehicle
+                  flooring). Custom patterns available for large quantity orders
+                  including company logos, geometric designs, or decorative
+                  motifs. Laser-cut patterns create intricate designs but remove
+                  material reducing load capacity. Embossed patterns maintain
+                  structural integrity while adding texture and visual interest.
+                  Pattern selection balances functional requirements (slip
+                  resistance, drainage) with aesthetic preferences.
+                </p>
+              </div>
+            </div>
+
+            <!-- Dimensions & Specifications with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Dimensions, Thickness & Standard Sizes</h4>
+                <p>
+                  <strong>Thickness Range:</strong> Standard thicknesses 2.5mm,
+                  3mm, 4mm, 5mm, 6mm, 8mm, 10mm, 12mm per IS 3502 with thickness
+                  measured at base between pattern lugs. Pattern height
+                  additional - total thickness including lugs 0.7-1.3× base
+                  thickness. Thin gauges (2.5-4mm) for light-duty walkways and
+                  vehicle flooring. Medium thickness (5-8mm) for industrial
+                  platforms, loading docks, stairs. Heavy gauges (10-12mm) for
+                  forklift traffic, heavy equipment access, and structural
+                  flooring applications.
+                </p>
+                <p>
+                  <strong>Plate Sizes:</strong> Standard sheets 1220×2440mm (4×8
+                  ft), 1500×3000mm, 1500×6000mm, and 2000×6000mm. Custom sizes
+                  cut to order up to mill capability typically 3000×12000mm
+                  maximum. Weight calculation: base thickness (mm) × 7.85
+                  kg/m²/mm plus 15-20% for pattern material. 5mm×1220×2440mm
+                  diamond plate weighs approximately 145 kg. Plates nest for
+                  shipping reducing transportation costs. Coil form available
+                  for continuous applications enabling on-site shearing to
+                  required lengths.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.dhanlaxmisteel.com/blog/wp-content/uploads/2022/04/Aluminum-Chequered-Plates.jpg"
+                  alt="Chequered Plate Applications"
+                />
+              </div>
+            </div>
+
+            <h4>Material Grades & Surface Finish</h4>
+            <p>
+              <strong>Carbon Steel Grades:</strong> IS 2062 mild steel most
+              common providing 250 MPa yield strength and good formability for
+              bending and welding. Surface as-rolled with mill scale or
+              shot-blasted for painting. Prime (first quality) plates have
+              minimal surface defects and consistent pattern. Secondary
+              (commercial) grade acceptable for non-critical applications with
+              minor surface blemishes. High-strength grades (IS 8500, ASTM A572)
+              reduce weight 20-30% in load-bearing applications but higher cost.
+            </p>
+            <p>
+              <strong>Stainless & Aluminum:</strong> Stainless steel 304/316
+              grade chequered plates for corrosive environments, food
+              processing, pharmaceutical, and architectural applications
+              requiring maintenance-free service. Bright annealed (BA) or No.4
+              brushed finish provides aesthetic appearance and easy cleaning.
+              Aluminum 5052/6061 grade chequered plates offer 60% weight savings
+              versus steel for vehicle flooring, truck beds, and transportation
+              applications. Mill finish or bright finish options. Anodized
+              aluminum provides enhanced corrosion resistance and color options
+              for architectural use.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Performance & Installation Section -->
+          <div class="spec-content spec-section">
+            <h3>Performance Characteristics & Installation</h3>
+
+            <!-- Slip Resistance with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://polishedconcrete.in/images/blog-pics/polished%20concrete3.jpg"
+                  alt="Industrial Flooring"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Slip Resistance & Safety Performance</h4>
+                <p>
+                  <strong>Coefficient of Friction:</strong> Diamond pattern
+                  provides static coefficient of friction (COF) 0.6-0.8 dry
+                  conditions versus 0.3-0.5 for smooth plate representing
+                  50-100% improvement. Wet conditions COF 0.4-0.6 still
+                  significantly better than smooth surfaces (0.15-0.25 wet).
+                  OSHA recommends COF ≥0.5 for walking surfaces - chequered
+                  plates exceed this under most conditions. Testing per ASTM
+                  F1679 (dry) and ASTM F2508 (wet) quantifies slip resistance
+                  for specific pattern and surface condition combinations.
+                </p>
+                <p>
+                  <strong>Safety Standards:</strong> OSHA 1910.24 requires
+                  platforms and walkways provide slip-resistant surface
+                  particularly at changes of elevation. BS 7976-2 Pendulum Test
+                  measures surface microroughness and slip potential under wet
+                  conditions. Australian Standard AS 4586 classifies surfaces
+                  from P0 (extremely slippery) to P5 (excellent slip resistance)
+                  - chequered plates typically rate P4. ADA accessibility
+                  guidelines permit chequered plates on ramps provided pattern
+                  lugs <13mm height preventing wheelchair interference. Fire
+                  safety codes may restrict combustible coatings on chequered
+                  plates in egress routes.
+                </p>
+              </div>
+            </div>
+
+            <!-- Load Capacity with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Load Capacity & Structural Design</h4>
+                <p>
+                  <strong>Bending Strength:</strong> Load capacity calculated
+                  using base thickness (excluding pattern height) per IS 800
+                  plate bending provisions. Simply-supported plate with uniform
+                  load: maximum stress σ = k×w×L²/t² where k is support factor
+                  (0.75 four-edge, 0.50 three-edge, 0.25 two-edge), w is load
+                  kg/m², L is span mm, t is thickness mm. Example: 5mm plate on
+                  600mm span supports 900 kg/m² uniform load at 165 MPa stress
+                  (safety factor 1.5 on 250 MPa yield).
+                </p>
+                <p>
+                  <strong>Point Load & Deflection:</strong> Concentrated loads
+                  (forklift wheels, equipment legs) critical for thin plates
+                  potentially causing local yielding or dimpling. Point load
+                  capacity W = 8×σ×t²/3 for central load on square plate simply
+                  supported all edges. Deflection δ = k×w×L⁴/E×t³ where E =
+                  200,000 MPa for steel - deflection increases rapidly with span
+                  (fourth power) and decreases with thickness (cubic). Maximum
+                  deflection typically limited L/180 to L/240 preventing
+                  excessive vibration and user discomfort. Supporting steel
+                  framework at 600-1200mm spacing prevents excessive deflection.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKXG9Gan8kQ8QdrX1ElO0pXQ4VsIvA2dkI4Q&s"
+                  alt="Industrial Platform"
+                />
+              </div>
+            </div>
+
+            <h4>Fabrication & Installation Methods</h4>
+            <p>
+              <strong>Cutting & Forming:</strong> Shearing with hydraulic
+              guillotine for straight cuts maintaining pattern alignment.
+              Plasma/laser cutting for curved or complex shapes but high heat
+              may distort thin gauges requiring subsequent flattening. Waterjet
+              cutting eliminates thermal distortion and produces clean edges.
+              Pattern side typically placed up (walking surface) but can be
+              inverted for aesthetic underside when viewing from below
+              important. Bending radius minimum 2× base thickness to prevent
+              pattern cracking - tighter bends require base-side-out
+              orientation.
+            </p>
+            <p>
+              <strong>Welding & Fastening:</strong> MIG/TIG welding along plate
+              edges to supporting angle frames or directly to structural beams.
+              Weld on base (smooth) side when possible preserving pattern
+              integrity on walking surface. Removable plates secured with M8-M12
+              bolts at 300-600mm spacing allowing access to underfloor services.
+              Self-drilling screws for attaching to wood substructures (truck
+              bodies, trailers). Adhesive bonding for stainless steel
+              architectural installations where exposed fasteners undesirable.
+              Edge trim angles (L-sections) provide finished appearance and
+              protect exposed plate edges from impact damage.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🚶">Superior Slip Resistance</h4>
+                <p>
+                  Raised pattern dramatically reduces slip-and-fall accidents in
+                  wet, oily, or contaminated conditions versus smooth plates.
+                  Multi-directional pattern effective regardless of approach
+                  angle unlike grooved surfaces working in single direction.
+                  Pattern continuously self-cleaning as foot traffic dislodges
+                  debris from raised surfaces. Meets OSHA, ADA, and
+                  international safety standards for pedestrian and vehicular
+                  traffic surfaces. Particularly valuable in high-risk
+                  environments: loading docks, processing plants, vehicle steps,
+                  marine decks, outdoor stairs exposed to rain/ice/snow.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💧">Drainage & Self-Cleaning</h4>
+                <p>
+                  Pattern valleys channel water, oil, and liquids away from
+                  walking surface preventing pooling and hydroplaning. Open
+                  pattern permits air circulation below plate for faster drying
+                  versus solid plates. Industrial applications benefit from
+                  reduced liquid accumulation preventing slip hazards and
+                  corrosion from standing water. Easier cleaning than perforated
+                  grating which traps debris in holes. High-pressure washing
+                  effectively removes contaminants from pattern valleys.
+                  Open-pattern designs available combining drainage holes with
+                  anti-slip surface for maximum performance in wet process
+                  areas.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💪">Structural Efficiency & Durability</h4>
+                <p>
+                  Pattern ribbing increases effective section modulus 15-25%
+                  versus flat plate of same base thickness providing greater
+                  stiffness and load capacity per kilogram. Raised pattern
+                  protects base material from direct wear extending service life
+                  2-3× versus smooth plate in abrasive environments. Suitable
+                  for vehicle traffic - cars, trucks, forklifts - when properly
+                  supported on framework at 600-900mm spacing. Fatigue
+                  resistance superior to welded bar grating through continuous
+                  one-piece construction eliminating stress-concentration points
+                  at welds. Typical service life 15-25 years in normal
+                  industrial use, 30+ years in architectural applications.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🎨">Aesthetic Versatility</h4>
+                <p>
+                  Industrial aesthetic appealing for architectural applications:
+                  stairs, flooring, wall cladding, elevator interiors, vehicle
+                  panels. Stainless steel chequered plates provide modern
+                  metallic appearance with low maintenance suitable for shopping
+                  centers, airports, commercial buildings. Pattern adds visual
+                  interest and texture to otherwise utilitarian surfaces.
+                  Multiple pattern options (diamond, linear, teardrop) suit
+                  different design themes. Aluminum chequered plates lightweight
+                  solution for vehicle bodies, trailers, tool boxes combining
+                  strength with corrosion resistance. Galvanized or
+                  powder-coated finishes provide color options while maintaining
+                  slip resistance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://w-bindustries.com/wp-content/uploads/2017/02/aluminum-industrial-work-platform-wb-industries.jpg"
+                  alt="Stairs & Walkways"
+                />
+                <div class="app-image-overlay">
+                  <h4>🪜 Industrial Stairs & Walkways</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://gates.scene7.com/is/image/gates/india-heavy-machinery?$Image_Responsive_Preset$&scl=1"
+                  alt="Loading Docks"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚛 Loading Docks & Ramps</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.shutterstock.com/image-photo/car-chassis-frame-automobile-manufacturing-600nw-2151565909.jpg"
+                  alt="Vehicle Flooring"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚗 Vehicle Flooring & Truck Beds</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://techlineint.com/wp-content/uploads/2022/09/industries_shipbuilding-and-marine.jpg"
+                  alt="Marine Decks"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚓ Ship Decks & Marine Platforms</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://havitsteelstructure.com/wp-content/uploads/2020/08/steel-structure-detail-4.jpg"
+                  alt="Industrial Platforms"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Work Platforms & Mezzanines</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTiz64rgqnxZ7bqqNz8h9-dEtLqssiZSI51Q&s"
+                  alt="Electrical Enclosures"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚡ Control Panel & Enclosure Floors</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>About India Steel</h3>
+            <p>
+              Leading supplier of quality steel products in India. We provide
+              comprehensive steel solutions with international standard
+              compliance.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Service Categories</h3>
+            <ul>
+              <li><a href="#">Thread Cutting</a></li>
+              <li><a href="#">Welding Services</a></li>
+              <li><a href="#">Galvanizing</a></li>
+              <li><a href="#">Assembly & Spools</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Standards We Follow</h3>
+            <ul>
+              <li>ASTM Standards</li>
+              <li>API Specifications</li>
+              <li>IS Standards</li>
+              <li>BS Standards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 India Steel Industries. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Filter Products
+      function filterProducts(category) {
+        const items = document.querySelectorAll(".category-item");
+        const buttons = document.querySelectorAll(".filter-btn");
+        let visibleCount = 0;
+
+        // Update active button
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        event.target.classList.add("active");
+
+        // Clear search box
+        document.querySelector(".search-box input").value = "";
+
+        // Filter items
+        items.forEach((item) => {
+          if (category === "all" || item.dataset.category === category) {
+            item.classList.remove("hidden");
+            visibleCount++;
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+
+        // Update count
+        updateResultsCount(visibleCount);
+      }
+
+      // Search Products
+      function searchProducts(query) {
+        const items = document.querySelectorAll(".category-item");
+        const searchTerm = query.toLowerCase();
+        let visibleCount = 0;
+
+        // Reset filter buttons when searching
+        if (query.length > 0) {
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((btn) => btn.classList.remove("active"));
+        }
+
+        items.forEach((item) => {
+          const name = item.dataset.name.toLowerCase();
+          if (name.includes(searchTerm)) {
+            item.classList.remove("hidden");
+            visibleCount++;
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+
+        updateResultsCount(visibleCount);
+      }
+
+      // Update Results Count
+      function updateResultsCount(count) {
+        const resultsCount = document.getElementById("resultsCount");
+        resultsCount.textContent = `Showing ${count} product${
+          count !== 1 ? "s" : ""
+        }`;
+      }
+
+      // Open Modal with Scroll Animations
+      function openModal(id, card) {
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.remove("active"));
+        document
+          .querySelectorAll(".category-item")
+          .forEach((c) => c.classList.remove("selected"));
+
+        const modal = document.getElementById("modal-" + id);
+        modal.classList.add("active");
+        card.classList.add("selected");
+        document.body.style.overflow = "hidden";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+
+        // Initialize scroll animations
+        setTimeout(() => {
+          observeElements();
+
+          // Update scroll progress for the specific modal
+          if (id === "bolts") {
+            updateScrollProgress("scrollProgressBolts");
+          } else if (id === "rods") {
+            updateScrollProgress("scrollProgressRods");
+          } else if (id === "u-bolts") {
+            updateScrollProgress("scrollProgressUBolts");
+          }
+        }, 100);
+      }
+
+      // Close Modal
+      function closeModal() {
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.remove("active"));
+        document
+          .querySelectorAll(".category-item")
+          .forEach((c) => c.classList.remove("selected"));
+        document.body.style.overflow = "auto";
+      }
+
+      // Escape key to close modal
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeModal();
+        }
+      });
+
+      // Scroll Animation Observer
+      function observeElements() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px",
+          }
+        );
+
+        document.querySelectorAll(".spec-section").forEach((el) => {
+          observer.observe(el);
+        });
+      }
+
+      // Scroll Progress Bar
+      function updateScrollProgress(progressId) {
+        const modal = document.querySelector(".modal.active");
+        if (!modal) return;
+
+        modal.addEventListener("scroll", function () {
+          const scrollProgress = document.getElementById(progressId);
+          if (!scrollProgress) return;
+
+          const scrollTop = modal.scrollTop;
+          const scrollHeight = modal.scrollHeight - modal.clientHeight;
+          const progress = (scrollTop / scrollHeight) * 100;
+          scrollProgress.style.width = progress + "%";
+        });
+      }
+
+      // Smooth scroll for modals
+      document.querySelectorAll(".modal").forEach((modal) => {
+        modal.style.scrollBehavior = "smooth";
+      });
+    </script>
+  </body>
+</html>

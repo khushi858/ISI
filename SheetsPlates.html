@@ -1,0 +1,3425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheets, Plates & Coils - India Steel Industries</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.7;
+        color: #1a1a1a;
+        background: #fff;
+      }
+
+      /* Top Bar */
+      .top-bar {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        color: #fff;
+        padding: 12px 0;
+        font-size: 13px;
+      }
+
+      .top-bar .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .top-bar-left {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+      }
+
+      .top-bar-left span {
+        opacity: 0.9;
+        letter-spacing: 0.3px;
+      }
+
+      .top-bar-right a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 500;
+        transition: color 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .top-bar-right a:hover {
+        color: #f59e0b;
+      }
+
+      /* Header */
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 25px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .logo-icon {
+        background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-weight: 800;
+        font-size: 22px;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(0, 51, 102, 0.3);
+      }
+
+      .logo-text h1 {
+        font-size: 26px;
+        font-weight: 800;
+        color: #0a0a0a;
+        letter-spacing: -0.5px;
+      }
+
+      .logo-text p {
+        font-size: 11px;
+        color: #666;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+      }
+
+      nav ul li a {
+        color: #1a1a1a;
+        text-decoration: none;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        border-radius: 8px;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background: #003366;
+        color: #fff;
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        background: #fafafa;
+        padding: 18px 0;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .breadcrumb-nav {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-size: 13px;
+      }
+
+      .breadcrumb-nav a {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 500;
+      }
+
+      .breadcrumb-nav a:hover {
+        color: #003366;
+      }
+
+      .breadcrumb-nav span {
+        color: #0a0a0a;
+        font-weight: 600;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        padding: 80px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at 50% 0%,
+          rgba(0, 51, 102, 0.3),
+          transparent 70%
+        );
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        color: #ccc;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.8;
+      }
+
+      /* Filter Section */
+      .filter-section {
+        background: #fafafa;
+        padding: 30px 0;
+        border-bottom: 1px solid #e5e5e5;
+        position: sticky;
+        top: 86px;
+        z-index: 99;
+      }
+
+      .filter-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .filter-label {
+        font-weight: 700;
+        color: #0a0a0a;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-buttons {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        flex: 1;
+      }
+
+      .filter-btn {
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: #666;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-btn:hover {
+        border-color: #003366;
+        color: #003366;
+        background: #eff6ff;
+      }
+
+      .filter-btn.active {
+        background: #003366;
+        color: #fff;
+        border-color: #003366;
+      }
+
+      .search-box {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        border-radius: 50px;
+        padding: 8px 20px;
+        min-width: 250px;
+        transition: border-color 0.3s;
+      }
+
+      .search-box:focus-within {
+        border-color: #003366;
+      }
+
+      .search-box input {
+        border: none;
+        outline: none;
+        padding: 6px 10px;
+        font-size: 14px;
+        width: 100%;
+      }
+
+      .search-box span {
+        color: #999;
+      }
+
+      .results-count {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 30px;
+        font-weight: 500;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      /* Category Section */
+      .category-section {
+        padding: 80px 0;
+        background: #fff;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 42px;
+        font-weight: 800;
+        color: #0a0a0a;
+        margin-bottom: 15px;
+        letter-spacing: -0.5px;
+      }
+
+      .section-header p {
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+      }
+
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+      }
+
+      .category-item {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+
+      .category-item:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        border-color: #003366;
+      }
+
+      .category-item.selected {
+        border-color: #003366;
+        box-shadow: 0 20px 60px rgba(0, 51, 102, 0.25);
+      }
+
+      .category-image {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.4s;
+      }
+
+      .category-item:hover .category-image {
+        transform: scale(1.05);
+      }
+
+      .category-info {
+        padding: 35px;
+      }
+
+      .category-badge {
+        display: inline-block;
+        background: #003366;
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .category-info h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #0a0a0a;
+        margin-bottom: 12px;
+        letter-spacing: -0.3px;
+      }
+
+      .category-info p {
+        font-size: 15px;
+        color: #666;
+        line-height: 1.7;
+      }
+
+      /* Modal Styles */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1000;
+        overflow-y: auto;
+        animation: fadeInModal 0.4s ease;
+      }
+
+      .modal.active {
+        display: block;
+      }
+
+      @keyframes fadeInModal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -1000px 0;
+        }
+        100% {
+          background-position: 1000px 0;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+      }
+
+      .modal-header {
+        background: linear-gradient(135deg, #0c0c0c 0%, #012e5b 100%);
+        padding: 40px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 8px 40px rgba(0, 51, 102, 0.4);
+      }
+
+      .modal-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: slideUp 0.6s ease;
+      }
+
+      .modal-header h2 {
+        font-size: 38px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -0.5px;
+      }
+
+      .close-button {
+        background: #022875;
+        color: #f8f5f5;
+        border: none;
+        padding: 14px 32px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .close-button:hover {
+        background: #003366;
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      .modal-content {
+        padding: 60px 0 80px;
+        background: #ffffff;
+        position: relative;
+      }
+
+      .modal-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        background: radial-gradient(
+          ellipse at top,
+          rgba(0, 0, 0, 0.03),
+          transparent
+        );
+        pointer-events: none;
+      }
+
+      /* Content Sections with Scroll Animations */
+      .spec-section {
+        margin-bottom: 60px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .spec-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Specifications Content */
+      .spec-content {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 50px;
+        box-shadow: 0 10px 40px rgba(0, 51, 102, 0.08);
+        border-left: 5px solid #003366;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .spec-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 51, 102, 0.05),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .spec-content:hover::before {
+        left: 100%;
+      }
+
+      .spec-content:hover {
+        box-shadow: 0 15px 50px rgba(0, 51, 102, 0.15);
+        transform: translateX(5px);
+      }
+
+      .spec-content h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #f59e0b;
+        position: relative;
+        display: inline-block;
+      }
+
+      .spec-content h3::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: #003366;
+        transition: width 0.6s ease;
+      }
+
+      .spec-content:hover h3::after {
+        width: 100%;
+      }
+
+      .spec-content h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #003366;
+        margin: 25px 0 15px;
+        padding-left: 20px;
+        border-left: 4px solid #f59e0b;
+        position: relative;
+      }
+
+      .spec-content h4::before {
+        content: "⚙️";
+        position: absolute;
+        left: -30px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .spec-content p {
+        font-size: 17px;
+        line-height: 1.9;
+        color: #495057;
+        margin-bottom: 20px;
+        text-align: justify;
+        position: relative;
+        padding-left: 25px;
+      }
+
+      .spec-content p::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background: #f59e0b;
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .spec-content p strong {
+        color: #003366;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      /* Feature Highlights */
+      .features-section {
+        background: linear-gradient(135deg, #edeeef 0%, #f9fafb 100%);
+        border-radius: 25px;
+        padding: 50px;
+        margin: 50px 0;
+        color: #060606;
+        box-shadow: 0 20px 60px rgba(7, 7, 7, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .features-section::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(14, 13, 13, 0.1), transparent);
+        animation: float 8s ease-in-out infinite;
+      }
+
+      .features-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        color: #080808;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-box {
+        background: rgb(243, 242, 242);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        border: 2px solid rgba(10, 10, 10, 0.2);
+        transition: all 0.4s ease;
+      }
+
+      .feature-box:hover {
+        background: rgba(245, 158, 11, 0.2);
+        border-color: #f59e0b;
+        transform: translateY(-5px);
+      }
+
+      .feature-box h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #080808;
+      }
+
+      .feature-box h4::before {
+        content: attr(data-icon);
+        margin-right: 10px;
+      }
+
+      .feature-box p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(4, 4, 4, 0.9);
+      }
+
+      /* Applications Tags */
+      .applications-section {
+        margin: 50px 0;
+      }
+
+      .applications-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      /* Divider Line */
+      .divider {
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          #003366,
+          #f59e0b,
+          #003366,
+          transparent
+        );
+        margin: 50px 0;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .divider::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        animation: shimmer 3s infinite;
+      }
+
+      /* Scroll Progress Bar */
+      .scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, #003366, #f59e0b);
+        z-index: 1001;
+        transition: width 0.1s ease;
+      }
+
+      /* Applications Image Grid */
+      .app-images-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .app-image-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 280px;
+        cursor: pointer;
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.6s ease-out backwards;
+      }
+
+      .app-image-card:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .app-image-card:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .app-image-card:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .app-image-card:nth-child(4) {
+        animation-delay: 0.25s;
+      }
+      .app-image-card:nth-child(5) {
+        animation-delay: 0.3s;
+      }
+      .app-image-card:nth-child(6) {
+        animation-delay: 0.35s;
+      }
+      .app-image-card:nth-child(7) {
+        animation-delay: 0.4s;
+      }
+      .app-image-card:nth-child(8) {
+        animation-delay: 0.45s;
+      }
+
+      .app-image-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        border-color: #003366;
+      }
+
+      .app-image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .app-image-card:hover img {
+        transform: scale(1.1);
+      }
+
+      .app-image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.95) 0%,
+          rgba(0, 0, 0, 0.7) 60%,
+          transparent 100%
+        );
+        padding: 25px;
+        transform: translateY(0);
+        transition: all 0.4s ease;
+      }
+
+      .app-image-card:hover .app-image-overlay {
+        background: linear-gradient(
+          to top,
+          rgba(0, 51, 102, 0.95) 0%,
+          rgba(0, 51, 102, 0.8) 60%,
+          transparent 100%
+        );
+      }
+
+      .app-image-overlay h4 {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 0.5px;
+      }
+
+      /* Configuration Row Layout */
+      .config-row {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 40px;
+        align-items: center;
+        margin: 40px 0;
+        padding: 30px 0;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .config-row:last-of-type {
+        border-bottom: none;
+      }
+
+      .config-row.reverse {
+        grid-template-columns: 380px 1fr;
+      }
+
+      .config-text {
+        order: 1;
+      }
+
+      .config-row.reverse .config-text {
+        order: 2;
+      }
+
+      .config-image {
+        order: 2;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s ease;
+        height: 320px;
+      }
+
+      .config-row.reverse .config-image {
+        order: 1;
+      }
+
+      .config-image:hover {
+        border-color: #003366;
+        box-shadow: 0 15px 40px rgba(0, 51, 102, 0.25);
+        transform: translateY(-5px);
+      }
+
+      .config-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .config-image:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Footer */
+      footer {
+        background: #0a0a0a;
+        color: #ccc;
+        padding: 60px 0 30px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-col h3 {
+        color: #f59e0b;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .footer-col p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #999;
+      }
+
+      .footer-col ul {
+        list-style: none;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+        color: #999;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+
+      .footer-col ul li a:hover {
+        color: #f59e0b;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid #222;
+        color: #666;
+        font-size: 13px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .config-row,
+        .config-row.reverse {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .config-text,
+        .config-row.reverse .config-text {
+          order: 1;
+        }
+
+        .config-image,
+        .config-row.reverse .config-image {
+          order: 2;
+        }
+
+        .config-image {
+          height: 280px;
+        }
+
+        .app-images-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .category-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .app-images-grid,
+        .category-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .config-image {
+          height: 240px;
+        }
+
+        .hero h2 {
+          font-size: 36px;
+        }
+
+        nav ul {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .filter-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .search-box {
+          width: 100%;
+        }
+
+        .feature-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <span>📧 info@indiasteelind.com</span>
+          <span>📞 +91 22 4567 8900</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="#">Get Quote</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo-icon">ISI</div>
+            <div class="logo-text">
+              <h1>INDIA STEEL INDUSTRIES</h1>
+              <p>Quality Steel Solutions Since 1998</p>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="index.html#products" class="active">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <a href="index.html#products">Products</a>
+          <span>›</span>
+          <span>Sheets, Plates & Coils</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>📋 Sheets, Plates & Coils</h2>
+          <p>
+            Explore our wide range of premium steel sheets, plates, and coils
+            suitable for industrial, construction, and fabrication applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-container">
+          <span class="filter-label">Filter By:</span>
+          <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProducts('all')">
+              All Products
+            </button>
+            <button class="filter-btn" onclick="filterProducts('ms')">
+              MS Plates
+            </button>
+            <button class="filter-btn" onclick="filterProducts('gi')">
+              GI Sheets
+            </button>
+            <button class="filter-btn" onclick="filterProducts('ss')">
+              Stainless Steel
+            </button>
+            <button class="filter-btn" onclick="filterProducts('chequered')">
+              Chequered
+            </button>
+          </div>
+          <div class="search-box">
+            <span>🔍</span>
+            <input
+              type="text"
+              placeholder="Search products..."
+              oninput="searchProducts(this.value)"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Products</h2>
+          <p>Click on a product to view detailed specifications</p>
+        </div>
+        <p class="results-count" id="resultsCount">Showing 4 products</p>
+        <div class="category-grid" id="productGrid">
+          <!-- Product 1: MS Plates -->
+          <div
+            class="category-item"
+            data-category="ms"
+            data-name="MS Plates Sheets Hot Rolled Cold Rolled"
+            onclick="openModal('ms-sheets', this)"
+          >
+            <img
+              src="https://m.media-amazon.com/images/I/31isk6v2UEL._AC_UF1000,1000_QL80_.jpg"
+              alt="MS Plates & Sheets"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">MS Plates</span>
+              <h3>MS Plates & Sheets (HR/CR)</h3>
+              <p>
+                Hot Rolled and Cold Rolled mild steel sheets and plates for
+                versatile industrial applications
+              </p>
+              <div class="product-specs">
+                <span class="spec-badge">0.5mm - 100mm</span>
+                <span class="spec-badge">IS 2062</span>
+                <span class="spec-badge">ASTM A36</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2: GI Sheets -->
+          <div
+            class="category-item"
+            data-category="gi"
+            data-name="GI Sheets Coils Galvanized"
+            onclick="openModal('gi-sheets', this)"
+          >
+            <img
+              src="https://5.imimg.com/data5/DP/AS/WY/SELLER-2348981/gp-coils.jpg"
+              alt="GI Sheets"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">GI Sheets</span>
+              <h3>GI Sheets / Coils</h3>
+              <p>
+                Galvanized steel sheets and coils with superior anti-corrosion
+                properties
+              </p>
+              <div class="product-specs">
+                <span class="spec-badge">0.3mm - 3.2mm</span>
+                <span class="spec-badge">80-275 GSM</span>
+                <span class="spec-badge">IS 277</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3: SS Sheets -->
+          <div
+            class="category-item"
+            data-category="ss"
+            data-name="Stainless Steel Sheets 304 316"
+            onclick="openModal('ss-sheets', this)"
+          >
+            <img
+              src="https://5.imimg.com/data5/SELLER/Default/2025/4/503163333/FI/KN/HZ/216700989/jindal-stainless-steel-sheets-1000x1000.jpg"
+              alt="Stainless Steel Sheets"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Stainless Steel</span>
+              <h3>Stainless Steel Sheets (304/316)</h3>
+              <p>
+                High corrosion resistance stainless steel sheets for demanding
+                environments
+              </p>
+              <div class="product-specs">
+                <span class="spec-badge">304 / 316 / 316L</span>
+                <span class="spec-badge">0.3mm - 6mm</span>
+                <span class="spec-badge">Multiple Finishes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4: Chequered Plate -->
+          <div
+            class="category-item"
+            data-category="chequered"
+            data-name="Chequered Checkered Plate Diamond Pattern"
+            onclick="openModal('chequered', this)"
+          >
+            <img
+              src="https://5.imimg.com/data5/GLADMIN/Default/2022/7/JE/GI/AJ/86648/chequered-plate-500x500.jpg"
+              alt="Chequered Plate"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Chequered</span>
+              <h3>Chequered / Checkered Plate</h3>
+              <p>
+                Anti-slip pattern plates ideal for flooring and heavy-duty
+                industrial use
+              </p>
+              <div class="product-specs">
+                <span class="spec-badge">2mm - 10mm</span>
+                <span class="spec-badge">Diamond Pattern</span>
+                <span class="spec-badge">MS / SS / Al</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- MS Sheets Modal -->
+    <div class="modal" id="modal-ms-sheets">
+      <div class="scroll-progress" id="scrollProgressMS"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>📋 MS Plates & Sheets (HR / CR)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Product Types Section -->
+          <div class="spec-content spec-section">
+            <h3>MS Plates & Sheets - Types & Configurations</h3>
+
+            <!-- Hot Rolled Plates with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Hot Rolled (HR) Plates & Sheets</h4>
+                <p>
+                  <strong>Manufacturing Process:</strong> Hot rolling above
+                  recrystallization temperature (typically 1200°C) produces
+                  plates and sheets with characteristic black mill scale surface
+                  finish. The process involves heating steel billets to
+                  austenitic phase and passing through progressive rolling mill
+                  stands, reducing thickness by 40-60% per pass until final
+                  gauge is achieved.
+                </p>
+                <p>
+                  <strong>Dimensional Range:</strong> Thickness from 2mm to
+                  100mm in plate category, 0.5mm to 6mm for sheet category.
+                  Standard widths 1000mm, 1250mm, 1500mm, 2000mm, 2500mm
+                  accommodating most fabrication requirements. Lengths available
+                  in 2000mm, 2400mm, 3000mm, 6000mm, or custom cut-to-length
+                  service. Tolerance per IS 1852 Grade A (±0.3mm for <6mm
+                  thickness).
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2024/8/440014747/HP/XU/CF/226585137/hr-plate-500x500.jpg"
+                  alt="Hot Rolled Plates"
+                />
+              </div>
+            </div>
+
+            <!-- Cold Rolled Sheets with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/21rIYsgBpOL._AC_UF1000,1000_QL80_.jpg"
+                  alt="Cold Rolled Sheets"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Cold Rolled (CR) Sheets</h4>
+                <p>
+                  <strong>Production Method:</strong> Cold reduction process
+                  performed at room temperature on pickled hot-rolled coils,
+                  producing superior surface finish, tighter dimensional
+                  tolerances, and improved mechanical properties. Multiple
+                  rolling passes achieve 50-90% thickness reduction with
+                  intermediate annealing to restore ductility and prevent work
+                  hardening.
+                </p>
+                <p>
+                  <strong>Surface Quality:</strong> Bright, smooth, scale-free
+                  finish ideal for painting, powder coating, and visible
+                  applications. Surface roughness Ra 0.5-1.5 microns compared to
+                  3-6 microns for hot rolled. Available in commercial quality
+                  (CQ), drawing quality (DQ), deep drawing quality (DDQ), and
+                  extra deep drawing quality (EDDQ) grades. Thickness range
+                  0.3mm to 3.2mm with tolerance ±0.05mm.
+                </p>
+              </div>
+            </div>
+
+            <!-- Plate Thickness Categories with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Plate Thickness Categories & Applications</h4>
+                <p>
+                  <strong>Thin Plates (2-6mm):</strong> General fabrication
+                  work, automotive body panels, electrical enclosures, HVAC
+                  ductwork, and light structural components. Easy to shear,
+                  punch, and form with standard tooling. Suitable for TIG/MIG
+                  welding without preheating.
+                </p>
+                <p>
+                  <strong>Medium Plates (8-25mm):</strong> Machinery bases,
+                  pressure vessel shells, structural reinforcement, crane
+                  girders, and moderate-load applications. Requires plasma
+                  cutting or oxy-fuel for thick sections. Preheat 100-150°C
+                  recommended for welding to prevent cracking.
+                </p>
+                <p>
+                  <strong>Heavy Plates (30-100mm):</strong> Bridge decking,
+                  shipbuilding hull plates, offshore platform structures, heavy
+                  press frames, and critical load-bearing members. Ultrasonic
+                  testing (UT) for internal defect detection. Controlled rolling
+                  and normalizing heat treatment for improved toughness and
+                  through-thickness properties.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2024/2/391030804/PC/OJ/QR/2498239/m-s-plates-500x500.jpg"
+                  alt="MS Plates Various Thickness"
+                />
+              </div>
+            </div>
+
+            <h4>Coil vs. Cut Sheet Supply</h4>
+            <p>
+              <strong>Coil Form:</strong> Master coils weighing 5-25 tons with
+              inside diameter 508mm or 610mm, suitable for high-volume
+              manufacturing with automated slitting, blanking, and roll-forming
+              lines. Eliminates butt-welding joints in continuous production.
+              Length up to 2000 meters depending on thickness and width.
+            </p>
+            <p>
+              <strong>Cut Sheets:</strong> Sheared or slit to specified
+              dimensions from master coils, ready for immediate fabrication
+              without further processing. Standard sizes 4'x8' (1220x2440mm),
+              5'x10' (1500x3000mm), or custom blanks optimized to minimize
+              scrap. Edge quality: mill edge (as-slit), sheared edge, or
+              precision-slit edge (<0.5mm burr height).
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Material Grades Section -->
+          <div class="spec-content spec-section">
+            <h3>Material Grades & Specifications</h3>
+
+            <!-- IS 2062 Standards with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://internal-assets.jswonemsme.com/IS_2062_E250_A_Plates_1736775353466_78272cc4fe/IS_2062_E250_A_Plates_1736775353466_78272cc4fe.jpeg"
+                  alt="IS 2062 Steel"
+                />
+              </div>
+              <div class="config-text">
+                <h4>IS 2062 - Indian Standard Structural Steel</h4>
+                <p>
+                  <strong>Grade Variants:</strong> E250 (250 MPa yield strength)
+                  for general structural and fabrication work, E300 (300 MPa)
+                  for moderate-stress applications, E350 (350 MPa) and E410 (410
+                  MPa) for high-strength structural components. A, B, C quality
+                  designations indicate impact toughness at 0°C, -20°C, -40°C
+                  respectively.
+                </p>
+                <p>
+                  <strong>Chemical Composition:</strong> Carbon content
+                  0.20-0.25% maximum for weldability, Manganese 1.50% max for
+                  strength, Sulphur and Phosphorus <0.045% each to prevent hot
+                  shortness and cold brittleness. Silicon 0.40% max as
+                  deoxidizer. Controlled rolling practice for fine grain
+                  structure and improved notch toughness.
+                </p>
+              </div>
+            </div>
+
+            <!-- ASTM Standards with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>ASTM A36 - Carbon Structural Steel</h4>
+                <p>
+                  <strong>Mechanical Properties:</strong> Minimum yield strength
+                  250 MPa (36 ksi), tensile strength 400-550 MPa (58-80 ksi),
+                  elongation 20% minimum in 200mm gauge length. Excellent
+                  ductility and formability for bending, stamping, and deep
+                  drawing operations without cracking.
+                </p>
+                <p>
+                  <strong>Weldability:</strong> Low carbon equivalent (CE) of
+                  0.40-0.45% enables welding without preheat for thickness up to
+                  25mm using SMAW, GMAW, SAW, and FCAW processes.
+                  Hydrogen-controlled electrodes (H5 or lower) prevent cold
+                  cracking in restrained joints. Post-weld heat treatment (PWHT)
+                  optional for stress relief.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/BI/RK/MY-580401/astm-a36-steel-plates.jpg"
+                  alt="ASTM A36 Steel"
+                />
+              </div>
+            </div>
+
+            <h4>Additional Material Standards</h4>
+            <p>
+              <strong>ASTM A283:</strong> Low and intermediate tensile strength
+              carbon steel plates for general structural and pressure vessel
+              applications. Grades A, B, C, D with tensile strength 310-450 MPa.
+              Primarily used in welded, riveted, or bolted construction of
+              bridges, buildings, and storage tanks.
+            </p>
+            <p>
+              <strong>ASTM A572:</strong> High-strength low-alloy (HSLA)
+              columbium-vanadium structural steel with yield strengths 290-450
+              MPa (Grades 42, 50, 55, 60, 65). Micro-alloyed for grain
+              refinement, providing superior strength-to-weight ratio. Used in
+              weight-critical structures like transmission towers, cranes, and
+              mobile equipment.
+            </p>
+            <p>
+              <strong>EN 10025:</strong> European standard covering non-alloy
+              structural steels S235 (235 MPa yield), S275, S355, S460.
+              Normalized or thermomechanical rolled (M, N designations) for
+              improved toughness. Impact testing at specified temperatures
+              ensures brittle fracture resistance in cold climates.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Surface Treatments Section -->
+          <div class="spec-content spec-section">
+            <h3>Surface Treatments & Finishing Options</h3>
+
+            <!-- Pickling & Oiling with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Pickling & Oiling (P&O)</h4>
+                <p>
+                  <strong>Process:</strong> Hot rolled coils pass through
+                  hydrochloric or sulphuric acid bath (5-15% concentration at
+                  60-80°C) removing mill scale and rust, followed by water
+                  rinse, drying, and protective oil coating. Results in clean,
+                  grey metallic surface free from scale but retaining hot rolled
+                  texture and dimensional characteristics.
+                </p>
+                <p>
+                  <strong>Benefits:</strong> Improved paint adhesion versus
+                  black mill scale, reduced spatter in welding, easier quality
+                  inspection of surface defects, and temporary corrosion
+                  protection during storage/transport (3-6 months indoors). Oil
+                  film thickness 1-2 g/m² using mineral oil or water-soluble
+                  rust preventive compounds. Ideal for subsequent cold rolling,
+                  galvanizing, or painting operations.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://millenniummetals.net/assets/images/buckets/shutterstock_391558495.jpg"
+                  alt="Pickled & Oiled Sheet"
+                />
+              </div>
+            </div>
+
+            <!-- Shot Blasting with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://1.bp.blogspot.com/-EItjUlHoocA/Uw4-dkfN4nI/AAAAAAAAAd8/iBwoE89tFjo/s1600/IMG_1252.JPG"
+                  alt="Shot Blasted Surface"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Shot Blasting & Abrasive Cleaning</h4>
+                <p>
+                  <strong>Mechanical Descaling:</strong> High-velocity steel
+                  shot or grit (0.3-2.0mm diameter) propelled by centrifugal
+                  wheel or compressed air impacts surface, removing mill scale,
+                  rust, and contaminants. Cleanliness grades per ISO 8501-1: Sa
+                  2 (thorough blast), Sa 2½ (very thorough blast), Sa 3 (blast
+                  to white metal). Surface profile 25-75 microns Rz for optimal
+                  coating adhesion.
+                </p>
+                <p>
+                  <strong>Applications:</strong> Pre-treatment for heavy-duty
+                  protective coatings (epoxy, polyurethane, inorganic zinc) in
+                  corrosive environments. Removes welding slag, heat treat
+                  scale, and surface defects. Creates anchor pattern for paint
+                  mechanical bonding, increasing coating life 3-5x versus
+                  unprepared surfaces. Shot peening variant induces compressive
+                  residual stresses, improving fatigue strength 20-30%.
+                </p>
+              </div>
+            </div>
+
+            <h4>Additional Surface Options</h4>
+            <p>
+              <strong>Mill Finish:</strong> As-rolled surface with black mill
+              scale (iron oxide) formed during hot rolling. Rust-like
+              appearance, uneven texture, suitable only for non-cosmetic
+              applications where subsequent cleaning/coating will be performed.
+              Lowest cost option, typically 10-15% cheaper than pickled
+              material.
+            </p>
+            <p>
+              <strong>Bright Annealed:</strong> Cold rolled sheets annealed in
+              controlled atmosphere (hydrogen or dissociated ammonia) preventing
+              oxidation, resulting in bright, reflective, oxide-free surface.
+              Used for decorative applications, electronic enclosures, and
+              components requiring subsequent plating without additional surface
+              preparation. Premium pricing, 25-40% above standard cold rolled.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="💪">Excellent Formability & Ductility</h4>
+                <p>
+                  Low carbon content (0.15-0.25%) provides superior ductility
+                  with 20-30% elongation, enabling complex forming operations
+                  including deep drawing, bending (minimum radius 1.5t for CR,
+                  2t for HR), stamping, and roll forming without cracking. Cold
+                  rolled grades DDQ/EDDQ achieve 38-42% elongation for
+                  automotive body panels and appliance shells. Uniform
+                  mechanical properties ensure consistent forming behavior.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🔧">Superior Weldability</h4>
+                <p>
+                  Low carbon equivalent (0.40-0.45%) enables welding without
+                  preheat up to 25mm thickness using all common processes: SMAW
+                  (stick), GMAW (MIG), GTAW (TIG), SAW (submerged arc), FCAW
+                  (flux-cored). Minimal weld defects (porosity, cracking,
+                  spatter) with proper technique. No special electrodes required
+                  for most applications. Excellent fusion and penetration
+                  characteristics reduce rework and inspection costs.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💰">Cost-Effective Solution</h4>
+                <p>
+                  Mild steel plates and sheets offer lowest cost per kilogram
+                  among structural materials, typically 30-50% less than alloy
+                  steels, 60-80% less than stainless steel, and comparable to
+                  aluminum on volume basis while providing 2.5x higher strength.
+                  High material availability and standardization reduce lead
+                  times. Extensive fabrication infrastructure and skilled
+                  workforce minimize processing costs. Recyclable with minimal
+                  value loss.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🏗️">Versatile Applications</h4>
+                <p>
+                  Suitable for 80% of structural steel applications from simple
+                  brackets to complex pressure vessels. Compatible with all
+                  common joining methods: welding, bolting, riveting, adhesive
+                  bonding. Accepts full range of surface treatments: painting,
+                  powder coating, galvanizing, plating. Machines readily with
+                  HSS and carbide tooling. Available in wide range of
+                  thicknesses, widths, and lengths minimizing material waste
+                  through efficient nesting.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://havitsteelstructure.com/wp-content/uploads/2020/08/steel-structure-detail-4.jpg"
+                  alt="Structural Steel Construction"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏗️ Structural Steel Construction</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.shutterstock.com/image-photo/car-chassis-frame-automobile-manufacturing-600nw-2151565909.jpg"
+                  alt="Automotive Body Panels"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚗 Automotive Body & Chassis</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://anglelock.com/hubfs/Machine-Base-Frame-Design-Guidelines_solar-cell-production.webp"
+                  alt="Machinery Manufacturing"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚙️ Machinery & Equipment Frames</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.teknoflow.co/wp-content/uploads/2023/03/IMG_1403.jpg"
+                  alt="Pressure Vessels"
+                />
+                <div class="app-image-overlay">
+                  <h4>🛢️ Tanks & Pressure Vessels</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://techlineint.com/wp-content/uploads/2022/09/industries_shipbuilding-and-marine.jpg"
+                  alt="Shipbuilding"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚢 Shipbuilding & Marine</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://indianinfrastructure.com/wp-content/uploads/2024/06/26_1-1024x537.jpg"
+                  alt="Bridge Construction"
+                />
+                <div class="app-image-overlay">
+                  <h4>🌉 Bridges & Infrastructure</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTiz64rgqnxZ7bqqNz8h9-dEtLqssiZSI51Q&s"
+                  alt="Electrical Panels"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚡ Electrical Panels & Enclosures</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://gates.scene7.com/is/image/gates/india-heavy-machinery?$Image_Responsive_Preset$&scl=1"
+                  alt="Heavy Equipment"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Heavy Industrial Equipment</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GI Sheets Modal -->
+    <div class="modal" id="modal-gi-sheets">
+      <div class="scroll-progress" id="scrollProgressGI"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>🛡️ GI Sheets / Coils (Galvanized Iron)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Galvanizing Process Section -->
+          <div class="spec-content spec-section">
+            <h3>Galvanizing Process & Types</h3>
+
+            <!-- Hot-Dip Galvanizing with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Hot-Dip Galvanizing (HDG) Process</h4>
+                <p>
+                  <strong>Manufacturing Method:</strong> Cold rolled steel strip
+                  passes through molten zinc bath at 450-460°C, forming
+                  metallurgically bonded zinc-iron alloy layers beneath pure
+                  zinc outer layer. Total coating weight 80-600 g/m² (40-300
+                  g/m² per side). Line speed 60-200 m/min through continuous
+                  galvanizing line (CGL) with air knife thickness control
+                  achieving ±10% coating uniformity.
+                </p>
+                <p>
+                  <strong>Coating Structure:</strong> Multi-layer coating
+                  consists of eta layer (pure zinc, 90% of thickness), zeta
+                  layer (FeZn13), delta layer (FeZn7), and gamma layer (Fe3Zn10)
+                  bonded to substrate. Zinc-iron intermetallic layers provide
+                  superior adhesion preventing coating delamination during
+                  forming. Spangle pattern (crystalline zinc grain structure)
+                  ranges from minimized spangle for painting to regular spangle
+                  for roofing aesthetics.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1HHG_qcwW4T57lLCGEAo5jGvuTaiX0TP9xQ&s"
+                  alt="Hot-Dip Galvanized Sheet"
+                />
+              </div>
+            </div>
+
+            <!-- Electrogalvanized with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://www.shanghaimetal.com/upfile/2019/08/14/20190814102936-Electrogalvanized-Steel-Coil-Sheet-6.jpg"
+                  alt="Electrogalvanized Steel"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Electrogalvanized (EG) Steel</h4>
+                <p>
+                  <strong>Electroplating Process:</strong> Zinc deposited via
+                  electrochemical reduction in zinc sulfate or zinc chloride
+                  electrolyte bath. Current density 20-100 A/dm² produces
+                  controlled coating thickness 2.5-20 microns per side with
+                  exceptional uniformity (±2 microns). Brightness and smoothness
+                  superior to hot-dip, ideal for exposed painted surfaces in
+                  automotive and appliances.
+                </p>
+                <p>
+                  <strong>Characteristics:</strong> Thin, ductile coating
+                  permits tighter bend radii (0.5t vs 2t for HDG) and severe
+                  forming without coating fracture. Excellent paint adhesion and
+                  surface smoothness eliminate orange peel. Lower coating weight
+                  reduces material cost but provides 5-10 year corrosion
+                  protection versus 15-25 years for HDG in similar environments.
+                  Common in automotive body panels, furniture, and consumer
+                  electronics.
+                </p>
+              </div>
+            </div>
+
+            <!-- Coating Weights with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Coating Weight Classifications</h4>
+                <p>
+                  <strong>Light Coating (80-120 GSM):</strong> Total coating
+                  weight 80-120 g/m² (40-60 g/m² per side, 5-8 micron thickness)
+                  for indoor or sheltered applications. Suitable for painted
+                  roofing, wall cladding, and HVAC ductwork with 7-12 year bare
+                  corrosion life. Most economical option for non-critical
+                  exterior use.
+                </p>
+                <p>
+                  <strong>Standard Coating (120-180 GSM):</strong> 120-180 g/m²
+                  total weight (60-90 g/m² per side, 8-13 microns) provides
+                  balanced corrosion protection and formability for general
+                  construction, purlins, girts, and structural framing. Expected
+                  12-18 year service life in typical rural/suburban atmospheric
+                  exposure per ISO 9223 C2/C3 categories.
+                </p>
+                <p>
+                  <strong>Heavy Coating (180-275 GSM):</strong> 180-275 g/m²
+                  total weight (90-137.5 g/m² per side, 13-19 microns) for
+                  severe corrosive environments including coastal areas (within
+                  1km of ocean), industrial zones with SO2/chloride exposure,
+                  and high-humidity tropical climates. 20-30 year durability
+                  with proper maintenance. Thicker coating reduces formability,
+                  minimum bend radius 3-4t.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.deltaware.in/images/blog/steel/galvanized-process_hu1225c1c38f1557b99376534c11664bdc_77843_1024x585_resize_q100_h2_box.webp"
+                  alt="GI Coating Thickness"
+                />
+              </div>
+            </div>
+
+            <h4>Zinc-Aluminum Coatings (Galvalume/Zincalume)</h4>
+            <p>
+              <strong>Composition:</strong> 55% aluminum, 43.4% zinc, 1.6%
+              silicon alloy coating (AZ150 typical) provides superior corrosion
+              resistance versus pure zinc through aluminum's passive oxide
+              protection. Coating weight 150 g/m² yields 2-4x longer life than
+              equivalent zinc coating in most environments. Heat reflectivity
+              65-70% reduces roof temperatures 10-15°C.
+            </p>
+            <p>
+              <strong>Performance:</strong> Excellent edge corrosion resistance
+              (aluminum barrier effect), high-temperature oxidation resistance
+              to 315°C (roofing fire rating), and superior paintability with
+              minimal chromate passivation. Ideal for unpainted roofing,
+              architectural panels, and agricultural buildings. Cut edge
+              protection inferior to zinc (no sacrificial protection), requiring
+              edge sealing in critical applications. Service life 25-40 years in
+              C2/C3 environments.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Standards & Grades Section -->
+          <div class="spec-content spec-section">
+            <h3>Material Standards & Grade Specifications</h3>
+
+            <!-- IS 277 Standards with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2021/1/BD/DB/WR/8396883/gi-sheet-is-277-500x500.jpg"
+                  alt="IS 277 GI Sheet"
+                />
+              </div>
+              <div class="config-text">
+                <h4>IS 277 - Indian Standard for Galvanized Sheets</h4>
+                <p>
+                  <strong>Grade Designations:</strong> Soft (annealed) for
+                  maximum ductility and deep drawing, Structural for general
+                  forming and construction (230-280 MPa yield), High Strength
+                  (280-360 MPa) for load-bearing applications. Surface quality
+                  ordinary (minor defects acceptable), commercial (smooth
+                  appearance), and drawing quality (defect-free for exposed
+                  surfaces).
+                </p>
+                <p>
+                  <strong>Coating Classifications:</strong> E (80 GSM minimum),
+                  D (120 GSM), C (180 GSM), B (240 GSM), A (275 GSM) with
+                  specified minimum coating weights ensuring 15-year guaranteed
+                  life in moderately corrosive (C3) environments. Coating
+                  adherence tested per bend test (180° bend over 1t mandrel
+                  without flaking) and impact test. Spangle finish: regular
+                  spangle, minimized spangle, or spangle-free.
+                </p>
+              </div>
+            </div>
+
+            <!-- ASTM Standards with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>ASTM A653/A653M - Galvanized Steel Sheets</h4>
+                <p>
+                  <strong>Structural Grades:</strong> SS Grade 33 (230 MPa
+                  yield), SS Grade 40 (280 MPa), SS Grade 50 (345 MPa), SS Grade
+                  80 (550 MPa) for progressively higher strength applications.
+                  HSLAS (High Strength Low Alloy Steel) grades provide enhanced
+                  strength-to-weight ratio through micro-alloying. Elongation
+                  10-22% depending on grade and thickness, enabling moderate
+                  forming operations.
+                </p>
+                <p>
+                  <strong>Coating Designations:</strong> G30 (90 g/m²), G60 (180
+                  g/m²), G90 (275 g/m²), G140 (425 g/m²), G210 (640 g/m²)
+                  indicate total coating weight both sides. A coating
+                  designation (A40, A60) specifies differential coating (heavier
+                  on one side) for applications with asymmetric corrosion
+                  exposure. Zinc-5% aluminum (ZA) and zinc-aluminum-magnesium
+                  (ZM) alloy coatings available for enhanced performance.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.mststeel.com/wp-content/uploads/2022/08/mst2-825x340.jpg"
+                  alt="ASTM A653 Coil"
+                />
+              </div>
+            </div>
+
+            <h4>European & International Standards</h4>
+            <p>
+              <strong>EN 10346:</strong> European standard for continuously
+              hot-dip coated steel flat products. Grade S220GD, S250GD, S280GD,
+              S320GD, S350GD (yield strength in MPa). Surface treatment A
+              (minimized spangle), B (skin-passed), N (normal spangle). Coating
+              mass Z100 to Z600 (100-600 g/m² total). +Z (zinc), +ZM
+              (zinc-magnesium), +AZ (zinc-aluminum) coating designations.
+            </p>
+            <p>
+              <strong>JIS G3302:</strong> Japanese Industrial Standard for
+              hot-dip zinc-coated steel sheets. SGH340 (340 MPa tensile),
+              SGH400, SGH440, SGH490, SGH540 for structural applications. SGCC
+              (commercial), SGCD (drawing quality) for forming grades. Z12, Z18,
+              Z22, Z27 coating thickness codes (12-27 microns). Chromate
+              treatment types 00, 01, 1C for corrosion resistance and
+              paintability.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Surface Treatments Section -->
+          <div class="spec-content spec-section">
+            <h3>Surface Treatments & Finishing</h3>
+
+            <!-- Chromate Passivation with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Chromate Passivation & Post-Treatment</h4>
+                <p>
+                  <strong>Passivation Process:</strong> Chemical conversion
+                  coating applied immediately after galvanizing using chromic
+                  acid or chromate salts, forming thin (0.01-0.1 micron)
+                  protective layer. Hexavalent chromate (traditional) provides
+                  excellent corrosion inhibition and paint adhesion. Trivalent
+                  chromate (RoHS compliant) offers lower toxicity with slightly
+                  reduced performance. Passivation prevents white rust (zinc
+                  corrosion products) during storage and transit.
+                </p>
+                <p>
+                  <strong>Advanced Treatments:</strong> Zinc phosphate
+                  conversion coating (1-5 microns) provides superior paint
+                  adhesion and corrosion protection beneath organic coatings.
+                  Thin-film organic coatings (0.5-2 microns epoxy, acrylic)
+                  further enhance pre-painted durability. Fingerprint-resistant
+                  coatings maintain aesthetic appearance on exposed surfaces.
+                  Anti-fingerprint treatments using silane or acrylic-based
+                  films prevent handling marks in appliance and automotive
+                  applications.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://image.made-in-china.com/365f3j00NmpIFOnjPlUk/Dx51d-Z-4-0mm-Chromium-Free-Passivating-Gi-Galvanized-Steel-Coil.webp"
+                  alt="Passivated GI Surface"
+                />
+              </div>
+            </div>
+            <!-- Pre-Painted/Coated with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://cdn.globalso.com/lsdsteel/c14c1610.jpg"
+                  alt="Pre-Painted GI"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Pre-Painted & Color-Coated GI (PPGI)</h4>
+                <p>
+                  <strong>Coating Systems:</strong> Factory-applied organic
+                  coatings on galvanized substrate through continuous coil
+                  coating line. Primer (5-8 microns) + topcoat (15-25 microns)
+                  on exposed side, backer coat (5-10 microns) on reverse. Total
+                  dry film thickness 20-35 microns. Polyester (PE) for general
+                  building, silicon-modified polyester (SMP) for improved color
+                  retention, polyvinylidene fluoride (PVDF) for 20+ year
+                  warranty in harsh environments.
+                </p>
+                <p>
+                  <strong>Performance Benefits:</strong> Factory finish quality
+                  superior to field painting with uniform thickness, complete
+                  cure, and defect-free application. Wide color range (RAL,
+                  Pantone) with gloss levels 10-80 GU. UV resistance, chemical
+                  resistance, and scratch resistance per ASTM D3363 (pencil
+                  hardness H-3H). Eliminates on-site painting costs, reduces
+                  construction time, and provides predictable long-term
+                  appearance. Used in roofing, wall panels, garage doors,
+                  appliances.
+                </p>
+              </div>
+            </div>
+
+            <h4>Embossing & Texturing</h4>
+            <p>
+              <strong>Embossed Patterns:</strong> Decorative or functional
+              surface textures rolled into galvanized sheet including stucco,
+              pebble, leather grain, linen, and tile patterns. Pattern depth
+              0.05-0.3mm increases surface area 15-30%, improving paint adhesion
+              and hiding minor surface imperfections. Anti-slip patterns for
+              flooring, walkways, and work platforms provide coefficient of
+              friction >0.5 wet/dry.
+            </p>
+            <p>
+              <strong>Corrugated Profiles:</strong> Sinusoidal, trapezoidal, or
+              box-rib profiles roll-formed for roofing and wall cladding.
+              Profile depth 10-40mm, pitch 50-200mm provides structural
+              rigidity, spanning 1-4 meters between supports depending on gauge
+              and profile geometry. Capillary channels and anti-capillary ribs
+              prevent water ingress at laps. Pre-cut lengths 3-12 meters or
+              custom cut-to-length eliminate field cutting and edge corrosion
+              concerns.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🛡️">Superior Corrosion Protection</h4>
+                <p>
+                  Zinc coating provides triple-barrier protection: physical
+                  barrier preventing moisture/oxygen contact, galvanic
+                  (sacrificial) protection where zinc corrodes preferentially
+                  protecting steel even at cut edges and scratches, and stable
+                  zinc carbonate patina formation in atmospheric exposure. HDG
+                  coating life 15-30 years in C2/C3 environments without
+                  maintenance. Coastal and industrial environments achieve 10-20
+                  years with heavier coatings (240-275 GSM).
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💰">Cost-Effective Lifecycle Value</h4>
+                <p>
+                  Initial material cost 15-25% premium over black (uncoated)
+                  steel, but eliminates painting costs (material + labor +
+                  downtime), extends maintenance intervals 3-5x, and provides
+                  20-40 year service life versus 5-10 years for painted mild
+                  steel. Total cost of ownership 40-60% lower than paint systems
+                  over 25-year building life. Salvage value retained due to 100%
+                  recyclability of zinc and steel with no separation required.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🔧">Excellent Formability</h4>
+                <p>
+                  Annealed substrate (soft temper) enables cold forming
+                  operations including roll forming (roof panels), brake bending
+                  (flashings, trims), deep drawing (air ducts), and stamping
+                  (electrical boxes) without coating fracture or delamination.
+                  Minimum bend radius 1.5-2t for standard coating, 2-3t for
+                  heavy coating. Zinc's low melting point (420°C) permits
+                  welding, though coating vaporization requires adequate
+                  ventilation and weld zone touch-up with zinc-rich paint.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🌱">Sustainable & Eco-Friendly</h4>
+                <p>
+                  Zinc coating extends steel life 3-10x, reducing resource
+                  extraction and embodied energy amortized over lifecycle. 100%
+                  recyclable indefinitely without quality loss—recycled
+                  galvanized steel yields zinc for re-galvanizing and steel for
+                  new products. Galvanizing process 90-95% material efficient
+                  with minimal waste. Zinc runoff non-toxic to aquatic life at
+                  concentrations present in rainwater. Lower lifecycle CO2
+                  emissions versus alternatives requiring frequent
+                  repainting/replacement.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://rakfabbuilding.com/wp-content/uploads/2023/09/vecteezy_roofer-worker-use-the-ladder-in-protective-uniform-wear-and_15632754_898-scaled.jpg"
+                  alt="Roofing Sheets"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏠 Roofing & Cladding Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.shutterstock.com/image-photo/complex-industrial-hvac-duct-system-260nw-2633207823.jpg"
+                  alt="HVAC Ducting"
+                />
+                <div class="app-image-overlay">
+                  <h4>❄️ HVAC Ductwork & Ventilation</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.eabel.com/wp-content/uploads/2024/03/Electrical-Cabinet.319.webp"
+                  alt="Electrical Enclosures"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚡ Electrical Panels & Cabinets</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.universalimplements.com/img/products/category/harrows.png"
+                  alt="Agricultural Equipment"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚜 Agricultural Buildings & Equipment</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://thepurlinmill.com/wp-content/uploads/2023/12/5d92239aa867cbfd1e582574_DSCF0251-1.jpg"
+                  alt="Structural Framing"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏗️ Structural Purlins & Girts</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.jkcement.com/wp-content/uploads/2025/03/old-water-storage-tank-isolated-with-blue-sky-scaled.jpg"
+                  alt="Storage Tanks"
+                />
+                <div class="app-image-overlay">
+                  <h4>💧 Water Tanks & Storage</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://kettautopaints.co.uk/wp-content/uploads/2019/12/kisspng-car-levan-group-inc-mercedes-benz-chevrolet-afterm-car-spare-parts-5b0c0fe68db477.5816448115275171585804.png"
+                  alt="Automotive Panels"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚗 Automotive Body Panels</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.betterkitchens.co.uk/web/image/227049-1f8bb68b/Marino-Moss-Green-%20%281%29.jpg"
+                  alt="Appliances"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏠 Appliance Housings & Cabinets</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SS Sheets Modal -->
+    <div class="modal" id="modal-ss-sheets">
+      <div class="scroll-progress" id="scrollProgressSS"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>✨ Stainless Steel Sheets (304 / 316 / 316L)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+          <!-- Stainless Steel Grades Section -->
+          <div class="spec-content spec-section">
+            <h3>Stainless Steel Grades & Metallurgy</h3>
+
+            <!-- SS 304 with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>SS 304 (18-8) - Austenitic Chromium-Nickel</h4>
+                <p>
+                  <strong>Chemical Composition:</strong> 18-20% Chromium,
+                  8-10.5% Nickel, ≤0.08% Carbon, ≤2% Manganese, ≤1% Silicon,
+                  balance Iron. Chromium forms stable, invisible passive
+                  chromium oxide (Cr₂O₃) layer 1-3 nanometers thick,
+                  self-healing when damaged in oxidizing environments. Nickel
+                  stabilizes austenitic (FCC) crystal structure providing
+                  non-magnetic properties and excellent ductility at cryogenic
+                  to elevated temperatures.
+                </p>
+                <p>
+                  <strong>Properties:</strong> Tensile strength 515-720 MPa,
+                  yield strength 205-310 MPa (annealed condition), elongation
+                  40-50%, hardness 70-90 HRB. Excellent formability with deep
+                  drawing capability. Corrosion resistance in fresh water,
+                  atmospheric, mild acidic/alkaline environments. Service
+                  temperature -196°C to +800°C (brief exposure). Non-magnetic in
+                  annealed state, slightly magnetic after cold work. Most widely
+                  used stainless steel grade (50% of production).
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.panchdeepmetal.com/wp-content/uploads/2018/11/ss-304-304l-sheets.jpg"
+                  alt="SS 304 Sheet"
+                />
+              </div>
+            </div>
+
+            <!-- SS 316 with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://www.roopamsteel.com/images/stainless-steel-316-sheet-1.jpg"
+                  alt="SS 316 Sheet"
+                />
+              </div>
+              <div class="config-text">
+                <h4>SS 316 / 316L - Molybdenum-Enhanced Marine Grade</h4>
+                <p>
+                  <strong>Enhanced Composition:</strong> 16-18% Chromium, 10-14%
+                  Nickel, 2-3% Molybdenum, ≤0.08% Carbon (316) or ≤0.03% Carbon
+                  (316L low-carbon variant). Molybdenum significantly improves
+                  resistance to chloride-induced pitting and crevice corrosion,
+                  critical for marine, coastal, and saline environments.
+                  Low-carbon 316L variant eliminates sensitization (grain
+                  boundary chromium carbide precipitation) during welding,
+                  maintaining corrosion resistance in heat-affected zones.
+                </p>
+                <p>
+                  <strong>Superior Performance:</strong> Pitting resistance
+                  equivalent number (PREN = %Cr + 3.3×%Mo + 16×%N) of 24-26
+                  versus 18-20 for SS304, quantifying chloride resistance.
+                  Withstands seawater, brine, phosphoric acid, acetic acid, and
+                  pharmaceutical/food processing chemicals. Essential for marine
+                  hardware, chemical processing equipment, pulp/paper mills,
+                  surgical implants, and pharmaceutical manufacturing. Cost
+                  premium 50-80% over SS304 justified in corrosive applications
+                  where SS304 would fail prematurely.
+                </p>
+              </div>
+            </div>
+
+            <!-- Other Grades with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Specialty Stainless Steel Grades</h4>
+                <p>
+                  <strong>SS 321 (Titanium-Stabilized):</strong> SS304 base with
+                  titanium addition (5×%C minimum) preventing sensitization
+                  during prolonged high-temperature exposure (425-815°C). Ideal
+                  for aircraft exhaust manifolds, expansion joints, heat
+                  exchangers, and high-temperature piping where welding without
+                  solution annealing is required. Maintains corrosion resistance
+                  after heating without requiring PWHT.
+                </p>
+                <p>
+                  <strong>SS 430 (Ferritic):</strong> 16-18% Chromium, low
+                  nickel (<0.75%), ferritic (BCC) crystal structure. Magnetic,
+                  lower cost (40% less than SS304), good oxidation resistance
+                  but inferior corrosion resistance versus austenitic grades.
+                  Moderate formability, suitable for automotive trim, appliance
+                  panels, and indoor architectural applications. Cannot be
+                  hardened by heat treatment. Service temperature -50°C to
+                  +815°C.
+                </p>
+                <p>
+                  <strong>Duplex 2205 (Ferritic-Austenitic):</strong> 22% Cr, 5%
+                  Ni, 3% Mo, 50/50 ferrite/austenite microstructure yielding
+                  twice the strength (450-550 MPa yield) of SS304 with superior
+                  pitting/stress corrosion cracking resistance (PREN 34-36).
+                  Enables weight reduction in pressure vessels, heat exchangers,
+                  offshore platforms. Excellent weldability without preheating
+                  or PWHT. Limited formability requires hot forming above 950°C
+                  for complex shapes.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.iqsdirectory.com/articles/stainless-steel/stainless-steel-304/stainless-steel-grade-304-surface-finishes.jpg"
+                  alt="SS Grades Comparison"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Surface Finishes Section -->
+          <div class="spec-content spec-section">
+            <h3>Surface Finishes & Treatments</h3>
+
+            <!-- Mill Finishes with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://shengenfab.com/wp-content/uploads/2024/07/Stainless-Steel-2B-Finish-768x430.webp"
+                  alt="2B Finish"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Standard Mill Finishes (ASTM A480)</h4>
+                <p>
+                  <strong>No. 1 Finish (Hot Rolled, Annealed, Pickled):</strong>
+                  Dull, rough surface with visible heat scale after hot rolling,
+                  followed by annealing and acid pickling (mixed
+                  nitric-hydrofluoric acid) to remove scale. Surface roughness
+                  Ra 1.5-3.0 microns. Used for industrial applications where
+                  appearance is secondary: tanks, piping, structural components
+                  requiring subsequent surface treatment or insulation covering.
+                </p>
+                <p>
+                  <strong>No. 2B Finish (Cold Rolled, Bright Annealed):</strong>
+                  Smooth, moderately reflective finish produced by cold rolling
+                  and bright annealing in controlled atmosphere (hydrogen or
+                  dissociated ammonia) preventing oxidation. Surface roughness
+                  Ra 0.5-1.0 microns. Most common general-purpose finish
+                  balancing cost and appearance. Suitable for most
+                  architectural, food processing, and equipment applications.
+                  Accepts polishing, painting, or use as-is.
+                </p>
+                <p>
+                  <strong>No. 2D Finish (Cold Rolled, Dull):</strong> Similar to
+                  2B but with dull, non-reflective surface from final cold
+                  rolling pass with dull rollers. Surface roughness Ra 0.8-1.5
+                  microns. Preferred where low glare or subsequent
+                  drawing/forming is required. Better paint adhesion than
+                  brighter finishes. Common in automotive trim, appliance
+                  components, and stamped parts receiving powder coat or paint.
+                </p>
+              </div>
+            </div>
+
+            <!-- Polished Finishes with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Mechanical Polished Finishes</h4>
+                <p>
+                  <strong>No. 3 Finish (Ground):</strong> Coarse abrasive belt
+                  grinding (100-120 grit) producing uniform, unidirectional
+                  scratch pattern. Surface roughness Ra 0.5-0.8 microns. Used in
+                  food processing equipment, commercial kitchen surfaces, and
+                  architectural panels where moderate appearance and
+                  cleanability are required. Hides fingerprints better than
+                  brighter finishes. Cost-effective upgrade from 2B for visible
+                  surfaces.
+                </p>
+                <p>
+                  <strong>No. 4 Finish (Brushed/Satin):</strong> Fine abrasive
+                  belt polishing (150-180 grit) creating directional satin
+                  appearance with fine, parallel grain lines. Surface roughness
+                  Ra 0.4-0.6 microns. Most popular architectural finish for
+                  column covers, elevator doors, kitchen equipment, handrails,
+                  and decorative panels. Excellent cleanability, hides minor
+                  scratches, maintains appearance under normal wear. Standard
+                  for commercial food service equipment per NSF requirements.
+                </p>
+                <p>
+                  <strong>No. 6 Finish (Dull Satin):</strong> Tampico brushing
+                  or fine abrasive polishing (220-320 grit) followed by soft
+                  buffing, producing lower sheen than No. 4. Surface roughness
+                  Ra 0.3-0.5 microns. Less reflective, minimizes glare in
+                  lighting fixtures, architectural applications. Easier
+                  maintenance versus mirror finishes as minor scratches blend
+                  into existing texture. Common in healthcare and laboratory
+                  environments.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT98sfmUOBY4ylJRe833xGDrarcXGicxFZTGw&s"
+                  alt="Brushed Finish"
+                />
+              </div>
+            </div>
+
+            <!-- Mirror & BA Finishes with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2024/12/470549227/VW/GP/AJ/6686073/mirror-finish-stainless-steel-sheet.jpg"
+                  alt="Mirror Finish"
+                />
+              </div>
+              <div class="config-text">
+                <h4>High-Gloss & Mirror Finishes</h4>
+                <p>
+                  <strong>No. 7 Finish (High Luster):</strong> Progressively
+                  finer grit grinding (400-600 grit) followed by buffing with
+                  medium-cut compounds, producing high reflectivity but with
+                  slight directional lines visible. Surface roughness Ra
+                  0.15-0.25 microns. Reflectivity 75-85%. Used in automotive
+                  trim, consumer products, and architectural accents where
+                  near-mirror appearance is desired at lower cost than true
+                  mirror finish. Shows fingerprints readily, requiring regular
+                  maintenance.
+                </p>
+                <p>
+                  <strong>No. 8 Finish (Mirror/Reflective):</strong> Finest
+                  mechanical polishing using successively finer abrasives
+                  (800-2000 grit) and buffing compounds, producing defect-free
+                  mirror reflection. Surface roughness Ra 0.05-0.15 microns,
+                  reflectivity >90%. Most expensive finish requiring skilled
+                  labor and multiple polishing stages. Applications include
+                  decorative panels, luxury architectural features, food
+                  processing, pharmaceutical equipment where both aesthetics and
+                  hygiene are critical. Requires protective PVC film during
+                  fabrication/installation.
+                </p>
+                <p>
+                  <strong>BA Finish (Bright Annealed):</strong> Cold rolled and
+                  bright annealed in protective atmosphere without subsequent
+                  mechanical finishing, producing smooth, reflective surface in
+                  coil form. Surface roughness Ra 0.2-0.4 microns, uniform
+                  appearance across entire coil. Lower cost than mechanical
+                  polishing, ideal for mass production of appliance liners,
+                  cookware, and light reflectors. Surface slightly less
+                  reflective than No. 8 but more cost-effective for large
+                  volumes.
+                </p>
+              </div>
+            </div>
+
+            <h4>Specialty Surface Treatments</h4>
+            <p>
+              <strong>Embossed/Patterned:</strong> Decorative patterns rolled
+              into sheet surface: linen, leather grain, stucco, checkered,
+              diamond plate. Pattern depth 0.05-0.3mm provides visual interest
+              and slip resistance while hiding minor defects. Common in elevator
+              interiors, wall panels, and anti-slip flooring. Easier cleaning as
+              dirt accumulates in recesses rather than visible flat surface.
+              Available in various finishes (2B, No. 4) applied before or after
+              embossing.
+            </p>
+            <p>
+              <strong>PVD Coating (Physical Vapor Deposition):</strong> Vacuum
+              deposition of titanium nitride (TiN), titanium carbide (TiC), or
+              chromium nitride (CrN) creating gold, bronze, black, or blue
+              metallic colors with exceptional durability. Coating thickness
+              0.5-3 microns, Vickers hardness 1500-2500 HV versus 200 HV for
+              base SS. Scratch and abrasion resistance 5-10x greater than
+              painted finishes. Architectural applications: elevator panels,
+              column covers, signage. No color fade, maintains appearance 20+
+              years indoors.
+            </p>
+            <p>
+              <strong>Electropolishing:</strong> Reverse electroplating process
+              removing surface metal (5-30 microns) via anodic dissolution in
+              phosphoric-sulfuric acid electrolyte, producing ultra-smooth,
+              passive surface. Surface roughness improved 30-50%, micro-peaks
+              removed enhancing corrosion resistance 30% and reducing bacterial
+              adhesion 99%. Critical for pharmaceutical vessels, food
+              processing, surgical instruments per FDA/GMP requirements. Deburrs
+              edges, brightens welds, enhances cleanability for sterile
+              environments.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Mechanical Properties Section -->
+          <div class="spec-content spec-section">
+            <h3>Mechanical Properties & Fabrication Characteristics</h3>
+
+            <h4>Strength & Formability</h4>
+            <p>
+              <strong>Annealed Condition:</strong> Solution annealed at
+              1040-1120°C and rapidly cooled dissolves carbides, producing soft,
+              ductile, non-magnetic structure. SS304: 205 MPa yield, 515 MPa
+              tensile, 40% elongation. SS316: 220 MPa yield, 520 MPa tensile,
+              40% elongation. Suitable for deep drawing, severe bending (1t
+              radius), hydroforming, and explosive forming. Hardness 70-90 HRB
+              permits efficient machining with carbide tooling.
+            </p>
+            <p>
+              <strong>Work Hardening:</strong> Austenitic stainless exhibits
+              rapid strain hardening during cold work, strength increasing 2-3x
+              while ductility decreases. Quarter-hard (1/4H) temper: 380 MPa
+              yield, half-hard (1/2H): 520 MPa yield, full-hard (H): 690 MPa
+              yield. Work-hardened material becomes slightly magnetic due to
+              strain-induced martensite transformation. Used in spring
+              applications, structural members, and components requiring higher
+              strength without heat treatment. Intermediate annealing required
+              between severe forming operations.
+            </p>
+
+            <h4>Welding Characteristics</h4>
+            <p>
+              <strong>Fusion Welding:</strong> Excellent weldability using TIG
+              (GTAW), MIG (GMAW), stick (SMAW), and automated processes (SAW,
+              laser, electron beam). No preheating required. Filler metal
+              matching or slightly overmatched to base: ER308/ER308L for SS304,
+              ER316/ER316L for SS316. Low-carbon (L) grades prevent
+              sensitization in as-welded condition. Argon or argon-helium
+              shielding gas prevents oxidation and porosity. Back purging with
+              argon maintains corrosion resistance on root side. Post-weld
+              passivation recommended for optimal corrosion performance.
+            </p>
+            <p>
+              <strong>Resistance Welding:</strong> Spot, seam, and projection
+              welding widely used in appliance and automotive manufacturing due
+              to high electrical resistivity (720-900 nΩ·m) generating heat
+              efficiently. Medium electrode force (2-4 kN) and welding current
+              10-20% higher than carbon steel. Electrode cooling critical as
+              stainless conducts heat poorly. Water-cooled copper-chromium
+              electrodes maintain shape. Typical spot weld shear strength 3-6 kN
+              for 1mm sheet. No post-weld cleaning required if welding
+              parameters optimized.
+            </p>
+
+            <h4>Machinability & Forming</h4>
+            <p>
+              <strong>Machining Considerations:</strong> Work hardening and low
+              thermal conductivity make stainless more difficult to machine than
+              carbon steel. Machinability rating 45% of B1112 free-machining
+              steel. Sharp tools essential (CBN or PCD inserts for high-volume),
+              reduced cutting speeds (50-60% of carbon steel), heavy feed rates,
+              and sulfur-chlorine cutting fluids prevent work hardening ahead of
+              tool. Free-machining grades 303/416 with sulfur additions improve
+              machinability 100% for screw machine products.
+            </p>
+            <p>
+              <strong>Cold Forming:</strong> Minimum bend radius 1-1.5t for
+              annealed material depending on thickness and bend axis relative to
+              rolling direction (transverse bending more difficult). Springback
+              3-5° requires overbending. Drawing compounds and polished dies
+              prevent galling. Roll forming, brake bending, stretching, and
+              hydroforming commercially practiced. For severe draws exceeding
+              40% reduction, intermediate annealing necessary. Punch clearance
+              10-12% of thickness prevents edge cracking. Stainless steel
+              drawing quality (DDQ) grades available for deep drawn cookware and
+              sinks.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🛡️">Exceptional Corrosion Resistance</h4>
+                <p>
+                  Self-healing passive chromium oxide layer provides corrosion
+                  immunity in atmospheric, fresh water, mild chemical
+                  environments indefinitely without protective coatings. SS316
+                  resists chlorides, marine spray, road salt, preventing pitting
+                  and crevice corrosion where other materials fail within years.
+                  Service life 50-100 years in building envelopes, 25-50 years
+                  in process equipment. Eliminates painting, galvanizing, or
+                  other barrier coatings reducing lifecycle costs 40-70% versus
+                  coated carbon steel.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="✨">Superior Aesthetics & Hygiene</h4>
+                <p>
+                  Smooth, non-porous surface with polished finishes provides
+                  aesthetic appeal maintaining appearance decades without
+                  refinishing. Essential for architectural, food service,
+                  pharmaceutical, and medical applications. Surface roughness
+                  <0.5 microns Ra (electropolished) prevents bacterial
+                  colonization, meeting FDA/USDA sanitary standards. Easily
+                  cleaned with mild detergents, no special coatings required.
+                  Inert, non-toxic, no leaching or contamination of
+                  food/drugs/chemicals in contact. NSF/ANSI 51 certified for
+                  food equipment.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🌡️">Wide Temperature Range Performance</h4>
+                <p>
+                  Maintains strength and ductility from cryogenic -196°C (liquid
+                  nitrogen) to +800°C continuous service. No ductile-to-brittle
+                  transition unlike carbon steel failing catastrophically at
+                  sub-zero temperatures. Thermal expansion 17×10⁻⁶/°C requires
+                  expansion joints in long runs. Low thermal conductivity (16
+                  W/m·K, 25% of carbon steel) advantageous in insulated systems,
+                  energy efficiency. Used in LNG terminals, power plants,
+                  exhaust systems, heat exchangers, and furnace components where
+                  temperature extremes encountered.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="♻️">100% Recyclable & Sustainable</h4>
+                <p>
+                  Infinitely recyclable without property degradation—recycled
+                  content 60-80% in typical stainless production. Segregation
+                  from carbon steel via magnetic separation enables closed-loop
+                  recycling. Long service life (2-10x carbon steel) reduces
+                  replacement frequency and resource consumption. No toxic
+                  coatings or treatments, safe for potable water contact. Low
+                  maintenance eliminates chemical cleaners, paints, solvents.
+                  Life cycle assessment shows 30-50% lower environmental impact
+                  versus painted carbon steel in 50-year building applications
+                  despite higher initial embodied energy.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://www.helandermetal.com/wp-content/uploads/industry-commercial-food-equipment-1.jpg"
+                  alt="Food Processing"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍽️ Food Processing & Kitchen Equipment</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.cphi-online.com/product/bioprocess-injectable-vessels/p1056909img_XL.jpg"
+                  alt="Pharmaceutical"
+                />
+                <div class="app-image-overlay">
+                  <h4>💊 Pharmaceutical & Biotech Vessels</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8kf2djoz7bO5YcVGtncKxn1pzqe4oO3CRZw&s"
+                  alt="Architecture"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏢 Architectural Cladding & Facades</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://assets.onestopndt.com/p/uploads/ndt-articles/original/how-the-oil-and-gas-industry-works-onestopndt.jpg"
+                  alt="Chemical Processing"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚗️ Chemical & Petrochemical Plants</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/65dcf29bd6be2515eb49786e/6e9d2c3e-dfc2-4ad4-838d-8ccdd70f4bd1/Shipboard+Systems+%26+Equipment+.jpeg"
+                  alt="Marine"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚓ Marine & Offshore Structures</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://images.jdmagicbox.com/quickquotes/images_main/surgical-equipment-for-hospital-2217816025-el5tyowu.jpg"
+                  alt="Medical"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏥 Medical & Surgical Instruments</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://media.deloitte.com/is/image/deloitte/smart-automotive-manufacturing-2:Mobile?$Responsive$&fmt=webp&fit=stretch,1&dpr=on,2.625"
+                  alt="Automotive"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚗 Automotive Exhaust & Trim</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://img.freepik.com/free-vector/household-appliances-realistic-composition_1284-65307.jpg?semt=ais_hybrid&w=740&q=80"
+                  alt="Appliances"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏠 Home Appliances & Fixtures</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Chequered Plate Modal -->
+    <div class="modal" id="modal-chequered">
+      <div class="scroll-progress" id="scrollProgressChequered"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>💎 Chequered / Checkered Plate (Anti-Slip)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+          <!-- Pattern Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Chequered Plate Patterns & Configurations</h3>
+
+            <!-- Diamond Pattern with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Diamond Pattern (5-Bar Treadplate)</h4>
+                <p>
+                  <strong>Pattern Geometry:</strong> Raised diamond-shaped bars
+                  arranged in parallel rows at 60° angles creating visually
+                  appealing and highly functional anti-slip surface. Bar height
+                  0.5mm to 1.5mm above base plate depending on thickness (1:5 to
+                  1:10 ratio pattern height to base thickness). Diamond pitch
+                  25-40mm center-to-center providing optimal contact area and
+                  drainage channels. Pattern area coverage 35-45% raised, 55-65%
+                  flat.
+                </p>
+                <p>
+                  <strong>Performance Characteristics:</strong> Coefficient of
+                  friction (COF) 0.60-0.75 dry, 0.45-0.60 wet conditions per
+                  ASTM F1679 exceeding building code minimums (0.50 dry, 0.42
+                  wet). Excellent directional grip for foot traffic and wheeled
+                  vehicles. Self-cleaning design as dirt, debris, water drain
+                  through pattern valleys. Pattern remains effective even with
+                  30-40% wear over 15-20 year service life. Most popular pattern
+                  accounting for 70% of chequered plate production worldwide.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://thumbs.dreamstime.com/b/seamless-crystal-diamond-pattern-vector-illustration-crystallic-background-187241093.jpg"
+                  alt="Diamond Pattern"
+                />
+              </div>
+            </div>
+
+            <!-- Tear Drop Pattern with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://www.shutterstock.com/image-vector/drops-droplets-tears-seamless-repeat-260nw-2343170671.jpg"
+                  alt="Tear Drop Pattern"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Tear Drop / Pebble Pattern</h4>
+                <p>
+                  <strong>Design Features:</strong> Rounded, teardrop-shaped
+                  raised protrusions arranged in staggered rows providing
+                  multi-directional traction. Protrusion height 1.0-2.0mm, base
+                  diameter 8-12mm, spacing 15-25mm. Smoother profile versus
+                  diamond pattern reduces noise from foot traffic and rolling
+                  loads while maintaining COF 0.55-0.70 dry, 0.40-0.55 wet. Less
+                  aggressive appearance preferred in commercial and public
+                  spaces.
+                </p>
+                <p>
+                  <strong>Applications:</strong> Ideal for platforms, walkways,
+                  and access areas where foot comfort and noise reduction are
+                  priorities alongside slip resistance. Rounded profile easier
+                  on footwear, reducing wear on shoe soles. Facilitates easier
+                  cleaning with mechanical sweepers and pressure washing versus
+                  angular diamond pattern which can trap debris. Common in food
+                  processing facilities (stainless steel), chemical plants, and
+                  public infrastructure where ADA/accessibility compliance and
+                  frequent cleaning required.
+                </p>
+              </div>
+            </div>
+
+            <!-- 3-Bar and Lentil Patterns with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Specialty Patterns - 3-Bar & Lentil</h4>
+                <p>
+                  <strong>3-Bar Pattern:</strong> Three parallel raised bars
+                  running longitudinally spaced evenly across plate width. Bar
+                  width 3-6mm, height 1.0-1.5mm, spacing 20-35mm. Provides
+                  directional slip resistance ideal for ramps, inclined
+                  walkways, and vehicle access where primary traffic flow is
+                  predictable. Lower manufacturing cost than diamond or tear
+                  drop patterns (20-30% savings). Commonly used in dock
+                  levelers, loading ramps, and stairs where perpendicular
+                  traction is priority.
+                </p>
+                <p>
+                  <strong>Lentil/Rice Grain Pattern:</strong> Small, elongated
+                  oval protrusions resembling lentils or rice grains, densely
+                  arranged in random or aligned arrays. Protrusion dimensions
+                  6-10mm length, 3-5mm width, 0.8-1.2mm height. Highest pattern
+                  density (protrusions per cm²) providing superior grip in
+                  compact areas. Used in stair treads, narrow platforms, and
+                  confined spaces where maximum traction needed. Aesthetic
+                  appeal for decorative applications in commercial interiors,
+                  elevator floors, and architectural features.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://image.made-in-china.com/202f0j00yMNidHItySpn/Galvanized-Checker-Plate-Diamond-Pattern-Lentil-Pattern-2-Bars-or-3-Bars-Stainless-Checker-Plate.webp"
+                  alt="3-Bar and Lentil Patterns"
+                />
+              </div>
+            </div>
+
+            <h4>Pattern Manufacturing Process</h4>
+            <p>
+              <strong>Hot Rolling Method:</strong> Pattern rolled into steel at
+              temperatures >1000°C during final mill passes using engraved work
+              rolls. Pattern depth 0.5-1.5mm, tolerances ±0.2mm. Hot-rolled
+              chequered plate maintains uniform base thickness with pattern on
+              one or both sides. Surface finish mill scale (black), pickled &
+              oiled, or hot-dip galvanized. Most economical production method
+              for carbon steel and low-alloy grades. Suitable for structural
+              applications where dimensional precision less critical.
+            </p>
+            <p>
+              <strong>Cold Pressing/Embossing:</strong> Pattern pressed into
+              cold sheet using hydraulic press with engraved male/female dies.
+              Enables tighter tolerances (±0.1mm), finer patterns, and
+              production on pre-finished materials (stainless steel, aluminum,
+              pre-painted). Press capacity 300-2000 tons depending on plate size
+              and pattern depth. Allows custom patterns and logos for branding
+              applications. Higher cost (30-50% premium) offset by superior
+              surface quality and dimensional accuracy. Used for stainless steel
+              and aluminum chequered plates where appearance and corrosion
+              resistance paramount.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Materials & Standards Section -->
+          <div class="spec-content spec-section">
+            <h3>Material Options & Technical Standards</h3>
+
+            <!-- Mild Steel with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://www.hhironandsteel.com/images/ms-chequered-plates.webp"
+                  alt="MS Chequered Plate"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Mild Steel (MS) Chequered Plate</h4>
+                <p>
+                  <strong>Material Specifications:</strong> Low carbon steel per
+                  IS 3502, ASTM A786, or EN 10025 with carbon content
+                  0.15-0.25%. Base thickness 2mm to 10mm, pattern on one side
+                  (standard) or both sides (special order). Total thickness
+                  including pattern 3-12mm. Standard sizes 4'×8' (1220×2440mm),
+                  5'×10' (1500×3000mm), 6'×8', custom sizes available. Weight
+                  25-100 kg/m² depending on thickness.
+                </p>
+                <p>
+                  <strong>Surface Treatments:</strong> Mill finish (black scale)
+                  for indoor industrial use, pickled & oiled for better paint
+                  adhesion, hot-dip galvanized (Z275-Z600 coating) for outdoor
+                  corrosion protection, epoxy or polyurethane paint coating for
+                  enhanced durability and color-coding. Galvanized versions
+                  provide 15-25 year outdoor service life. Paint coatings
+                  available in safety yellow, gray, green, black per ANSI/OSHA
+                  color standards for hazard identification. Most economical
+                  option, widely used in trucks, platforms, stairs, industrial
+                  flooring.
+                </p>
+              </div>
+            </div>
+
+            <!-- Stainless Steel with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Stainless Steel Chequered Plate</h4>
+                <p>
+                  <strong>Grade Options:</strong> SS304 (18-8) for general
+                  corrosion resistance, SS316 (marine grade) for coastal,
+                  chemical, and food processing environments, SS430 (ferritic)
+                  for cost-sensitive indoor applications. Base thickness 1.5mm
+                  to 6mm, pattern typically tear drop or diamond due to cold
+                  embossing production method. Surface finishes 2B (standard),
+                  No. 4 brushed (architectural), BA bright annealed
+                  (food/pharma). Non-magnetic (304/316 annealed), hygienic,
+                  50-100 year service life.
+                </p>
+                <p>
+                  <strong>Premium Applications:</strong> Food processing
+                  platforms, pharmaceutical clean rooms, marine deck plates,
+                  chemical plant walkways, brewery equipment, commercial
+                  kitchens, hospital corridors, and architectural features.
+                  Meets FDA/USDA sanitary requirements, easily cleaned with
+                  steam or chemical sanitizers. No coating required, eliminating
+                  maintenance costs and downtime for refinishing. Cost premium
+                  3-5x versus MS galvanized, justified by lifecycle value in
+                  corrosive or sanitary applications where carbon steel would
+                  require frequent replacement.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://images.jdmagicbox.com/quickquotes/images_main/stainless-steel-chequered-plate-2182772338-4h46ck2r.jpg"
+                  alt="Stainless Steel Chequered"
+                />
+              </div>
+            </div>
+
+            <!-- Aluminum with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2023/9/344151123/AP/JC/UB/1437532/aluminum-chequered-plate.jpg"
+                  alt="Aluminum Chequered"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Aluminum Chequered Plate (Treadplate)</h4>
+                <p>
+                  <strong>Alloy Grades:</strong> 1100-H14 (99% pure) for maximum
+                  corrosion resistance and formability, 3003-H22 (manganese
+                  alloy) for improved strength and corrosion resistance,
+                  5052-H32 (magnesium alloy) for highest strength (215 MPa
+                  yield) and saltwater resistance, 6061-T6 (heat-treatable) for
+                  structural applications requiring 275 MPa yield strength.
+                  Bright mill finish or mill finish (dull), anodized for color
+                  and wear resistance.
+                </p>
+                <p>
+                  <strong>Weight & Performance Advantages:</strong> Density 2.7
+                  g/cm³ (65% lighter than steel) enables easier handling,
+                  reduced structural loading, improved fuel efficiency in
+                  vehicle applications. Natural corrosion resistance from
+                  aluminum oxide passive layer eliminates painting/galvanizing.
+                  Non-sparking property essential in explosive atmospheres (oil
+                  refineries, grain elevators). Excellent thermal/electrical
+                  conductivity. Used in truck toolboxes, trailers, aircraft
+                  flooring, marine applications, and aesthetic architectural
+                  panels. Cost comparable to stainless steel but easier
+                  fabrication.
+                </p>
+              </div>
+            </div>
+
+            <h4>Technical Standards & Specifications</h4>
+            <p>
+              <strong>Dimensional Standards:</strong> ASTM A786 (carbon steel),
+              EN 10025 (European structural steel), IS 3502 (Indian standard)
+              specify base thickness tolerances ±5-10%, length/width tolerances
+              ±10mm, and squareness ±3mm per meter. Pattern height tolerances
+              typically ±0.2-0.3mm. Flatness 10mm per meter maximum deviation.
+              Weight tolerance ±5% on theoretical weight. Edges mill edge
+              (as-rolled), sheared, or slit depending on production method and
+              customer requirements.
+            </p>
+            <p>
+              <strong>Performance Testing:</strong> Slip resistance tested per
+              ASTM F1679 (BOT-3000E tribometer), ASTM C1028 (static COF), or BS
+              7976 (pendulum test) under dry and wet conditions. Load capacity
+              verified per ASTM E1592 (concentrated load) and E1300 (uniform
+              load) for specified span and support conditions. Impact resistance
+              ASTM E23 (Charpy V-notch) ensures ductility at operating
+              temperatures. Corrosion testing salt spray ASTM B117 for coated
+              products. Fatigue testing cyclic loading per ASTM E466 for
+              high-traffic applications.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Installation & Maintenance Section -->
+          <div class="spec-content spec-section">
+            <h3>Installation Methods & Maintenance</h3>
+
+            <h4>Mounting & Fastening</h4>
+            <p>
+              <strong>Welded Installation:</strong> Direct welding to structural
+              steel supports using SMAW (stick), GMAW (MIG), or FCAW
+              (flux-cored) processes. Intermittent welds 50-75mm length,
+              150-200mm spacing minimize distortion and allow thermal expansion.
+              Weld on flat (underside) of plate preserving top pattern
+              integrity. Grind weld spatter flush to prevent trip hazards.
+              Touch-up welds with zinc-rich paint (galvanized) or matching paint
+              system. Used in permanent industrial platforms, truck beds, stair
+              treads welded to stringers.
+            </p>
+            <p>
+              <strong>Bolted/Screwed Installation:</strong> Mechanical fastening
+              using countersunk screws, bolts, or blind rivets allows
+              disassembly for access to underfloor utilities and replacement of
+              worn sections. Pre-drill holes 1-2mm oversize for thermal
+              expansion, use flat washers distributing load, and weatherproof
+              sealant at penetrations. Fastener spacing 200-300mm perimeter,
+              400-600mm field depending on thickness and loading. Stainless
+              steel fasteners prevent galvanic corrosion with aluminum. Ideal
+              for removable access panels, equipment covers, modular platform
+              systems.
+            </p>
+
+            <h4>Edge Treatment & Finishing</h4>
+            <p>
+              <strong>Edge Protection:</strong> Sheared edges sharp and prone to
+              injury, requiring edge treatment: grinding/deburring smooth,
+              folding/hemming 90° return, or welding angle iron nosing. Nosing
+              provides finished appearance, stiffens panel edge, and protects
+              pattern integrity at high-traffic boundaries. Yellow powder-coated
+              nosing provides visual warning for drop-offs and platform edges
+              per OSHA requirements. Threshold plates with beveled edges (1:12
+              slope max) ensure ADA wheelchair accessibility and reduce trip
+              hazards.
+            </p>
+            <p>
+              <strong>Joint Detailing:</strong> Adjacent plates butt-jointed
+              with 3-5mm gap for drainage and expansion, supported on continuous
+              beams beneath. Lapped joints (50mm min overlap) for water-tight
+              applications, sealed with butyl tape or polyurethane caulk.
+              Expansion joints 10-15mm width every 15-20 meters accommodate
+              thermal movement (12×10⁻⁶/°C for steel, 23×10⁻⁶/°C for aluminum).
+              Cover plates or flexible joint fillers prevent debris accumulation
+              and maintain safe walking surface.
+            </p>
+
+            <h4>Maintenance & Service Life</h4>
+            <p>
+              <strong>Routine Maintenance:</strong> Regular sweeping removes
+              debris preventing pattern valley clogging which reduces slip
+              resistance. Pressure washing (2000-3000 PSI) quarterly or
+              semi-annually removes oil, grease, and embedded dirt. Degreasing
+              detergents restore COF to near-new levels. For galvanized steel,
+              inspect for coating breakdown (white rust, red rust) annually,
+              touch-up with zinc-rich paint as needed. Stainless/aluminum
+              require minimal maintenance beyond cleaning. Expected service
+              life: MS painted 7-12 years indoor, MS galvanized 15-25 years
+              outdoor, SS/aluminum 30-50 years with proper drainage.
+            </p>
+            <p>
+              <strong>Refurbishment:</strong> Worn patterns (>50% height loss)
+              or corroded plates warrant replacement. Welded installations
+              require cutting and re-welding. Bolted systems easily replaced by
+              removing fasteners and installing new panels. Partial replacements
+              possible by cutting out damaged sections and welding/bolting
+              patches. Galvanized plates can be over-coated with epoxy systems
+              extending life 5-10 years. Consider upgrading to stainless or
+              aluminum in high-corrosion areas experiencing premature failure of
+              carbon steel to reduce lifecycle costs.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Safety Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="👟">Superior Slip Resistance</h4>
+                <p>
+                  Raised pattern provides mechanical grip exceeding smooth
+                  surfaces by 50-80% in dry conditions, 100-200% in wet/oily
+                  conditions. Pattern valleys channel liquids away from contact
+                  surface maintaining traction. Effective across temperature
+                  range -40°C to +60°C. Reduces slip-and-fall accidents 60-80%
+                  versus smooth plates per OSHA statistics. Complies with
+                  building codes (IBC, NFPA 101) requiring COF ≥0.50 dry, ≥0.42
+                  wet for walking surfaces. Critical safety feature in
+                  industrial, commercial, and public environments.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💪">High Strength-to-Weight Ratio</h4>
+                <p>
+                  Pattern ribs increase bending stiffness 20-40% versus flat
+                  plate of same base thickness, allowing greater span capability
+                  or thickness reduction for weight savings. 5mm chequered spans
+                  600-800mm versus 400-600mm for flat plate at equivalent
+                  deflection. Aluminum chequered provides 65% weight savings
+                  versus steel at comparable stiffness. Enables lightweight
+                  structures (vehicle bodies, platforms, walkways) reducing fuel
+                  consumption, foundation loads, and handling effort during
+                  installation.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💧">Self-Draining & Easy Cleaning</h4>
+                <p>
+                  Pattern valleys provide natural drainage channels preventing
+                  standing water accumulation which would reduce slip resistance
+                  and promote corrosion. Open design prevents mud, debris, snow,
+                  and ice buildup common with solid plates. Facilitates rapid
+                  drying after rain or wash-down. Easy mechanical cleaning with
+                  brooms, blowers, pressure washers—no special equipment
+                  required. Reduces maintenance time/cost 30-50% versus textured
+                  coatings which trap contaminants. Critical in food processing,
+                  chemical plants, and outdoor applications requiring frequent
+                  washdown and sanitation.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🎨">Aesthetic & Functional Versatility</h4>
+                <p>
+                  Distinctive appearance provides industrial aesthetic sought in
+                  modern architecture, commercial interiors, and automotive
+                  customization. Various patterns (diamond, tear drop, lentil)
+                  and materials (bright aluminum, brushed stainless, painted
+                  steel) offer design flexibility. Pattern improves paint
+                  adhesion 40-60% versus smooth surfaces through increased
+                  mechanical bonding area. Hides minor surface defects,
+                  scratches, and wear better than smooth finishes. Color-coding
+                  available for safety zones, walkway delineation, and brand
+                  identity in industrial and commercial facilities.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://m.media-amazon.com/images/I/71LFoROaMSL._AC_UF1000,1000_QL80_.jpg"
+                  alt="Truck Flooring"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚛 Truck Beds & Vehicle Flooring</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.erectastep.com/wp-content/uploads/2017/07/Raised-walkway-service-platform.jpg"
+                  alt="Industrial Platforms"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Industrial Platforms & Walkways</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://handiramp.com/wp-content/uploads/2018/03/Milford-Animal-Hospital-2nd-Image-8-15-17-1024x768.jpg"
+                  alt="Stair Treads"
+                />
+                <div class="app-image-overlay">
+                  <h4>🪜 Stair Treads & Ramps</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/65dcf29bd6be2515eb49786e/6e9d2c3e-dfc2-4ad4-838d-8ccdd70f4bd1/Shipboard+Systems+%26+Equipment+.jpeg"
+                  alt="Marine Decking"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚓ Marine & Offshore Decking</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://www.universalimplements.com/img/products/category/harrows.png"
+                  alt="Agricultural"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚜 Agricultural Equipment & Trailers</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>About India Steel</h3>
+            <p>
+              Leading supplier of quality steel products in India. We provide
+              comprehensive steel solutions with international standard
+              compliance.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Service Categories</h3>
+            <ul>
+              <li><a href="#">Thread Cutting</a></li>
+              <li><a href="#">Welding Services</a></li>
+              <li><a href="#">Galvanizing</a></li>
+              <li><a href="#">Assembly & Spools</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Standards We Follow</h3>
+            <ul>
+              <li>ASTM Standards</li>
+              <li>API Specifications</li>
+              <li>IS Standards</li>
+              <li>BS Standards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 India Steel Industries. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Filter Products
+      function filterProducts(category) {
+        const items = document.querySelectorAll(".category-item");
+        const buttons = document.querySelectorAll(".filter-btn");
+        let visibleCount = 0;
+
+        // Update active button
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        event.target.classList.add("active");
+
+        // Clear search box
+        document.querySelector(".search-box input").value = "";
+
+        // Filter items
+        items.forEach((item) => {
+          if (category === "all" || item.dataset.category === category) {
+            item.classList.remove("hidden");
+            visibleCount++;
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+
+        // Update count
+        updateResultsCount(visibleCount);
+      }
+
+      // Search Products
+      function searchProducts(query) {
+        const items = document.querySelectorAll(".category-item");
+        const searchTerm = query.toLowerCase();
+        let visibleCount = 0;
+
+        // Reset filter buttons when searching
+        if (query.length > 0) {
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((btn) => btn.classList.remove("active"));
+        }
+
+        items.forEach((item) => {
+          const name = item.dataset.name.toLowerCase();
+          if (name.includes(searchTerm)) {
+            item.classList.remove("hidden");
+            visibleCount++;
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+
+        updateResultsCount(visibleCount);
+      }
+
+      // Update Results Count
+      function updateResultsCount(count) {
+        const resultsCount = document.getElementById("resultsCount");
+        resultsCount.textContent = `Showing ${count} product${
+          count !== 1 ? "s" : ""
+        }`;
+      }
+
+      // Open Modal with Scroll Animations
+      function openModal(id, card) {
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.remove("active"));
+        document
+          .querySelectorAll(".category-item")
+          .forEach((c) => c.classList.remove("selected"));
+
+        const modal = document.getElementById("modal-" + id);
+        modal.classList.add("active");
+        card.classList.add("selected");
+        document.body.style.overflow = "hidden";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+
+        // Initialize scroll animations
+        setTimeout(() => {
+          observeElements();
+
+          // Update scroll progress for the specific modal
+          if (id === "bolts") {
+            updateScrollProgress("scrollProgressBolts");
+          } else if (id === "rods") {
+            updateScrollProgress("scrollProgressRods");
+          } else if (id === "u-bolts") {
+            updateScrollProgress("scrollProgressUBolts");
+          }
+        }, 100);
+      }
+
+      // Close Modal
+      function closeModal() {
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.remove("active"));
+        document
+          .querySelectorAll(".category-item")
+          .forEach((c) => c.classList.remove("selected"));
+        document.body.style.overflow = "auto";
+      }
+
+      // Escape key to close modal
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeModal();
+        }
+      });
+
+      // Scroll Animation Observer
+      function observeElements() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px",
+          }
+        );
+
+        document.querySelectorAll(".spec-section").forEach((el) => {
+          observer.observe(el);
+        });
+      }
+
+      // Scroll Progress Bar
+      function updateScrollProgress(progressId) {
+        const modal = document.querySelector(".modal.active");
+        if (!modal) return;
+
+        modal.addEventListener("scroll", function () {
+          const scrollProgress = document.getElementById(progressId);
+          if (!scrollProgress) return;
+
+          const scrollTop = modal.scrollTop;
+          const scrollHeight = modal.scrollHeight - modal.clientHeight;
+          const progress = (scrollTop / scrollHeight) * 100;
+          scrollProgress.style.width = progress + "%";
+        });
+      }
+
+      // Smooth scroll for modals
+      document.querySelectorAll(".modal").forEach((modal) => {
+        modal.style.scrollBehavior = "smooth";
+      });
+    </script>
+  </body>
+</html>

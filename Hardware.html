@@ -1,0 +1,2617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardware & Fasteners - India Steel Industries</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.7;
+        color: #1a1a1a;
+        background: #fff;
+      }
+
+      /* Top Bar */
+      .top-bar {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        color: #fff;
+        padding: 12px 0;
+        font-size: 13px;
+      }
+
+      .top-bar .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .top-bar-left {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+      }
+
+      .top-bar-left span {
+        opacity: 0.9;
+        letter-spacing: 0.3px;
+      }
+
+      .top-bar-right a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 500;
+        transition: color 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .top-bar-right a:hover {
+        color: #f59e0b;
+      }
+
+      /* Header */
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 25px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .logo-icon {
+        background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-weight: 800;
+        font-size: 22px;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(0, 51, 102, 0.3);
+      }
+
+      .logo-text h1 {
+        font-size: 26px;
+        font-weight: 800;
+        color: #0a0a0a;
+        letter-spacing: -0.5px;
+      }
+
+      .logo-text p {
+        font-size: 11px;
+        color: #666;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+      }
+
+      nav ul li a {
+        color: #1a1a1a;
+        text-decoration: none;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        border-radius: 8px;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background: #003366;
+        color: #fff;
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        background: #fafafa;
+        padding: 18px 0;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .breadcrumb-nav {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-size: 13px;
+      }
+
+      .breadcrumb-nav a {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 500;
+      }
+
+      .breadcrumb-nav a:hover {
+        color: #003366;
+      }
+
+      .breadcrumb-nav span {
+        color: #0a0a0a;
+        font-weight: 600;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        padding: 80px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at 50% 0%,
+          rgba(0, 51, 102, 0.3),
+          transparent 70%
+        );
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        color: #ccc;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.8;
+      }
+
+      /* Filter Section */
+      .filter-section {
+        background: #fafafa;
+        padding: 30px 0;
+        border-bottom: 1px solid #e5e5e5;
+        position: sticky;
+        top: 86px;
+        z-index: 99;
+      }
+
+      .filter-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .filter-label {
+        font-weight: 700;
+        color: #0a0a0a;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-buttons {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        flex: 1;
+      }
+
+      .filter-btn {
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: #666;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-btn:hover {
+        border-color: #003366;
+        color: #003366;
+        background: #eff6ff;
+      }
+
+      .filter-btn.active {
+        background: #003366;
+        color: #fff;
+        border-color: #003366;
+      }
+
+      .search-box {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        border-radius: 50px;
+        padding: 8px 20px;
+        min-width: 250px;
+        transition: border-color 0.3s;
+      }
+
+      .search-box:focus-within {
+        border-color: #003366;
+      }
+
+      .search-box input {
+        border: none;
+        outline: none;
+        padding: 6px 10px;
+        font-size: 14px;
+        width: 100%;
+      }
+
+      .search-box span {
+        color: #999;
+      }
+
+      .results-count {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 30px;
+        font-weight: 500;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      /* Category Section */
+      .category-section {
+        padding: 80px 0;
+        background: #fff;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 42px;
+        font-weight: 800;
+        color: #0a0a0a;
+        margin-bottom: 15px;
+        letter-spacing: -0.5px;
+      }
+
+      .section-header p {
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+      }
+
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+      }
+
+      .category-item {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+
+      .category-item:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        border-color: #003366;
+      }
+
+      .category-item.selected {
+        border-color: #003366;
+        box-shadow: 0 20px 60px rgba(0, 51, 102, 0.25);
+      }
+
+      .category-image {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.4s;
+      }
+
+      .category-item:hover .category-image {
+        transform: scale(1.05);
+      }
+
+      .category-info {
+        padding: 35px;
+      }
+
+      .category-badge {
+        display: inline-block;
+        background: #003366;
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .category-info h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #0a0a0a;
+        margin-bottom: 12px;
+        letter-spacing: -0.3px;
+      }
+
+      .category-info p {
+        font-size: 15px;
+        color: #666;
+        line-height: 1.7;
+      }
+
+      /* Modal Styles */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1000;
+        overflow-y: auto;
+        animation: fadeInModal 0.4s ease;
+      }
+
+      .modal.active {
+        display: block;
+      }
+
+      @keyframes fadeInModal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -1000px 0;
+        }
+        100% {
+          background-position: 1000px 0;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+      }
+
+      .modal-header {
+        background: linear-gradient(135deg, #0c0c0c 0%, #012e5b 100%);
+        padding: 40px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 8px 40px rgba(0, 51, 102, 0.4);
+      }
+
+      .modal-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: slideUp 0.6s ease;
+      }
+
+      .modal-header h2 {
+        font-size: 38px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -0.5px;
+      }
+
+      .close-button {
+        background: #022875;
+        color: #f8f5f5;
+        border: none;
+        padding: 14px 32px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .close-button:hover {
+        background: #003366;
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      .modal-content {
+        padding: 60px 0 80px;
+        background: #ffffff;
+        position: relative;
+      }
+
+      .modal-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        background: radial-gradient(
+          ellipse at top,
+          rgba(0, 0, 0, 0.03),
+          transparent
+        );
+        pointer-events: none;
+      }
+
+      /* Content Sections with Scroll Animations */
+      .spec-section {
+        margin-bottom: 60px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .spec-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Specifications Content */
+      .spec-content {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 50px;
+        box-shadow: 0 10px 40px rgba(0, 51, 102, 0.08);
+        border-left: 5px solid #003366;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .spec-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 51, 102, 0.05),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .spec-content:hover::before {
+        left: 100%;
+      }
+
+      .spec-content:hover {
+        box-shadow: 0 15px 50px rgba(0, 51, 102, 0.15);
+        transform: translateX(5px);
+      }
+
+      .spec-content h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #f59e0b;
+        position: relative;
+        display: inline-block;
+      }
+
+      .spec-content h3::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: #003366;
+        transition: width 0.6s ease;
+      }
+
+      .spec-content:hover h3::after {
+        width: 100%;
+      }
+
+      .spec-content h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #003366;
+        margin: 25px 0 15px;
+        padding-left: 20px;
+        border-left: 4px solid #f59e0b;
+        position: relative;
+      }
+
+      .spec-content h4::before {
+        content: "⚙️";
+        position: absolute;
+        left: -30px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .spec-content p {
+        font-size: 17px;
+        line-height: 1.9;
+        color: #495057;
+        margin-bottom: 20px;
+        text-align: justify;
+        position: relative;
+        padding-left: 25px;
+      }
+
+      .spec-content p::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background: #f59e0b;
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .spec-content p strong {
+        color: #003366;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      /* Feature Highlights */
+      .features-section {
+        background: linear-gradient(135deg, #edeeef 0%, #f9fafb 100%);
+        border-radius: 25px;
+        padding: 50px;
+        margin: 50px 0;
+        color: #060606;
+        box-shadow: 0 20px 60px rgba(7, 7, 7, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .features-section::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(14, 13, 13, 0.1), transparent);
+        animation: float 8s ease-in-out infinite;
+      }
+
+      .features-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        color: #080808;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-box {
+        background: rgb(243, 242, 242);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        border: 2px solid rgba(10, 10, 10, 0.2);
+        transition: all 0.4s ease;
+      }
+
+      .feature-box:hover {
+        background: rgba(245, 158, 11, 0.2);
+        border-color: #f59e0b;
+        transform: translateY(-5px);
+      }
+
+      .feature-box h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #080808;
+      }
+
+      .feature-box h4::before {
+        content: attr(data-icon);
+        margin-right: 10px;
+      }
+
+      .feature-box p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(4, 4, 4, 0.9);
+      }
+
+      /* Applications Tags */
+      .applications-section {
+        margin: 50px 0;
+      }
+
+      .applications-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      /* Divider Line */
+      .divider {
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          #003366,
+          #f59e0b,
+          #003366,
+          transparent
+        );
+        margin: 50px 0;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .divider::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        animation: shimmer 3s infinite;
+      }
+
+      /* Scroll Progress Bar */
+      .scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, #003366, #f59e0b);
+        z-index: 1001;
+        transition: width 0.1s ease;
+      }
+
+      /* Applications Image Grid */
+      .app-images-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .app-image-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 280px;
+        cursor: pointer;
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.6s ease-out backwards;
+      }
+
+      .app-image-card:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .app-image-card:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .app-image-card:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .app-image-card:nth-child(4) {
+        animation-delay: 0.25s;
+      }
+      .app-image-card:nth-child(5) {
+        animation-delay: 0.3s;
+      }
+      .app-image-card:nth-child(6) {
+        animation-delay: 0.35s;
+      }
+      .app-image-card:nth-child(7) {
+        animation-delay: 0.4s;
+      }
+      .app-image-card:nth-child(8) {
+        animation-delay: 0.45s;
+      }
+
+      .app-image-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        border-color: #003366;
+      }
+
+      .app-image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .app-image-card:hover img {
+        transform: scale(1.1);
+      }
+
+      .app-image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.95) 0%,
+          rgba(0, 0, 0, 0.7) 60%,
+          transparent 100%
+        );
+        padding: 25px;
+        transform: translateY(0);
+        transition: all 0.4s ease;
+      }
+
+      .app-image-card:hover .app-image-overlay {
+        background: linear-gradient(
+          to top,
+          rgba(0, 51, 102, 0.95) 0%,
+          rgba(0, 51, 102, 0.8) 60%,
+          transparent 100%
+        );
+      }
+
+      .app-image-overlay h4 {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 0.5px;
+      }
+
+      /* Configuration Row Layout */
+      .config-row {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 40px;
+        align-items: center;
+        margin: 40px 0;
+        padding: 30px 0;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .config-row:last-of-type {
+        border-bottom: none;
+      }
+
+      .config-row.reverse {
+        grid-template-columns: 380px 1fr;
+      }
+
+      .config-text {
+        order: 1;
+      }
+
+      .config-row.reverse .config-text {
+        order: 2;
+      }
+
+      .config-image {
+        order: 2;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s ease;
+        height: 320px;
+      }
+
+      .config-row.reverse .config-image {
+        order: 1;
+      }
+
+      .config-image:hover {
+        border-color: #003366;
+        box-shadow: 0 15px 40px rgba(0, 51, 102, 0.25);
+        transform: translateY(-5px);
+      }
+
+      .config-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .config-image:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Footer */
+      footer {
+        background: #0a0a0a;
+        color: #ccc;
+        padding: 60px 0 30px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-col h3 {
+        color: #f59e0b;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .footer-col p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #999;
+      }
+
+      .footer-col ul {
+        list-style: none;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+        color: #999;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+
+      .footer-col ul li a:hover {
+        color: #f59e0b;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid #222;
+        color: #666;
+        font-size: 13px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .config-row,
+        .config-row.reverse {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .config-text,
+        .config-row.reverse .config-text {
+          order: 1;
+        }
+
+        .config-image,
+        .config-row.reverse .config-image {
+          order: 2;
+        }
+
+        .config-image {
+          height: 280px;
+        }
+
+        .app-images-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .category-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .app-images-grid,
+        .category-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .config-image {
+          height: 240px;
+        }
+
+        .hero h2 {
+          font-size: 36px;
+        }
+
+        nav ul {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .filter-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .search-box {
+          width: 100%;
+        }
+
+        .feature-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <span>📧 info@indiasteelind.com</span>
+          <span>📞 +91 22 4567 8900</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="#">Get Quote</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo-icon">ISI</div>
+            <div class="logo-text">
+              <h1>INDIA STEEL INDUSTRIES</h1>
+              <p>Quality Steel Solutions Since 1998</p>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="index.html#products" class="active">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <a href="index.html#products">Products</a>
+          <span>›</span>
+          <span>Hardware & Fasteners</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>🔩 Hardware & Fasteners</h2>
+          <p>
+            High-strength bolts, nuts, washers, and custom fasteners for
+            industrial and construction needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-container">
+          <span class="filter-label">Filter By:</span>
+          <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProducts('all')">
+              All Products
+            </button>
+            <button class="filter-btn" onclick="filterProducts('bolts')">
+              Bolts
+            </button>
+            <button class="filter-btn" onclick="filterProducts('rods')">
+              Rods
+            </button>
+            <button class="filter-btn" onclick="filterProducts('u-bolts')">
+              U-Bolts
+            </button>
+          </div>
+          <div class="search-box">
+            <span>🔍</span>
+            <input
+              type="text"
+              placeholder="Search products..."
+              oninput="searchProducts(this.value)"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Products</h2>
+          <p>Click on a product to view detailed specifications</p>
+        </div>
+        <p class="results-count" id="resultsCount">Showing 3 products</p>
+        <div class="category-grid" id="productGrid">
+          <!-- Bolts, Nuts, Washers -->
+          <div
+            class="category-item"
+            data-category="bolts"
+            data-name="Bolts Nuts Washers MS GI SS"
+            onclick="openModal('bolts', this)"
+          >
+            <img
+              src="https://amaanent.com/images/bolt-main.jpg"
+              alt="Bolts, Nuts, Washers"
+              class="category-image"
+              onerror="this.src='https://5.imimg.com/data5/SELLER/Default/2023/6/315333538/WN/SZ/LX/6242910/stainless-steel-hex-bolt-500x500.jpg'"
+            />
+            <div class="category-info">
+              <span class="category-badge">Bolts</span>
+              <h3>Bolts / Nuts / Washers (MS / GI / SS)</h3>
+              <p>High-tensile and corrosion-resistant fasteners.</p>
+            </div>
+          </div>
+
+          <!-- Threaded Rods -->
+          <div
+            class="category-item"
+            data-category="rods"
+            data-name="Threaded Rods Anchor Bolts"
+            onclick="openModal('rods', this)"
+          >
+            <img
+              src="https://atlrod.com/wp-content/uploads/2012/08/Partially-threaded-rod-300x225.jpg"
+              alt="Threaded Rods"
+              class="category-image"
+              onerror="this.src='https://m.media-amazon.com/images/I/61kIlme6R9L.jpg'"
+            />
+            <div class="category-info">
+              <span class="category-badge">Rods</span>
+              <h3>Threaded Rods / Anchor Bolts</h3>
+              <p>Precision-engineered threaded rods and anchor bolts.</p>
+            </div>
+          </div>
+
+          <!-- U-Bolts & Clamps -->
+          <div
+            class="category-item"
+            data-category="u-bolts"
+            data-name="U-Bolts Clamps"
+            onclick="openModal('u-bolts', this)"
+          >
+            <img
+              src="https://www.kotadiafasteners.com/wp-content/uploads/2024/01/633ff007cec9337a620a898c-mromax-u-bolts-m10x33-304-stainless.jpg"
+              alt="U-Bolts & Clamps"
+              class="category-image"
+              onerror="this.src='https://cpimg.tistatic.com/07788836/b/4/U-Bolt.jpg'"
+            />
+            <div class="category-info">
+              <span class="category-badge">U-Bolts</span>
+              <h3>U-Bolts / Clamps</h3>
+              <p>Pipe support and industrial fitting clamps.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- Bolts Modal -->
+    <div class="modal" id="modal-bolts">
+      <div class="scroll-progress" id="scrollProgressBolts"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>🔩 Bolts / Nuts / Washers (MS / GI / SS)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Fastener Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Fastener Types & Configurations</h3>
+
+            <!-- Hex Bolts with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Hexagon Head Bolts</h4>
+                <p>
+                  <strong>Design:</strong> Full-thread and partial-thread
+                  configurations with precision-machined hexagon heads
+                  conforming to DIN 931, DIN 933, ISO 4014, and ISO 4017
+                  standards. Available in metric sizes M6 to M48 with coarse
+                  (standard) and fine thread pitch options for specialized
+                  applications.
+                </p>
+                <p>
+                  <strong>Thread Types:</strong> Metric ISO threads for
+                  European/Asian markets, UNC (Unified Coarse) and UNF (Unified
+                  Fine) threads for North American applications. Thread
+                  tolerance classes 6g for standard fit, 6h for close fit
+                  assemblies. Thread length calculated per DIN 960 for optimal
+                  clamping force distribution.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.pankajinternational.com/PankajInternationalmages/ProductImages/bolts-screws-cap-screws-hex-head-bolt-2-PankajInternational.jpg"
+                  alt="Hex Bolts"
+                />
+              </div>
+            </div>
+
+            <!-- Socket Head Cap Screws with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/61VIHcLUrlL._AC_UF1000,1000_QL80_.jpg"
+                  alt="Socket Head Cap Screws"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Socket Head Cap Screws (SHCS)</h4>
+                <p>
+                  <strong>Construction:</strong> High-strength internal hexagon
+                  drive (Allen key) design per DIN 912 and ISO 4762, providing
+                  superior torque transmission and compact head profile. Ideal
+                  for counterbored holes and applications requiring flush
+                  mounting or aesthetic appearance.
+                </p>
+                <p>
+                  <strong>Strength Grades:</strong> Class 12.9 (1220 MPa tensile
+                  strength) for high-stress structural connections, Class 10.9
+                  (1040 MPa) for general engineering applications, Class 8.8
+                  (800 MPa) for standard industrial use. Socket sizes from 2.5mm
+                  to 36mm accommodate various torque requirements.
+                </p>
+              </div>
+            </div>
+
+            <!-- Stud Bolts with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Stud Bolts & Double-End Studs</h4>
+                <p>
+                  <strong>Design Variants:</strong> Continuous thread
+                  (full-length threaded) for adjustable clamping, double-end
+                  studs with 1D, 1.5D, or 2D thread engagement lengths for
+                  permanent installation in tapped holes. Tap-end studs feature
+                  reduced shank diameter for thermal expansion compensation in
+                  flange connections.
+                </p>
+                <p>
+                  <strong>Applications:</strong> ASME B16.5 and API 6A flange
+                  connections in pressure vessels, heat exchangers, and piping
+                  systems. Available with rolled or cut threads, heavy hex nuts,
+                  and hardened washers as complete stud bolt sets rated for
+                  pressures up to 15,000 PSI and temperatures to 650°C.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/61Nir93NSpL._AC_UF1000,1000_QL80_.jpg"
+                  alt="Stud Bolts"
+                />
+              </div>
+            </div>
+
+            <h4>Anchor Bolts & Foundation Fasteners</h4>
+            <p>
+              <strong>Types:</strong> L-bolt (bent anchor) for light structural
+              loads, J-bolt with 90° hook for moderate pullout resistance,
+              headed anchor bolts with forged heads for heavy equipment
+              foundations. Available in galvanized carbon steel, stainless steel
+              304/316, and high-strength alloy steel grades.
+            </p>
+            <p>
+              <strong>Specifications:</strong> Sizes from M12 to M64 (1/2" to
+              2.5") with embedment lengths from 150mm to 1500mm. Design load
+              capacity per ACI 318 and AISC standards. Chemical anchor systems
+              with epoxy or polyester resin for post-installation in concrete,
+              masonry, and stone with seismic and fire ratings.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Nuts & Washers Section -->
+          <div class="spec-content spec-section">
+            <h3>Nuts & Washers - Types & Specifications</h3>
+
+            <!-- Hex Nuts with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://www.fastdep.in/images/product/hex-nut-m8_hu47a00efe8e2a7a2e9db764f7bcc7bc3d_56879_1000x1000_resize_q85_box.jpg"
+                  alt="Hex Nuts"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Hexagon Nuts - Standard & Specialty</h4>
+                <p>
+                  <strong>Nut Types:</strong> Full hex nuts DIN 934/ISO 4032 for
+                  standard applications, heavy hex nuts ASME B18.2.2 for
+                  structural bolting with increased bearing area, jam nuts
+                  (half-height) for lock-nut applications, slotted castle nuts
+                  with cotter pin holes for safety-critical assemblies, and
+                  nylon-insert lock nuts with vibration resistance.
+                </p>
+                <p>
+                  <strong>Grades & Coatings:</strong> Property Class 8 (800 MPa
+                  proof load) matching Grade 8.8 bolts, Class 10 for Grade
+                  10.9/12.9 high-strength bolts. Surface treatments include zinc
+                  electroplating (5-15 microns), hot-dip galvanizing (50-85
+                  microns), Dacromet coating for superior corrosion protection,
+                  and PTFE dry-film lubricant for controlled torque assembly.
+                </p>
+              </div>
+            </div>
+
+            <!-- Washers with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Washers - Flat, Spring & Specialty</h4>
+                <p>
+                  <strong>Flat Washers:</strong> Form A (normal series) per DIN
+                  125/ISO 7089 for general load distribution, Form B (large
+                  series) with increased outer diameter for soft materials and
+                  oversize holes, Form C (extra large) for timber construction
+                  and oversized clearances. Fender washers with 3:1 OD:ID ratio
+                  for maximum bearing area.
+                </p>
+                <p>
+                  <strong>Spring Washers:</strong> Helical spring washers (split
+                  lock) DIN 127 providing axial tension and anti-loosening
+                  action, wave washers for controlled compression in assemblies,
+                  Belleville (conical disc) washers for high-load applications
+                  with predictable deflection characteristics. Tooth lock
+                  washers with internal/external serrations bite into mating
+                  surfaces.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/61ruJx0sueL.jpg"
+                  alt="Washers"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Materials & Standards -->
+          <div class="spec-content spec-section">
+            <h3>Materials, Grades & Manufacturing Standards</h3>
+
+            <h4>Carbon & Alloy Steel Grades</h4>
+            <p>
+              <strong>Mild Steel (MS):</strong> Low carbon steel (0.15-0.30% C)
+              conforming to ASTM A307 Grade A for general purpose fasteners, SAE
+              J429 Grade 2 with 60 ksi minimum tensile strength for automotive
+              and machinery. Cost-effective solution for non-critical indoor
+              applications with basic zinc plating for corrosion protection.
+            </p>
+            <p>
+              <strong>High-Strength Steel:</strong> Grade 4.6 (400 MPa tensile)
+              for light structural work, Grade 5.8 for moderate-stress
+              applications, Grade 8.8 heat-treated medium carbon alloy steel
+              (800 MPa) for critical structural and machinery bolting, Grade
+              10.9 and 12.9 (1040-1220 MPa) quenched and tempered alloy steel
+              for extreme load and fatigue-resistant connections.
+            </p>
+
+            <h4>Corrosion-Resistant Materials</h4>
+            <p>
+              <strong>Galvanized Iron (GI):</strong> Hot-dip galvanized per ASTM
+              A153/ISO 1461 with minimum 50-85 micron zinc coating providing
+              sacrificial corrosion protection for 15-25 years in typical
+              atmospheric conditions. Suitable for outdoor structural
+              applications, utility poles, highway barriers, and agricultural
+              equipment.
+            </p>
+            <p>
+              <strong>Stainless Steel (SS):</strong> Austenitic SS304 (18Cr-8Ni)
+              offering excellent general corrosion resistance in fresh water,
+              mild chemicals, and food contact applications. SS316/316L
+              (18Cr-10Ni-2Mo) with molybdenum addition provides superior
+              resistance to chlorides, marine environments, pulp/paper
+              chemicals, and saline solutions. SS321 stabilized with titanium
+              for high-temperature service to 900°C.
+            </p>
+            <p>
+              <strong>Exotic Alloys:</strong> Duplex stainless steel (2205,
+              2507) combining high strength with excellent corrosion resistance
+              for offshore oil & gas platforms. Inconel 625/718 nickel-chromium
+              superalloy for extreme temperatures above 700°C in aerospace and
+              power generation. Monel 400 nickel-copper alloy for hydrofluoric
+              acid and seawater applications. Titanium Grade 2/5 for aerospace,
+              marine, and chemical processing with exceptional
+              strength-to-weight ratio.
+            </p>
+
+            <h4>Manufacturing & Quality Standards</h4>
+            <p>
+              <strong>Dimensional Standards:</strong> ISO metric threads per ISO
+              68-1, ISO 724, ISO 965 ensuring global interchangeability. ASME
+              B18.2.1 (hex bolts), B18.2.2 (heavy hex), B18.3 (socket products)
+              for North American markets. DIN standards (DIN 931, 933, 912, 934,
+              125, 127) widely adopted in Europe and Asia.
+            </p>
+            <p>
+              <strong>Quality Assurance:</strong> Mechanical property testing
+              per ISO 898-1 (bolts) and ISO 898-2 (nuts) including tensile
+              strength, proof load, hardness, and decarburization checks. Thread
+              gauging with GO/NO-GO ring/plug gauges per ISO 1502. Positive
+              material identification (PMI) using XRF spectrometry. Dimensional
+              inspection with coordinate measuring machines (CMM) for critical
+              aerospace/automotive applications.
+            </p>
+            <p>
+              <strong>Certifications:</strong> EN 10204 3.1 mill test
+              certificates with chemical composition and mechanical properties.
+              NACE MR0175/ISO 15156 sour service compliance for oil & gas
+              applications. DFARS compliant specialty metals for US
+              military/defense. RoHS and REACH compliance for European markets.
+              AS9100 aerospace quality management for aviation fasteners.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="💪">High Tensile Strength</h4>
+                <p>
+                  Grade 8.8 and higher fasteners provide ultimate tensile
+                  strength of 800-1220 MPa, enabling compact joint designs with
+                  fewer bolts and reduced assembly weight. Heat-treated alloy
+                  construction ensures consistent mechanical properties with
+                  minimal variation. Proof load testing guarantees elastic
+                  behavior under rated loads, preventing permanent deformation
+                  and joint failure.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🛡️">Superior Corrosion Protection</h4>
+                <p>
+                  Multi-layer coating systems including zinc plating (5-15μm),
+                  hot-dip galvanizing (50-85μm), Geomet/Dacromet 500 (8-12μm)
+                  provide graduated protection levels. SS304/316 stainless steel
+                  offers passive chromium oxide layer for self-healing corrosion
+                  resistance. Salt spray testing per ASTM B117 validates
+                  500-3000 hour durability in marine and industrial atmospheres.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🔧">Precision Thread Quality</h4>
+                <p>
+                  Cold-rolled threads produce 30% stronger grain flow compared
+                  to cut threads, increasing fatigue resistance and stripping
+                  torque. Thread tolerance classes 6g/6H ensure optimal fit with
+                  minimal assembly force yet adequate thread engagement.
+                  Phosphate coating on threads provides lubrication during
+                  installation, reducing galling and enabling accurate
+                  torque-tension relationships for critical assemblies.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="⚡">Standardized Interchangeability</h4>
+                <p>
+                  Compliance with ISO, DIN, ASTM, ASME, and JIS standards
+                  ensures global parts interchangeability and supply chain
+                  flexibility. Standardized head styles, thread forms, and
+                  mechanical properties simplify maintenance inventory and
+                  reduce obsolescence risk. Metric and imperial sizing available
+                  for retrofit and replacement applications in existing
+                  equipment populations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://havitsteelstructure.com/wp-content/uploads/2020/08/steel-structure-detail-4.jpg"
+                  alt="Structural Steel Construction"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏗️ Structural Steel Construction</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.schaeffler-special-machinery.de/remotemedien/media/_shared_media_rwd/03_worldwide_1/websites_worldwide/germany_3/schaeffler_special_machinery/products_9/assembly_machines/header-schaeffler-special-machinery-assembly-machines.jpg"
+                  alt="Machinery & Equipment"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚙️ Machinery & Equipment Assembly</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://media.deloitte.com/is/image/deloitte/smart-automotive-manufacturing-2:Mobile?$Responsive$&fmt=webp&fit=stretch,1&dpr=on,2.625"
+                  alt="Automotive Manufacturing"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚗 Automotive Manufacturing</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://assets.onestopndt.com/p/uploads/ndt-articles/original/how-the-oil-and-gas-industry-works-onestopndt.jpg"
+                  alt="Oil & Gas Infrastructure"
+                />
+                <div class="app-image-overlay">
+                  <h4>🛢️ Oil & Gas Infrastructure</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://5.imimg.com/data5/UO/LJ/GLADMIN-46328052/rail-transportation-services.jpg"
+                  alt="Railway Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚂 Railway & Transportation Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://gates.scene7.com/is/image/gates/india-heavy-machinery?$Image_Responsive_Preset$&scl=1"
+                  alt="Heavy Industrial Equipment"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Heavy Industrial Equipment</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Threaded Rods Modal -->
+    <div class="modal" id="modal-rods">
+      <div class="scroll-progress" id="scrollProgressRods"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>🔩 Threaded Rods / Anchor Bolts</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Threaded Rod Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Threaded Rod Types & Configurations</h3>
+
+            <!-- Fully Threaded Rods with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Fully Threaded Rods (All-Thread)</h4>
+                <p>
+                  <strong>Design:</strong> Continuous thread along entire length
+                  from M6 to M48 diameter, available in standard lengths of 1m,
+                  2m, and 3m. Custom lengths up to 6m available for special
+                  applications. Thread form per ISO 68-1 metric coarse pitch or
+                  DIN 976-1 for European markets, ASME B18.31.3 for unified inch
+                  threads.
+                </p>
+                <p>
+                  <strong>Thread Quality:</strong> Rolled threads (Class 8.8 and
+                  higher) provide 10-15% greater tensile strength than cut
+                  threads through cold-work hardening and uninterrupted grain
+                  flow. Cut threads available for larger diameters (M56-M100)
+                  and exotic materials. Thread tolerance 6g for free-running
+                  assembly with standard nuts, 6h for tighter fit in precision
+                  applications.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/71Tm291X1nL.jpg"
+                  alt="Fully Threaded Rods"
+                />
+              </div>
+            </div>
+
+            <!-- Partially Threaded Rods with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/71Tm291X1nL._AC_UF1000,1000_QL80_.jpg"
+                  alt="Partially Threaded Rods"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Partially Threaded Rods (Half-Thread)</h4>
+                <p>
+                  <strong>Construction:</strong> Smooth shank section with
+                  threaded ends, typically 2D to 3D thread length (D = nominal
+                  diameter) on each end. Smooth section reduces stress
+                  concentration and allows thermal expansion in high-temperature
+                  flange connections. Thread transition features rolled or
+                  undercut relief to minimize fatigue crack initiation.
+                </p>
+                <p>
+                  <strong>Applications:</strong> Ideal for ASME B16.5 flange
+                  bolting where threads should not engage in the pressure
+                  boundary, suspended piping systems requiring vertical
+                  adjustment, and structural connections with long grip lengths.
+                  The smooth shank section provides superior fatigue performance
+                  compared to fully threaded rods under cyclic loading.
+                </p>
+              </div>
+            </div>
+
+            <!-- Coupling Nuts with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Threaded Rod Couplers & Connectors</h4>
+                <p>
+                  <strong>Coupling Nuts:</strong> Hex coupling nuts (also called
+                  extension nuts) per DIN 6334 with length equal to 3 times the
+                  diameter, enabling rigid joining of threaded rods for extended
+                  reach applications. Right-hand or left-hand threads available
+                  for turnbuckle-style tensioning assemblies. Heavy hex pattern
+                  provides adequate wrench engagement.
+                </p>
+                <p>
+                  <strong>Turnbuckles:</strong> Adjustable tensioning devices
+                  with opposing right-hand and left-hand threads allowing length
+                  adjustment without rotation of connected members. Hook, eye,
+                  and jaw end fittings accommodate wire rope, chain, and
+                  structural connection requirements. Forged carbon steel or
+                  stainless steel construction with hot-dip galvanized or
+                  electropolished finishes.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://muxbolts.com/wp-content/uploads/2024/07/MUXBOLTS_Coupling-Nuts-2.jpg"
+                  alt="Coupling Nuts"
+                />
+              </div>
+            </div>
+
+            <h4>Anchor Bolt Systems</h4>
+            <p>
+              <strong>Cast-In-Place Anchors:</strong> L-bolts and J-bolts with
+              90° or 180° hooks embedded in fresh concrete during pour,
+              providing mechanical interlock. Headed anchor bolts with forged
+              heads per ASTM F1554 Grade 36, 55, or 105 for structural steel
+              base plate connections. Embedment depth calculated per ACI 318
+              Chapter 17 for tension and shear capacity.
+            </p>
+            <p>
+              <strong>Post-Installed Anchors:</strong> Mechanical expansion
+              anchors (wedge, sleeve, undercut) for installation in hardened
+              concrete with ICC-ES ESR approval. Chemical adhesive anchors using
+              epoxy (high-load), polyester (fast-cure), or vinyl ester
+              (moisture-tolerant) systems per ASTM E488. Seismic and fire
+              ratings available for life-safety applications.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Technical Specifications -->
+          <div class="spec-content spec-section">
+            <h3>Materials, Grades & Performance Standards</h3>
+
+            <h4>Material Options & Properties</h4>
+            <p>
+              <strong>Carbon Steel:</strong> ASTM A36 (250 MPa yield) low-carbon
+              steel for general structural anchoring, A193 Grade B7 quenched and
+              tempered chromium-molybdenum alloy steel (660 MPa yield) for
+              high-temperature flange bolting to 540°C, A307 Grade A (230 MPa
+              tensile) for light-duty applications. Class 4.6 through 12.9
+              metric grades per ISO 898-1.
+            </p>
+            <p>
+              <strong>Stainless Steel:</strong> ASTM A193 Grade B8 (SS304) for
+              general corrosion resistance to 650°C, B8M (SS316) with 2-3%
+              molybdenum for chloride and marine environments, B8T (SS321)
+              titanium-stabilized for high-temperature service without
+              sensitization. A320 Grade B8 Class 1 for low-temperature service
+              to -196°C in LNG applications.
+            </p>
+            <p>
+              <strong>Galvanized Steel:</strong> Hot-dip galvanized per ASTM
+              A153 with minimum 610 g/m² (85 micron) zinc coating providing
+              20-30 years corrosion protection in typical atmospheric exposure.
+              Mechanically galvanized per ASTM B695 Class 50 for smaller
+              fasteners. HDG sacrificial protection prevents base metal
+              corrosion even if coating is damaged.
+            </p>
+
+            <h4>Length & Size Range</h4>
+            <p>
+              <strong>Standard Dimensions:</strong> Metric diameters M6, M8,
+              M10, M12, M16, M20, M24, M30, M36, M42, M48 in standard lengths
+              1000mm, 2000mm, 3000mm. Imperial sizes 1/4", 3/8", 1/2", 5/8",
+              3/4", 7/8", 1", 1-1/4", 1-1/2", 2" in 12", 24", 36", 72", 96",
+              120" lengths. Custom cutting available with threading dies for
+              field-length requirements.
+            </p>
+            <p>
+              <strong>Heavy-Duty Sizes:</strong> Large diameter rods M56 to M100
+              (2-1/4" to 4") for foundation bolts in power generation turbines,
+              heavy presses, and marine dock bollards. Lengths to 6000mm (20
+              feet) for deep foundation tie-downs and soil anchor systems.
+              Special machining for reduced shank diameters, wrench flats, and
+              pin holes.
+            </p>
+
+            <h4>Coatings & Finishes</h4>
+            <p>
+              <strong>Zinc Coatings:</strong> Electroplated zinc 5-15 micron per
+              ASTM B633 for mild indoor corrosion protection, zinc-nickel alloy
+              plating (Zn-Ni 12-15% Ni) providing 10x better corrosion
+              resistance than pure zinc, mechanical zinc 25-50 micron per ASTM
+              B695. Hexavalent chromate (gold), trivalent chromate (clear,
+              black, olive), or phosphate top coats enhance passivation.
+            </p>
+            <p>
+              <strong>Advanced Coatings:</strong> Geomet/Dacromet zinc-aluminum
+              flake coating (8-15 micron) offering 1000+ hours salt spray
+              resistance with high-temperature capability to 300°C, ideal for
+              automotive and heavy equipment. PTFE/Xylan dry-film lubricants
+              reduce galling and provide controlled friction coefficients
+              (0.15-0.25) for accurate torque-tension relationships.
+              Ceramic-filled epoxy coatings for severe chemical and abrasion
+              resistance.
+            </p>
+
+            <h4>Standards & Certifications</h4>
+            <p>
+              <strong>Design Standards:</strong> ASTM A193/A320 for
+              high-strength/high-temperature and low-temperature bolting. ASTM
+              F1554 for anchor bolts with three strength grades (36, 55, 105 ksi
+              yield). DIN 975/DIN 976 for metric threaded rods. ASME B18.31.3
+              for continuous thread rods. API 20E/API 5CT for oil field tubular
+              connections.
+            </p>
+            <p>
+              <strong>Testing & Quality:</strong> Mechanical testing per ASTM
+              A370 including tensile strength, yield strength, elongation, and
+              reduction of area. Hardness testing (Rockwell, Brinell, Vickers)
+              per ASTM E18. Positive material identification (PMI) using optical
+              emission spectroscopy (OES) or X-ray fluorescence (XRF). Thread
+              inspection with optical comparators and laser scanning for pitch
+              diameter, lead, and flank angle verification.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="📏">Flexible Length Customization</h4>
+                <p>
+                  Standard stock lengths of 1m, 2m, 3m can be field-cut to exact
+                  requirements using portable threading machines, reducing waste
+                  and inventory costs. Continuous thread design allows nuts to
+                  be positioned anywhere along length for infinite adjustment
+                  capability. Pre-cut and threaded assemblies available for
+                  large projects with +/-1mm length tolerance.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🏗️">High Load Capacity</h4>
+                <p>
+                  Grade 8.8 threaded rods provide 800 MPa minimum tensile
+                  strength, supporting heavy structural loads in tension
+                  applications. M20 Grade 8.8 rod has 144 kN (32,000 lbs)
+                  minimum tensile capacity. Proof load testing ensures elastic
+                  behavior to 640 MPa (80% of ultimate) without permanent set.
+                  Larger diameters to M48 support loads exceeding 500 kN.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🌡️">Temperature Extremes Performance</h4>
+                <p>
+                  Low-temperature materials A320 Grade L7 and B8 Class 1
+                  maintain ductility and impact toughness to -196°C for
+                  cryogenic LNG and liquid nitrogen service. High-temperature
+                  alloy steels A193 B7, B16 (to 540°C) and B8/B8M stainless (to
+                  650°C) resist creep, relaxation, and oxidation in flange
+                  bolting, turbine assemblies, and furnace components.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🔄">Easy Installation & Adjustment</h4>
+                <p>
+                  Double-nut jam nut technique locks position after adjustment.
+                  Coupling nuts enable quick field extensions without welding.
+                  Standard hex nut compatibility eliminates special tools.
+                  Thread lubricants (anti-seize, Molykote) prevent galling on
+                  stainless steel. Turnbuckles provide precise tensioning in
+                  cable stays and bracing systems with visual length indicators.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://i.pinimg.com/474x/cd/9a/8d/cd9a8de37192337137ef718a96120b91.jpg"
+                  alt="Foundation Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏗️ Foundation & Base Plate Anchoring</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.a193bolts.com/wp-content/uploads/sites/29/2016/08/Fotolia_91070149_XS.jpg"
+                  alt="Flange Connections"
+                />
+                <div class="app-image-overlay">
+                  <h4>🔩 Flange & Pressure Vessel Bolting</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.shutterstock.com/image-illustration/complex-industrial-hvac-duct-system-260nw-2633207823.jpg"
+                  alt="Suspended Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚙️ Suspended Piping & HVAC Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.universalimplements.com/img/products/category/harrows.png"
+                  alt="Agricultural Equipment"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚜 Agricultural Equipment Mounting</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/65dcf29bd6be2515eb49786e/6e9d2c3e-dfc2-4ad4-838d-8ccdd70f4bd1/Shipboard+Systems+%26+Equipment+.jpeg"
+                  alt="Marine Applications"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚓ Marine & Shipboard Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://indianinfrastructure.com/wp-content/uploads/2024/06/26_1-1024x537.jpg"
+                  alt="Bridge Construction"
+                />
+                <div class="app-image-overlay">
+                  <h4>🌉 Bridge & Infrastructure Projects</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- U-Bolts Modal -->
+    <div class="modal" id="modal-u-bolts">
+      <div class="scroll-progress" id="scrollProgressUBolts"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>🔧 U-Bolts / Clamps / Brackets</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+          <!-- U-Bolt Types Section -->
+          <!-- U-Bolt Types Section -->
+          <div class="spec-content spec-section">
+            <h3>U-Bolt Types & Configurations</h3>
+
+            <!-- Round U-Bolts with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Round Bend U-Bolts (Pipe Clamps)</h4>
+                <p>
+                  <strong>Design:</strong> Semi-circular bend matching pipe
+                  outer diameter with two threaded legs passing through saddle
+                  or mounting plate. Inside diameter (ID) sized to pipe nominal
+                  bore: DN15-DN600 (1/2" to 24" NPS). Bend radius
+                  precision-formed to maintain uniform clamping pressure around
+                  full pipe circumference, preventing localized stress
+                  concentration.
+                </p>
+                <p>
+                  <strong>Thread Configuration:</strong> Coarse metric threads
+                  M6 to M48 or unified coarse UNC 1/4" to 2" for maximum
+                  clamping force with standard hex nuts. Thread length typically
+                  2.5D to 3D (D = nominal diameter) to accommodate double-nut
+                  lockdown, spring washers, and saddle thickness. Right-angle
+                  thread ends machined perpendicular to leg axis for proper
+                  washer seating.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://images-cdn.ubuy.co.in/657c278a97c9fd386a438dc2-u-bolts-round-bend-u-bolt-clamp-m6m8-304.jpg"
+                  alt="Round U-Bolts"
+                />
+              </div>
+            </div>
+
+            <!-- Square U-Bolts with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/71iGQuBXugL._AC_UF1000,1000_QL80_.jpg"
+                  alt="Square U-Bolts"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Square Bend U-Bolts (Structural Mounting)</h4>
+                <p>
+                  <strong>Construction:</strong> Square or rectangular bend
+                  geometry designed to capture I-beams, channel iron
+                  (C-channel), angle iron, and square/rectangular hollow
+                  sections (RHS/SHS). Inside dimensions correspond to standard
+                  structural steel sections per AISC, BS, or DIN standards.
+                  Sharp 90° corners or radiused bends depending on load
+                  distribution requirements.
+                </p>
+                <p>
+                  <strong>Load Distribution:</strong> Wide mounting plates
+                  (often 6mm-12mm thick) distribute clamping forces across
+                  greater surface area, reducing bearing stress on thin-walled
+                  structural members. Ribbed or gusseted plates provide bending
+                  rigidity preventing plate deflection under high clamping
+                  torque. Suitable for beam hanger assemblies supporting HVAC
+                  ductwork, cable trays, and conveyor systems.
+                </p>
+              </div>
+            </div>
+
+            <!-- Semi-Round U-Bolts with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Semi-Round & Custom Bend U-Bolts</h4>
+                <p>
+                  <strong>Semi-Round Design:</strong> Flattened top section with
+                  round bottom bend, combining advantages of round pipe clamping
+                  with flat top surface for direct mounting to beam flanges or
+                  flat plates. Particularly useful for securing conduit, cable
+                  bundles, and small-diameter pipe to structural steel without
+                  separate saddles or backing plates.
+                </p>
+                <p>
+                  <strong>Custom Configurations:</strong> J-bolts (single leg
+                  anchor), L-bolts (90° hook), eye bolts (forged eye for
+                  rigging), and specialty shapes for unique mounting geometries.
+                  CNC tube bending enables complex multi-axis bends for
+                  automotive exhaust hangers, agricultural implements, and
+                  custom machinery fixtures. Prototype and short-run production
+                  available.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2025/2/486496292/BL/OE/HE/3178930/u-bolt-and-nut-500x500.jpg"
+                  alt="Semi-Round U-Bolts"
+                />
+              </div>
+            </div>
+
+            <h4>Heavy-Duty Industrial U-Bolts</h4>
+            <p>
+              <strong>Construction:</strong> Forged rather than bent
+              construction for extreme-load applications where bend radius
+              fatigue is concern. Material upsizing (e.g., 16mm diameter rod for
+              M12 thread) provides greater bending stiffness and fatigue
+              resistance. Tangent legs (straight sections) extended to 100-200mm
+              (4"-8") accommodate thick insulation, multiple pipes in rack, or
+              offset mounting requirements.
+            </p>
+            <p>
+              <strong>Special Features:</strong> Thread rolled after bending
+              preserves material grain flow and tensile strength (no HAZ from
+              welding). Thread protectors (plastic caps) prevent damage during
+              shipping and storage. Identification marking (size, grade, heat
+              number) via roll-stamping or laser etching for traceability in
+              critical applications like nuclear power and aerospace.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Clamps & Brackets Section -->
+          <div class="spec-content spec-section">
+            <h3>Pipe Clamps, Brackets & Support Systems</h3>
+
+            <!-- Cushioned Pipe Clamps with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/61iSOFfEvFL.jpg"
+                  alt="Cushioned Pipe Clamps"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Cushioned Pipe Clamps (Vibration Isolation)</h4>
+                <p>
+                  <strong>Design:</strong> Steel U-bolt with bonded rubber or
+                  elastomer liner preventing metal-to-metal contact. Rubber
+                  compound durometer (hardness) selected for application: soft
+                  (40-50 Shore A) for maximum vibration damping in HVAC, medium
+                  (60-70 Shore A) for general water pipe, hard (80-90 Shore A)
+                  for high-temperature steam to 100°C.
+                </p>
+                <p>
+                  <strong>Benefits:</strong> Eliminates galvanic corrosion
+                  between dissimilar metals (steel clamp on copper pipe),
+                  reduces noise transmission by 15-25 dB in building services,
+                  prevents abrasive wear on FRP and PVC pipe, accommodates minor
+                  thermal expansion/contraction without stress concentration.
+                  UV-resistant EPDM rubber for outdoor exposure, Nitrile for
+                  oil/fuel lines, Neoprene for general purpose.
+                </p>
+              </div>
+            </div>
+
+            <!-- Split Clamps with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Two-Piece Split Clamps (Hinged Design)</h4>
+                <p>
+                  <strong>Construction:</strong> Bolted two-piece clamshell
+                  design allowing installation on existing pipe runs without
+                  disconnection. Hinged models with spring-loaded hinge pin
+                  enable one-handed installation. Precision-machined
+                  semi-circular grooves provide 360° pipe contact with uniform
+                  pressure distribution. Available with or without
+                  rubber/plastic liners.
+                </p>
+                <p>
+                  <strong>Variants:</strong> Riser clamps for vertical pipe
+                  support with integral load-bearing collar, guide/slide clamps
+                  with low-friction PTFE washers permitting axial thermal
+                  movement while restricting lateral displacement, and sprinkler
+                  head clamps for fire protection systems with drop-rod threaded
+                  holes at precise angles per NFPA 13 requirements.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://images.jdmagicbox.com/quickquotes/images_main/rubber-lined-split-clamp-1-2-inches-diameter-10mm-2223197668-hjn6q1id.jpg"
+                  alt="Split Clamps"
+                />
+              </div>
+            </div>
+
+            <!-- Beam Clamps with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://www.grsscaffolding.com/images/product/beam-clamp.jpg"
+                  alt="Beam Clamps"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Beam Clamps & Structural Attachments</h4>
+                <p>
+                  <strong>Types:</strong> Flange clamps with serrated jaws
+                  gripping I-beam top flange, providing vertical hanging points
+                  for trapeze hangers and threaded rod suspensions. Adjustable
+                  jaw opening accommodates flange thickness variations 6-25mm.
+                  Rated load capacities 100kg to 2000kg depending on size and
+                  material grade.
+                </p>
+                <p>
+                  <strong>Specialized Designs:</strong> Girder clamps with
+                  side-mount threaded holes for horizontal pipe attachment.
+                  Purlin clamps with C-section profile matching corrugated roof
+                  purlins in industrial buildings. Trolley beam clamps with
+                  rolling wheels for movable lifting points on overhead monorail
+                  systems. Drop forged construction provides superior
+                  strength-to-weight ratio versus fabricated steel.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Materials & Standards -->
+          <div class="spec-content spec-section">
+            <h3>Materials, Finishes & Quality Standards</h3>
+
+            <h4>Base Materials & Grades</h4>
+            <p>
+              <strong>Carbon Steel:</strong> Low carbon steel (C1010-C1020) for
+              light-duty clamps under 50kg load, medium carbon (C1035-C1045)
+              heat-treated to 32-38 HRC for general industrial use supporting
+              50-500kg, high-strength alloy steel Grade 8.8 or higher for
+              heavy-duty applications exceeding 500kg. Material selection per
+              ASTM A29 for bar stock, A510 for wire products.
+            </p>
+            <p>
+              <strong>Stainless Steel:</strong> Type 304 (18-8) austenitic
+              stainless for indoor corrosive environments and food/pharma
+              sanitary requirements, Type 316 (18-10-2) with molybdenum for
+              marine, coastal, and chemical plant installations with chloride
+              exposure. Type 316L low-carbon grade prevents sensitization and
+              intergranular corrosion in welded assemblies. Passivation per ASTM
+              A967 enhances corrosion resistance.
+            </p>
+            <p>
+              <strong>Specialized Alloys:</strong> Aluminum 6061-T6 providing
+              70% weight reduction versus steel with adequate strength for HVAC
+              and electrical conduit support in aircraft, recreational vehicles,
+              and lightweight structures. Bronze and brass for marine
+              through-hull fittings and underwater applications. Duplex
+              stainless 2205 combines high strength with pitting resistance for
+              offshore oil platforms.
+            </p>
+
+            <h4>Protective Coatings & Finishes</h4>
+            <p>
+              <strong>Galvanized Coatings:</strong> Hot-dip galvanizing per ASTM
+              A153 or ISO 1461 providing 50-85 micron zinc layer with 15-25 year
+              outdoor durability. Electrogalvanized (zinc electroplated) 5-15
+              micron per ASTM B633 for indoor or covered applications.
+              Mechanically galvanized ASTM B695 Class 50 (43 micron minimum)
+              offers good coverage in threaded areas and complex geometries.
+            </p>
+            <p>
+              <strong>Paint & Powder Coat:</strong> Epoxy powder coat (100-150
+              micron) baked at 200°C providing superior chip resistance and
+              chemical protection in industrial environments. Polyester powder
+              coat for outdoor UV stability with 10+ year gloss retention.
+              E-coat (electrodeposition) primer + powder topcoat system for
+              automotive-grade durability. RAL color matching for architectural
+              visibility and identification.
+            </p>
+            <p>
+              <strong>Rubber & Plastic Components:</strong> EPDM (ethylene
+              propylene diene monomer) rubber -40°C to +120°C for general
+              weather resistance and ozone stability. Nitrile (Buna-N) for oil
+              and fuel compatibility. Silicone rubber for extreme temperature
+              -60°C to +230°C in engine compartments. Polyurethane for abrasion
+              resistance and load-bearing applications. Nylon and HDPE plastic
+              inserts for electrical isolation.
+            </p>
+
+            <h4>Standards, Testing & Certifications</h4>
+            <p>
+              <strong>Design Standards:</strong> Federal Specification A-A-1192
+              for U-bolts used in US government contracts. MSS-SP-58 for pipe
+              hangers and supports in piping systems. ASME B31.1 power piping
+              and B31.3 process piping codes specify support spacing and load
+              limits. NFPA 13 for fire sprinkler system hangers with FM
+              approval. MSHA accepted for underground mining applications.
+            </p>
+            <p>
+              <strong>Load Testing:</strong> Proof load testing to 1.5x or 2.0x
+              working load limit (WLL) demonstrates elastic behavior without
+              permanent set. Ultimate tensile testing to failure establishes
+              minimum 5:1 design factor of safety. Fatigue testing per ASTM E606
+              for cyclic loading applications (vibration, thermal cycling).
+              Torque-tension testing establishes recommended installation torque
+              values.
+            </p>
+            <p>
+              <strong>Quality Certifications:</strong> ISO 9001:2015 quality
+              management for consistent manufacturing processes. CE marking for
+              European market conformity. UKCA marking for UK market. RoHS and
+              REACH compliance for restricted substances. Material test reports
+              (MTR) per EN 10204 3.1 with chemical composition and mechanical
+              properties. Traceability through heat lot marking for critical
+              applications.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Installation Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🔧">Quick Installation & Adjustment</h4>
+                <p>
+                  U-bolt designs enable rapid field installation without
+                  specialized tools—standard wrenches or socket sets suffice.
+                  Split clamps install on existing pipe runs without system
+                  shutdown or disconnection. Pre-assembled kits with U-bolt,
+                  saddle/mounting plate, nuts, and washers reduce installation
+                  time by 50% versus assembling individual components. Slotted
+                  mounting holes allow ±25mm positioning adjustment.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🛡️">Vibration & Noise Dampening</h4>
+                <p>
+                  Cushioned clamps with elastomer liners absorb mechanical
+                  vibration from pumps, compressors, and fluid turbulence,
+                  reducing noise transmission by 15-25 dB and preventing metal
+                  fatigue from high-cycle loading. Isolation prevents
+                  structure-borne sound propagation through building frames in
+                  HVAC and plumbing systems. Critical for noise-sensitive
+                  environments like hospitals, laboratories, and recording
+                  studios.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💪">High Clamping Force Capacity</h4>
+                <p>
+                  Threaded design provides mechanical advantage enabling high
+                  clamping forces with modest installation torque. M12 Grade 8.8
+                  U-bolt delivers 17.8 kN (4000 lbs) clamping force at 50 Nm (37
+                  ft-lb) torque. Dual-nut lockdown with spring washers maintains
+                  preload under thermal cycling and vibration. Prevents pipe
+                  slippage on sloped runs and seismic shifting in
+                  earthquake-prone regions.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🌍">Corrosion Resistance Options</h4>
+                <p>
+                  Material and coating selection tailored to environment: mild
+                  indoor (painted steel), general outdoor (hot-dip galvanized),
+                  marine/coastal (SS316 stainless), chemical plant (exotic
+                  alloys). Galvanic compatibility with copper, steel, aluminum,
+                  and plastic pipe prevents electrochemical corrosion. Rubber
+                  isolators eliminate dissimilar metal contact. Expected service
+                  life 15-50 years depending on environment and material choice.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://www.appmfg.com/hs-fs/hubfs/Blog%20Images/Blog-Composite%20Pipe%20Supports%20vs.%20Metallic%20Pipe%20Supports.jpg?width=798&name=Blog-Composite%20Pipe%20Supports%20vs.%20Metallic%20Pipe%20Supports.jpg"
+                  alt="Pipe Support Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>🔧 Industrial Pipe Support Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.cbac.com/images/blog/How-exhaust-components-work-together-min.jpg"
+                  alt="Automotive Exhaust"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚗 Automotive Exhaust Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2021/3/UW/QF/CZ/3873256/hvac-building-services-500x500.jpg"
+                  alt="HVAC Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>❄️ HVAC & Building Services</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.ctube-gr.com/wp-content/uploads/2024/12/Electrical-Raceway-Electrical-Conduit-introduce-1024x689.jpg"
+                  alt="Electrical Conduit"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚡ Electrical Conduit & Cable Tray</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.universalimplements.com/img/products/category/harrows.png"
+                  alt="Agricultural Equipment"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚜 Agricultural Equipment Mounting</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/65dcf29bd6be2515eb49786e/6e9d2c3e-dfc2-4ad4-838d-8ccdd70f4bd1/Shipboard+Systems+%26+Equipment+.jpeg"
+                  alt="Marine Applications"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚓ Marine & Shipboard Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Pipes_various.jpg/1200px-Pipes_various.jpg"
+                  alt="Plumbing Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚰 Water Supply & Plumbing</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>About India Steel</h3>
+            <p>
+              Leading supplier of quality steel products in India. We provide
+              comprehensive steel solutions with international standard
+              compliance.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Service Categories</h3>
+            <ul>
+              <li><a href="#">Thread Cutting</a></li>
+              <li><a href="#">Welding Services</a></li>
+              <li><a href="#">Galvanizing</a></li>
+              <li><a href="#">Assembly & Spools</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Standards We Follow</h3>
+            <ul>
+              <li>ASTM Standards</li>
+              <li>API Specifications</li>
+              <li>IS Standards</li>
+              <li>BS Standards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 India Steel Industries. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Filter Products
+      function filterProducts(category) {
+        const items = document.querySelectorAll(".category-item");
+        const buttons = document.querySelectorAll(".filter-btn");
+        let visibleCount = 0;
+
+        // Update active button
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        event.target.classList.add("active");
+
+        // Clear search box
+        document.querySelector(".search-box input").value = "";
+
+        // Filter items
+        items.forEach((item) => {
+          if (category === "all" || item.dataset.category === category) {
+            item.classList.remove("hidden");
+            visibleCount++;
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+
+        // Update count
+        updateResultsCount(visibleCount);
+      }
+
+      // Search Products
+      function searchProducts(query) {
+        const items = document.querySelectorAll(".category-item");
+        const searchTerm = query.toLowerCase();
+        let visibleCount = 0;
+
+        // Reset filter buttons when searching
+        if (query.length > 0) {
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((btn) => btn.classList.remove("active"));
+        }
+
+        items.forEach((item) => {
+          const name = item.dataset.name.toLowerCase();
+          if (name.includes(searchTerm)) {
+            item.classList.remove("hidden");
+            visibleCount++;
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+
+        updateResultsCount(visibleCount);
+      }
+
+      // Update Results Count
+      function updateResultsCount(count) {
+        const resultsCount = document.getElementById("resultsCount");
+        resultsCount.textContent = `Showing ${count} product${
+          count !== 1 ? "s" : ""
+        }`;
+      }
+
+      // Open Modal with Scroll Animations
+      function openModal(id, card) {
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.remove("active"));
+        document
+          .querySelectorAll(".category-item")
+          .forEach((c) => c.classList.remove("selected"));
+
+        const modal = document.getElementById("modal-" + id);
+        modal.classList.add("active");
+        card.classList.add("selected");
+        document.body.style.overflow = "hidden";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+
+        // Initialize scroll animations
+        setTimeout(() => {
+          observeElements();
+
+          // Update scroll progress for the specific modal
+          if (id === "bolts") {
+            updateScrollProgress("scrollProgressBolts");
+          } else if (id === "rods") {
+            updateScrollProgress("scrollProgressRods");
+          } else if (id === "u-bolts") {
+            updateScrollProgress("scrollProgressUBolts");
+          }
+        }, 100);
+      }
+
+      // Close Modal
+      function closeModal() {
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.remove("active"));
+        document
+          .querySelectorAll(".category-item")
+          .forEach((c) => c.classList.remove("selected"));
+        document.body.style.overflow = "auto";
+      }
+
+      // Escape key to close modal
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeModal();
+        }
+      });
+
+      // Scroll Animation Observer
+      function observeElements() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px",
+          }
+        );
+
+        document.querySelectorAll(".spec-section").forEach((el) => {
+          observer.observe(el);
+        });
+      }
+
+      // Scroll Progress Bar
+      function updateScrollProgress(progressId) {
+        const modal = document.querySelector(".modal.active");
+        if (!modal) return;
+
+        modal.addEventListener("scroll", function () {
+          const scrollProgress = document.getElementById(progressId);
+          if (!scrollProgress) return;
+
+          const scrollTop = modal.scrollTop;
+          const scrollHeight = modal.scrollHeight - modal.clientHeight;
+          const progress = (scrollTop / scrollHeight) * 100;
+          scrollProgress.style.width = progress + "%";
+        });
+      }
+
+      // Smooth scroll for modals
+      document.querySelectorAll(".modal").forEach((modal) => {
+        modal.style.scrollBehavior = "smooth";
+      });
+    </script>
+  </body>
+</html>

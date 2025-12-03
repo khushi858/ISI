@@ -1,0 +1,2485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Export / Bulk Packs - India Steel Industries</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.7;
+        color: #1a1a1a;
+        background: #fff;
+      }
+
+      /* Top Bar */
+      .top-bar {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        color: #fff;
+        padding: 12px 0;
+        font-size: 13px;
+      }
+
+      .top-bar .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .top-bar-left {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+      }
+
+      .top-bar-left span {
+        opacity: 0.9;
+        letter-spacing: 0.3px;
+      }
+
+      .top-bar-right a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 500;
+        transition: color 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .top-bar-right a:hover {
+        color: #f59e0b;
+      }
+
+      /* Header */
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 25px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .logo-icon {
+        background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-weight: 800;
+        font-size: 22px;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(0, 51, 102, 0.3);
+      }
+
+      .logo-text h1 {
+        font-size: 26px;
+        font-weight: 800;
+        color: #0a0a0a;
+        letter-spacing: -0.5px;
+      }
+
+      .logo-text p {
+        font-size: 11px;
+        color: #666;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+      }
+
+      nav ul li a {
+        color: #1a1a1a;
+        text-decoration: none;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        border-radius: 8px;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background: #003366;
+        color: #fff;
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        background: #fafafa;
+        padding: 18px 0;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .breadcrumb-nav {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-size: 13px;
+      }
+
+      .breadcrumb-nav a {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 500;
+      }
+
+      .breadcrumb-nav a:hover {
+        color: #003366;
+      }
+
+      .breadcrumb-nav span {
+        color: #0a0a0a;
+        font-weight: 600;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        padding: 80px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at 50% 0%,
+          rgba(0, 51, 102, 0.3),
+          transparent 70%
+        );
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        color: #ccc;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.8;
+      }
+
+      /* Filter Section */
+      .filter-section {
+        background: #fafafa;
+        padding: 30px 0;
+        border-bottom: 1px solid #e5e5e5;
+        position: sticky;
+        top: 86px;
+        z-index: 99;
+      }
+
+      .filter-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .filter-label {
+        font-weight: 700;
+        color: #0a0a0a;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-buttons {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        flex: 1;
+      }
+
+      .filter-btn {
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: #666;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-btn:hover {
+        border-color: #003366;
+        color: #003366;
+        background: #eff6ff;
+      }
+
+      .filter-btn.active {
+        background: #003366;
+        color: #fff;
+        border-color: #003366;
+      }
+
+      .search-box {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        border-radius: 50px;
+        padding: 8px 20px;
+        min-width: 250px;
+        transition: border-color 0.3s;
+      }
+
+      .search-box:focus-within {
+        border-color: #003366;
+      }
+
+      .search-box input {
+        border: none;
+        outline: none;
+        padding: 6px 10px;
+        font-size: 14px;
+        width: 100%;
+      }
+
+      .search-box span {
+        color: #999;
+      }
+
+      .results-count {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 30px;
+        font-weight: 500;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      /* Category Section */
+      .category-section {
+        padding: 80px 0;
+        background: #fff;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 42px;
+        font-weight: 800;
+        color: #0a0a0a;
+        margin-bottom: 15px;
+        letter-spacing: -0.5px;
+      }
+
+      .section-header p {
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+      }
+
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+      }
+
+      .category-item {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+
+      .category-item:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        border-color: #003366;
+      }
+
+      .category-item.selected {
+        border-color: #003366;
+        box-shadow: 0 20px 60px rgba(0, 51, 102, 0.25);
+      }
+
+      .category-image {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.4s;
+      }
+
+      .category-item:hover .category-image {
+        transform: scale(1.05);
+      }
+
+      .category-info {
+        padding: 35px;
+      }
+
+      .category-badge {
+        display: inline-block;
+        background: #003366;
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .category-info h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #0a0a0a;
+        margin-bottom: 12px;
+        letter-spacing: -0.3px;
+      }
+
+      .category-info p {
+        font-size: 15px;
+        color: #666;
+        line-height: 1.7;
+      }
+
+      /* Modal Styles */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1000;
+        overflow-y: auto;
+        animation: fadeInModal 0.4s ease;
+      }
+
+      .modal.active {
+        display: block;
+      }
+
+      @keyframes fadeInModal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -1000px 0;
+        }
+        100% {
+          background-position: 1000px 0;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+      }
+
+      .modal-header {
+        background: linear-gradient(135deg, #0c0c0c 0%, #012e5b 100%);
+        padding: 40px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 8px 40px rgba(0, 51, 102, 0.4);
+      }
+
+      .modal-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: slideUp 0.6s ease;
+      }
+
+      .modal-header h2 {
+        font-size: 38px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -0.5px;
+      }
+
+      .close-button {
+        background: #022875;
+        color: #f8f5f5;
+        border: none;
+        padding: 14px 32px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .close-button:hover {
+        background: #003366;
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      .modal-content {
+        padding: 60px 0 80px;
+        background: #ffffff;
+        position: relative;
+      }
+
+      .modal-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        background: radial-gradient(
+          ellipse at top,
+          rgba(0, 0, 0, 0.03),
+          transparent
+        );
+        pointer-events: none;
+      }
+
+      /* Content Sections with Scroll Animations */
+      .spec-section {
+        margin-bottom: 60px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .spec-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Specifications Content */
+      .spec-content {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 50px;
+        box-shadow: 0 10px 40px rgba(0, 51, 102, 0.08);
+        border-left: 5px solid #003366;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .spec-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 51, 102, 0.05),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .spec-content:hover::before {
+        left: 100%;
+      }
+
+      .spec-content:hover {
+        box-shadow: 0 15px 50px rgba(0, 51, 102, 0.15);
+        transform: translateX(5px);
+      }
+
+      .spec-content h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #f59e0b;
+        position: relative;
+        display: inline-block;
+      }
+
+      .spec-content h3::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: #003366;
+        transition: width 0.6s ease;
+      }
+
+      .spec-content:hover h3::after {
+        width: 100%;
+      }
+
+      .spec-content h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #003366;
+        margin: 25px 0 15px;
+        padding-left: 20px;
+        border-left: 4px solid #f59e0b;
+        position: relative;
+      }
+
+      .spec-content h4::before {
+        content: "⚙️";
+        position: absolute;
+        left: -30px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .spec-content p {
+        font-size: 17px;
+        line-height: 1.9;
+        color: #495057;
+        margin-bottom: 20px;
+        text-align: justify;
+        position: relative;
+        padding-left: 25px;
+      }
+
+      .spec-content p::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background: #f59e0b;
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .spec-content p strong {
+        color: #003366;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      /* Feature Highlights */
+      .features-section {
+        background: linear-gradient(135deg, #edeeef 0%, #f9fafb 100%);
+        border-radius: 25px;
+        padding: 50px;
+        margin: 50px 0;
+        color: #060606;
+        box-shadow: 0 20px 60px rgba(7, 7, 7, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .features-section::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(14, 13, 13, 0.1), transparent);
+        animation: float 8s ease-in-out infinite;
+      }
+
+      .features-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        color: #080808;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-box {
+        background: rgb(243, 242, 242);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        border: 2px solid rgba(10, 10, 10, 0.2);
+        transition: all 0.4s ease;
+      }
+
+      .feature-box:hover {
+        background: rgba(245, 158, 11, 0.2);
+        border-color: #f59e0b;
+        transform: translateY(-5px);
+      }
+
+      .feature-box h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #080808;
+      }
+
+      .feature-box h4::before {
+        content: attr(data-icon);
+        margin-right: 10px;
+      }
+
+      .feature-box p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(4, 4, 4, 0.9);
+      }
+
+      /* Applications Tags */
+      .applications-section {
+        margin: 50px 0;
+      }
+
+      .applications-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      /* Divider Line */
+      .divider {
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          #003366,
+          #f59e0b,
+          #003366,
+          transparent
+        );
+        margin: 50px 0;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .divider::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        animation: shimmer 3s infinite;
+      }
+
+      /* Scroll Progress Bar */
+      .scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, #003366, #f59e0b);
+        z-index: 1001;
+        transition: width 0.1s ease;
+      }
+
+      /* Applications Image Grid */
+      .app-images-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .app-image-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 280px;
+        cursor: pointer;
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.6s ease-out backwards;
+      }
+
+      .app-image-card:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .app-image-card:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .app-image-card:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .app-image-card:nth-child(4) {
+        animation-delay: 0.25s;
+      }
+      .app-image-card:nth-child(5) {
+        animation-delay: 0.3s;
+      }
+      .app-image-card:nth-child(6) {
+        animation-delay: 0.35s;
+      }
+      .app-image-card:nth-child(7) {
+        animation-delay: 0.4s;
+      }
+      .app-image-card:nth-child(8) {
+        animation-delay: 0.45s;
+      }
+
+      .app-image-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        border-color: #003366;
+      }
+
+      .app-image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .app-image-card:hover img {
+        transform: scale(1.1);
+      }
+
+      .app-image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.95) 0%,
+          rgba(0, 0, 0, 0.7) 60%,
+          transparent 100%
+        );
+        padding: 25px;
+        transform: translateY(0);
+        transition: all 0.4s ease;
+      }
+
+      .app-image-card:hover .app-image-overlay {
+        background: linear-gradient(
+          to top,
+          rgba(0, 51, 102, 0.95) 0%,
+          rgba(0, 51, 102, 0.8) 60%,
+          transparent 100%
+        );
+      }
+
+      .app-image-overlay h4 {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 0.5px;
+      }
+
+      /* Configuration Row Layout */
+      .config-row {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 40px;
+        align-items: center;
+        margin: 40px 0;
+        padding: 30px 0;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .config-row:last-of-type {
+        border-bottom: none;
+      }
+
+      .config-row.reverse {
+        grid-template-columns: 380px 1fr;
+      }
+
+      .config-text {
+        order: 1;
+      }
+
+      .config-row.reverse .config-text {
+        order: 2;
+      }
+
+      .config-image {
+        order: 2;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s ease;
+        height: 320px;
+      }
+
+      .config-row.reverse .config-image {
+        order: 1;
+      }
+
+      .config-image:hover {
+        border-color: #003366;
+        box-shadow: 0 15px 40px rgba(0, 51, 102, 0.25);
+        transform: translateY(-5px);
+      }
+
+      .config-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .config-image:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Footer */
+      footer {
+        background: #0a0a0a;
+        color: #ccc;
+        padding: 60px 0 30px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-col h3 {
+        color: #f59e0b;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .footer-col p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #999;
+      }
+
+      .footer-col ul {
+        list-style: none;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+        color: #999;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+
+      .footer-col ul li a:hover {
+        color: #f59e0b;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid #222;
+        color: #666;
+        font-size: 13px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .config-row,
+        .config-row.reverse {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .config-text,
+        .config-row.reverse .config-text {
+          order: 1;
+        }
+
+        .config-image,
+        .config-row.reverse .config-image {
+          order: 2;
+        }
+
+        .config-image {
+          height: 280px;
+        }
+
+        .app-images-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .category-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .app-images-grid,
+        .category-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .config-image {
+          height: 240px;
+        }
+
+        .hero h2 {
+          font-size: 36px;
+        }
+
+        nav ul {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .filter-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .search-box {
+          width: 100%;
+        }
+
+        .feature-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <span>📧 info@indiasteelind.com</span>
+          <span>📞 +91 22 4567 8900</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="#">Get Quote</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo-icon">ISI</div>
+            <div class="logo-text">
+              <h1>INDIA STEEL INDUSTRIES</h1>
+              <p>Quality Steel Solutions Since 1998</p>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="index.html#products" class="active">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <a href="index.html#products">Products</a>
+          <span>›</span>
+          <span>Export / Bulk Packs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>📦 Export / Bulk Packs</h2>
+          <p>
+            Customized export-grade packaging including wooden crates, steel
+            pallets, and shrink-wrapped bulk shipments for safe international
+            logistics.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-container">
+          <span class="filter-label">Filter By:</span>
+          <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProducts('all')">
+              All Products
+            </button>
+            <button class="filter-btn" onclick="filterProducts('wooden')">
+              Wooden Crates
+            </button>
+            <button class="filter-btn" onclick="filterProducts('steel')">
+              Steel Pallets
+            </button>
+            <button class="filter-btn" onclick="filterProducts('wrap')">
+              Bulk Wraps
+            </button>
+          </div>
+          <div class="search-box">
+            <span>🔍</span>
+            <input
+              type="text"
+              placeholder="Search products..."
+              oninput="searchProducts(this.value)"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Products</h2>
+          <p>Click on a product to view detailed specifications</p>
+        </div>
+        <p class="results-count" id="resultsCount">Showing 3 products</p>
+        <div class="category-grid" id="productGrid">
+          <!-- Wooden Crates & Boxes -->
+          <div
+            class="category-item"
+            data-category="wooden"
+            data-name="Wooden Crates Boxes ISPM-15"
+            onclick="openModal('wooden-crates', this)"
+          >
+            <img
+              src="https://cdn.media.amplience.net/s/hobbylobby/2179497-81071863-04242024-IMGSET"
+              alt="Wooden Crates & Boxes"
+              class="category-image"
+              onerror="this.src='https://5.imimg.com/data5/BD/GA/MY-58082022/wooden-crate-500x500.png'"
+            />
+            <div class="category-info">
+              <span class="category-badge">Export Packaging</span>
+              <h3>Wooden Crates & Boxes</h3>
+              <p>
+                ISPM-15 certified wooden crates for export and heavy machinery
+                packaging
+              </p>
+            </div>
+          </div>
+
+          <!-- Steel Pallets & Frames -->
+          <div
+            class="category-item"
+            data-category="steel"
+            data-name="Steel Pallets Frames Heavy Duty"
+            onclick="openModal('steel-pallets', this)"
+          >
+            <img
+              src="https://commercialdoorhardwaresupply.com/cdn/shop/products/pallet-frames.jpg?v=1480425207"
+              alt="Steel Pallets & Frames"
+              class="category-image"
+              onerror="this.src='https://cpimg.tistatic.com/08073525/b/4/Steel-Pallet.jpg'"
+            />
+            <div class="category-info">
+              <span class="category-badge">Heavy Duty</span>
+              <h3>Steel Pallets & Frames</h3>
+              <p>
+                Durable, stackable steel pallets designed for heavy-duty export
+                cargo
+              </p>
+            </div>
+          </div>
+
+          <!-- Bulk Wraps & Shrink Film -->
+          <div
+            class="category-item"
+            data-category="wrap"
+            data-name="Bulk Wraps Shrink Film Protection"
+            onclick="openModal('bulk-wrap', this)"
+          >
+            <img
+              src="https://5.imimg.com/data5/GV/WZ/TJ/ANDROID-53540716/product-jpeg.jpeg"
+              alt="Bulk Wraps & Shrink Film"
+              class="category-image"
+              onerror="this.src='https://www.shutterstock.com/image-photo/cropped-view-movers-wrapping-box-260nw-1884392347.jpg'"
+            />
+            <div class="category-info">
+              <span class="category-badge">Protection</span>
+              <h3>Bulk Wraps & Shrink Film</h3>
+              <p>
+                Moisture-resistant shrink films and wrapping solutions for
+                bundled goods
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals content  -->
+    <!-- Wooden Crates Modal -->
+    <div class="modal" id="modal-wooden-crates">
+      <div class="scroll-progress" id="scrollProgress1"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>📦 Wooden Crates & Boxes</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Crate Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Crate Types & Construction Standards</h3>
+
+            <!-- Standard Wooden Crates with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Standard Wooden Crates</h4>
+                <p>
+                  <strong>Construction:</strong> Heavy-duty pinewood and
+                  rubberwood construction with reinforced corner posts and
+                  cross-bracing. Available in open-top design for easy loading,
+                  closed design with removable panels for complete protection,
+                  and skeleton crates with minimal framing for lightweight
+                  shipments. Thickness ranges from 18mm to 25mm depending on
+                  load requirements.
+                </p>
+                <p>
+                  <strong>Load Capacity:</strong> Designed to support static
+                  loads from 500kg to 5000kg (5 tons) with safety factor of 4:1.
+                  Floor boards spaced at optimal intervals for forklift
+                  compatibility. Reinforced base construction with double-layer
+                  flooring for heavy machinery transport. Corner protectors and
+                  edge guards prevent damage during handling.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/BD/GA/MY-58082022/wooden-crate-500x500.png"
+                  alt="Standard Wooden Crates"
+                />
+              </div>
+            </div>
+
+            <!-- Plywood Boxes with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/WR/QJ/MY-3576718/plywood-packing-cases.gif"
+                  alt="Plywood Boxes"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Plywood Boxes & Cases</h4>
+                <p>
+                  <strong>Material Specifications:</strong> Marine-grade plywood
+                  (IS:710 BWP) with thickness 12mm, 15mm, or 18mm offering
+                  superior moisture resistance and dimensional stability.
+                  Constructed with tongue-and-groove joints sealed with
+                  waterproof adhesive. Internal blocking provides additional
+                  strength for heavy items. Smooth interior finish prevents
+                  product damage.
+                </p>
+                <p>
+                  <strong>Design Features:</strong> Modular construction allows
+                  custom sizing from 300x300x300mm to 3000x2000x2000mm.
+                  Integrated lifting points with steel reinforcement for crane
+                  handling. Weatherproof sealing with rubber gaskets for ocean
+                  freight. Optional internal cushioning with foam inserts or
+                  corrugated dividers for fragile cargo protection.
+                </p>
+              </div>
+            </div>
+
+            <!-- Export Crates with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>ISPM-15 Certified Export Crates</h4>
+                <p>
+                  <strong>Compliance Standards:</strong> International Standards
+                  for Phytosanitary Measures No. 15 (ISPM-15) certified for all
+                  wood packaging materials. Heat treatment (HT) process at 56°C
+                  core temperature for minimum 30 minutes eliminates pests and
+                  diseases. Methyl bromide fumigation (MB) available for
+                  specific country requirements. Permanent IPPC stamps and
+                  certification documents included.
+                </p>
+                <p>
+                  <strong>Export Features:</strong> Kiln-dried lumber with
+                  moisture content below 20% prevents warping during transit.
+                  Corner brackets and steel strapping integration points ensure
+                  secure closure. Stencil-ready surface for shipping marks,
+                  handling instructions, and destination labels. Collapsible
+                  designs available for return shipping cost reduction up to
+                  80%.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://sharkcrates.com/wp-content/uploads/2020/10/ISPM-15-Stamp-on-SharkCarkcrate-Pallets-rotated.jpg"
+                  alt="ISPM-15 Certified Export Crates"
+                />
+              </div>
+            </div>
+
+            <h4>Custom-Built Crates</h4>
+            <p>
+              <strong>Engineering Services:</strong> CAD-designed crates
+              tailored to exact product dimensions and weight distribution. Load
+              analysis and stress testing ensure optimal wood selection and
+              reinforcement placement. 3D modeling visualization provided before
+              manufacturing. Field-proven designs for machinery, electronics,
+              artwork, and automotive components.
+            </p>
+            <p>
+              <strong>Specialized Construction:</strong> Shock-absorbing bases
+              with spring-loaded mounts for vibration-sensitive equipment.
+              Climate-controlled packaging with desiccant integration and vapor
+              barrier lining for humidity control. Anti-static interior coating
+              for electronic components. Tilt indicators and shock sensors can
+              be integrated for monitoring during transport.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Technical Specifications -->
+          <div class="spec-content spec-section">
+            <h3>Technical Specifications & Materials</h3>
+
+            <h4>Wood Material Options</h4>
+            <p>
+              <strong>Pinewood:</strong> Lightweight yet strong, ideal for
+              general export packaging. Density 500-550 kg/m³ provides excellent
+              nail-holding capacity. Natural resin content offers inherent
+              moisture resistance. Cost-effective solution for standard shipping
+              containers with load capacity up to 2 tons per crate.
+            </p>
+            <p>
+              <strong>Rubberwood:</strong> Sustainable hardwood with superior
+              strength-to-weight ratio. Density 600-650 kg/m³ suitable for heavy
+              industrial machinery packaging. Tight grain structure resists
+              splitting during nailing and handling. Excellent dimensional
+              stability across temperature variations from -20°C to +50°C.
+            </p>
+            <p>
+              <strong>Marine Plywood:</strong> Waterproof boil-resistant (BWP)
+              grade with phenolic resin bonding. 7-ply or 9-ply construction
+              maintains integrity even when exposed to rain or humidity. Zero
+              delamination guarantee for 12-month storage period. Ideal for sea
+              freight requiring long-duration moisture protection.
+            </p>
+            <p>
+              <strong>Hardwood Options:</strong> Teak, sal, and acacia for
+              ultra-heavy-duty applications exceeding 5-ton loads. High-density
+              hardwoods (700-900 kg/m³) resist compression and impact damage.
+              Premium choice for valuable machinery and long-term reusable
+              packaging solutions. Custom milling available for precise
+              tolerances.
+            </p>
+
+            <h4>Fastening & Hardware</h4>
+            <p>
+              <strong>Nails & Screws:</strong> Galvanized ring-shank nails
+              (2.5"-4") provide 300% higher pull-out resistance than smooth
+              nails. Corrosion-resistant coating ensures 5+ year service life in
+              outdoor storage. Deck screws (#8 to #12) with coarse threads for
+              plywood assembly. Pneumatic nailing for consistent, rapid
+              production.
+            </p>
+            <p>
+              <strong>Steel Reinforcement:</strong> Corner brackets (2mm-5mm
+              thickness) with zinc plating prevent joint separation under shock
+              loads. Steel strapping bands (16mm-32mm width) with tensile
+              strength 1000-2000N provide external compression. Integrated
+              lifting eyes (WLL 500kg-5000kg) with load certification enable
+              safe crane handling.
+            </p>
+            <p>
+              <strong>Locking Mechanisms:</strong> Hasp and staple closures with
+              padlock compatibility for security during transit. Butterfly
+              latches for quick-access service panels. Cam locks for repeated
+              opening/closing in reusable crates. Tamper-evident seals available
+              with serial number tracking for high-value cargo.
+            </p>
+
+            <h4>Treatment & Certification</h4>
+            <p>
+              <strong>Heat Treatment (HT):</strong> ISPM-15 compliant kiln
+              treatment at 56°C core temperature for 30+ minutes verified with
+              calibrated probes. Process eliminates bark beetles, pine wilt
+              nematodes, and other quarantine pests. IPPC-certified stamps
+              applied with permanent ink indicating treatment date, facility
+              code, and country of origin.
+            </p>
+            <p>
+              <strong>Fumigation (MB):</strong> Methyl bromide gas treatment at
+              48g/m³ concentration for 24-hour exposure period. Required for
+              specific countries including Australia, New Zealand, and China.
+              Chamber fumigation with gas concentration monitoring ensures
+              complete penetration. Phytosanitary certificates issued by
+              authorized government agencies.
+            </p>
+            <p>
+              <strong>Quality Documentation:</strong> Material certificates
+              tracing wood source and treatment compliance. Load test reports
+              with photographs demonstrating crate integrity under simulated
+              transport conditions. Packaging declaration forms for customs
+              clearance. ISO 9001:2015 certified manufacturing process with
+              batch traceability.
+            </p>
+
+            <h4>Environmental & Sustainability</h4>
+            <p>
+              <strong>Sustainable Sourcing:</strong> FSC-certified (Forest
+              Stewardship Council) wood from responsibly managed forests.
+              Chain-of-custody documentation verifying legal harvesting
+              practices. Rubberwood sourced from plantation trees at end of
+              latex-producing life, promoting circular economy. Zero old-growth
+              or endangered species wood used.
+            </p>
+            <p>
+              <strong>Recyclability:</strong> 100% biodegradable and recyclable
+              natural wood material. Crates can be disassembled and wood reused
+              for pallets, furniture, or biomass fuel. Metal hardware removed
+              and recycled separately. Repairability extends service life up to
+              10+ uses for reusable packaging programs reducing waste by 90%.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🛡️">Maximum Cargo Protection</h4>
+                <p>
+                  Multi-layer construction with reinforced corners and edges
+                  protects against impact damage during loading, transport, and
+                  unloading. Internal cushioning systems with foam padding,
+                  corrugated inserts, or air-filled bladders prevent product
+                  movement and vibration damage. Weatherproof sealing with vapor
+                  barriers and desiccants maintains internal humidity below 40%
+                  RH for moisture-sensitive electronics and machinery.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="✈️">Global Export Compliance</h4>
+                <p>
+                  ISPM-15 certification accepted in 180+ countries eliminates
+                  customs delays and quarantine holds. Complete documentation
+                  package includes phytosanitary certificates, material
+                  declarations, and packing lists. Meets international shipping
+                  standards for air freight (IATA), sea freight (IMO), and rail
+                  transport. Country-specific treatments (MB fumigation)
+                  available for Australia, China, and other regulated
+                  destinations.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💰">Cost-Effective Logistics</h4>
+                <p>
+                  Optimized crate design maximizes container utilization,
+                  fitting 20ft (28m³) and 40ft (68m³) containers efficiently.
+                  Lightweight construction reduces freight charges by 15-30%
+                  compared to steel packaging. Collapsible and nestable designs
+                  reduce return shipping costs by 80%. Reusable crates for
+                  repeat shipments amortize packaging costs over multiple
+                  cycles.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="⚙️">Custom Engineering Solutions</h4>
+                <p>
+                  In-house design team provides CAD modeling and finite element
+                  analysis for complex loads. Custom internal fixtures,
+                  brackets, and supports secure irregularly shaped cargo.
+                  Integrated shock and tilt indicators monitor handling
+                  conditions during transit. Quick-assembly designs reduce
+                  on-site packing time by 60%, minimizing production downtime
+                  during equipment installation projects.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://metal-india.com/wp-content/uploads/2022/10/interior-view-steel-factory-3-scaled-e1665062298239.jpg"
+                  alt="Heavy Machinery Export"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏗️ Heavy Machinery & Equipment</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.deangroup-int.co.uk/wp-content/uploads/2017/05/Steel-Sheets.jpg"
+                  alt="Automotive Parts"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚗 Automotive Components</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://arc.losrios.edu/arc/main/img/ARC03-Academics/instruction/ARC-Technical-Education-Division/ARC-Electronics-Technology/ARC-electronics-technology-940x529.jpg"
+                  alt="Electronics Export"
+                />
+                <div class="app-image-overlay">
+                  <h4>💻 Electronics & Technology</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://static.vesselfinder.net/ship-photo/9213959-305157000-b03af46f8a7e33b22f432001ae1e1ee6/1?v1"
+                  alt="General Cargo"
+                />
+                <div class="app-image-overlay">
+                  <h4>📦 General Industrial Cargo</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Steel Pallets Modal -->
+    <div class="modal" id="modal-steel-pallets">
+      <div class="scroll-progress" id="scrollProgress2"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>🔩 Steel Pallets & Frames</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Pallet Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Steel Pallet Types & Configurations</h3>
+
+            <!-- Standard Steel Pallets with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Standard Steel Pallets</h4>
+                <p>
+                  <strong>Construction:</strong> Welded steel construction with
+                  50mm x 50mm or 60mm x 60mm RHS (Rectangular Hollow Section)
+                  frame providing superior rigidity and load distribution. Top
+                  deck constructed from 3mm-5mm MS plate or perforated sheet
+                  with drainage holes. Four-way entry design allows forklift
+                  access from all sides. Corner protectors and edge
+                  reinforcement prevent damage during handling.
+                </p>
+                <p>
+                  <strong>Load Specifications:</strong> Static load capacity
+                  1000kg to 3000kg with safety factor 3:1 certified by load
+                  testing. Dynamic load capacity (in-transit) rated at 800kg to
+                  2500kg. Racking load capacity when supported on warehouse
+                  beams: 750kg to 2000kg. Deck deflection under maximum load:
+                  less than 10mm ensuring product stability.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://cpimg.tistatic.com/08073525/b/4/Steel-Pallet.jpg"
+                  alt="Standard Steel Pallets"
+                />
+              </div>
+            </div>
+
+            <!-- Stackable Pallets with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://dev-13sqft.s3.ap-south-1.amazonaws.com/vendor-list/167792476823323.webp"
+                  alt="Stackable Steel Pallets"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Stackable Steel Pallets</h4>
+                <p>
+                  <strong>Design Features:</strong> Integrated corner posts
+                  (100mm x 100mm angle or box section) enable vertical stacking
+                  up to 6 levels high when loaded, 20+ levels when empty.
+                  Interlocking guides ensure stable stacking with anti-slip
+                  features. Total stack height optimization maximizes warehouse
+                  vertical space utilization by 300%. Post height: 150mm, 200mm,
+                  or custom dimensions.
+                </p>
+                <p>
+                  <strong>Versatility:</strong> Removable post design converts
+                  stackable pallet to standard flat pallet for shipping
+                  flexibility. Quick-release pins or bolted connections allow
+                  tool-free post removal in under 2 minutes. Nesting capability
+                  when posts removed reduces return logistics costs by 75%.
+                  Universal foot design compatible with conveyor systems, AGVs,
+                  and automated storage systems.
+                </p>
+              </div>
+            </div>
+
+            <!-- Collapsible Pallets with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Collapsible/Foldable Steel Pallets</h4>
+                <p>
+                  <strong>Folding Mechanism:</strong> Hinged side panels and
+                  gates fold flat reducing height from 150mm to 50mm (67% space
+                  reduction). Spring-loaded locking pins secure panels in both
+                  deployed and collapsed positions. No tools required for
+                  transformation - single operator can collapse pallet in 30
+                  seconds. Wear-resistant hinges rated for 10,000+ fold cycles.
+                </p>
+                <p>
+                  <strong>Logistics Efficiency:</strong> Collapsed pallets stack
+                  3x higher during return shipping reducing freight costs by
+                  65%. Ideal for one-way export shipments where pallet return is
+                  necessary. Expanded pallet provides full rigidity and load
+                  capacity identical to non-folding units. Popular for
+                  automotive, retail distribution, and seasonal shipping
+                  applications.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/JS/PI/LY/SELLER-84102114/collapsible-metal-pallets.jpg"
+                  alt="Collapsible Steel Pallets"
+                />
+              </div>
+            </div>
+
+            <h4>Custom Steel Frames & Stillages</h4>
+            <p>
+              <strong>Engineering Design:</strong> CAD-modeled frames tailored
+              to specific product dimensions and weight profiles. Tube-frame
+              construction with mesh sides provides visibility and ventilation
+              for packaged goods. Half-drop gates and full-drop gates enable
+              easy front or side loading with forklifts. Base frames compatible
+              with standard pallet dimensions (1200x1000mm, 1200x800mm) for
+              logistics integration.
+            </p>
+            <p>
+              <strong>Specialized Applications:</strong> Automotive industry
+              frames with contoured supports for engines, transmissions, and
+              body panels. Coil frames with saddle supports for steel/aluminum
+              coil transport. Tire racks with vertical storage slots. Glass
+              frames with A-frame dividers and rubber padding. Textile racks
+              with hanging bars for garment industry. Pharmaceutical industry
+              GMP-compliant stainless steel frames.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Technical Specifications -->
+          <div class="spec-content spec-section">
+            <h3>Technical Specifications & Materials</h3>
+
+            <h4>Material Options</h4>
+            <p>
+              <strong>Mild Steel (MS):</strong> ASTM A36 or IS:2062 grade with
+              yield strength 250 MPa, tensile strength 400-550 MPa.
+              Cost-effective solution for general industrial applications with
+              indoor storage. Requires protective coating (paint/powder) for
+              corrosion resistance. Common for pallets with 3-7 year service
+              life in controlled environments.
+            </p>
+            <p>
+              <strong>Galvanized Steel:</strong> Hot-dip galvanized (HDG)
+              coating per ASTM A123 with minimum 85 microns zinc layer. Superior
+              corrosion protection for outdoor storage, coastal environments,
+              and marine shipping. 15-25 year service life without rust.
+              Pre-galvanized steel (275 g/m² coating) available for lighter-duty
+              applications at reduced cost.
+            </p>
+            <p>
+              <strong>Powder Coated Steel:</strong> Electrostatic powder coating
+              in various colors (RAL standards) with 80-120 micron thickness.
+              Excellent chip and scratch resistance with UV stability. Baked
+              finish at 180-200°C creates durable, attractive surface. Popular
+              for retail and automotive industries requiring brand color
+              matching. 5-10 year exterior durability.
+            </p>
+            <p>
+              <strong>Stainless Steel:</strong> SS304/SS316 grades for food
+              processing, pharmaceutical, and chemical industries.
+              Corrosion-proof and washable for hygiene-critical applications.
+              Fully welded construction with ground seams eliminates bacterial
+              harborage points. FDA-compliant materials certification available.
+              20+ year service life with minimal maintenance.
+            </p>
+
+            <h4>Dimensional Standards</h4>
+            <p>
+              <strong>International Sizes:</strong> Euro pallet 1200x800mm for
+              European markets and standard shipping containers. North American
+              1219x1016mm (48"x40") for US logistics networks. Asian standard
+              1100x1100mm for square packaging compatibility. Australian
+              1165x1165mm for local pallet pooling systems. Custom dimensions
+              from 800x600mm to 1500x1200mm available.
+            </p>
+            <p>
+              <strong>Height Variations:</strong> Low-profile 80mm-100mm height
+              for maximum container utilization and low-clearance AGV
+              compatibility. Standard 120mm-150mm height provides optimal
+              forklift clearance and pallet jack access. High-profile
+              180mm-200mm for extra clearance on uneven surfaces or damaged
+              warehouse floors. Custom heights accommodate specific automated
+              handling equipment requirements.
+            </p>
+
+            <h4>Welding & Fabrication Quality</h4>
+            <p>
+              <strong>Welding Standards:</strong> MIG/MAG welding per AWS D1.1
+              structural welding code with full penetration welds at critical
+              stress points. 100% visual inspection and random destructive
+              testing verify weld integrity. Certified welders with documented
+              training records. Weld spatter removal and grinding for smooth,
+              snag-free surfaces protecting product and handler safety.
+            </p>
+            <p>
+              <strong>Surface Preparation:</strong> Shot blasting or acid
+              pickling removes mill scale and contaminants before coating
+              application. Degreasing ensures optimal paint adhesion. Sharp
+              edges rounded to R3-R5 radius prevents packaging damage and worker
+              injury. Burr-free fabrication with deburred holes and smooth cut
+              edges. Final inspection per ISO 9001:2015 quality management
+              standards.
+            </p>
+
+            <h4>Load Testing & Certification</h4>
+            <p>
+              <strong>Destructive Testing:</strong> Sample pallets subjected to
+              150% rated load until failure to verify safety factors. Racking
+              load tests simulate warehouse storage conditions with beam
+              supports. Drop tests from 300mm-500mm height assess impact
+              resistance. Fatigue testing with 1000+ load cycles confirms
+              durability for repeated use applications.
+            </p>
+            <p>
+              <strong>Certification Documentation:</strong> Load capacity
+              certificates with test photos and data signed by qualified
+              engineer. Material certificates tracing steel origin and grade
+              verification. Dimensional inspection reports with tolerance
+              verification (±2mm). Coating thickness measurements with
+              calibrated gauges. Third-party inspection available for export
+              compliance (SGS, TUV, Bureau Veritas).
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="💪">Superior Durability</h4>
+                <p>
+                  Steel construction withstands extreme loads, impacts, and
+                  harsh environments that destroy wooden pallets. 10-20 year
+                  service life reduces replacement costs by 90% compared to
+                  disposable wood pallets. Resistant to moisture, mold, insects,
+                  and chemical spills. No splintering, cracking, or wood rot
+                  eliminates product contamination risks. Field-repairable with
+                  standard welding equipment minimizes downtime.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🔄">Reusability & Sustainability</h4>
+                <p>
+                  100+ reuse cycles typical before recycling compared to 5-10
+                  trips for wood pallets. Closed-loop recycling - steel pallets
+                  are 100% recyclable into new steel products at end of life.
+                  Carbon footprint reduced by 40% over lifetime versus
+                  single-use wood packaging. No ISPM-15 treatment required,
+                  eliminating fumigation chemicals. Zero waste to landfills
+                  supports corporate sustainability goals.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🏭">Automated Handling Compatible</h4>
+                <p>
+                  Consistent dimensions (±2mm tolerance) enable reliable
+                  automated conveyor transport and robotic handling. Four-way
+                  forklift entry and pallet jack slots provide handling
+                  flexibility. RFID tag mounting points support inventory
+                  tracking and warehouse management systems. Smooth surfaces
+                  prevent snags on automated guided vehicles (AGVs). Compatible
+                  with AS/RS (Automated Storage and Retrieval Systems) for
+                  lights-out warehousing.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🧹">Hygiene & Cleanliness</h4>
+                <p>
+                  Non-porous surface prevents bacterial growth and pest
+                  infestation. Easily washable with high-pressure cleaners,
+                  steam, or chemical sanitizers. Ideal for food, pharmaceutical,
+                  and healthcare industries with strict hygiene requirements. No
+                  wood splinters contaminating products or injuring workers.
+                  Smooth finish prevents dust accumulation maintaining clean
+                  room environments. Powder-coated or stainless surfaces meet
+                  FDA, GMP, and HACCP standards.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://media.gettyimages.com/id/1330219470/video/automated-car-production-line.jpg?s=640x640&k=20&c=y0LkOa5VFIVUPUl5u0zaO6ZG7CuPc_o7YL0kwvzjr_4="
+                  alt="Automotive Industry"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚗 Automotive Manufacturing</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.leadec-services.com/fileadmin/_processed_/d/3/csm_2023_header_beverage_3ab1401edf.jpg"
+                  alt="Food & Beverage"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍺 Food & Beverage Industry</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/d/de/Distribution_centre_%28J_Sainsbury%27s%29.jpg"
+                  alt="Warehousing & Logistics"
+                />
+                <div class="app-image-overlay">
+                  <h4>📦 Warehousing & Distribution</h4>
+                </div>
+              </div>
+
+              <div class="app-image-card">
+                <img
+                  src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-steel-production-metallurgical-plant-SHS-292901249.2400.jpg"
+                  alt="Steel & Metal Industry"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏗️ Steel & Metal Processing</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://media.licdn.com/dms/image/D4D12AQGX2nw1m7eiKg/article-cover_image-shrink_720_1280/0/1685441742313?e=2147483647&v=beta&t=fWSJ4Av9UNOreiEksJ5td0G91xnnvzqmvhHywsO8EQk"
+                  alt="E-commerce"
+                />
+                <div class="app-image-overlay">
+                  <h4>🛒 E-commerce & Retail</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bulk Wrap Modal -->
+    <div class="modal" id="modal-bulk-wrap">
+      <div class="scroll-progress" id="scrollProgress3"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>📦 Bulk Wraps & Shrink Film</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Film Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Shrink Film Types & Specifications</h3>
+
+            <!-- Stretch Wrap Film with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Stretch Wrap Film</h4>
+                <p>
+                  <strong>Material Composition:</strong> Linear Low-Density
+                  Polyethylene (LLDPE) with multi-layer coextrusion providing
+                  superior puncture resistance and load-holding force. Available
+                  in blown film (high-clarity, strong) and cast film (quiet
+                  unwind, consistent). Stretch capacity 200%-300% (pre-stretch)
+                  reduces film consumption by 50% while maintaining load
+                  security.
+                </p>
+                <p>
+                  <strong>Thickness & Performance:</strong> Standard gauge 12-23
+                  microns (50-90 gauge) for general pallets, heavy-duty 25-35
+                  microns for sharp-edged or unstable loads. Cling properties:
+                  single-sided cling adheres to itself preventing load shifting,
+                  double-sided cling for bundle wrapping. Load retention force
+                  3-8 kg maintains pallet integrity during transport and
+                  storage.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://bizpressions.in/cdn/shop/products/wrapping-stretch-film-roll-399-500x500.jpg?v=1640238484"
+                  alt="Stretch Wrap Film"
+                />
+              </div>
+            </div>
+
+            <!-- Shrink Wrap Film with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/GV/WZ/TJ/ANDROID-53540716/product-jpeg.jpeg"
+                  alt="Shrink Wrap Film"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Heat Shrink Film</h4>
+                <p>
+                  <strong>Shrink Properties:</strong> Polyolefin (POF) or PVC
+                  film shrinks 40-60% when heated to 120-160°C, conforming
+                  tightly to product contours. Cross-linked polyethylene for
+                  high-temperature applications. Biaxially oriented shrink film
+                  provides uniform shrinkage in all directions preventing
+                  warping. Crystal-clear transparency showcases packaged
+                  products for retail display.
+                </p>
+                <p>
+                  <strong>Application Methods:</strong> Manual shrink wrap with
+                  heat gun for small batches, semi-automatic L-bar sealers for
+                  medium production, fully automatic shrink tunnel systems
+                  processing 20-50 pallets/hour. Center-folded or single-wound
+                  rolls available. Perforation patterns enable steam venting
+                  during shrink process preventing air pockets and wrinkles.
+                </p>
+              </div>
+            </div>
+
+            <!-- VCI Film with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>VCI (Vapor Corrosion Inhibitor) Film</h4>
+                <p>
+                  <strong>Corrosion Protection:</strong> Polyethylene film
+                  impregnated with volatile corrosion inhibitors (VCI) releases
+                  protective vapor molecules forming invisible mono-molecular
+                  layer on metal surfaces. Prevents rust, tarnish, and oxidation
+                  for up to 24 months in sealed packaging. Protects ferrous and
+                  non-ferrous metals including steel, aluminum, copper, brass
+                  without surface preparation.
+                </p>
+                <p>
+                  <strong>Technical Specifications:</strong> Available in
+                  pink/blue tinted film for easy identification of
+                  corrosion-protected packaging. Effective protection range 60cm
+                  from film surface in enclosed spaces. No oily residue - parts
+                  ready for immediate use after unpacking. FDA/USDA compliant
+                  formulations for food industry equipment. Salt spray test
+                  results: 500+ hours corrosion-free per ASTM B117.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://australianinhibitor.com.au/wp-content/uploads/2024/02/mm-stretch-scaled-1-e1707260419552.jpg"
+                  alt="VCI Corrosion Protection Film"
+                />
+              </div>
+            </div>
+
+            <h4>Specialized Films & Coatings</h4>
+            <p>
+              <strong>UV Protection Film:</strong> UV-stabilized polyethylene
+              blocks 95%+ harmful UV radiation extending outdoor storage life
+              from 3 months to 12+ months. Prevents polymer degradation, color
+              fading, and brittleness. Essential for construction materials,
+              agricultural products, and outdoor equipment storage. Available in
+              black, white, or clear with UV absorbers/stabilizers.
+            </p>
+            <p>
+              <strong>Anti-Static Film:</strong> Dissipative or conductive
+              polyethylene prevents static electricity buildup protecting
+              sensitive electronics. Surface resistivity 10^8 to 10^11
+              ohms/square meets ESD safe packaging standards. Pink or black
+              colored for identification. Ideal for PCB boards, semiconductors,
+              LCD panels, and electronic components in clean room environments.
+            </p>
+            <p>
+              <strong>Breathable Film:</strong> Micro-perforated film allows
+              moisture vapor transmission preventing condensation buildup while
+              blocking liquid water penetration. Prevents mold and mildew on
+              hygroscopic products like paper, textiles, and food grains.
+              Perforation density customizable from 0.5% to 5% open area.
+              Temperature-fluctuation protection for shipping containers and
+              outdoor storage.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Technical Specifications -->
+          <div class="spec-content spec-section">
+            <h3>Technical Specifications & Performance</h3>
+
+            <h4>Film Properties & Testing</h4>
+            <p>
+              <strong>Mechanical Strength:</strong> Tensile strength 20-60 N/mm²
+              (ASTM D882) ensures film doesn't tear during wrapping. Elongation
+              at break 300-700% provides stretch without failure. Dart drop
+              impact test 150-500g measures puncture resistance against sharp
+              objects. Tear propagation resistance 50-200 N/mm prevents small
+              punctures from enlarging during handling.
+            </p>
+            <p>
+              <strong>Optical Properties:</strong> Haze measurement 2-15% (ASTM
+              D1003) indicates clarity - lower values provide better product
+              visibility for retail. Gloss measurement 60-90% creates attractive
+              shelf appeal. Transmission properties: clear film 90%+ light
+              transmission, tinted films 40-70% for UV protection. Color
+              consistency ΔE<2 ensures brand color matching across production
+              batches.
+            </p>
+            <p>
+              <strong>Barrier Properties:</strong> Water vapor transmission rate
+              (WVTR) 5-50 g/m²/day controls moisture ingress. Oxygen
+              transmission rate (OTR) 1000-5000 cc/m²/day affects
+              oxidation-sensitive products. Thickness uniformity ±5% ensures
+              consistent protection and machine performance. Heat seal strength
+              1-5 N/15mm provides secure closures for bags and overwraps.
+            </p>
+
+            <h4>Environmental Specifications</h4>
+            <p>
+              <strong>Temperature Resistance:</strong> Storage temperature range
+              -40°C to +60°C for frozen goods transport and tropical climates.
+              Shrink activation temperature 100-160°C depending on film type.
+              Low-temperature flexibility maintains pliability in cold storage
+              facilities. High-temperature resistance to 80°C for enclosed
+              shipping containers in summer.
+            </p>
+            <p>
+              <strong>Environmental Compliance:</strong> Recyclable polyethylene
+              marked with #2 or #4 resin codes for municipal recycling programs.
+              Biodegradable oxo-degradable additives available breaking down
+              film in 12-36 months for sustainable disposal. Heavy metal-free
+              formulations comply with RoHS and REACH regulations. Food-contact
+              approved materials certified to FDA 21 CFR 177.1520 and EU
+              10/2011.
+            </p>
+            <p>
+              <strong>Sustainability Options:</strong> Post-consumer recycled
+              (PCR) content films contain 30-50% recycled polyethylene reducing
+              virgin plastic consumption. Bio-based polyethylene from sugarcane
+              ethanol offers carbon-neutral alternative. Downgauging initiatives
+              reduce film thickness by 20-30% while maintaining performance
+              using advanced polymers. Compostable PLA films for organic/food
+              waste applications.
+            </p>
+
+            <h4>Application Equipment Compatibility</h4>
+            <p>
+              <strong>Manual Application:</strong> Hand-held dispenser reels
+              with adjustable tension control for 400mm-500mm wide rolls.
+              Ergonomic handles reduce operator fatigue during 8-hour shifts.
+              Brake mechanisms control unwind speed preventing over-stretching.
+              Compatible with standard 76mm (3") core diameter. Portable and
+              battery-powered options for field/job-site use.
+            </p>
+            <p>
+              <strong>Semi-Automatic Wrapping:</strong> Turntable wrappers with
+              programmable wrap patterns (top, bottom, full coverage) process
+              20-40 pallets/hour. Adjustable film tension and wrap overlap
+              settings optimize material usage. Pre-stretch rollers amplify film
+              to 250% reducing consumption. Photo-eye sensors detect pallet
+              height for automatic top-off. Integrated film cutters and tail
+              wipers complete professional finish.
+            </p>
+            <p>
+              <strong>Fully Automatic Systems:</strong> Rotary arm or ring
+              wrappers integrate with conveyor lines processing 60-120
+              pallets/hour. RFID/barcode scanning coordinates with WMS for
+              inventory control. Corner protection applicators attach cardboard
+              or foam edge guards automatically. Film break detection with
+              auto-restart minimizes downtime. Statistical process control
+              monitors film usage per pallet for cost optimization.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🛡️">Complete Load Protection</h4>
+                <p>
+                  360° containment prevents product shifting during transport
+                  reducing damage claims by 85%. Moisture barrier protection
+                  with sealed overlaps prevents water intrusion during outdoor
+                  storage and rain exposure. Dust and dirt exclusion maintains
+                  product cleanliness for retail-ready packaging. UV protection
+                  extends outdoor storage life 4x without degradation.
+                  Tamper-evident sealed wraps deter theft and provide security
+                  for high-value shipments.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💰">Cost Reduction & Efficiency</h4>
+                <p>
+                  Pre-stretch technology reduces film consumption 30-50%
+                  compared to hand wrapping while improving load stability.
+                  Faster wrapping cycles (90 seconds/pallet automated vs 5
+                  minutes manual) increase throughput 3x. Lighter pallet weights
+                  reduce freight charges by 2-5kg per pallet. Elimination of
+                  strapping, edge protectors, and corrugated wraps consolidates
+                  packaging into single film layer reducing SKU complexity by
+                  75%.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="♻️">Sustainability & Recyclability</h4>
+                <p>
+                  100% recyclable polyethylene integrates with existing #2/#4
+                  plastic recycling streams. Downgauged films reduce plastic
+                  usage by 20-30% meeting corporate sustainability targets.
+                  Post-consumer recycled content options reduce virgin plastic
+                  consumption. Mono-material construction (no adhesives or
+                  coatings) simplifies recycling process. Longer service life
+                  (2+ year outdoor durability) reduces replacement frequency and
+                  waste generation.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🎯">Customization & Branding</h4>
+                <p>
+                  Custom printing with company logos, handling instructions, and
+                  destination labels (up to 8-color flexographic printing)
+                  creates professional branded packaging. Color-coded films
+                  organize inventory by product type, destination, or priority
+                  level improving warehouse efficiency. Printed security
+                  messages ("Do Not Accept if Seal is Broken") deter tampering.
+                  Barcode integration enables scan-and-track throughout supply
+                  chain. Pre-printed warning symbols comply with hazmat and
+                  regulatory requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://www.polyflex.uk.com/templates/yootheme/cache/19/stacked-cargo-boxes-warehouse-storage-194369a7.jpeg"
+                  alt="Pallet Wrapping"
+                />
+                <div class="app-image-overlay">
+                  <h4>📦 Pallet & Unit Load Wrapping</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.shutterstock.com/image-photo/ecommerce-warehouse-inventory-management-cardboard-600nw-2390297689.jpg"
+                  alt="E-commerce"
+                />
+                <div class="app-image-overlay">
+                  <h4>🛒 E-commerce & Distribution</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.leadec-services.com/fileadmin/_processed_/d/3/csm_2023_header_beverage_3ab1401edf.jpg"
+                  alt="Food & Beverage"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍺 Food & Beverage Packaging</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://bhansalitechno.com/wp-content/uploads/2024/04/How-to-choose-the-best-auto-parts-manufacturer.jpg"
+                  alt="Automotive"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚗 Automotive Parts & Components</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://filesblog.bizvibe.com/wp-content/webp-express/webp-images/uploads/2022/10/how-to-find-a-manufacturer-for-your-product.jpg.webp"
+                  alt="Metal Protection"
+                />
+                <div class="app-image-overlay">
+                  <h4>🔩 Metal Products & Machinery</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://thumbs.dreamstime.com/b/container-cargo-ship-global-business-import-export-commerce-trade-logistic-transportation-worldwide-boat-open-sea-176863923.jpg"
+                  alt="Export Shipping"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚢 Export & International Shipping</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>About India Steel</h3>
+            <p>
+              Leading supplier of quality steel products in India. We provide
+              comprehensive steel solutions with international standard
+              compliance.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Service Categories</h3>
+            <ul>
+              <li><a href="#">Thread Cutting</a></li>
+              <li><a href="#">Welding Services</a></li>
+              <li><a href="#">Galvanizing</a></li>
+              <li><a href="#">Assembly & Spools</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Standards We Follow</h3>
+            <ul>
+              <li>ASTM Standards</li>
+              <li>API Specifications</li>
+              <li>IS Standards</li>
+              <li>BS Standards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 India Steel Industries. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Filter Products
+      function filterProducts(category) {
+        const items = document.querySelectorAll(".category-item");
+        const buttons = document.querySelectorAll(".filter-btn");
+        let visibleCount = 0;
+
+        // Update active button
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        event.target.classList.add("active");
+
+        // Clear search box
+        document.querySelector(".search-box input").value = "";
+
+        // Filter items
+        items.forEach((item) => {
+          if (category === "all" || item.dataset.category === category) {
+            item.classList.remove("hidden");
+            visibleCount++;
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+
+        // Update count
+        updateResultsCount(visibleCount);
+      }
+
+      // Search Products
+      function searchProducts(query) {
+        const items = document.querySelectorAll(".category-item");
+        const searchTerm = query.toLowerCase();
+        let visibleCount = 0;
+
+        // Reset filter buttons when searching
+        if (query.length > 0) {
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((btn) => btn.classList.remove("active"));
+        }
+
+        items.forEach((item) => {
+          const name = item.dataset.name.toLowerCase();
+          if (name.includes(searchTerm)) {
+            item.classList.remove("hidden");
+            visibleCount++;
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+
+        updateResultsCount(visibleCount);
+      }
+
+      // Update Results Count
+      function updateResultsCount(count) {
+        const resultsCount = document.getElementById("resultsCount");
+        resultsCount.textContent = `Showing ${count} product${
+          count !== 1 ? "s" : ""
+        }`;
+      }
+
+      // Open Modal
+      function openModal(id, card) {
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.remove("active"));
+        document
+          .querySelectorAll(".category-item")
+          .forEach((c) => c.classList.remove("selected"));
+        document.getElementById("modal-" + id).classList.add("active");
+        if (card) card.classList.add("selected");
+        document.body.style.overflow = "hidden";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+
+        // Initialize scroll animations
+        setTimeout(() => {
+          observeElements();
+          updateScrollProgress();
+        }, 100);
+      }
+
+      // Close Modal
+      function closeModal() {
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.remove("active"));
+        document
+          .querySelectorAll(".category-item")
+          .forEach((c) => c.classList.remove("selected"));
+        document.body.style.overflow = "auto";
+      }
+
+      // Escape key to close modal
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeModal();
+        }
+      });
+
+      // Scroll Animation Observer
+      function observeElements() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px",
+          }
+        );
+
+        document.querySelectorAll(".spec-section").forEach((el) => {
+          observer.observe(el);
+        });
+      }
+
+      // Scroll Progress Bar
+      function updateScrollProgress() {
+        const modal = document.querySelector(".modal.active");
+        if (!modal) return;
+
+        modal.addEventListener("scroll", function () {
+          const scrollProgress = modal.querySelector(".scroll-progress");
+          if (!scrollProgress) return;
+
+          const scrollTop = modal.scrollTop;
+          const scrollHeight = modal.scrollHeight - modal.clientHeight;
+          const progress = (scrollTop / scrollHeight) * 100;
+          scrollProgress.style.width = progress + "%";
+        });
+      }
+
+      // Smooth scroll for modal
+      document.querySelectorAll(".modal").forEach((modal) => {
+        modal.style.scrollBehavior = "smooth";
+      });
+    </script>
+  </body>
+</html>

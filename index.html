@@ -1,0 +1,2198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>India Steel Industries - Quality Steel Products & Solutions</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary-blue: #0066cc;
+        --dark-blue: #003d7a;
+        --light-blue: #4da6ff;
+        --black: #000000;
+        --dark-gray: #1a1a1a;
+        --light-gray: #f5f5f5;
+        --white: #ffffff;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--black);
+        overflow-x: hidden;
+        line-height: 1.6;
+      }
+
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Top Info Bar */
+      /* Top Info Bar */
+      .top-info {
+        background: var(--dark-gray);
+        color: var(--white);
+        padding: 10px 0;
+        font-size: 14px;
+      }
+
+      .top-info .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .contact-top span {
+        margin-right: 30px;
+      }
+
+      .top-info a {
+        color: var(--white);
+        text-decoration: none;
+        margin-left: 20px;
+        transition: color 0.3s;
+      }
+
+      .top-info a:hover {
+        color: var(--light-blue);
+      }
+
+      /* Header */
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 25px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .logo-icon {
+        background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-weight: 800;
+        font-size: 22px;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+      }
+
+      .logo-text h1 {
+        font-size: 26px;
+        font-weight: 800;
+        color: #0a0a0a;
+        letter-spacing: -0.5px;
+      }
+
+      .logo-text p {
+        font-size: 11px;
+        color: #666;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+
+      .header-contact {
+        text-align: right;
+      }
+
+      .header-contact .phone {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primary-blue);
+      }
+
+      .header-contact .email {
+        font-size: 14px;
+        color: #666;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+      }
+
+      nav ul li a {
+        color: #1a1a1a;
+        text-decoration: none;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        border-radius: 8px;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background: #3b82f6;
+        color: #fff;
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      /* Navigation */
+      nav {
+        background: var(--dark-blue);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-links {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        list-style: none;
+        gap: 5px;
+      }
+
+      .nav-links li a {
+        display: block;
+        padding: 18px 25px;
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        transition: all 0.3s;
+        position: relative;
+      }
+
+      .nav-links li a::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 3px;
+        background: var(--white);
+        transition: all 0.3s;
+        transform: translateX(-50%);
+      }
+
+      .nav-links li a:hover::before,
+      .nav-links li a.active::before {
+        width: 70%;
+      }
+
+      .nav-links li a:hover,
+      .nav-links li a.active {
+        background: var(--dark-blue);
+      }
+
+      /* Hero Section */
+      .hero-section {
+        position: relative;
+        height: 100vh;
+        min-height: 700px;
+        overflow: hidden;
+      }
+
+      .hero-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 0, 0, 0.7) 0%,
+          rgba(0, 61, 122, 0.6) 100%
+        );
+        z-index: 1;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--white);
+      }
+
+      .hero-content h2 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 25px;
+        line-height: 1.2;
+        animation: fadeInUp 1s ease 0.3s both;
+      }
+
+      .hero-content p {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        max-width: 800px;
+        font-weight: 300;
+        animation: fadeInUp 1s ease 0.5s both;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .hero-buttons {
+        display: flex;
+        gap: 20px;
+        animation: fadeInUp 1s ease 0.7s both;
+      }
+
+      .btn {
+        padding: 18px 40px;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: all 0.3s;
+        cursor: pointer;
+        border: none;
+        letter-spacing: 1px;
+      }
+
+      .btn-primary {
+        background: var(--primary-blue);
+        color: var(--white);
+      }
+
+      .btn-primary:hover {
+        background: var(--white);
+        color: var(--primary-blue);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0, 102, 204, 0.3);
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: var(--white);
+        border: 2px solid var(--white);
+      }
+
+      .btn-secondary:hover {
+        background: var(--white);
+        color: var(--primary-blue);
+        transform: translateY(-3px);
+      }
+
+      /* Company Info Section */
+      .company-info {
+        padding: 100px 0;
+        background: var(--white);
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      .about-text h2 {
+        font-size: 3rem;
+        color: var(--black);
+        margin-bottom: 30px;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 20px;
+      }
+
+      .about-text h2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80px;
+        height: 4px;
+        background: var(--primary-blue);
+      }
+
+      .about-text p {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 20px;
+        line-height: 1.8;
+      }
+
+      .stats-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+
+      .stat-item {
+        background: linear-gradient(
+          135deg,
+          var(--primary-blue),
+          var(--dark-blue)
+        );
+        padding: 40px 30px;
+        text-align: center;
+        border-radius: 10px;
+        color: var(--white);
+        transition: all 0.3s;
+        box-shadow: 0 5px 20px rgba(0, 102, 204, 0.2);
+      }
+
+      .stat-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 102, 204, 0.4);
+      }
+
+      .stat-item h3 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .stat-item p {
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+
+      /* Parallax Sections */
+      .parallax-section {
+        position: relative;
+        height: 600px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .parallax-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 61, 122, 0.6)
+        );
+      }
+
+      .parallax-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: var(--white);
+        padding: 40px;
+      }
+
+      .parallax-content h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .parallax-content p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* Products Section */
+      .products-section {
+        padding: 100px 0;
+        background: var(--light-gray);
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 3rem;
+        color: var(--black);
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .section-header p {
+        font-size: 1.2rem;
+        color: #666;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+      }
+
+      .product-card {
+        background: var(--white);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s;
+        text-decoration: none;
+        color: var(--black);
+      }
+
+      .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 102, 204, 0.3);
+      }
+
+      .product-img {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .product-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s;
+      }
+
+      .product-card:hover .product-img img {
+        transform: scale(1.1);
+      }
+
+      .product-img::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
+      }
+
+      .product-card h3 {
+        padding: 25px 25px 15px;
+        font-size: 1.5rem;
+        color: var(--black);
+        font-weight: 700;
+      }
+
+      .product-card p {
+        padding: 0 25px 20px;
+        color: #666;
+        font-size: 1rem;
+      }
+
+      .product-link {
+        padding: 0 25px 25px;
+        color: var(--primary-blue);
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: gap 0.3s;
+      }
+
+      .product-card:hover .product-link {
+        gap: 15px;
+      }
+
+      /* Features Section */
+      .features-section {
+        padding: 120px 0;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(
+            135deg,
+            rgba(10, 15, 28, 0.95) 0%,
+            rgba(26, 31, 53, 0.95) 50%
+          ),
+          url("https://endura-steel.com/wp-content/uploads/2023/07/Custom-dimensions-1200x900-px-1024x768.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      /* Animated overlay */
+      .features-section::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: radial-gradient(
+            circle at 20% 30%,
+            rgba(0, 102, 255, 0.1) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 70%,
+            rgba(0, 204, 255, 0.08) 0%,
+            transparent 50%
+          );
+        animation: overlayPulse 15s ease-in-out infinite;
+        z-index: 0;
+      }
+
+      @keyframes overlayPulse {
+        0%,
+        100% {
+          opacity: 0.6;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      /* Floating particles effect */
+      .features-section::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: radial-gradient(
+            2px 2px at 20% 30%,
+            rgba(255, 255, 255, 0.3),
+            transparent
+          ),
+          radial-gradient(
+            2px 2px at 60% 70%,
+            rgba(255, 255, 255, 0.3),
+            transparent
+          ),
+          radial-gradient(
+            1px 1px at 50% 50%,
+            rgba(255, 255, 255, 0.2),
+            transparent
+          ),
+          radial-gradient(
+            1px 1px at 80% 10%,
+            rgba(255, 255, 255, 0.3),
+            transparent
+          ),
+          radial-gradient(
+            2px 2px at 90% 60%,
+            rgba(255, 255, 255, 0.2),
+            transparent
+          ),
+          radial-gradient(
+            1px 1px at 33% 50%,
+            rgba(255, 255, 255, 0.3),
+            transparent
+          ),
+          radial-gradient(
+            1px 1px at 70% 30%,
+            rgba(255, 255, 255, 0.2),
+            transparent
+          );
+        background-size: 200% 200%;
+        background-position: 0% 0%;
+        animation: particleFloat 30s ease-in-out infinite;
+        z-index: 0;
+      }
+
+      @keyframes particleFloat {
+        0%,
+        100% {
+          background-position: 0% 0%;
+          opacity: 0.6;
+        }
+        50% {
+          background-position: 100% 100%;
+          opacity: 1;
+        }
+      }
+
+      .features-section .section-header h2 {
+        color: #fff;
+        background: linear-gradient(135deg, #fff, #4da6ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .features-section .section-header p {
+        color: #9fc6ff;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 40px;
+        margin-top: 60px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-item {
+        position: relative;
+        text-align: center;
+        padding: 50px 35px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .feature-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 102, 255, 0.1),
+          rgba(0, 204, 255, 0.1)
+        );
+        opacity: 0;
+        transition: opacity 0.5s;
+        z-index: 0;
+      }
+
+      .feature-item::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: radial-gradient(
+          circle,
+          rgba(77, 166, 255, 0.3),
+          transparent
+        );
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+        z-index: 0;
+      }
+
+      .feature-item:hover::before {
+        opacity: 1;
+      }
+
+      .feature-item:hover::after {
+        width: 300px;
+        height: 300px;
+      }
+
+      .feature-item:hover {
+        transform: translateY(-15px) scale(1.03);
+        border-color: #4da6ff;
+        box-shadow: 0 20px 60px rgba(0, 102, 255, 0.4);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .feature-icon {
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(
+          135deg,
+          var(--primary-blue),
+          var(--dark-blue)
+        );
+        color: var(--white);
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 30px;
+        border-radius: 50%;
+        box-shadow: 0 10px 30px rgba(0, 102, 204, 0.4);
+        position: relative;
+        z-index: 1;
+        transition: all 0.5s;
+        animation: iconFloat 3s ease-in-out infinite;
+      }
+
+      @keyframes iconFloat {
+        0%,
+        100% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-10px) rotate(5deg);
+        }
+      }
+
+      .feature-item:hover .feature-icon {
+        transform: scale(1.15) rotate(360deg);
+        box-shadow: 0 15px 40px rgba(77, 166, 255, 0.6);
+        background: linear-gradient(135deg, #00ccff, #0066ff);
+      }
+
+      .feature-item h3 {
+        font-size: 1.6rem;
+        color: #fff;
+        margin-bottom: 15px;
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s;
+      }
+
+      .feature-item:hover h3 {
+        color: #4da6ff;
+        transform: scale(1.05);
+      }
+
+      .feature-item p {
+        color: #b8d4ff;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s;
+      }
+
+      .feature-item:hover p {
+        color: #d4e6ff;
+      }
+
+      /* Staggered animation for feature items */
+      .feature-item:nth-child(1) {
+        animation: fadeInUp 0.6s ease 0.1s both;
+      }
+
+      .feature-item:nth-child(2) {
+        animation: fadeInUp 0.6s ease 0.2s both;
+      }
+
+      .feature-item:nth-child(3) {
+        animation: fadeInUp 0.6s ease 0.3s both;
+      }
+
+      .feature-item:nth-child(4) {
+        animation: fadeInUp 0.6s ease 0.4s both;
+      }
+
+      /* FAQ Section */
+      .faq-section {
+        padding: 100px 0;
+        background: var(--light-gray);
+      }
+
+      .faq-container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .faq-category {
+        margin-bottom: 40px;
+      }
+
+      .faq-category-title {
+        font-size: 1.8rem;
+        color: var(--primary-blue);
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+
+      .faq-item {
+        background: var(--white);
+        margin-bottom: 15px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s;
+      }
+
+      .faq-item:hover {
+        box-shadow: 0 5px 20px rgba(0, 102, 204, 0.15);
+      }
+
+      .faq-question {
+        padding: 25px 30px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+        color: var(--black);
+        font-size: 1.1rem;
+        transition: all 0.3s;
+      }
+
+      .faq-question:hover {
+        color: var(--primary-blue);
+      }
+
+      .faq-icon {
+        font-size: 1.5rem;
+        color: var(--primary-blue);
+        font-weight: 700;
+        transition: transform 0.3s;
+      }
+
+      .faq-item.active .faq-icon {
+        transform: rotate(45deg);
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0 30px;
+        color: #666;
+        line-height: 1.8;
+      }
+
+      .faq-item.active .faq-answer {
+        max-height: 500px;
+        padding: 0 30px 25px;
+      }
+
+      /* ========== PREMIUM CONTACT SECTION ========== */
+      .contact-section-premium {
+        background: linear-gradient(
+            135deg,
+            rgba(5, 8, 18, 0.95) 0%,
+            rgba(13, 22, 37, 0.95) 50%,
+            rgba(10, 15, 28, 0.95) 100%
+          ),
+          url("https://img.freepik.com/premium-photo/iron-steel-factory-pipe-mill-located-taganrog-south-russia_215274-1185.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 120px 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Animated grid background */
+      .contact-section-premium::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(
+            rgba(59, 130, 246, 0.03) 1px,
+            transparent 1px
+          ),
+          linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+        background-size: 50px 50px;
+        animation: gridScroll 20s linear infinite;
+        z-index: 0;
+      }
+
+      @keyframes gridScroll {
+        0% {
+          transform: translateY(0) translateX(0);
+        }
+        100% {
+          transform: translateY(50px) translateX(50px);
+        }
+      }
+
+      /* Multiple animated gradient orbs */
+      .contact-section-premium::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: radial-gradient(
+            circle at 20% 20%,
+            rgba(0, 102, 255, 0.15) 0%,
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 80% 80%,
+            rgba(0, 204, 255, 0.12) 0%,
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 60% 40%,
+            rgba(77, 166, 255, 0.1) 0%,
+            transparent 35%
+          ),
+          radial-gradient(
+            circle at 30% 70%,
+            rgba(59, 130, 246, 0.08) 0%,
+            transparent 45%
+          );
+        animation: orbsFloat 25s ease-in-out infinite;
+        z-index: 0;
+      }
+
+      @keyframes orbsFloat {
+        0%,
+        100% {
+          transform: translate(0, 0) scale(1);
+          opacity: 0.6;
+        }
+        33% {
+          transform: translate(30px, -20px) scale(1.1);
+          opacity: 0.8;
+        }
+        66% {
+          transform: translate(-20px, 30px) scale(0.95);
+          opacity: 0.7;
+        }
+      }
+
+      .contact-header {
+        text-align: center;
+        margin-bottom: 70px;
+        animation: fadeInDown 0.8s ease;
+        position: relative;
+        z-index: 1;
+      }
+
+      .contact-header h2 {
+        font-size: 3rem;
+        color: #fff;
+        font-weight: 700;
+        background: linear-gradient(135deg, #fff, #4da6ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .contact-header p {
+        color: #9fc6ff;
+        margin-top: 10px;
+        font-size: 1.2rem;
+      }
+
+      /* Contact Info in Header - Right side of logo */
+      .contact-header-info {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+
+      .contact-header-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 30px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s;
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .contact-header-item:hover {
+        background: rgba(255, 255, 255, 0.15);
+        border-color: #4da6ff;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 102, 255, 0.3);
+      }
+
+      .contact-header-icon {
+        font-size: 32px;
+        filter: drop-shadow(0 0 8px #4da6ff);
+      }
+
+      .contact-header-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact-header-label {
+        font-size: 12px;
+        color: #9fc6ff;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+
+      .contact-header-value {
+        font-size: 18px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: 0.5px;
+      }
+
+      /* Layout Grid */
+      .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* LEFT INFO BOX */
+      .contact-info-box {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      .info-card {
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        color: #fff;
+        transition: all 0.35s ease;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-decoration: none !important;
+        height: 170px;
+      }
+
+      /* Remove slanting shine effect */
+      .info-card::before {
+        display: none;
+      }
+
+      /* Simplified hover – NO SLANT, NO ROTATION */
+      .info-card:hover {
+        transform: translateY(-6px);
+        border-color: #4da6ff;
+        box-shadow: 0 12px 30px rgba(0, 102, 255, 0.35);
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      /* Icon — remove rotation */
+      .info-icon {
+        font-size: 2rem;
+        filter: drop-shadow(0 0 10px #4da6ff);
+        flex-shrink: 0;
+        transition: transform 0.25s;
+      }
+
+      .info-card:hover .info-icon {
+        transform: scale(1.08); /* ONLY scale, no rotation */
+      }
+
+      .info-content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      /* Title styling */
+      .info-card h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #9fc6ff;
+        margin: 0;
+      }
+
+      /* Remove UNDERLINE from link text */
+      .info-card a,
+      .info-card h3,
+      .info-card p {
+        text-decoration: none !important;
+        color: inherit;
+      }
+
+      /* ========== FORM ========== */
+      .contact-form-premium {
+        background: rgba(255, 255, 255, 0.07);
+        padding: 50px;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(12px);
+        color: #fff;
+        position: relative;
+      }
+
+      .contact-form-premium::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #0066ff, #00ccff, #0066ff);
+        background-size: 200% 100%;
+        animation: shimmer 3s linear infinite;
+        border-radius: 15px 15px 0 0;
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: 200% 0;
+        }
+        100% {
+          background-position: -200% 0;
+        }
+      }
+
+      .contact-form-premium h3 {
+        font-size: 2rem;
+        margin-bottom: 35px;
+        font-weight: 700;
+      }
+
+      .form-row {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 25px;
+      }
+
+      /* Floating Label Input Style */
+      .input-wrapper {
+        position: relative;
+        flex: 1;
+      }
+
+      .input-wrapper input,
+      .input-wrapper select,
+      .input-wrapper textarea {
+        width: 100%;
+        padding: 18px 16px 12px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #fff;
+        font-size: 1rem;
+        transition: all 0.3s;
+        position: relative;
+      }
+
+      .input-wrapper label {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1rem;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .input-wrapper input:focus,
+      .input-wrapper input:not(:placeholder-shown),
+      .input-wrapper select:focus,
+      .input-wrapper textarea:focus,
+      .input-wrapper textarea:not(:placeholder-shown) {
+        border-color: #4da6ff;
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      .input-wrapper input:focus ~ label,
+      .input-wrapper input:not(:placeholder-shown) ~ label,
+      .input-wrapper select:focus ~ label,
+      .input-wrapper textarea:focus ~ label,
+      .input-wrapper textarea:not(:placeholder-shown) ~ label {
+        top: 8px;
+        font-size: 0.75rem;
+        color: #4da6ff;
+      }
+
+      .input-wrapper textarea {
+        min-height: 100px;
+        resize: vertical;
+        padding-top: 25px;
+      }
+
+      .input-wrapper textarea ~ label {
+        top: 25px;
+        transform: translateY(0);
+      }
+
+      .input-wrapper textarea:focus ~ label,
+      .input-wrapper textarea:not(:placeholder-shown) ~ label {
+        top: 8px;
+      }
+
+      .input-border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #0066ff, #00ccff);
+        transition: width 0.4s;
+        border-radius: 0 0 8px 8px;
+      }
+
+      .input-wrapper input:focus ~ .input-border,
+      .input-wrapper select:focus ~ .input-border,
+      .input-wrapper textarea:focus ~ .input-border {
+        width: 100%;
+      }
+
+      /* Select styling */
+      .input-wrapper select {
+        cursor: pointer;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%234da6ff' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        padding-right: 40px;
+        max-height: 400px;
+        overflow-y: auto;
+      }
+
+      .input-wrapper select option {
+        background: #0f1c2e;
+        color: #fff;
+        padding: 12px;
+        font-size: 1rem;
+      }
+
+      /* Scrollbar styling for select dropdown */
+      .input-wrapper select::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .input-wrapper select::-webkit-scrollbar-track {
+        background: #0a0f1c;
+      }
+
+      .input-wrapper select::-webkit-scrollbar-thumb {
+        background: #4da6ff;
+        border-radius: 4px;
+      }
+
+      .input-wrapper select::-webkit-scrollbar-thumb:hover {
+        background: #0066ff;
+      }
+
+      /* Button */
+      .contact-btn {
+        width: 100%;
+        padding: 18px;
+        margin-top: 15px;
+        background: linear-gradient(135deg, #0066ff, #00ccff);
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.4s;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .contact-btn::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+      }
+
+      .contact-btn:hover::before {
+        width: 300px;
+        height: 300px;
+      }
+
+      .contact-btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 153, 255, 0.5);
+      }
+
+      .btn-text,
+      .btn-icon {
+        position: relative;
+        z-index: 1;
+      }
+
+      .btn-icon {
+        font-size: 1.5rem;
+        transition: transform 0.3s;
+      }
+
+      .contact-btn:hover .btn-icon {
+        transform: translateX(5px);
+      }
+
+      /* Footer */
+      footer {
+        background: var(--dark-gray);
+        color: var(--white);
+        padding: 60px 0 0;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-section h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #3b82f6;
+        font-weight: 700;
+      }
+
+      .footer-section p,
+      .footer-section ul li {
+        color: #ccc;
+        line-height: 1.8;
+        margin-bottom: 10px;
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section ul li a {
+        color: #ccc;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      .footer-section ul li a:hover {
+        color: var(--light-blue);
+        padding-left: 5px;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid #444;
+        padding: 30px 0;
+        text-align: center;
+        color: #888;
+      }
+
+      /* Scroll Animations */
+      .fade-item {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease;
+      }
+
+      .fade-item.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .info-grid,
+        .contact-wrapper {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-content h2 {
+          font-size: 3rem;
+        }
+
+        .contact-header-info {
+          gap: 20px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .header-content {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .nav-links {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .hero-content h2 {
+          font-size: 2rem;
+        }
+
+        .hero-content p {
+          font-size: 1.1rem;
+        }
+
+        .hero-buttons {
+          flex-direction: column;
+        }
+
+        .about-text h2,
+        .section-header h2 {
+          font-size: 2rem;
+        }
+
+        .parallax-section {
+          background-attachment: scroll;
+          height: 400px;
+        }
+
+        .parallax-content h2 {
+          font-size: 2rem;
+        }
+
+        .stats-box {
+          grid-template-columns: 1fr;
+        }
+
+        .form-row {
+          flex-direction: column;
+        }
+
+        .contact-header-info {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .contact-header-item {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .features-section,
+        .contact-section-premium {
+          background-attachment: scroll;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Info Bar -->
+    <div class="top-info">
+      <div class="container">
+        <div class="contact-top">
+          <span>📧 info@indiasteelind.com</span>
+          <span>📞 +91 22 4567 8900</span>
+        </div>
+
+        <div>
+          <a href="#contact">Get Quote</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo-icon">ISI</div>
+            <div class="logo-text">
+              <h1>INDIA STEEL INDUSTRIES</h1>
+              <p>Quality Steel Solutions Since 1998</p>
+            </div>
+          </div>
+          <div class="header-contact">
+            <div class="phone">+91 22 4567 8900</div>
+            <div class="email">info@indiasteelind.com</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">HOME</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#products">PRODUCTS</a></li>
+        <li><a href="#features">WHY CHOOSE US</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source
+          src="https://www.pexels.com/download/video/5121753/"
+          type="video/mp4"
+        />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h2>Your Trusted Partner in Steel Trading & Fabrication Solutions</h2>
+        <p>
+          Supplying MS Pipes, Hollow Sections, Angles, and Custom Fabrication
+          across India and the Middle East.
+        </p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-primary">BROWSE CATALOG</a>
+          <a href="#contact" class="btn btn-secondary">REQUEST QUOTE</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Info -->
+    <section class="company-info" id="about">
+      <div class="container">
+        <div class="info-grid">
+          <div class="about-text fade-item">
+            <h2>Who We Are?</h2>
+            <p>
+              India Steel Industries constantly strives to produce & supply High
+              Quality Steel Products complying with various International and
+              Indian Standards. We believe in extending quality Service and
+              After-sales support to all our Customers across India and
+              internationally.
+            </p>
+            <p>
+              We carry sufficient stock to meet immediate demand. Our team
+              involves qualified sales personnel and deliverymen ensuring prompt
+              delivery at all times. It will be our constant effort to
+              anticipate & exceed customer expectations.
+            </p>
+            <p>
+              The ever-changing needs of clients at any level, no matter
+              domestic or international, require professional and reliable
+              support from suppliers at all times. We are committed to being
+              that partner you can trust.
+            </p>
+          </div>
+          <div class="stats-box fade-item">
+            <div class="stat-item">
+              <h3>25+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+              <h3>ISO 9001</h3>
+              <p>Certified Company</p>
+            </div>
+            <div class="stat-item">
+              <h3>5000+</h3>
+              <p>Satisfied Clients</p>
+            </div>
+            <div class="stat-item">
+              <h3>24/7</h3>
+              <p>Customer Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parallax Section 1 -->
+    <section
+      class="parallax-section"
+      style="
+        background-image: url('https://static.vecteezy.com/system/resources/thumbnails/033/059/743/small/high-quality-galvanized-steel-pipe-or-aluminum-and-chrome-stainless-steel-pipes-in-stack-ai-generated-image-photo.jpg');
+      "
+    >
+      <div class="parallax-overlay"></div>
+      <div class="parallax-content">
+        <h2>Precision Steel Fabrication</h2>
+        <p>
+          State-of-the-art machinery delivering excellence in every cut, bend,
+          and weld
+        </p>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Steel Product Categories</h2>
+          <p>Choose a category to explore specifications</p>
+        </div>
+        <div class="product-grid">
+          <a href="SteelPipes.html" class="product-card fade-item">
+            <div class="product-img">
+              <img
+                src="https://www.solitaire-overseas.com/blog/wp-content/uploads/2021/10/Stainless-Steel-Pipe-And-Tube.jpg"
+                alt="Steel Pipes & Tubes"
+              />
+            </div>
+            <h3>Steel Pipes & Tubes</h3>
+            <p>MS, GI, Seamless, ERW, SS, CHS, SHS & RHS sections</p>
+            <span class="product-link">Explore Category →</span>
+          </a>
+
+          <a href="PipeFittings.html" class="product-card fade-item">
+            <div class="product-img">
+              <img
+                src="https://www.simplexfittings.com/blog/wp-content/uploads/2024/11/Pipe-Fittings-Used-in-Piping.jpg"
+                alt="Pipe Fittings"
+              />
+            </div>
+            <h3>Pipe Fittings & Accessories</h3>
+            <p>Nipples, elbows, tees, reducers, couplings, valves & flanges</p>
+            <span class="product-link">Explore Category →</span>
+          </a>
+
+          <a href="StructuralSteel.html" class="product-card fade-item">
+            <div class="product-img">
+              <img
+                src="https://www.montanstahl.com/wp-content/uploads/2017/06/Stainless-Steel-Structural-Section.jpg"
+                alt="Structural Steel"
+              />
+            </div>
+            <h3>Structural Steel Sections</h3>
+            <p>Angles, channels, beams, flats, rounds & TMT bars</p>
+            <span class="product-link">Explore Category →</span>
+          </a>
+
+          <a href="SheetsPlates.html" class="product-card fade-item">
+            <div class="product-img">
+              <img
+                src="https://999piping.com/uploads/media/6245af4e2df1e-steel-sheets-plates-coils-supplier.jpg"
+                alt="Sheets & Plates"
+              />
+            </div>
+            <h3>Sheets, Plates & Coils</h3>
+            <p>MS plates, GI sheets, SS sheets & chequered plates</p>
+            <span class="product-link">Explore Category →</span>
+          </a>
+
+          <a href="Fabrication.html" class="product-card fade-item">
+            <div class="product-img">
+              <img
+                src="https://img500.exportersindia.com/product_images/bc-500/2024/7/4889015/heavy-fabrication-job-work-1721731632-7533324.jpeg"
+                alt="Fabrication Services"
+              />
+            </div>
+            <h3>Fabrication & Job Work</h3>
+            <p>Cutting, bending, welding, threading, galvanizing & more</p>
+            <span class="product-link">Explore Category →</span>
+          </a>
+
+          <a href="StainlessSteel.html" class="product-card fade-item">
+            <div class="product-img">
+              <img
+                src="https://cdn-ilcjahl.nitrocdn.com/rISTsRVCliZocmivdTDTSVrxrSNwkubX/assets/images/optimized/rev-d898fad/eagletube.com/wp-content/uploads/2015/07/Depositphotos_18849747_s-20151-300x300.jpg"
+                alt="Stainless Steel"
+              />
+            </div>
+            <h3>Stainless Steel Products</h3>
+            <p>SS pipes, SS fittings, sheets & plates</p>
+            <span class="product-link">Explore Category →</span>
+          </a>
+
+          <a href="Hardware.html" class="product-card fade-item">
+            <div class="product-img">
+              <img
+                src="https://grainger-prod.adobecqms.net/content/dam/grainger/gus/en/public/digital-tactics/know-how/hero/SS-KH_10-factors-to-consider-when-choosing-fasteners_KH-HRO.jpg"
+                alt="Hardware"
+              />
+            </div>
+            <h3>Hardware & Fasteners</h3>
+            <p>Bolts, nuts, washers, rods & clamps</p>
+            <span class="product-link">Explore Category →</span>
+          </a>
+
+          <a href="Valves.html" class="product-card fade-item">
+            <div class="product-img">
+              <img
+                src="https://www.savoypipinginc.com/img/instrumentation-tube-fittings.jpg"
+                alt="Valves"
+              />
+            </div>
+            <h3>Valves & Instrumentation</h3>
+            <p>Ball, gate, globe, butterfly valves & gauges</p>
+            <span class="product-link">Explore Category →</span>
+          </a>
+
+          <a href="ExportBulk.html" class="product-card fade-item">
+            <div class="product-img">
+              <img
+                src="https://www.shutterstock.com/image-photo/warehouse-manager-box-stock-label-260nw-2451952719.jpg"
+                alt="Export Bulk"
+              />
+            </div>
+            <h3>Export / Bulk Packs</h3>
+            <p>Packed crates, pallets & export-grade packaging</p>
+            <span class="product-link">Explore Category →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parallax Section 2 -->
+    <section
+      class="parallax-section"
+      style="
+        background-image: url('https://media.istockphoto.com/id/1046590862/photo/large-silver-pipes-stacked-at-factory.jpg?s=612x612&w=0&k=20&c=hEEPljtqfVODUzEduNoBQ4Jh_TnYrj0ogt9FWIcNCh4=');
+      "
+    >
+      <div class="parallax-overlay"></div>
+      <div class="parallax-content">
+        <h2>Quality Steel Products</h2>
+        <p>
+          Comprehensive range of pipes, tubes, and structural steel meeting
+          international standards
+        </p>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose Us</h2>
+          <p>Your reliable partner for quality steel products</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item fade-item">
+            <div class="feature-icon">✓</div>
+            <h3>ISO Certified</h3>
+            <p>
+              ISO 9001 certified ensuring consistent quality and reliability
+            </p>
+          </div>
+          <div class="feature-item fade-item">
+            <div class="feature-icon">⚡</div>
+            <h3>Fast Delivery</h3>
+            <p>Prompt delivery with our efficient logistics network</p>
+          </div>
+          <div class="feature-item fade-item">
+            <div class="feature-icon">💰</div>
+            <h3>Best Prices</h3>
+            <p>Competitive pricing without compromising quality</p>
+          </div>
+          <div class="feature-item fade-item">
+            <div class="feature-icon">📦</div>
+            <h3>Large Stock</h3>
+            <p>Extensive inventory to meet immediate requirements</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Find answers to common questions about our products and services
+          </p>
+        </div>
+        <div class="faq-container">
+          <div class="faq-category">
+            <h3 class="faq-category-title">Product Details</h3>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(this)">
+                <span>What types of steel products do you supply?</span>
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                We supply a comprehensive range including MS Channels, MS
+                Angles, Steel Pipes (seamless & welded), Hollow Sections, GI
+                Coils & Sheets, TMT Bars, Steel Plates, Flat Bars, Round Bars,
+                and more. All products comply with international standards
+                including ASTM, BS, EN, JIS, and DIN.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(this)">
+                <span
+                  >Do you provide custom cutting and fabrication services?</span
+                >
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                Yes, we offer custom cutting, bending, and fabrication services
+                according to your specific project requirements. Our advanced
+                machinery ensures precise dimensions and quality finishing.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(this)">
+                <span>What standards do your products comply with?</span>
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                Our products comply with various international standards
+                including ASTM (American), BS (British), EN (European), JIS
+                (Japanese), DIN (German), API, and IS (Indian) standards. All
+                products come with mill test certificates.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-category">
+            <h3 class="faq-category-title">Delivery & Timelines</h3>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(this)">
+                <span>What are your typical delivery timelines?</span>
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                For stock items, delivery is typically within 24-48 hours across
+                major Indian cities. For custom orders or large quantities,
+                delivery takes 3-7 working days. International deliveries are
+                arranged based on location and order size.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(this)">
+                <span>Do you deliver outside India?</span>
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                Yes, we export to Middle East countries, Africa, and South Asian
+                nations. We handle all export documentation, customs clearance,
+                and logistics to ensure smooth delivery to your location.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-category">
+            <h3 class="faq-category-title">Pricing & Payment</h3>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(this)">
+                <span>How can I get a price quotation?</span>
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                Simply fill out our quote request form with product
+                specifications and quantity, or contact us directly via phone or
+                email. We provide detailed quotations within 2-4 hours during
+                business hours.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(this)">
+                <span>Do you offer bulk discounts?</span>
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                Yes, we provide competitive pricing for bulk orders. Contact our
+                sales team with your requirements for a customized quote with
+                the best possible rates.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section-premium" id="contact">
+      <div class="container">
+        <div class="contact-header">
+          <h2>Get In Touch</h2>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- LEFT : Contact Info -->
+          <div class="contact-info-box">
+            <a href="tel:+919820123456" class="info-card">
+              <div class="info-icon">📞</div>
+              <div class="info-content">
+                <h3>+91 98201 23456</h3>
+                <h3>+91 98201 23456</h3>
+              </div>
+            </a>
+
+            <a href="mailto:sales@indiasteelindustries.com" class="info-card">
+              <div class="info-icon">📧</div>
+              <div class="info-content">
+                <h3>sales@indiasteel.com</h3>
+                <h3>sales@indiasteel.com</h3>
+              </div>
+            </a>
+
+            <a href="https://maps.google.com" target="_blank" class="info-card">
+              <div class="info-icon">📍</div>
+              <div class="info-content">
+                <h3>
+                  INDIA STEEL INDUSTRIES 1st floor, Plot No. 558 897 654 TTC
+                  Industrial Area, MIDC, Mumbai, India
+                </h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- RIGHT : FORM -->
+          <div class="contact-form-premium">
+            <h3>Send us a message</h3>
+
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="input-wrapper">
+                  <input type="text" id="name" placeholder=" " required />
+                  <label for="name">Your Name *</label>
+                  <span class="input-border"></span>
+                </div>
+                <div class="input-wrapper">
+                  <input type="email" id="email" placeholder=" " required />
+                  <label for="email">Your Email *</label>
+                  <span class="input-border"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="input-wrapper">
+                  <input type="tel" id="phone" placeholder=" " />
+                  <label for="phone">Phone Number</label>
+                  <span class="input-border"></span>
+                </div>
+                <div class="input-wrapper">
+                  <select id="category" required size="1">
+                    <option value="">Select Product Category *</option>
+                    <option>Steel Pipes & Tubes</option>
+                    <option>Pipe Fittings & Accessories</option>
+                    <option>Structural Steel Sections</option>
+                    <option>Sheets, Plates & Coils</option>
+                    <option>Fabrication & Job Work</option>
+                    <option>Stainless Steel Products</option>
+                    <option>Hardware & Fasteners</option>
+                    <option>Valves & Instrumentation</option>
+                    <option>Export / Bulk Packs</option>
+                  </select>
+                  <span class="input-border"></span>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <textarea id="message" placeholder=" " required></textarea>
+                <label for="message">Write your message *</label>
+                <span class="input-border"></span>
+              </div>
+
+              <button type="submit" class="contact-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-icon">→</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3>About India Steel</h3>
+            <p>
+              Leading supplier of quality steel products in India. We provide
+              comprehensive steel solutions with international standard
+              compliance and exceptional customer service.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#features">Why Choose Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Product Categories</h3>
+            <ul>
+              <li><a href="#">Steel Pipes & Tubes</a></li>
+              <li><a href="#">Structural Steel</a></li>
+              <li><a href="#">Sheets & Plates</a></li>
+              <li><a href="#">Pipe Fittings</a></li>
+              <li><a href="#">Fabrication Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Standards We Follow</h3>
+            <ul>
+              <li>ASTM Standards</li>
+              <li>BS Standards</li>
+              <li>EN Standards</li>
+              <li>JIS Standards</li>
+              <li>IS Standards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 India Steel Industries. All Rights Reserved. | Designed
+            for Quality & Excellence
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Scroll Animation Observer
+      const fadeElements = document.querySelectorAll(".fade-item");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        }
+      );
+
+      fadeElements.forEach((el) => observer.observe(el));
+
+      // FAQ Toggle Function
+      function toggleFaq(element) {
+        const faqItem = element.parentElement;
+        const answer = faqItem.querySelector(".faq-answer");
+        const icon = element.querySelector(".faq-icon");
+
+        // Close other FAQs
+        document.querySelectorAll(".faq-item").forEach((item) => {
+          if (item !== faqItem && item.classList.contains("active")) {
+            item.classList.remove("active");
+            item.querySelector(".faq-icon").textContent = "+";
+          }
+        });
+
+        faqItem.classList.toggle("active");
+
+        if (faqItem.classList.contains("active")) {
+          icon.textContent = "−";
+        } else {
+          icon.textContent = "+";
+        }
+      }
+
+      // Smooth Scroll for Navigation
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Active Nav Link on Scroll
+      window.addEventListener("scroll", () => {
+        let current = "";
+        const sections = document.querySelectorAll("section[id]");
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        document.querySelectorAll(".nav-links a").forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // Header Scroll Effect
+      let lastScroll = 0;
+      const header = document.querySelector("header");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > 100) {
+          header.style.boxShadow = "0 5px 20px rgba(0,0,0,0.15)";
+        } else {
+          header.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
+        }
+
+        lastScroll = currentScroll;
+      });
+
+      // Contact Form Submission
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Thank you for your message! We will get back to you soon.");
+          this.reset();
+        });
+    </script>
+  </body>
+</html>

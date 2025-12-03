@@ -1,0 +1,4474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pipe Fittings & Accessories - India Steel Industries</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.7;
+        color: #1a1a1a;
+        background: #fff;
+      }
+
+      /* Top Bar */
+      .top-bar {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        color: #fff;
+        padding: 12px 0;
+        font-size: 13px;
+      }
+
+      .top-bar .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .top-bar-left {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+      }
+
+      .top-bar-left span {
+        opacity: 0.9;
+        letter-spacing: 0.3px;
+      }
+
+      .top-bar-right a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 500;
+        transition: color 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .top-bar-right a:hover {
+        color: #f59e0b;
+      }
+
+      /* Header */
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 25px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .logo-icon {
+        background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-weight: 800;
+        font-size: 22px;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(0, 51, 102, 0.3);
+      }
+
+      .logo-text h1 {
+        font-size: 26px;
+        font-weight: 800;
+        color: #0a0a0a;
+        letter-spacing: -0.5px;
+      }
+
+      .logo-text p {
+        font-size: 11px;
+        color: #666;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+      }
+
+      nav ul li a {
+        color: #1a1a1a;
+        text-decoration: none;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        border-radius: 8px;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background: #003366;
+        color: #fff;
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        background: #fafafa;
+        padding: 18px 0;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .breadcrumb-nav {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-size: 13px;
+      }
+
+      .breadcrumb-nav a {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 500;
+      }
+
+      .breadcrumb-nav a:hover {
+        color: #003366;
+      }
+
+      .breadcrumb-nav span {
+        color: #0a0a0a;
+        font-weight: 600;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        padding: 80px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at 50% 0%,
+          rgba(0, 51, 102, 0.3),
+          transparent 70%
+        );
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        color: #ccc;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.8;
+      }
+
+      /* Filter Section */
+      .filter-section {
+        background: #fafafa;
+        padding: 30px 0;
+        border-bottom: 1px solid #e5e5e5;
+        position: sticky;
+        top: 86px;
+        z-index: 99;
+      }
+
+      .filter-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .filter-label {
+        font-weight: 700;
+        color: #0a0a0a;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-buttons {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        flex: 1;
+      }
+
+      .filter-btn {
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: #666;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-btn:hover {
+        border-color: #003366;
+        color: #003366;
+        background: #eff6ff;
+      }
+
+      .filter-btn.active {
+        background: #003366;
+        color: #fff;
+        border-color: #003366;
+      }
+
+      .search-box {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        border-radius: 50px;
+        padding: 8px 20px;
+        min-width: 250px;
+        transition: border-color 0.3s;
+      }
+
+      .search-box:focus-within {
+        border-color: #003366;
+      }
+
+      .search-box input {
+        border: none;
+        outline: none;
+        padding: 6px 10px;
+        font-size: 14px;
+        width: 100%;
+      }
+
+      .search-box span {
+        color: #999;
+      }
+
+      .results-count {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 30px;
+        font-weight: 500;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      /* Category Section */
+      .category-section {
+        padding: 80px 0;
+        background: #fff;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 42px;
+        font-weight: 800;
+        color: #0a0a0a;
+        margin-bottom: 15px;
+        letter-spacing: -0.5px;
+      }
+
+      .section-header p {
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+      }
+
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+      }
+
+      .category-item {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+
+      .category-item:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        border-color: #003366;
+      }
+
+      .category-item.selected {
+        border-color: #003366;
+        box-shadow: 0 20px 60px rgba(0, 51, 102, 0.25);
+      }
+
+      .category-image {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.4s;
+      }
+
+      .category-item:hover .category-image {
+        transform: scale(1.05);
+      }
+
+      .category-info {
+        padding: 35px;
+      }
+
+      .category-badge {
+        display: inline-block;
+        background: #003366;
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .category-info h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #0a0a0a;
+        margin-bottom: 12px;
+        letter-spacing: -0.3px;
+      }
+
+      .category-info p {
+        font-size: 15px;
+        color: #666;
+        line-height: 1.7;
+      }
+
+      /* Modal Styles */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1000;
+        overflow-y: auto;
+        animation: fadeInModal 0.4s ease;
+      }
+
+      .modal.active {
+        display: block;
+      }
+
+      @keyframes fadeInModal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -1000px 0;
+        }
+        100% {
+          background-position: 1000px 0;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+      }
+
+      .modal-header {
+        background: linear-gradient(135deg, #0c0c0c 0%, #012e5b 100%);
+        padding: 40px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 8px 40px rgba(0, 51, 102, 0.4);
+      }
+
+      .modal-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: slideUp 0.6s ease;
+      }
+
+      .modal-header h2 {
+        font-size: 38px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -0.5px;
+      }
+
+      .close-button {
+        background: #022875;
+        color: #f8f5f5;
+        border: none;
+        padding: 14px 32px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .close-button:hover {
+        background: #003366;
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      .modal-content {
+        padding: 60px 0 80px;
+        background: #ffffff;
+        position: relative;
+      }
+
+      .modal-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        background: radial-gradient(
+          ellipse at top,
+          rgba(0, 0, 0, 0.03),
+          transparent
+        );
+        pointer-events: none;
+      }
+
+      /* Content Sections with Scroll Animations */
+      .spec-section {
+        margin-bottom: 60px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .spec-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Specifications Content */
+      .spec-content {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 50px;
+        box-shadow: 0 10px 40px rgba(0, 51, 102, 0.08);
+        border-left: 5px solid #003366;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .spec-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 51, 102, 0.05),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .spec-content:hover::before {
+        left: 100%;
+      }
+
+      .spec-content:hover {
+        box-shadow: 0 15px 50px rgba(0, 51, 102, 0.15);
+        transform: translateX(5px);
+      }
+
+      .spec-content h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #f59e0b;
+        position: relative;
+        display: inline-block;
+      }
+
+      .spec-content h3::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: #003366;
+        transition: width 0.6s ease;
+      }
+
+      .spec-content:hover h3::after {
+        width: 100%;
+      }
+
+      .spec-content h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #003366;
+        margin: 25px 0 15px;
+        padding-left: 20px;
+        border-left: 4px solid #f59e0b;
+        position: relative;
+      }
+
+      .spec-content h4::before {
+        content: "⚙️";
+        position: absolute;
+        left: -30px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .spec-content p {
+        font-size: 17px;
+        line-height: 1.9;
+        color: #495057;
+        margin-bottom: 20px;
+        text-align: justify;
+        position: relative;
+        padding-left: 25px;
+      }
+
+      .spec-content p::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background: #f59e0b;
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .spec-content p strong {
+        color: #003366;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      /* Feature Highlights */
+      .features-section {
+        background: linear-gradient(135deg, #edeeef 0%, #f9fafb 100%);
+        border-radius: 25px;
+        padding: 50px;
+        margin: 50px 0;
+        color: #060606;
+        box-shadow: 0 20px 60px rgba(7, 7, 7, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .features-section::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(14, 13, 13, 0.1), transparent);
+        animation: float 8s ease-in-out infinite;
+      }
+
+      .features-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        color: #080808;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-box {
+        background: rgb(243, 242, 242);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        border: 2px solid rgba(10, 10, 10, 0.2);
+        transition: all 0.4s ease;
+      }
+
+      .feature-box:hover {
+        background: rgba(245, 158, 11, 0.2);
+        border-color: #f59e0b;
+        transform: translateY(-5px);
+      }
+
+      .feature-box h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #080808;
+      }
+
+      .feature-box h4::before {
+        content: attr(data-icon);
+        margin-right: 10px;
+      }
+
+      .feature-box p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(4, 4, 4, 0.9);
+      }
+
+      /* Applications Tags */
+      .applications-section {
+        margin: 50px 0;
+      }
+
+      .applications-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #003366;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      /* Divider Line */
+      .divider {
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          #003366,
+          #f59e0b,
+          #003366,
+          transparent
+        );
+        margin: 50px 0;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .divider::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        animation: shimmer 3s infinite;
+      }
+
+      /* Scroll Progress Bar */
+      .scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, #003366, #f59e0b);
+        z-index: 1001;
+        transition: width 0.1s ease;
+      }
+
+      /* Applications Image Grid */
+      .app-images-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .app-image-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 280px;
+        cursor: pointer;
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.6s ease-out backwards;
+      }
+
+      .app-image-card:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .app-image-card:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .app-image-card:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .app-image-card:nth-child(4) {
+        animation-delay: 0.25s;
+      }
+      .app-image-card:nth-child(5) {
+        animation-delay: 0.3s;
+      }
+      .app-image-card:nth-child(6) {
+        animation-delay: 0.35s;
+      }
+      .app-image-card:nth-child(7) {
+        animation-delay: 0.4s;
+      }
+      .app-image-card:nth-child(8) {
+        animation-delay: 0.45s;
+      }
+
+      .app-image-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        border-color: #003366;
+      }
+
+      .app-image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .app-image-card:hover img {
+        transform: scale(1.1);
+      }
+
+      .app-image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.95) 0%,
+          rgba(0, 0, 0, 0.7) 60%,
+          transparent 100%
+        );
+        padding: 25px;
+        transform: translateY(0);
+        transition: all 0.4s ease;
+      }
+
+      .app-image-card:hover .app-image-overlay {
+        background: linear-gradient(
+          to top,
+          rgba(0, 51, 102, 0.95) 0%,
+          rgba(0, 51, 102, 0.8) 60%,
+          transparent 100%
+        );
+      }
+
+      .app-image-overlay h4 {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 0.5px;
+      }
+
+      /* Configuration Row Layout */
+      .config-row {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 40px;
+        align-items: center;
+        margin: 40px 0;
+        padding: 30px 0;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .config-row:last-of-type {
+        border-bottom: none;
+      }
+
+      .config-row.reverse {
+        grid-template-columns: 380px 1fr;
+      }
+
+      .config-text {
+        order: 1;
+      }
+
+      .config-row.reverse .config-text {
+        order: 2;
+      }
+
+      .config-image {
+        order: 2;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s ease;
+        height: 320px;
+      }
+
+      .config-row.reverse .config-image {
+        order: 1;
+      }
+
+      .config-image:hover {
+        border-color: #003366;
+        box-shadow: 0 15px 40px rgba(0, 51, 102, 0.25);
+        transform: translateY(-5px);
+      }
+
+      .config-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .config-image:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Footer */
+      footer {
+        background: #0a0a0a;
+        color: #ccc;
+        padding: 60px 0 30px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-col h3 {
+        color: #f59e0b;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .footer-col p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #999;
+      }
+
+      .footer-col ul {
+        list-style: none;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+        color: #999;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+
+      .footer-col ul li a:hover {
+        color: #f59e0b;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid #222;
+        color: #666;
+        font-size: 13px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .config-row,
+        .config-row.reverse {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .config-text,
+        .config-row.reverse .config-text {
+          order: 1;
+        }
+
+        .config-image,
+        .config-row.reverse .config-image {
+          order: 2;
+        }
+
+        .config-image {
+          height: 280px;
+        }
+
+        .app-images-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .category-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .app-images-grid,
+        .category-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .config-image {
+          height: 240px;
+        }
+
+        .hero h2 {
+          font-size: 36px;
+        }
+
+        nav ul {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .filter-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .search-box {
+          width: 100%;
+        }
+
+        .feature-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <span>📧 info@indiasteelind.com</span>
+          <span>📞 +91 22 4567 8900</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="#">Get Quote</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo-icon">ISI</div>
+            <div class="logo-text">
+              <h1>INDIA STEEL INDUSTRIES</h1>
+              <p>Quality Steel Solutions Since 1998</p>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="index.html#products" class="active">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <a href="index.html#products">Products</a>
+          <span>›</span>
+          <span>Pipe Fittings & Accessories</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>🔧 Pipe Fittings & Accessories</h2>
+          <p>
+            Complete range of pipe fittings, valves, and accessories for
+            industrial, commercial, and residential piping systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-container">
+          <span class="filter-label">Filter By:</span>
+          <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProducts('all')">
+              All Products
+            </button>
+            <button class="filter-btn" onclick="filterProducts('fittings')">
+              Fittings
+            </button>
+            <button class="filter-btn" onclick="filterProducts('flanges')">
+              Flanges
+            </button>
+            <button class="filter-btn" onclick="filterProducts('valves')">
+              Valves
+            </button>
+          </div>
+          <div class="search-box">
+            <span>🔍</span>
+            <input
+              type="text"
+              placeholder="Search products..."
+              oninput="searchProducts(this.value)"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Products</h2>
+          <p>Click on a product to view detailed specifications</p>
+        </div>
+        <p class="results-count" id="resultsCount">Showing 10 products</p>
+        <div class="category-grid" id="productGrid">
+          <!-- B.P. Nipples -->
+          <div
+            class="category-item"
+            data-category="fittings"
+            data-name="BP Nipples Threaded Barrel Pattern"
+            onclick="openModal('nipples', this)"
+          >
+            <img
+              src="https://shreebajrangudyog.com/wp-content/uploads/2025/01/banner2.jpg"
+              alt="B.P. Nipples"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Fittings</span>
+              <h3>B.P. Nipples (Threaded Nipples)</h3>
+              <p>Barrel pattern threaded nipples for pipe connections</p>
+            </div>
+          </div>
+
+          <!-- Elbows -->
+          <div
+            class="category-item"
+            data-category="fittings"
+            data-name="Elbows 90 45 Degree Threaded Butt Weld"
+            onclick="openModal('elbows', this)"
+          >
+            <img
+              src="https://www.ltdpipeline.com/wp-content/uploads/2023/05/bw_elbows1-2.gif"
+              alt="Elbows"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Fittings</span>
+              <h3>Elbows (90°, 45°)</h3>
+              <p>Threaded and butt-weld elbows for directional changes</p>
+            </div>
+          </div>
+
+          <!-- Tees -->
+          <div
+            class="category-item"
+            data-category="fittings"
+            data-name="Tees Equal Reducing Junction"
+            onclick="openModal('tees', this)"
+          >
+            <img
+              src="https://www.ng-steel.com/wp-content/uploads/2021/10/inconel-equal-unequal-tee.jpg"
+              alt="Pipe Tees"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Fittings</span>
+              <h3>Tees (Equal / Reducing)</h3>
+              <p>T-junction fittings for branch connections</p>
+            </div>
+          </div>
+
+          <!-- Couplings -->
+          <div
+            class="category-item"
+            data-category="fittings"
+            data-name="Couplings Unions Sockets Connection"
+            onclick="openModal('couplings', this)"
+          >
+            <img
+              src="https://5.imimg.com/data5/JR/KM/EF/SELLER-663564/fcs-socket-weld-fittings-3000-lbs-ibr-elbow-tee-coupling-union--500x500.png"
+              alt="Couplings and Sockets"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Fittings</span>
+              <h3>Couplings / Unions / Sockets</h3>
+              <p>Connection fittings for joining pipe sections</p>
+            </div>
+          </div>
+
+          <!-- Reducers -->
+          <div
+            class="category-item"
+            data-category="fittings"
+            data-name="Reducers Concentric Eccentric"
+            onclick="openModal('reducers', this)"
+          >
+            <img
+              src="https://www.oepipe.com/uploads/12033/products/p2024041711410467238.jpg?size=450x0"
+              alt="Reducers"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Fittings</span>
+              <h3>Reducers (Concentric / Eccentric)</h3>
+              <p>Diameter reducing fittings for pipe size transitions</p>
+            </div>
+          </div>
+
+          <!-- Hex Nipples -->
+          <div
+            class="category-item"
+            data-category="fittings"
+            data-name="Hex Nipples Threaded Bars Hexagonal"
+            onclick="openModal('hex-nipples', this)"
+          >
+            <img
+              src="https://5.imimg.com/data5/SELLER/Default/2022/6/NN/IC/QG/93054272/stainless-steel-threaded-hex-nipple-500x500-500x500.jpg"
+              alt="Hex Nipples"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Fittings</span>
+              <h3>Hex Nipples / Threaded Bars</h3>
+              <p>Hexagonal nipples and threaded connecting bars</p>
+            </div>
+          </div>
+
+          <!-- Bushes -->
+          <div
+            class="category-item"
+            data-category="fittings"
+            data-name="Bushes Plugs Caps End Closures"
+            onclick="openModal('bushes', this)"
+          >
+            <img
+              src="https://5.imimg.com/data5/II/GV/MY-2620073/quick-change-coupling-500x500.jpg"
+              alt="Bushes and Caps"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Fittings</span>
+              <h3>Bushes, Plugs, Caps</h3>
+              <p>End closures and thread adapters for pipe systems</p>
+            </div>
+          </div>
+
+          <!-- Flanges -->
+          <div
+            class="category-item"
+            data-category="flanges"
+            data-name="Flanges Slip Weld Neck Blind Socket"
+            onclick="openModal('flanges', this)"
+          >
+            <img
+              src="https://www.kencotubes.com/blog/wp-content/uploads/2021/12/Flanges.jpg"
+              alt="Flanges"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Flanges</span>
+              <h3>Flanges (Multiple Types)</h3>
+              <p>Slip-on, weld neck, blind, and socket weld flanges</p>
+            </div>
+          </div>
+
+          <!-- Valves -->
+          <div
+            class="category-item"
+            data-category="valves"
+            data-name="Valves Ball Gate Check Globe Butterfly"
+            onclick="openModal('valves', this)"
+          >
+            <img
+              src="https://www.airaindia.com/wp-content/uploads/2024/09/Stainless-Steel-Body-Pressure-Reducing-Valve-Flanged-05.webp"
+              alt="Industrial Valves"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Valves</span>
+              <h3>Valve Range</h3>
+              <p>Ball, gate, check, globe, and butterfly valves</p>
+            </div>
+          </div>
+
+          <!-- Adaptors -->
+          <div
+            class="category-item"
+            data-category="fittings"
+            data-name="Thread Adaptors Bushings Converters"
+            onclick="openModal('adaptors', this)"
+          >
+            <img
+              src="https://www.reloadingsolutions.com/cdn/shop/products/red-70030-1inch-Threaded-Bushing_800x800.jpg?v=1671117162"
+              alt="Thread Adaptors"
+              class="category-image"
+            />
+            <div class="category-info">
+              <span class="category-badge">Fittings</span>
+              <h3>Thread Adaptors / Bushings</h3>
+              <p>Thread converters and size adapting bushings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- B.P. Nipples Modal -->
+    <div class="modal" id="modal-nipples">
+      <div class="scroll-progress" id="scrollProgressNipples"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>🔩 B.P. Nipples (Threaded Nipples)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Nipple Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Barrel Pattern Nipple Types & Configurations</h3>
+
+            <!-- Close Nipples with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Close Nipples (Shortest Length)</h4>
+                <p>
+                  <strong>Design:</strong> Minimum length threaded pipe nipples
+                  with threads extending nearly the full length, leaving only a
+                  small unthreaded section in the middle. Available in sizes
+                  1/8" to 4" (6mm to 100mm) with BSP, NPT, or BSPT thread
+                  standards. Length typically ranges from 25mm to 50mm depending
+                  on pipe diameter.
+                </p>
+                <p>
+                  <strong>Applications:</strong> Used in tight spaces where
+                  minimal distance is required between two threaded connections.
+                  Ideal for manifold assemblies, close-coupled valve
+                  installations, and compact plumbing configurations. The short
+                  length provides rigid connection preventing movement and
+                  vibration in high-pressure systems.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://shreebajrangudyog.com/wp-content/uploads/2025/01/banner2.jpg"
+                  alt="Close Nipples"
+                />
+              </div>
+            </div>
+
+            <!-- Shoulder Nipples with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2023/6/315333538/WN/SZ/LX/6242910/stainless-steel-hex-bolt-500x500.jpg"
+                  alt="Shoulder Nipples"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Shoulder Nipples (Standard Barrel)</h4>
+                <p>
+                  <strong>Construction:</strong> Threaded sections on both ends
+                  with a distinct unthreaded shoulder (barrel) in the middle
+                  section. The shoulder provides a grip surface for installation
+                  using pipe wrenches without damaging threads. Thread length
+                  typically 1.5D to 2D (D = nominal diameter) on each end per IS
+                  1239 standards.
+                </p>
+                <p>
+                  <strong>Strength Benefits:</strong> The unthreaded shoulder
+                  section maintains full pipe wall thickness, providing greater
+                  mechanical strength and pressure rating compared to close
+                  nipples. Particularly important in steam lines, compressed air
+                  systems, and high-pressure hydraulic applications where pipe
+                  integrity is critical.
+                </p>
+              </div>
+            </div>
+
+            <!-- Long Nipples with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Long Nipples & Custom Lengths</h4>
+                <p>
+                  <strong>Design Variants:</strong> Extended length nipples from
+                  100mm to 300mm (4" to 12") providing greater spacing between
+                  connections. Available as fully threaded (all-thread) or
+                  partially threaded with extended barrel sections. Custom
+                  lengths can be manufactured to specific project requirements
+                  up to 1000mm (40").
+                </p>
+                <p>
+                  <strong>Installation Advantages:</strong> Long nipples enable
+                  pipe routing around obstacles, provide adjustment capability
+                  during installation, and facilitate future maintenance access
+                  by allowing components to be unscrewed and separated without
+                  cutting pipes. Essential for complex piping layouts in
+                  mechanical rooms and industrial facilities.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2022/6/MB/UM/XI/141693202/51kj-8-ew-l-1--500x500.jpg"
+                  alt="Long Nipples"
+                />
+              </div>
+            </div>
+
+            <h4>Specialty Nipple Configurations</h4>
+            <p>
+              <strong>Swage Nipples:</strong> Reducing nipples with different
+              thread sizes on each end (e.g., 1" x 3/4"), eliminating the need
+              for separate reducer fittings. Concentric design maintains flow
+              axis alignment, while eccentric versions prevent air pockets in
+              horizontal runs. Available in hex, round, and octagonal barrel
+              shapes for different wrench grip requirements.
+            </p>
+            <p>
+              <strong>Tank Nipples:</strong> Extra heavy-wall nipples designed
+              for welding into pressure vessels, storage tanks, and boiler
+              drums. One end typically features a welding bevel (30° or 37.5°
+              preparation) while the other has standard pipe threads. Material
+              grades include Schedule XXS, Schedule 160, and custom heavy-wall
+              specifications for extreme pressure services.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Materials & Standards -->
+          <div class="spec-content spec-section">
+            <h3>Materials, Grades & Manufacturing Standards</h3>
+
+            <h4>Material Options & Properties</h4>
+            <p>
+              <strong>Mild Steel (MS):</strong> Low carbon steel (ASTM A53 Grade
+              B or IS 1239 Medium) providing adequate strength for general
+              water, air, and low-pressure applications. Tensile strength 415
+              MPa minimum with good weldability and threading characteristics.
+              Cost-effective for indoor installations with basic corrosion
+              protection through paint or light oil coating.
+            </p>
+            <p>
+              <strong>Galvanized Iron (GI):</strong> Hot-dip galvanized per ASTM
+              A153 or IS 1239 with zinc coating 50-85 microns thick, providing
+              15-25 year outdoor durability. The sacrificial zinc layer protects
+              the underlying steel even when coating is scratched or damaged.
+              Ideal for water supply lines, fire protection systems, and outdoor
+              compressed air distribution where corrosion resistance is
+              essential.
+            </p>
+            <p>
+              <strong>Stainless Steel:</strong> Austenitic SS304 (ASTM A312)
+              offering excellent corrosion resistance in fresh water, food
+              processing, pharmaceutical, and dairy applications. SS316/316L
+              with molybdenum addition provides superior resistance to
+              chlorides, marine environments, and chemical processing. Available
+              in seamless or welded construction with bright annealed,
+              electropolished, or pickled/passivated surface finishes.
+            </p>
+            <p>
+              <strong>Brass & Bronze:</strong> Naval brass (C46400) and
+              admiralty brass (C44300) providing natural antimicrobial
+              properties for potable water systems and corrosion resistance in
+              marine environments. Lead-free brass alloys (C89833) comply with
+              NSF-61 and Safe Drinking Water Act requirements. Bronze nipples
+              offer superior dezincification resistance in aggressive water
+              chemistry conditions.
+            </p>
+
+            <h4>Thread Types & Standards</h4>
+            <p>
+              <strong>BSP (British Standard Pipe):</strong> BSPT (tapered)
+              threads per IS 554 and BS 21 used throughout India, UK, Europe,
+              and Commonwealth countries. Thread angle 55° with 1:16 taper on
+              diameter. Parallel BSPP threads with bonded washer seals used in
+              hydraulic systems. Thread engagement length calculated per IS 1239
+              Part 2 for adequate strength.
+            </p>
+            <p>
+              <strong>NPT (National Pipe Thread):</strong> ASME B1.20.1 tapered
+              threads with 60° thread angle and 1:16 taper, standard in North
+              America and oil & gas industry globally. Thread compound or PTFE
+              tape required for pressure-tight seal. NPS (straight) threads used
+              with O-ring or gasket seals in sanitary and hydraulic applications
+              per ASME B1.20.1.
+            </p>
+            <p>
+              <strong>Manufacturing Process:</strong> Seamless construction from
+              solid bar stock provides superior strength and pressure rating
+              compared to welded/ERW construction. Hot-finished or cold-drawn
+              processing determines surface finish and dimensional tolerance.
+              Threads are cut using single-point or die-head threading machines,
+              then inspected with GO/NO-GO ring gauges per ISO 7-1 for
+              dimensional accuracy.
+            </p>
+
+            <h4>Quality Standards & Testing</h4>
+            <p>
+              <strong>Dimensional Standards:</strong> IS 1239 Part 1 (steel
+              tubes) and Part 2 (screwed fittings) specify dimensions,
+              tolerances, and thread specifications. ASTM A733 covers threaded
+              fittings for low-pressure applications. BS 1740 defines dimensions
+              for malleable iron and steel pipe fittings. Thread tolerance Class
+              A (tight fit) or Class B (free fit) selected based on application
+              sealing requirements.
+            </p>
+            <p>
+              <strong>Pressure Testing:</strong> Hydrostatic testing to 1.5x
+              rated working pressure per IS 1239 or ASME B31.1/B31.3 ensures
+              leak-free construction. Test duration minimum 30 seconds at full
+              pressure. Pneumatic testing with reduced test pressure (1.1x to
+              1.15x rated) for systems where water residue is unacceptable.
+              Radiographic or ultrasonic inspection of welds in critical
+              services.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🔧">Universal Thread Compatibility</h4>
+                <p>
+                  Available in all standard thread types (BSP, NPT, BSPT)
+                  ensuring compatibility with existing piping infrastructure
+                  globally. Thread quality inspected with precision gauges
+                  guarantees proper engagement and pressure-tight seals.
+                  Interchangeable sizing reduces inventory complexity and
+                  simplifies maintenance operations across multi-national
+                  facilities.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💪">High Pressure Rating</h4>
+                <p>
+                  Schedule 40 and Schedule 80 wall thicknesses provide pressure
+                  ratings from 20 bar to 200 bar depending on size and material.
+                  Extra heavy-wall nipples (XXS) support extreme pressures in
+                  steam, hydraulic, and high-pressure gas services. Seamless
+                  construction eliminates weld seam weakness, providing
+                  consistent strength throughout the pipe body and threaded
+                  areas.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="⚡">Quick Installation</h4>
+                <p>
+                  Pre-threaded and ready to install, eliminating field threading
+                  operations and specialized equipment. Standard pipe wrenches
+                  or strap wrenches are sufficient for installation without
+                  damaging threads. Barrel grip section allows secure tightening
+                  without thread damage. Color-coded or stamped markings
+                  identify size and material at a glance during installation.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🛡️">Corrosion Protection Options</h4>
+                <p>
+                  Galvanized coating provides 15-25 year outdoor service life
+                  with zinc thickness 50-85 microns per ASTM A153. Stainless
+                  steel options eliminate corrosion concerns entirely in
+                  aggressive environments. Black iron with rust-preventive oil
+                  suitable for indoor dry applications. Brass/bronze naturally
+                  resist dezincification and biological growth in potable water
+                  systems per NSF-61 standards.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://www.avanticorporate.com/wp-content/uploads/2022/01/commercial-kitchen-size-blog-header-scaled-e1645764462148.jpeg"
+                  alt="Commercial Kitchens"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍽️ Commercial Kitchen Plumbing</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://architectureideas.info/wp-content/uploads/2008/08/ARCHITECTURE-1024x682.jpeg"
+                  alt="Building Construction"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏢 Building & Architectural Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSKjqSduX8lsI55eEvd-dxfbMdvooZViaRw&s"
+                  alt="Industrial Machinery"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚙️ Industrial Machinery Connections</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://5.imimg.com/data5/UO/LJ/GLADMIN-46328052/rail-transportation-services.jpg"
+                  alt="Fire Protection"
+                />
+                <div class="app-image-overlay">
+                  <h4>🔥 Fire Protection Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://gates.scene7.com/is/image/gates/india-heavy-machinery?$Image_Responsive_Preset$&scl=1"
+                  alt="Heavy Equipment"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Heavy Industrial Equipment</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/65dcf29bd6be2515eb49786e/6e9d2c3e-dfc2-4ad4-838d-8ccdd70f4bd1/Shipboard+Systems+%26+Equipment+.jpeg"
+                  alt="Marine Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚓ Marine & Shipboard Piping</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    I'll help you edit the pipe fittings modals to match the hardware modals
+    style with enhanced content, proper CSS classes, and the application images
+    you provided. Here are the updated modals: html<!-- B.P. Nipples Modal -->
+    <div class="modal" id="modal-nipples">
+      <div class="scroll-progress" id="scrollProgressNipples"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>🔩 B.P. Nipples (Threaded Nipples)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Nipple Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Barrel Pattern Nipple Types & Configurations</h3>
+
+            <!-- Close Nipples with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Close Nipples (Shortest Length)</h4>
+                <p>
+                  <strong>Design:</strong> Minimum length threaded pipe nipples
+                  with threads extending nearly the full length, leaving only a
+                  small unthreaded section in the middle. Available in sizes
+                  1/8" to 4" (6mm to 100mm) with BSP, NPT, or BSPT thread
+                  standards. Length typically ranges from 25mm to 50mm depending
+                  on pipe diameter.
+                </p>
+                <p>
+                  <strong>Applications:</strong> Used in tight spaces where
+                  minimal distance is required between two threaded connections.
+                  Ideal for manifold assemblies, close-coupled valve
+                  installations, and compact plumbing configurations. The short
+                  length provides rigid connection preventing movement and
+                  vibration in high-pressure systems.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://shreebajrangudyog.com/wp-content/uploads/2025/01/banner2.jpg"
+                  alt="Close Nipples"
+                />
+              </div>
+            </div>
+
+            <!-- Shoulder Nipples with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2022/6/MB/UM/XI/141693202/51kj-8-ew-l-1--500x500.jpg"
+                  alt="Shoulder Nipples"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Shoulder Nipples (Standard Barrel)</h4>
+                <p>
+                  <strong>Construction:</strong> Threaded sections on both ends
+                  with a distinct unthreaded shoulder (barrel) in the middle
+                  section. The shoulder provides a grip surface for installation
+                  using pipe wrenches without damaging threads. Thread length
+                  typically 1.5D to 2D (D = nominal diameter) on each end per IS
+                  1239 standards.
+                </p>
+                <p>
+                  <strong>Strength Benefits:</strong> The unthreaded shoulder
+                  section maintains full pipe wall thickness, providing greater
+                  mechanical strength and pressure rating compared to close
+                  nipples. Particularly important in steam lines, compressed air
+                  systems, and high-pressure hydraulic applications where pipe
+                  integrity is critical.
+                </p>
+              </div>
+            </div>
+
+            <!-- Long Nipples with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Long Nipples & Custom Lengths</h4>
+                <p>
+                  <strong>Design Variants:</strong> Extended length nipples from
+                  100mm to 300mm (4" to 12") providing greater spacing between
+                  connections. Available as fully threaded (all-thread) or
+                  partially threaded with extended barrel sections. Custom
+                  lengths can be manufactured to specific project requirements
+                  up to 1000mm (40").
+                </p>
+                <p>
+                  <strong>Installation Advantages:</strong> Long nipples enable
+                  pipe routing around obstacles, provide adjustment capability
+                  during installation, and facilitate future maintenance access
+                  by allowing components to be unscrewed and separated without
+                  cutting pipes. Essential for complex piping layouts in
+                  mechanical rooms and industrial facilities.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://atlrod.com/wp-content/uploads/2012/08/Partially-threaded-rod-300x225.jpg"
+                  alt="Long Nipples"
+                />
+              </div>
+            </div>
+
+            <h4>Specialty Nipple Configurations</h4>
+            <p>
+              <strong>Swage Nipples:</strong> Reducing nipples with different
+              thread sizes on each end (e.g., 1" x 3/4"), eliminating the need
+              for separate reducer fittings. Concentric design maintains flow
+              axis alignment, while eccentric versions prevent air pockets in
+              horizontal runs. Available in hex, round, and octagonal barrel
+              shapes for different wrench grip requirements.
+            </p>
+            <p>
+              <strong>Tank Nipples:</strong> Extra heavy-wall nipples designed
+              for welding into pressure vessels, storage tanks, and boiler
+              drums. One end typically features a welding bevel (30° or 37.5°
+              preparation) while the other has standard pipe threads. Material
+              grades include Schedule XXS, Schedule 160, and custom heavy-wall
+              specifications for extreme pressure services.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Materials & Standards -->
+          <div class="spec-content spec-section">
+            <h3>Materials, Grades & Manufacturing Standards</h3>
+
+            <h4>Material Options & Properties</h4>
+            <p>
+              <strong>Mild Steel (MS):</strong> Low carbon steel (ASTM A53 Grade
+              B or IS 1239 Medium) providing adequate strength for general
+              water, air, and low-pressure applications. Tensile strength 415
+              MPa minimum with good weldability and threading characteristics.
+              Cost-effective for indoor installations with basic corrosion
+              protection through paint or light oil coating.
+            </p>
+            <p>
+              <strong>Galvanized Iron (GI):</strong> Hot-dip galvanized per ASTM
+              A153 or IS 1239 with zinc coating 50-85 microns thick, providing
+              15-25 year outdoor durability. The sacrificial zinc layer protects
+              the underlying steel even when coating is scratched or damaged.
+              Ideal for water supply lines, fire protection systems, and outdoor
+              compressed air distribution where corrosion resistance is
+              essential.
+            </p>
+            <p>
+              <strong>Stainless Steel:</strong> Austenitic SS304 (ASTM A312)
+              offering excellent corrosion resistance in fresh water, food
+              processing, pharmaceutical, and dairy applications. SS316/316L
+              with molybdenum addition provides superior resistance to
+              chlorides, marine environments, and chemical processing. Available
+              in seamless or welded construction with bright annealed,
+              electropolished, or pickled/passivated surface finishes.
+            </p>
+            <p>
+              <strong>Brass & Bronze:</strong> Naval brass (C46400) and
+              admiralty brass (C44300) providing natural antimicrobial
+              properties for potable water systems and corrosion resistance in
+              marine environments. Lead-free brass alloys (C89833) comply with
+              NSF-61 and Safe Drinking Water Act requirements. Bronze nipples
+              offer superior dezincification resistance in aggressive water
+              chemistry conditions.
+            </p>
+
+            <h4>Thread Types & Standards</h4>
+            <p>
+              <strong>BSP (British Standard Pipe):</strong> BSPT (tapered)
+              threads per IS 554 and BS 21 used throughout India, UK, Europe,
+              and Commonwealth countries. Thread angle 55° with 1:16 taper on
+              diameter. Parallel BSPP threads with bonded washer seals used in
+              hydraulic systems. Thread engagement length calculated per IS 1239
+              Part 2 for adequate strength.
+            </p>
+            <p>
+              <strong>NPT (National Pipe Thread):</strong> ASME B1.20.1 tapered
+              threads with 60° thread angle and 1:16 taper, standard in North
+              America and oil & gas industry globally. Thread compound or PTFE
+              tape required for pressure-tight seal. NPS (straight) threads used
+              with O-ring or gasket seals in sanitary and hydraulic applications
+              per ASME B1.20.1.
+            </p>
+            <p>
+              <strong>Manufacturing Process:</strong> Seamless construction from
+              solid bar stock provides superior strength and pressure rating
+              compared to welded/ERW construction. Hot-finished or cold-drawn
+              processing determines surface finish and dimensional tolerance.
+              Threads are cut using single-point or die-head threading machines,
+              then inspected with GO/NO-GO ring gauges per ISO 7-1 for
+              dimensional accuracy.
+            </p>
+
+            <h4>Quality Standards & Testing</h4>
+            <p>
+              <strong>Dimensional Standards:</strong> IS 1239 Part 1 (steel
+              tubes) and Part 2 (screwed fittings) specify dimensions,
+              tolerances, and thread specifications. ASTM A733 covers threaded
+              fittings for low-pressure applications. BS 1740 defines dimensions
+              for malleable iron and steel pipe fittings. Thread tolerance Class
+              A (tight fit) or Class B (free fit) selected based on application
+              sealing requirements.
+            </p>
+            <p>
+              <strong>Pressure Testing:</strong> Hydrostatic testing to 1.5x
+              rated working pressure per IS 1239 or ASME B31.1/B31.3 ensures
+              leak-free construction. Test duration minimum 30 seconds at full
+              pressure. Pneumatic testing with reduced test pressure (1.1x to
+              1.15x rated) for systems where water residue is unacceptable.
+              Radiographic or ultrasonic inspection of welds in critical
+              services.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🔧">Universal Thread Compatibility</h4>
+                <p>
+                  Available in all standard thread types (BSP, NPT, BSPT)
+                  ensuring compatibility with existing piping infrastructure
+                  globally. Thread quality inspected with precision gauges
+                  guarantees proper engagement and pressure-tight seals.
+                  Interchangeable sizing reduces inventory complexity and
+                  simplifies maintenance operations across multi-national
+                  facilities.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💪">High Pressure Rating</h4>
+                <p>
+                  Schedule 40 and Schedule 80 wall thicknesses provide pressure
+                  ratings from 20 bar to 200 bar depending on size and material.
+                  Extra heavy-wall nipples (XXS) support extreme pressures in
+                  steam, hydraulic, and high-pressure gas services. Seamless
+                  construction eliminates weld seam weakness, providing
+                  consistent strength throughout the pipe body and threaded
+                  areas.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="⚡">Quick Installation</h4>
+                <p>
+                  Pre-threaded and ready to install, eliminating field threading
+                  operations and specialized equipment. Standard pipe wrenches
+                  or strap wrenches are sufficient for installation without
+                  damaging threads. Barrel grip section allows secure tightening
+                  without thread damage. Color-coded or stamped markings
+                  identify size and material at a glance during installation.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🛡️">Corrosion Protection Options</h4>
+                <p>
+                  Galvanized coating provides 15-25 year outdoor service life
+                  with zinc thickness 50-85 microns per ASTM A153. Stainless
+                  steel options eliminate corrosion concerns entirely in
+                  aggressive environments. Black iron with rust-preventive oil
+                  suitable for indoor dry applications. Brass/bronze naturally
+                  resist dezincification and biological growth in potable water
+                  systems per NSF-61 standards.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://www.avanticorporate.com/wp-content/uploads/2022/01/commercial-kitchen-size-blog-header-scaled-e1645764462148.jpeg"
+                  alt="Commercial Kitchens"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍽️ Commercial Kitchen Plumbing</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://architectureideas.info/wp-content/uploads/2008/08/ARCHITECTURE-1024x682.jpeg"
+                  alt="Building Construction"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏢 Building & Architectural Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSKjqSduX8lsI55eEvd-dxfbMdvooZViaRw&s"
+                  alt="Industrial Machinery"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚙️ Industrial Machinery Connections</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://5.imimg.com/data5/UO/LJ/GLADMIN-46328052/rail-transportation-services.jpg"
+                  alt="Fire Protection"
+                />
+                <div class="app-image-overlay">
+                  <h4>🔥 Fire Protection Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://gates.scene7.com/is/image/gates/india-heavy-machinery?$Image_Responsive_Preset$&scl=1"
+                  alt="Heavy Equipment"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Heavy Industrial Equipment</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/65dcf29bd6be2515eb49786e/6e9d2c3e-dfc2-4ad4-838d-8ccdd70f4bd1/Shipboard+Systems+%26+Equipment+.jpeg"
+                  alt="Marine Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚓ Marine & Shipboard Piping</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Elbows Modal -->
+    <div class="modal" id="modal-elbows">
+      <div class="scroll-progress" id="scrollProgressElbows"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>🔄 Elbows (90°, 45° — Threaded / Butt-Weld)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Elbow Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Elbow Types & Bend Configurations</h3>
+
+            <!-- 90 Degree Long Radius with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>90° Long Radius Elbows (1.5D)</h4>
+                <p>
+                  <strong>Design:</strong> Center-to-end dimension equals 1.5
+                  times the nominal pipe diameter (e.g., 6" elbow has 9"
+                  radius). The gradual curvature minimizes pressure drop and
+                  flow turbulence compared to short radius elbows. Available in
+                  seamless or welded construction per ASME B16.9 from 1/2" to
+                  72" NPS sizes.
+                </p>
+                <p>
+                  <strong>Flow Characteristics:</strong> Lower resistance
+                  coefficient (K-factor 0.3-0.4) reduces pumping energy
+                  requirements by 30-40% compared to short radius elbows. Smooth
+                  internal surface finish minimizes erosion in slurry, abrasive
+                  media, and high-velocity applications. Preferred for mainline
+                  piping in petroleum refineries, chemical plants, and power
+                  generation facilities.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.ltdpipeline.com/wp-content/uploads/2023/05/bw_elbows1-2.gif"
+                  alt="Long Radius Elbows"
+                />
+              </div>
+            </div>
+
+            <!-- Short Radius Elbows with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://www.oepipe.com/uploads/12033/products/p2024041711410467238.jpg?size=450x0"
+                  alt="Short Radius Elbows"
+                />
+              </div>
+              <div class="config-text">
+                <h4>90° Short Radius Elbows (1.0D)</h4>
+                <p>
+                  <strong>Construction:</strong> Center-to-end dimension equals
+                  pipe diameter, providing compact directional change in
+                  constrained spaces. Higher pressure drop (K-factor 0.6-0.9)
+                  balanced by space-saving advantage in tight piping layouts.
+                  Commonly used in sizes up to 8" NPS where space limitations
+                  prevent long radius installation.
+                </p>
+                <p>
+                  <strong>Applications:</strong> Ideal for shipboard piping,
+                  offshore platform topsides, equipment skids, and modular
+                  process units where footprint reduction is critical. Heavier
+                  wall thickness (Schedule 80, Schedule 160) compensates for
+                  increased stress concentration at the intrados (inner bend
+                  radius). Subject to ASME B31.3 stress intensification factors
+                  in flexibility analysis.
+                </p>
+              </div>
+            </div>
+
+            <!-- 45 Degree Elbows with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>45° Elbows & Oblique Bends</h4>
+                <p>
+                  <strong>Design Advantages:</strong> Half the deflection angle
+                  of 90° elbows produces significantly lower pressure drop
+                  (K-factor 0.2-0.25) and reduced flow turbulence. Center-to-end
+                  dimension 0.7D to 1.0D depending on manufacturing standard.
+                  Two 45° elbows in series can replace one 90° elbow with
+                  improved flow characteristics for viscous fluids and settling
+                  slurries.
+                </p>
+                <p>
+                  <strong>Specialized Uses:</strong> Preferred in drainage and
+                  gravity flow systems where gradual directional change prevents
+                  solid settlement and blockages. Pipeline pigging operations
+                  benefit from shallow angle changes allowing tool passage
+                  without damage. Vacuum systems maintain higher efficiency with
+                  reduced pressure losses. Available in long tangent versions
+                  for custom angular requirements (22.5°, 30°, 67.5°).
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.ng-steel.com/wp-content/uploads/2021/10/inconel-equal-unequal-tee.jpg"
+                  alt="45 Degree Elbows"
+                />
+              </div>
+            </div>
+
+            <h4>Specialty Elbow Configurations</h4>
+            <p>
+              <strong>180° Return Bends:</strong> U-shaped fittings with
+              center-to-center distance 2D (short) or 3D (long) used in heat
+              exchangers, coil-type heat transfer equipment, and close-coupled
+              piping configurations. Seamless construction from ASTM A234 carbon
+              steel or A403 stainless steel ensures high integrity in thermal
+              cycling applications. Frequently used in boiler economizers and
+              superheater circuits.
+            </p>
+            <p>
+              <strong>Reducing Elbows:</strong> Combined elbow and reducer in
+              single fitting, eliminating need for separate reducer piece and
+              associated weld joint. One-piece construction reduces potential
+              leak paths and installation time by 40%. Available in concentric
+              (centerline aligned) or eccentric (offset to maintain top-of-pipe
+              or bottom-of-pipe elevation) configurations for pump suction lines
+              and gravity drainage.
+            </p>
+            <p>
+              <strong>Threaded Elbows:</strong> Malleable iron or forged steel
+              construction with NPT, BSP, or BSPT threads per ASME B16.3
+              (malleable iron) or ASME B16.11 (forged steel). Pressure classes
+              150#, 300#, 600# supporting services to 300°C. Black or galvanized
+              finish. Used in sizes 1/8" to 4" for low-pressure steam,
+              compressed air, water, and oil distribution where welding is
+              impractical or prohibited.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Materials & Manufacturing -->
+          <div class="spec-content spec-section">
+            <h3>Materials, Manufacturing & Quality Standards</h3>
+
+            <h4>Material Specifications</h4>
+            <p>
+              <strong>Carbon Steel:</strong> ASTM A234 WPB (wrought carbon
+              steel) for temperatures -29°C to +400°C, most common material for
+              general refinery and chemical service. A234 WPC offers improved
+              low-temperature impact toughness to -46°C for winterized and
+              refrigeration systems. A420 WPL6 alloy steel for cryogenic LNG
+              service to -196°C with guaranteed Charpy V-notch impact values.
+            </p>
+            <p>
+              <strong>Stainless Steel:</strong> ASTM A403 WP304/WP304L
+              austenitic stainless for general corrosion resistance and
+              food/pharma sanitary service. WP316/WP316L with 2-3% molybdenum
+              for chloride and marine environments. WP321 titanium-stabilized
+              for high-temperature service 400°C-650°C without sensitization.
+              Duplex WP S31803/S32205 combining high strength with pitting
+              resistance for offshore applications.
+            </p>
+            <p>
+              <strong>Alloy Steel:</strong> ASTM A234 WP5, WP9, WP11, WP22, WP91
+              chrome-molybdenum alloy steels for high-temperature power
+              generation (540°C to 625°C) in steam piping, fossil-fired boilers,
+              and reformer furnaces. Creep-resistant properties prevent
+              dimensional changes under sustained elevated temperature and
+              pressure. Hydrogen attack resistant for oil refining
+              hydroprocessing units.
+            </p>
+            <p>
+              <strong>Exotic Alloys:</strong> Nickel alloys (Inconel 625, 825,
+              Monel 400, Hastelloy C276) for severe corrosive environments
+              including sulfuric acid, hydrofluoric acid, and sour gas with H2S.
+              Titanium Grade 2/5 for seawater, chlorine, and aerospace
+              weight-critical applications. Alloy 20 (Carpenter 20Cb-3) for
+              dilute sulfuric acid in chemical processing providing superior
+              resistance versus 316L stainless.
+            </p>
+
+            <h4>Manufacturing Processes</h4>
+            <p>
+              <strong>Seamless Elbows:</strong> Hot-formed from seamless pipe or
+              solid round bar using mandrel bending, rotary draw bending, or
+              forging processes. Grain flow follows bend contour providing
+              uniform strength. No longitudinal weld seam eliminates potential
+              failure path. Preferred for critical services including
+              high-pressure steam, hydrogen, and severe cyclic loading per ASME
+              B31.3 Section 302.3.5.
+            </p>
+            <p>
+              <strong>Welded Elbows:</strong> Formed from plate or welded pipe
+              (ERW/DSAW) using mandrel or press forming. Longitudinal seam weld
+              inspected per ASME Section V (RT, UT, or MT). More economical in
+              larger sizes (NPS 24 and above) where seamless manufacturing is
+              limited. Acceptable for lower-stress services and ASME B31.3
+              Category D fluid service where leakage consequences are minimal.
+            </p>
+            <p>
+              <strong>Surface Finishing:</strong> Pickled and passivated per
+              ASTM A380 for stainless steel removes heat tint and enhances
+              corrosion resistance. Electropolished finish (Ra 0.4-0.8 microns)
+              for pharmaceutical and semiconductor ultra-pure applications.
+              Shot-blasted or sandblasted preparing surface for coating systems.
+              Hydrostatic testing and drying before protective coating or
+              shipment.
+            </p>
+
+            <h4>Dimensional & Quality Standards</h4>
+            <p>
+              <strong>ASME B16.9:</strong> Factory-made wrought butt-welding
+              fittings defining dimensions, tolerances, and marking requirements
+              for elbows, tees, reducers, and caps from 1/2" to 48" NPS. Wall
+              thickness matches pipe schedule (SCH 10, 40, 80, 160, XXS).
+              Center-to-end dimensions standardized enabling interchangeability
+              across manufacturers globally.
+            </p>
+            <p>
+              <strong>ASME B16.11:</strong> Forged fittings socket-welding and
+              threaded for high-pressure services (Class 2000#, 3000#, 6000#,
+              9000#). Primarily used in small bore connections 2" and smaller
+              where threaded or socket-weld joints are preferred over
+              butt-welding. Heavy wall thickness provides burst pressure
+              resistance exceeding 400 bar (6000 PSI) in 1" size Class 6000
+              fittings.
+            </p>
+            <p>
+              <strong>Testing & Inspection:</strong> Visual inspection for
+              surface defects, dimensional verification with templates/gauges,
+              PMI (positive material identification) using XRF spectrometry
+              confirming chemistry. Radiographic (RT) or ultrasonic (UT) testing
+              of welds per ASME Section V. Hydrostatic testing per MSS-SP-75 or
+              customer specification. Material test reports (MTR) per EN 10204
+              3.1 with full traceability to heat number and manufacturing lot.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="💧">Optimized Flow Dynamics</h4>
+                <p>
+                  Long radius elbows reduce pressure drop by 30-40% versus short
+                  radius, saving pumping energy costs over equipment lifetime.
+                  Smooth internal contours minimize erosion-corrosion in
+                  high-velocity services (>5 m/s). CFD-optimized profiles
+                  available for critical applications. Lower turbulence reduces
+                  noise and vibration in high-pressure steam and gas systems
+                  improving operator comfort and equipment longevity.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🔥">High Temperature Capability</h4>
+                <p>
+                  Chrome-moly alloy steels (A234 WP11, WP22, WP91) maintain
+                  strength to 625°C in superheated steam and reformer services.
+                  Austenitic stainless grades withstand 650°C continuous
+                  exposure without scaling or oxidation. Creep testing per ASTM
+                  E139 validates dimensional stability under sustained
+                  high-temperature loading. Thermal expansion coefficients
+                  matched to connected piping prevent thermally-induced stresses
+                  at flanged joints.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💪">Structural Integrity</h4>
+                <p>
+                  Seamless construction eliminates weld seam weakness - critical
+                  for cyclic pressure and thermal loading causing fatigue
+                  cracks. Forged fittings provide grain flow following contour
+                  geometry for maximum strength. Stress intensification factors
+                  (i-factors) per ASME B31.3 Appendix D lower than fabricated
+                  mitred bends, simplifying piping flexibility analysis.
+                  Hydrostatic testing to 1.5x design pressure validates
+                  leak-free construction.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🌐">Global Standardization</h4>
+                <p>
+                  ASME B16.9 dimensions ensure worldwide interchangeability
+                  across manufacturers, simplifying procurement and reducing
+                  spares inventory. Compatible with ASME/ANSI flanges B16.5,
+                  B16.47 enabling mix-and-match component sourcing. Metric
+                  equivalent DIN/EN standards available for European projects.
+                  Third-party inspection and certification by Lloyd's, Bureau
+                  Veritas, TUV providing quality assurance for critical
+                  services.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://assets.onestopndt.com/p/uploads/ndt-articles/original/how-the-oil-and-gas-industry-works-onestopndt.jpg"
+                  alt="Oil & Gas"
+                />
+                <div class="app-image-overlay">
+                  <h4>🛢️ Petroleum Refineries & Petrochemical</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://media.deloitte.com/is/image/deloitte/smart-automotive-manufacturing-2:Mobile?$Responsive$&fmt=webp&fit=stretch,1&dpr=on,2.625"
+                  alt="Power Generation"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚡ Power Generation & Steam Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.general-steel.com/wp-content/uploads/2024/06/laser-cutting-machine-services.jpg"
+                  alt="Chemical Processing"
+                />
+                <div class="app-image-overlay">
+                  <h4>🧪 Chemical & Process Industries</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/65dcf29bd6be2515eb49786e/6e9d2c3e-dfc2-4ad4-838d-8ccdd70f4bd1/Shipboard+Systems+%26+Equipment+.jpeg"
+                  alt="Marine"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚓ Marine & Offshore Platforms</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.avanticorporate.com/wp-content/uploads/2022/01/commercial-kitchen-size-blog-header-scaled-e1645764462148.jpeg"
+                  alt="Food Processing"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍽️ Food & Beverage Processing</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://architectureideas.info/wp-content/uploads/2008/08/ARCHITECTURE-1024x682.jpeg"
+                  alt="HVAC Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏢 HVAC & Building Services</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tees Modal -->
+    <div class="modal" id="modal-tees">
+      <div class="scroll-progress" id="scrollProgressTees"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>⚙️ Tees (Equal / Reducing)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Tee Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Tee Types & Branch Configurations</h3>
+
+            <!-- Equal Tees with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Equal Tees (Straight Pattern)</h4>
+                <p>
+                  <strong>Design:</strong> Three openings of identical diameter
+                  forming T-shaped junction with run (straight-through) and
+                  branch (perpendicular outlet) connections. Dimensions per ASME
+                  B16.9 specify center-to-end distances on run (C) and branch
+                  outlet (M) ensuring standardized fit-up with pipes and other
+                  fittings. Available seamless or welded in sizes 1/2" to 48"
+                  NPS.
+                </p>
+                <p>
+                  <strong>Flow Characteristics:</strong> Branch outlet creates
+                  flow division or combination depending on direction. Pressure
+                  drop coefficient (K-factor) varies 0.9-1.8 based on flow ratio
+                  between run and branch. Reinforced crotch area withstands
+                  internal pressure stresses where three pipe sections
+                  intersect. Suitable for manifold distribution, process
+                  sampling points, and parallel equipment tie-ins.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.ng-steel.com/wp-content/uploads/2021/10/inconel-equal-unequal-tee.jpg"
+                  alt="Equal Tees"
+                />
+              </div>
+            </div>
+
+            <!-- Reducing Tees with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://www.oepipe.com/uploads/12033/products/p2024041711410467238.jpg?size=450x0"
+                  alt="Reducing Tees"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Reducing Tees (Outlet Reduction)</h4>
+                <p>
+                  <strong>Construction:</strong> Branch outlet or run outlet (or
+                  both) reduced to smaller diameter than main run. Designated by
+                  three dimensions: Run inlet x Run outlet x Branch outlet
+                  (e.g., 6" x 4" x 3"). Concentric reduction maintains
+                  centerline alignment while eccentric reduction offsets smaller
+                  pipe to maintain top-of-pipe or bottom-of-pipe elevation in
+                  horizontal runs.
+                </p>
+                <p>
+                  <strong>Application Benefits:</strong> Eliminates separate
+                  reducer fitting and associated weld joint, reducing
+                  fabrication cost by 30-40% and potential leak paths. One-piece
+                  construction improves pressure integrity and simplifies
+                  radiographic inspection. Common in pump discharge headers,
+                  steam distribution manifolds, and chemical feed systems where
+                  branch flows are significantly smaller than main line.
+                </p>
+              </div>
+            </div>
+
+            <!-- Lateral Tees with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Lateral Tees (45° Y-Pattern)</h4>
+                <p>
+                  <strong>Design Geometry:</strong> Branch outlet at 45° angle
+                  rather than 90°, creating Y-shaped junction. Lower pressure
+                  drop (K-factor 0.5-0.8) compared to straight tees due to
+                  gradual flow deflection. Center-to-branch dimension greater
+                  than straight tee requiring additional layout space. Available
+                  as true wye (equal 45° branches) or lateral (single 45° branch
+                  with straight run).
+                </p>
+                <p>
+                  <strong>Specialized Uses:</strong> Preferred in drainage and
+                  settling systems where gradual direction change prevents solid
+                  accumulation and blockages. Pipeline pigging operations
+                  benefit from shallow branch angle allowing cleaning tool
+                  passage without impact damage. Vacuum systems maintain
+                  efficiency with reduced turbulence. Steam condensate
+                  collection headers use laterals to minimize erosion-corrosion
+                  from high-velocity droplets.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/II/GV/MY-2620073/quick-change-coupling-500x500.jpg"
+                  alt="Lateral Tees"
+                />
+              </div>
+            </div>
+
+            <h4>Specialty Tee Configurations</h4>
+            <p>
+              <strong>Barred Tees:</strong> Internal baffle plate (bar)
+              perpendicular to branch outlet prevents direct impingement of
+              high-velocity flow into branch piping. Protects branch line from
+              erosion, water hammer, and excessive vibration. Critical in steam
+              headers, high-pressure gas distribution, and slurry services where
+              flow velocity exceeds 15 m/s. Bar design per MSS-SP-75 provides
+              turbulence-free flow split.
+            </p>
+            <p>
+              <strong>Reducing-on-the-Run Tees:</strong> Run inlet and outlet
+              different diameters with full-size or reduced branch. Example: 8"
+              x 6" x 4" indicates 8" inlet reducing to 6" outlet with 4" branch.
+              Used in progressive takeoff manifolds where main line flow
+              decreases with each branch connection. Single fitting replaces
+              separate tee and reducer, saving installation time and reducing
+              pressure drop versus two-piece assembly.
+            </p>
+            <p>
+              <strong>Cross Fittings:</strong> Four-way intersection with two
+              perpendicular branches opposite each other on run pipe.
+              Essentially two tees intersecting at same location. Subject to
+              complex stress patterns requiring heavier wall thickness or
+              reinforcement pad per ASME B31.3 para 304.3.3. Used in manifold
+              blocks, multiple equipment connections, and cross-country pipeline
+              emergency shut-down valve (ESDV) installations.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Materials & Manufacturing -->
+          <div class="spec-content spec-section">
+            <h3>Materials, Manufacturing & Quality Standards</h3>
+
+            <h4>Material Specifications</h4>
+            <p>
+              <strong>Carbon Steel:</strong> ASTM A234 WPB wrought carbon steel
+              for general refinery, chemical, and power services -29°C to
+              +400°C. Higher-strength grades A234 WPC (improved notch toughness)
+              and A420 WPL6 (low-temperature alloy) for winterized and cryogenic
+              applications to -46°C. Normalized heat treatment relieves forming
+              stresses and ensures uniform mechanical properties throughout
+              fitting body.
+            </p>
+            <p>
+              <strong>Stainless Steel:</strong> ASTM A403 WP304/304L austenitic
+              stainless resists general corrosion, oxidation, and stress
+              corrosion cracking in chloride-free environments. WP316/316L with
+              2-3% molybdenum provides pitting resistance in marine, coastal,
+              and chloride-containing process streams. WP321 titanium-stabilized
+              prevents carbide precipitation (sensitization) during welding in
+              high-temperature service 400°C-650°C.
+            </p>
+            <p>
+              <strong>Alloy Steel:</strong> Chrome-molybdenum grades A234 WP5
+              (5Cr-0.5Mo), WP9 (9Cr-1Mo), WP11 (1.25Cr-0.5Mo), WP22
+              (2.25Cr-1Mo), WP91 (9Cr-1Mo-V) for elevated temperature creep
+              resistance in fossil-fired boilers, steam piping, and
+              petrochemical reformers operating 480°C-625°C. Post-weld heat
+              treatment (PWHT) required per ASME B31.3 para 331 to restore
+              toughness and relieve residual stresses.
+            </p>
+            <p>
+              <strong>Duplex & Super Duplex:</strong> ASTM A815 UNS S31803
+              (2205) and S32750 (2507) combining austenite and ferrite
+              microstructure provides double the yield strength of austenitic
+              stainless with superior chloride stress corrosion cracking
+              resistance. Ideal for offshore oil production, seawater cooling
+              systems, and chemical processing with aggressive halide
+              environments. Pitting resistance equivalent number (PREN) >40 for
+              S32750 resists localized corrosion.
+            </p>
+
+            <h4>Manufacturing Processes</h4>
+            <p>
+              <strong>Seamless Tees:</strong> Forged from solid bar stock or
+              hot-formed from seamless pipe using hydraulic presses and
+              mandrels. Grain flow follows tee contour providing uniform
+              strength in run and branch. No longitudinal welds eliminates
+              potential failure paths. Ultrasonic testing (UT) per ASTM A388
+              verifies internal soundness. Preferred for critical services
+              including high-pressure hydrogen, sour gas with H2S, and severe
+              cyclic loading per ASME B31.3.
+            </p>
+            <p>
+              <strong>Fabricated Tees:</strong> Branch pipe section welded to
+              run pipe with reinforcement pad if required per ASME B31.3 para
+              304.3. More economical for large diameter (NPS 24+) and
+              non-standard sizes. Branch connection weld fully radiographed or
+              ultrasonically tested per ASME Section V. Reinforcement
+              calculations per B31.3 para 304.3.3 ensure adequate strength for
+              internal pressure, external loads, and thermal expansion stresses.
+            </p>
+            <p>
+              <strong>Quality Control:</strong> Dimensional inspection verifies
+              center-to-end distances, wall thickness uniformity, and branch
+              perpendicularity within ASME B16.9 tolerances. Positive material
+              identification (PMI) using XRF or OES spectrometry confirms
+              chemistry compliance. Hydrostatic testing to 1.5x design pressure
+              per MSS-SP-75 validates pressure integrity. Dye penetrant (PT) or
+              magnetic particle (MT) testing detects surface defects.
+            </p>
+
+            <h4>Standards & Specifications</h4>
+            <p>
+              <strong>ASME B16.9:</strong> Factory-made wrought butt-welding
+              fittings defining dimensions, tolerances, marking, and material
+              grades for tees, elbows, reducers, and caps. Wall thickness
+              matches standard pipe schedules (SCH 10, 20, 40, 80, 160, XXS).
+              Center-to-end dimensions standardized: C-dimension (run) and
+              M-dimension (branch outlet) ensuring interchangeability across
+              manufacturers globally.
+            </p>
+            <p>
+              <strong>MSS-SP-75:</strong> Manufacturer's Standardization Society
+              specification for high-test wrought welding fittings covering
+              additional sizes, wall thicknesses, and tolerances beyond ASME
+              B16.9 scope. Includes Schedule 5S through XXS and special
+              heavy-wall options. Hydrostatic test pressure requirements and
+              acceptance criteria specified. Widely referenced in chemical
+              processing and heavy oil refining for corrosive and erosive
+              services.
+            </p>
+            <p>
+              <strong>ASME B31.3 Process Piping:</strong> Branch connection
+              design requirements in Chapter IV para 304.3 specify reinforcement
+              area calculations, maximum unreinforced openings, and weld joint
+              details. Stress intensification factors (i-factors) for
+              flexibility analysis in Appendix D. Fabricated tee design per para
+              304.3.3 requires area replacement calculations ensuring adequate
+              strength for pressure, weight, thermal, and dynamic loads.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🔀">Versatile Flow Distribution</h4>
+                <p>
+                  Equal and reducing configurations accommodate diverse flow
+                  splitting and combining requirements in process manifolds,
+                  utility distribution headers, and sampling systems. Lateral
+                  (45°) tees reduce pressure drop 40-50% versus straight tees in
+                  high-velocity services. Barred tees protect branch piping from
+                  erosion and water hammer in steam and two-phase flow systems
+                  improving equipment reliability and safety.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💰">Cost-Effective Integration</h4>
+                <p>
+                  Reducing tees eliminate separate reducer fittings saving
+                  30-40% on fabrication costs, installation labor, and
+                  radiographic inspection expense. One-piece construction
+                  reduces weld joints by 50% decreasing potential leak paths and
+                  improving system integrity. Pre-fabricated tee assemblies with
+                  reinforcement pads ship ready-to-install reducing field labor
+                  by 60% and improving construction schedule predictability.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🏗️">Structural Reinforcement</h4>
+                <p>
+                  Forged seamless construction provides grain flow following
+                  stress contours ensuring uniform strength in high-pressure
+                  branch connections. Reinforced crotch area per ASME B31.3
+                  withstands combined internal pressure, piping loads, and
+                  thermal expansion stresses without supplemental reinforcement
+                  pads. Stress intensification factors (SIF) properly account
+                  for local stress concentration in piping flexibility analysis
+                  preventing fatigue failures.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🌡️">High Temperature Performance</h4>
+                <p>
+                  Chrome-moly alloy steel grades (WP11, WP22, WP91) maintain
+                  tensile and creep-rupture strength to 625°C in power
+                  generation and petrochemical high-temperature services.
+                  Austenitic stainless resists oxidation and scaling to 650°C
+                  continuous exposure. Normalized or solution-annealed heat
+                  treatment ensures predictable mechanical properties and
+                  thermal expansion coefficients matched to connected piping
+                  preventing thermally-induced joint failures.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://assets.onestopndt.com/p/uploads/ndt-articles/original/how-the-oil-and-gas-industry-works-onestopndt.jpg"
+                  alt="Oil & Gas Processing"
+                />
+                <div class="app-image-overlay">
+                  <h4>🛢️ Oil & Gas Processing Plants</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.general-steel.com/wp-content/uploads/2024/06/laser-cutting-machine-services.jpg"
+                  alt="Chemical Plants"
+                />
+                <div class="app-image-overlay">
+                  <h4>🧪 Chemical & Petrochemical Plants</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://media.deloitte.com/is/image/deloitte/smart-automotive-manufacturing-2:Mobile?$Responsive$&fmt=webp&fit=stretch,1&dpr=on,2.625"
+                  alt="Power Generation"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚡ Power Generation Facilities</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.avanticorporate.com/wp-content/uploads/2022/01/commercial-kitchen-size-blog-header-scaled-e1645764462148.jpeg"
+                  alt="Food Processing"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍽️ Food & Beverage Industry</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://architectureideas.info/wp-content/uploads/2008/08/ARCHITECTURE-1024x682.jpeg"
+                  alt="HVAC Distribution"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏢 HVAC Distribution Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSKjqSduX8lsI55eEvd-dxfbMdvooZViaRw&s"
+                  alt="Water Treatment"
+                />
+                <div class="app-image-overlay">
+                  <h4>💧 Water Treatment Plants</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Couplings Modal -->
+    <div class="modal" id="modal-couplings">
+      <div class="scroll-progress" id="scrollProgressCouplings"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>🔗 Couplings / Unions / Sockets</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Coupling Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Coupling Types & Connection Methods</h3>
+
+            <!-- Full Couplings with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Full Couplings (Threaded)</h4>
+                <p>
+                  <strong>Design:</strong> Cylindrical fitting with internal
+                  threads on both ends per ASME B16.11 (forged steel) or ASME
+                  B16.3 (malleable iron). Length approximately 2-3 times pipe
+                  diameter providing adequate thread engagement. Available in
+                  sizes 1/8" to 4" with NPT, BSP, or BSPT threads. Pressure
+                  classes 2000#, 3000#, 6000# PSI supporting high-pressure
+                  steam, compressed air, hydraulic, and pneumatic services.
+                </p>
+                <p>
+                  <strong>Installation Benefits:</strong> Enables joining two
+                  pipes in straight-line configuration without welding.
+                  Disassembly for maintenance requires only unscrewing one pipe
+                  end. Thread sealant (pipe dope) or PTFE tape ensures
+                  pressure-tight seal. Black iron, galvanized, stainless steel
+                  304/316, brass, and bronze material options. Hex body design
+                  (reducing coupling) provides wrench flats for installation
+                  torque.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/JR/KM/EF/SELLER-663564/fcs-socket-weld-fittings-3000-lbs-ibr-elbow-tee-coupling-union--500x500.png"
+                  alt="Full Couplings"
+                />
+              </div>
+            </div>
+
+            <!-- Half Couplings with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/II/GV/MY-2620073/quick-change-coupling-500x500.jpg"
+                  alt="Half Couplings"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Half Couplings (Outlet Connections)</h4>
+                <p>
+                  <strong>Construction:</strong> Threaded internally on one end,
+                  plain or socket-weld boss on opposite end for welding to pipe,
+                  vessel, or equipment nozzle. Creates branch outlet connection
+                  on existing piping or equipment without cutting large opening.
+                  Available in full and reducing sizes: 1/2" x 1/4" through 4" x
+                  2". Forged construction per ASTM A105 (carbon steel) or A182
+                  (stainless/alloy steel).
+                </p>
+                <p>
+                  <strong>Applications:</strong> Instrumentation connections
+                  (pressure gauges, temperature wells, level transmitters), vent
+                  and drain taps on vessels and piping, sampling points in
+                  process lines, small-bore chemical injection nozzles.
+                  Socket-weld attachment per ASME B31.3 provides
+                  full-penetration weld ensuring leak-tight seal. Threaded
+                  outlet accepts instrument tubing connections or small valves
+                  without flanged assembly.
+                </p>
+              </div>
+            </div>
+
+            <!-- Unions with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Unions (Serviceable Joints)</h4>
+                <p>
+                  <strong>Design Principle:</strong> Three-piece assembly
+                  consisting of two threaded end pieces and center ring nut
+                  enabling disconnection without unscrewing entire piping run.
+                  Conical seat joint with metal-to-metal seal (ground joint) or
+                  elastomer gasket provides leak-tight seal. Forged steel per
+                  ASME B16.11 or malleable iron per ASME B16.3 in pressure
+                  classes 150#, 300#, 600# for services to 260°C.
+                </p>
+                <p>
+                  <strong>Service Advantages:</strong> Facilitates routine
+                  maintenance, equipment removal/replacement, and system
+                  modifications without disturbing adjacent piping. Union joint
+                  location placed strategically near pumps, valves, heat
+                  exchangers, and instruments allowing isolated component
+                  removal. Ground joint unions require no gaskets eliminating
+                  sealing element deterioration. Suitable for steam, gas, air,
+                  water, and compatible chemicals in sizes 1/4" to 4".
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://muxbolts.com/wp-content/uploads/2024/07/MUXBOLTS_Coupling-Nuts-2.jpg"
+                  alt="Unions"
+                />
+              </div>
+            </div>
+
+            <h4>Socket-Weld Couplings & Fittings</h4>
+            <p>
+              <strong>Socket-Weld Design:</strong> Female socket accepts pipe
+              end with approximately 1/16" (1.5mm) expansion gap per ASME B31.3
+              para 328.5.2(d) preventing weld root cracking. Fillet weld around
+              circumference joins pipe to socket. Pressure rating higher than
+              equivalent threaded fittings due to welded construction. Forged
+              per ASTM A105/A182 in Class 3000#, 6000#, 9000# supporting
+              services to 400 bar (6000 PSI) in 1" size.
+            </p>
+            <p>
+              <strong>Advantages vs. Butt-Weld:</strong> No beveling or backing
+              ring required reducing preparation labor by 60%. Self-aligning
+              socket ensures proper fit-up without complex jigging. Smaller weld
+              cross-section reduces welding time and radiographic inspection
+              costs. Preferred for small-bore piping (2" and smaller) in
+              chemical plants, refineries, and offshore platforms. Branch
+              connections via socket-weld half couplings simpler than reinforced
+              butt-weld branches.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Materials & Standards -->
+          <div class="spec-content spec-section">
+            <h3>Materials, Standards & Quality Assurance</h3>
+
+            <h4>Material Specifications</h4>
+            <p>
+              <strong>Carbon Steel:</strong> ASTM A105 forged carbon steel for
+              socket-weld and threaded fittings in Class 2000# to 9000# pressure
+              services. Normalized heat treatment provides uniform grain
+              structure and predictable mechanical properties. Minimum yield
+              strength 250 MPa (36 ksi) with good weldability and toughness to
+              -29°C. Suitable for water, steam, air, gas, and non-corrosive
+              process fluids in temperature range -29°C to +400°C.
+            </p>
+            <p>
+              <strong>Stainless Steel:</strong> ASTM A182 F304/F304L forged
+              austenitic stainless for corrosive services and sanitary
+              applications. F316/F316L with molybdenum addition resists pitting
+              and crevice corrosion in chloride environments, marine
+              atmospheres, and pharmaceutical/food processing. Passivated per
+              ASTM A380 enhances corrosion resistance. Electropolished (Ra
+              0.4-0.8 microns) for ultra-pure water and semiconductor
+              applications.
+            </p>
+            <p>
+              <strong>Malleable Iron:</strong> ASTM A197 cupola or air-furnace
+              malleable iron for threaded couplings, unions, and fittings per
+              ASME B16.3 in pressure classes 150# and 300#. Annealing heat
+              treatment converts white cast iron to tough, ductile material
+              resisting impact damage. Black malleable finish for standard
+              service, galvanized per ASTM A153 for outdoor and corrosive
+              atmospheres. Limited to 340°C maximum temperature due to
+              graphitization above this threshold.
+            </p>
+            <p>
+              <strong>Brass & Bronze:</strong> Copper alloy C84400 (naval brass
+              60% Cu, 39% Zn, 1% Sn) or C83600 (red brass 85% Cu, 5% Sn, 5% Pb,
+              5% Zn) per ASTM B62 for threaded fittings in potable water, HVAC,
+              and plumbing applications. Natural antimicrobial properties
+              inhibit bacterial growth. Lead-free brass (C89833) complies with
+              NSF-61 and Safe Drinking Water Act for drinking water contact.
+              Dezincification-resistant (DZR) brass resists selective leaching
+              in aggressive water chemistry.
+            </p>
+
+            <h4>Thread Standards & Specifications</h4>
+            <p>
+              <strong>NPT (National Pipe Taper):</strong> ASME B1.20.1 tapered
+              pipe threads with 60° thread angle and 1:16 taper on diameter.
+              Thread interference creates mechanical seal enhanced by thread
+              sealant (pipe dope or PTFE tape). Standard in North America and
+              global oil & gas industry. Assembly torque specifications per
+              manufacturer data ensure proper engagement without over-tightening
+              causing thread stripping or cracking.
+            </p>
+            <p>
+              <strong>BSP (British Standard Pipe):</strong> BSPT tapered threads
+              per IS 554 and BS 21 used throughout India, UK, Europe, and
+              Commonwealth. Thread angle 55° with 1:16 taper. BSPP parallel
+              threads with bonded sealing washer (Dowty seal) used in hydraulic
+              systems where metal-to-metal taper seal is inadequate. Thread
+              gauging with GO/NO-GO ring gauges per ISO 7-1 ensures dimensional
+              compliance and assembly compatibility.
+            </p>
+            <p>
+              <strong>Quality Control:</strong> Visual inspection for surface
+              defects (cracks, laps, seams), dimensional verification with
+              calipers and thread gauges, hydrostatic testing to 1.5x rated
+              pressure validating integrity. Positive material identification
+              (PMI) using XRF spectrometry confirms chemistry. Magnetic particle
+              (MT) or dye penetrant (PT) testing detects surface
+              discontinuities. Material test reports (MTR) per EN 10204 3.1 with
+              full traceability.
+            </p>
+
+            <h4>Standards Compliance</h4>
+            <p>
+              <strong>ASME B16.11:</strong> Forged fittings socket-welding and
+              threaded defining dimensions, pressure-temperature ratings,
+              tolerances, and marking for Class 2000#, 3000#, 6000#, 9000#
+              fittings. Socket depth, bore diameter, and thread lengths
+              standardized. Pressure ratings derated with increasing temperature
+              per rating tables. Materials per ASTM A105 (carbon steel), A182
+              (stainless/alloy steel), A350 (low-temperature carbon steel).
+            </p>
+            <p>
+              <strong>ASME B16.3:</strong> Malleable iron threaded fittings for
+              pressure classes 150# and 300# covering couplings, unions, elbows,
+              tees, crosses, plugs, and bushings. Dimensional compatibility with
+              ASME B1.20.1 NPT threads. Hydrostatic test pressure 450 PSI (Class
+              150) and 900 PSI (Class 300). Suitable for water, oil, gas, and
+              air services with temperature limitations per pressure-temperature
+              rating charts.
+            </p>
+            <p>
+              <strong>MSS-SP-83:</strong> Manufacturer's Standardization Society
+              specification for socket-welding and threaded Class 3000 and 6000
+              steel unions. Dimensions, materials, pressure-temperature ratings,
+              and testing requirements. Ground joint unions feature
+              precision-machined conical seats providing metal-to-metal seal
+              without gaskets. Applicable to forged carbon steel, alloy steel,
+              and stainless steel in severe services including high-pressure
+              steam and sour gas.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🔧">Easy Maintenance Access</h4>
+                <p>
+                  Union joints enable equipment removal and piping modifications
+                  without cutting and re-welding. Ground joint design eliminates
+                  gasket replacement reducing maintenance costs. Strategic union
+                  placement near pumps, heat exchangers, and instruments
+                  facilitates rapid component changeout minimizing production
+                  downtime. Threaded couplings allow field adjustments during
+                  installation compensating for dimensional variations without
+                  custom fabrication.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💪">High Pressure Capability</h4>
+                <p>
+                  Forged construction per ASTM A105/A182 provides superior
+                  strength versus cast or fabricated alternatives. Class 6000#
+                  and 9000# ratings support pressures to 600 bar (9000 PSI) in
+                  1" size at ambient temperature. Socket-weld joints eliminate
+                  threaded connection limitations achieving pressure ratings
+                  equal to seamless pipe. Heavy-wall construction withstands
+                  water hammer, pressure surges, and cyclic loading in demanding
+                  services.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="⚡">Rapid Installation</h4>
+                <p>
+                  Threaded fittings install 60-70% faster than welded
+                  equivalents eliminating hot-work permits, welding equipment,
+                  and post-weld heat treatment delays. Socket-weld preparation
+                  requires no beveling, backing rings, or consumable inserts
+                  reducing fit-up labor by 50%. Pre-assembled components ship
+                  ready-to-install. No specialized tools required—standard pipe
+                  wrenches and socket drivers suffice enabling installation by
+                  general maintenance personnel.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🌐">Universal Compatibility</h4>
+                <p>
+                  ASME B16.11 and B16.3 dimensional standards ensure worldwide
+                  interchangeability across manufacturers. NPT and BSP thread
+                  compatibility with global valve and instrument suppliers.
+                  Socket-weld bore dimensions match standard pipe OD enabling
+                  mix-and-match component sourcing. Material grades (A105, A182
+                  F304/F316) equivalent to international specifications (EN,
+                  JIS, DIN) simplifying procurement and spares inventory for
+                  multinational operations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSKjqSduX8lsI55eEvd-dxfbMdvooZViaRw&s"
+                  alt="Industrial Machinery"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚙️ Industrial Machinery & Equipment</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.general-steel.com/wp-content/uploads/2024/06/laser-cutting-machine-services.jpg"
+                  alt="Process Plants"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Chemical & Process Plants</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://assets.onestopndt.com/p/uploads/ndt-articles/original/how-the-oil-and-gas-industry-works-onestopndt.jpg"
+                  alt="Oil & Gas"
+                />
+                <div class="app-image-overlay">
+                  <h4>🛢️ Oil & Gas Facilities</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://architectureideas.info/wp-content/uploads/2008/08/ARCHITECTURE-1024x682.jpeg"
+                  alt="Building Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏢 Building Utility Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.avanticorporate.com/wp-content/uploads/2022/01/commercial-kitchen-size-blog-header-scaled-e1645764462148.jpeg"
+                  alt="Food Industry"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍽️ Food & Beverage Processing</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/65dcf29bd6be2515eb49786e/6e9d2c3e-dfc2-4ad4-838d-8ccdd70f4bd1/Shipboard+Systems+%26+Equipment+.jpeg"
+                  alt="Marine Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚓ Marine & Offshore Applications</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Reducers Modal -->
+    <div class="modal" id="modal-reducers">
+      <div class="scroll-progress" id="scrollProgressReducers"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>📐 Reducers (Concentric / Eccentric)</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+          <!-- Reducer Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Reducer Types & Configuration Principles</h3>
+
+            <!-- Concentric Reducers with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Concentric Reducers (Centerline Aligned)</h4>
+                <p>
+                  <strong>Design Geometry:</strong> Symmetrical cone-shaped
+                  fitting with both pipe centerlines on same axis. Angle of
+                  taper typically 15°-30° depending on size differential.
+                  Dimensions per ASME B16.9 specify large end, small end, and
+                  end-to-end length ensuring standardized fit-up. Available
+                  seamless or welded in combinations from 1/2" x 1/4" through
+                  48" x 36" with wall thickness matching connected pipe
+                  schedules.
+                </p>
+                <p>
+                  <strong>Flow Applications:</strong> Used in vertical piping
+                  runs (up or down flow) where centerline alignment maintains
+                  balanced velocity profile. Ideal for gas and vapor systems
+                  where air pocket formation is not concern. Steam headers, vent
+                  stacks, and compressed air distribution benefit from
+                  concentric design. Symmetrical stress distribution under
+                  internal pressure provides uniform loading on connected piping
+                  without bending moments.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.oepipe.com/uploads/12033/products/p2024041711410467238.jpg?size=450x0"
+                  alt="Concentric Reducers"
+                />
+              </div>
+            </div>
+
+            <!-- Eccentric Reducers with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/JR/KM/EF/SELLER-663564/fcs-socket-weld-fittings-3000-lbs-ibr-elbow-tee-coupling-union--500x500.png"
+                  alt="Eccentric Reducers"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Eccentric Reducers (Offset Design)</h4>
+                <p>
+                  <strong>Construction Principle:</strong> One side of reducer
+                  remains flat (typically top-of-pipe or bottom-of-pipe) while
+                  opposite side tapers, offsetting pipe centerlines.
+                  "Flat-side-up" orientation prevents air pocket accumulation in
+                  liquid lines allowing complete venting. "Flat-side-down"
+                  maintains bottom-of-pipe elevation in gravity drainage
+                  preventing solid settlement and providing complete drainage
+                  capability.
+                </p>
+                <p>
+                  <strong>Critical Applications:</strong> Pump suction lines use
+                  flat-side-up eccentric reducers eliminating vortex formation
+                  and air entrainment causing cavitation damage. Condensate
+                  drain headers employ flat-side-down maintaining gravity flow
+                  and preventing water hammer. Process lines with particulate
+                  slurries prevent solid accumulation zones. Eccentric design
+                  essential in systems requiring complete draining for cleaning,
+                  sterilization, or winterization.
+                </p>
+              </div>
+            </div>
+
+            <!-- Swage Reducers with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Swage Reducers & Nipples</h4>
+                <p>
+                  <strong>Threaded Reducers:</strong> Hex-body reducing coupling
+                  with different thread sizes on each end (e.g., 2" NPT x 1"
+                  NPT). Compact length 1.5-2.5 times larger diameter provides
+                  space-efficient size transition. Forged construction per ASME
+                  B16.11 in Class 3000# and 6000# for high-pressure threaded
+                  systems. Hex flats enable installation torque without damaging
+                  threads. Available in carbon steel, stainless, brass, and
+                  galvanized finishes.
+                </p>
+                <p>
+                  <strong>Swage Nipples:</strong> Concentric reducing pipe
+                  nipples with male threads on both ends. One end larger
+                  diameter transitioning to smaller diameter opposite end. Used
+                  in tight spaces where standard reducer plus nipples would
+                  exceed available length. Common sizes 2" x 1", 1-1/2" x 1",
+                  1-1/4" x 3/4" in lengths 100mm-300mm. Barrel shoulder provides
+                  wrench grip surface. Suitable for water, steam, air, gas, and
+                  oil services per IS 1239.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://shreebajrangudyog.com/wp-content/uploads/2025/01/banner2.jpg"
+                  alt="Swage Reducers"
+                />
+              </div>
+            </div>
+
+            <h4>Specialty Reducer Configurations</h4>
+            <p>
+              <strong>Reducing Inserts:</strong> Short-length reducers (flush
+              type) with minimal end-to-end dimension used in flanged systems.
+              One end beveled for butt-welding, opposite end faced for flange
+              bolting. Enables pipe size change at flange joint without separate
+              reducer and flange. Reduces weld joints by 50% and piping
+              footprint by 30%. Common in pump suction/discharge nozzles and
+              equipment connections with size mismatch.
+            </p>
+            <p>
+              <strong>Incremental Reducers:</strong> Multiple-stage reducers for
+              large diameter changes (e.g., 24" to 12") where single-piece
+              reducer would have excessive taper angle causing flow separation.
+              Two-piece assembly with intermediate size (24"-16"-12") provides
+              gradual velocity increase minimizing pressure recovery losses.
+              Used in large-diameter water transmission, power plant circulating
+              water, and mine dewatering systems where energy efficiency is
+              critical.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Technical Specifications -->
+          <div class="spec-content spec-section">
+            <h3>Materials, Standards & Engineering Considerations</h3>
+
+            <h4>Material Options & Properties</h4>
+            <p>
+              <strong>Carbon Steel:</strong> ASTM A234 WPB wrought butt-weld
+              reducers for general refinery and chemical service -29°C to
+              +400°C. Seamless hot-formed construction from solid pipe or forged
+              billet provides uniform wall thickness and grain structure. Welded
+              reducers fabricated from plate (NPS 24+) using longitudinal seam
+              weld inspected per ASME Section V. Normalized heat treatment
+              relieves forming stresses ensuring dimensional stability and
+              predictable mechanical properties.
+            </p>
+            <p>
+              <strong>Stainless Steel:</strong> ASTM A403 WP304/304L for
+              corrosion resistance in food processing, pharmaceuticals, and
+              chemical handling. WP316/316L molybdenum-enhanced grade resists
+              pitting and crevice corrosion in marine, coastal, and
+              chloride-containing environments. Solution annealed heat treatment
+              (1040°C-1150°C) dissolves carbides and optimizes corrosion
+              resistance. Bright annealed or electropolished surface finishes
+              (Ra 0.4-0.8 microns) for sanitary and ultra-high-purity
+              applications.
+            </p>
+            <p>
+              <strong>Alloy Steel:</strong> A234 WP11 (1.25Cr-0.5Mo), WP22
+              (2.25Cr-1Mo), WP91 (9Cr-1Mo-V) chrome-molybdenum grades for
+              elevated temperature creep service 480°C-625°C in power generation
+              and petrochemical reforming. Post-weld heat treatment (PWHT) per
+              ASME B31.3 restores toughness degraded during welding. Impact
+              testing per ASTM A370 validates low-temperature toughness for
+              winterized and arctic service applications.
+            </p>
+
+            <h4>Dimensional Standards & Tolerances</h4>
+            <p>
+              <strong>ASME B16.9 Requirements:</strong> End-to-end length varies
+              with size combination per dimensional tables (e.g., 10" x 6"
+              reducer = 9" length). Wall thickness matches standard pipe
+              schedules (SCH 10, 40, 80, 160) or can be specified as "heavy
+              wall" exceeding standard. Tolerance on end-to-end dimension ±3.2mm
+              (±1/8") for sizes up to 18", ±6.4mm (±1/4") for larger sizes.
+              Perpendicularity tolerance 1% of end diameter ensures square
+              fit-up.
+            </p>
+            <p>
+              <strong>Eccentric Offset:</strong> Flat side parallel to pipe axis
+              within 1.5mm (1/16") ensuring proper elevation maintenance. Offset
+              dimension (distance between centerlines) calculated as half the
+              difference of diameters: (D1-D2)/2. Flat-side marking ("TOP" or
+              "BOTTOM" stamp) indicates proper installation orientation.
+              Improper installation negates design benefits and can cause
+              operational problems (cavitation, air binding, incomplete
+              drainage).
+            </p>
+            <p>
+              <strong>Quality Verification:</strong> Dimensional inspection
+              verifies large end OD, small end OD, and end-to-end length within
+              ASME B16.9 tolerances. Wall thickness uniformity checked with
+              ultrasonic thickness gauges ensuring no thin areas. Positive
+              material identification (PMI) using XRF confirms chemistry
+              compliance. Hydrostatic testing to 1.5x design pressure validates
+              pressure integrity. Documentation includes MTR per EN 10204 3.1
+              with full traceability.
+            </p>
+
+            <h4>Piping Design Considerations</h4>
+            <p>
+              <strong>Pressure Drop Analysis:</strong> Gradual taper angle
+              (15°-30°) in well-designed reducers minimizes sudden expansion
+              losses. Pressure recovery efficiency depends on taper angle,
+              Reynolds number, and upstream flow conditions. Abrupt reducers
+              (large diameter change in short length) cause flow separation,
+              vortex formation, and excessive pressure losses. CFD
+              (computational fluid dynamics) analysis optimizes geometry for
+              critical low-pressure-drop applications.
+            </p>
+            <p>
+              <strong>Stress Intensification:</strong> ASME B31.3 Appendix D
+              provides stress intensification factors (SIF) for flexibility
+              analysis of reducers under sustained and cyclic loading.
+              Concentric reducers exhibit lower SIF (0.5-0.75) versus eccentric
+              reducers (1.0-1.3) due to symmetrical stress distribution. Large
+              diameter ratios (D1/D2 > 2) increase local stresses requiring
+              closer nozzle support and potential stress analysis per para
+              319.4.
+            </p>
+            <p>
+              <strong>Flow-Induced Vibration:</strong> High-velocity flow
+              through reducers can induce acoustic resonance and vibration in
+              susceptible frequency ranges. Eccentric reducers in pump suction
+              mitigate vortex-induced vibration. Proper pipe support spacing per
+              ASME B31.3 Table 321.3.5 prevents resonant frequency matching with
+              vortex shedding frequencies. Flow velocities should not exceed
+              recommendations: liquid 3 m/s (suction), 6 m/s (discharge);
+              gas/steam 15-30 m/s depending on pressure and density.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="📐">Optimized Flow Transition</h4>
+                <p>
+                  Gradual taper angles minimize turbulence and pressure recovery
+                  losses in expanding flows. Concentric design maintains
+                  symmetrical velocity profile in vertical gas/vapor lines.
+                  Eccentric flat-side-up prevents pump cavitation by eliminating
+                  air pockets. Flat-side-down ensures complete drainage and
+                  prevents particulate accumulation. Proper reducer selection
+                  improves process efficiency, reduces energy consumption, and
+                  prevents operational issues throughout equipment service life.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🔗">Simplified Piping Layouts</h4>
+                <p>
+                  Single-piece construction eliminates multiple components (pipe
+                  spools, flanges) reducing fabrication complexity, welded
+                  joints, and potential leak paths by 50%. Standardized ASME
+                  B16.9 dimensions enable global sourcing and
+                  interchangeability. Pre-fabricated reducer assemblies ship
+                  ready-to-install reducing field labor by 40%. Compact
+                  end-to-end length minimizes piping footprint important in
+                  congested plant layouts, offshore platforms, and modular skid
+                  packages.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💪">Structural Integrity</h4>
+                <p>
+                  Seamless hot-formed construction provides uniform wall
+                  thickness and grain flow following taper geometry ensuring
+                  consistent strength. No longitudinal weld seam eliminates
+                  potential failure path in cyclic and high-pressure services.
+                  Forged reducers offer superior mechanical properties versus
+                  fabricated alternatives. Hydrostatic testing validates
+                  pressure containment. Lower stress intensification factors
+                  versus fabricated transitions simplify piping flexibility
+                  analysis and support design.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="⚙️">Versatile Size Range</h4>
+                <p>
+                  Available in all common size combinations from 1/2" x 1/4"
+                  through 48" x 36" accommodating diverse piping requirements.
+                  Wall thickness options (SCH 10 through XXS) match connected
+                  pipe strength and pressure ratings. Threaded, socket-weld, and
+                  butt-weld connection types suit various installation methods
+                  and pressure classes. Custom intermediate sizes and
+                  non-standard ratios available for special applications.
+                  Material grades span carbon steel through exotic alloys for
+                  all service conditions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSKjqSduX8lsI55eEvd-dxfbMdvooZViaRw&s"
+                  alt="Pump Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚙️ Pump Suction & Discharge Lines</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://assets.onestopndt.com/p/uploads/ndt-articles/original/how-the-oil-and-gas-industry-works-onestopndt.jpg"
+                  alt="Oil & Gas"
+                />
+                <div class="app-image-overlay">
+                  <h4>🛢️ Oil & Gas Pipeline Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://media.deloitte.com/is/image/deloitte/smart-automotive-manufacturing-2:Mobile?$Responsive$&fmt=webp&fit=stretch,1&dpr=on,2.625"
+                  alt="Power Plants"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚡ Power Plant Steam Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.general-steel.com/wp-content/uploads/2024/06/laser-cutting-machine-services.jpg"
+                  alt="Process Industries"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Chemical Process Industries</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://architectureideas.info/wp-content/uploads/2008/08/ARCHITECTURE-1024x682.jpeg"
+                  alt="Water Treatment"
+                />
+                <div class="app-image-overlay">
+                  <h4>💧 Water Treatment Facilities</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.avanticorporate.com/wp-content/uploads/2022/01/commercial-kitchen-size-blog-header-scaled-e1645764462148.jpeg"
+                  alt="Food Processing"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍽️ Food & Beverage Plants</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hex Nipples Modal -->
+    <div class="modal" id="modal-hex-nipples">
+      <div class="scroll-progress" id="scrollProgressHexNipples"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>🔩 Hex Nipples / Threaded Bars</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Hex Nipple Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Hex Nipple Types & Configurations</h3>
+
+            <!-- Standard Hex Nipples with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Standard Hex Nipples (Barrel Pattern)</h4>
+                <p>
+                  <strong>Design:</strong> Threaded pipe section with hexagonal
+                  center body providing wrench flats for installation torque.
+                  Threads on both ends per IS 554, BS 21 (BSP), or ASME B1.20.1
+                  (NPT) standards. Hex body width across flats typically 1.5-2
+                  times pipe diameter allowing adequate wrench engagement.
+                  Available in sizes 1/8" to 4" (6mm to 100mm) with lengths from
+                  50mm to 500mm or custom specifications.
+                </p>
+                <p>
+                  <strong>Installation Advantages:</strong> Hex section prevents
+                  pipe rotation during tightening of second connection enabling
+                  single-person installation without backup wrench. Reduces
+                  installation time by 40% versus round nipples requiring two
+                  wrenches. Hex flats accommodate standard open-end, box, or
+                  adjustable wrenches available in any maintenance facility.
+                  Precision-machined flats provide secure grip without slippage
+                  or rounding.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2022/6/NN/IC/QG/93054272/stainless-steel-threaded-hex-nipple-500x500-500x500.jpg"
+                  alt="Hex Nipples"
+                />
+              </div>
+            </div>
+
+            <!-- Long Hex Nipples with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://atlrod.com/wp-content/uploads/2012/08/Partially-threaded-rod-300x225.jpg"
+                  alt="Long Hex Nipples"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Long Hex Nipples & Threaded Bars</h4>
+                <p>
+                  <strong>Construction:</strong> Extended length hex nipples
+                  300mm to 1000mm (12" to 40") providing extended reach for
+                  offset connections, wall penetrations, and equipment spacing
+                  requirements. Central hex section flanked by threaded ends
+                  with unthreaded transition zones preventing thread damage
+                  during installation. Available as fully threaded (all-thread
+                  hex rod) or partially threaded with extended hex barrel.
+                </p>
+                <p>
+                  <strong>Applications:</strong> Wall or floor penetrations
+                  maintaining weatherproof seal with escutcheon plates. Meter
+                  bypass assemblies spacing valves for gauge installation.
+                  Pump/compressor foundation bolting extending through concrete
+                  with hex body embedded. Adjustable pipe connections where
+                  final spacing determined during installation. Replacement of
+                  damaged nipples without disturbing connected fittings by
+                  unscrewing from accessible end only.
+                </p>
+              </div>
+            </div>
+
+            <!-- Reducing Hex Nipples with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Reducing Hex Nipples (Swage Pattern)</h4>
+                <p>
+                  <strong>Design Configuration:</strong> Different thread sizes
+                  on each end (e.g., 2" BSP x 1" BSP) with hex body sized to
+                  larger diameter. Eliminates separate reducer and nipple
+                  reducing joints by 50% and installation time by 30%.
+                  Concentric reduction maintains flow axis alignment. Available
+                  in all common size combinations from 2" x 1/4" through 4" x 2"
+                  with various length options.
+                </p>
+                <p>
+                  <strong>Benefits:</strong> One-piece construction reduces
+                  potential leak paths and inventory complexity. Compact length
+                  fits tight spaces where standard reducer plus nipples exceed
+                  available dimension. Hex body provides installation leverage
+                  regardless of thread size differential. Common in manifold
+                  assemblies, instrument connections, and service line taps
+                  where size transition and installation access are simultaneous
+                  challenges.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://shreebajrangudyog.com/wp-content/uploads/2025/01/banner2.jpg"
+                  alt="Reducing Hex Nipples"
+                />
+              </div>
+            </div>
+
+            <h4>Specialty Hex Configurations</h4>
+            <p>
+              <strong>Tank Hex Nipples:</strong> One end with male threads,
+              opposite end plain (unwelded) or beveled for welding into pressure
+              vessels, storage tanks, and heat exchangers. Hex body outside tank
+              wall enables external valve/fitting installation without internal
+              access. Welded construction per ASME Section VIII Division 1
+              provides pressure-tight seal. Available in Schedule XXS heavy-wall
+              construction for extreme pressure services and corrosive
+              environments.
+            </p>
+            <p>
+              <strong>Hex Couplings:</strong> Female threaded internal hex body
+              joining two male-threaded pipes. Hex exterior provides wrench grip
+              during assembly/disassembly. Functions as union replacement in
+              low-pressure applications where full union cost is unwarranted.
+              Available in reducing configurations (2" x 1") for size transition
+              joints. Forged construction per ASME B16.11 in Class 3000# and
+              6000# for high-pressure steam, hydraulic, and pneumatic systems.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Materials & Standards -->
+          <div class="spec-content spec-section">
+            <h3>Materials, Manufacturing & Quality Standards</h3>
+
+            <h4>Material Options & Properties</h4>
+            <p>
+              <strong>Mild Steel (Black Iron):</strong> Low carbon steel per IS
+              1239 Medium or ASTM A53 Grade B providing adequate strength for
+              general industrial water, air, and gas services. Tensile strength
+              415 MPa minimum with good threading and welding characteristics.
+              Black oxide surface finish with rust-preventive oil for indoor dry
+              applications. Cost-effective solution for concealed installations
+              and temporary connections where corrosion protection is minimal
+              concern.
+            </p>
+            <p>
+              <strong>Galvanized Iron (GI):</strong> Hot-dip galvanized after
+              threading per ASTM A153 or IS 1239 with zinc coating 50-85 microns
+              (610 g/m²) providing 15-25 year outdoor durability. Zinc layer
+              protects exposed threads and hex body from atmospheric corrosion.
+              Post-galvanizing chromate passivation enhances corrosion
+              resistance and provides temporary corrosion protection before
+              installation. Suitable for outdoor piping, fire protection,
+              irrigation, and corrosive industrial atmospheres.
+            </p>
+            <p>
+              <strong>Stainless Steel:</strong> ASTM A182 F304 forged austenitic
+              stainless for food processing, pharmaceutical, dairy, and brewery
+              applications requiring sanitary conditions and corrosion
+              resistance. F316/F316L with 2-3% molybdenum resists pitting and
+              crevice corrosion in marine, coastal, and chemical processing
+              environments. Passivated per ASTM A380 or electropolished (Ra
+              0.4-0.8 microns) for ultra-high-purity water, semiconductor, and
+              biotech applications.
+            </p>
+            <p>
+              <strong>Brass & Bronze:</strong> Naval brass C46400 or admiralty
+              brass C44300 providing natural antimicrobial properties and
+              corrosion resistance in potable water systems. Lead-free brass
+              alloys (C89833) comply with NSF-61 and Safe Drinking Water Act for
+              drinking water contact. Dezincification-resistant (DZR) brass
+              resists selective leaching in aggressive water chemistry. Bronze
+              nipples offer superior strength and seawater resistance for marine
+              plumbing and fire systems.
+            </p>
+
+            <h4>Thread Manufacturing & Quality</h4>
+            <p>
+              <strong>Threading Process:</strong> Threads cut using precision
+              die-head machines ensuring accurate pitch, lead, and flank angles
+              per ISO 7-1 specifications. Thread form: BSP 55° Whitworth or NPT
+              60° V-thread with 1:16 taper on diameter. Thread tolerance Class A
+              (tight fit for pressure-tight seal) or Class B (free-running fit
+              for easy assembly). Thread inspection with GO/NO-GO ring gauges
+              verifies dimensional compliance before coating or shipment.
+            </p>
+            <p>
+              <strong>Hex Body Machining:</strong> Hex section machined from
+              round bar stock using multi-spindle screw machines or CNC turning
+              centers. Width across flats held to ±0.5mm tolerance ensuring
+              wrench fit. Parallel faces machined perpendicular to thread axis
+              within 0.1mm/100mm straightness. Chamfers on hex corners prevent
+              sharp edges and facilitate wrench engagement. Surface finish
+              3.2-6.3 Ra (125-250 microinch) provides adequate grip without tool
+              damage.
+            </p>
+            <p>
+              <strong>Coating & Finishing:</strong> Electroplated zinc 5-15
+              microns per ASTM B633 provides mild indoor corrosion protection.
+              Hot-dip galvanizing after threading produces 50-85 micron coating
+              with excellent outdoor durability. Threads chased after
+              galvanizing using thread chasers or taps restoring dimensional
+              accuracy. PTFE thread sealant pre-applied to threads in some
+              products eliminating field application and ensuring proper seal.
+              Thread protectors (plastic caps) prevent damage during shipping.
+            </p>
+
+            <h4>Standards & Specifications</h4>
+            <p>
+              <strong>IS 1239 Part 2:</strong> Indian Standard for steel tubular
+              screwed fittings specifying dimensions, threads, and materials for
+              hex nipples, barrel nipples, and couplings. Thread form per IS 554
+              (BSP/BSPT). Pressure rating classes: Light, Medium, Heavy with
+              corresponding wall thicknesses. Galvanizing per IS 2629 specifies
+              minimum zinc coating mass 610 g/m². Material traceability and
+              pressure testing requirements defined.
+            </p>
+            <p>
+              <strong>ASTM A733:</strong> Standard specification for welded and
+              seamless carbon steel and austenitic stainless steel pipe nipples
+              covering close, short, long, and extra-long lengths. Thread
+              dimensions per ASME B1.20.1 (NPT) or B1.20.3 (NPTF). Chemical
+              composition and mechanical properties of base pipe per ASTM A53,
+              A106 (carbon steel) or A312 (stainless). Hydrostatic testing
+              optional per customer specification.
+            </p>
+            <p>
+              <strong>BS 1740:</strong> British Standard for wrought steel pipe
+              fittings (screwed BS 21 thread). Covers nipples, sockets, plugs,
+              bushings, elbows, tees, unions, and bends. Dimensional tables
+              specify thread lengths, body lengths, and hex across-flats
+              dimensions. Steel grade and heat treatment requirements ensure
+              adequate strength. Pressure testing requirements per type and
+              pressure class. Marking requirements include size, material grade,
+              manufacturer identification.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🔧">Single-Wrench Installation</h4>
+                <p>
+                  Hex body prevents rotation during tightening eliminating need
+                  for backup wrench and second technician. Reduces installation
+                  time by 40% versus round nipples. Standard wrench sizes (10mm
+                  to 55mm across flats) available in any maintenance toolkit.
+                  Precision-machined hex flats provide secure grip preventing
+                  wrench slippage and fitting damage. Enables one-person
+                  installation in confined spaces where two-wrench access is
+                  impossible.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="📏">Flexible Length Options</h4>
+                <p>
+                  Standard lengths from 50mm to 500mm accommodate diverse
+                  spacing requirements. Custom lengths to 1000mm+ available for
+                  special applications. Extended hex body on long nipples
+                  provides multiple wrench positions for leverage in tight
+                  spaces. Fully threaded versions allow infinite adjustment
+                  capability by threading to required depth. Pre-cut to customer
+                  specifications reducing field cutting, threading, and
+                  deburring labor by 70%.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💪">High Strength Construction</h4>
+                <p>
+                  Forged or machined from solid bar stock provides superior
+                  strength versus hollow pipe construction. Hex body section
+                  maintains full wall thickness resisting bending and torsional
+                  loads during installation. Schedule 80 and XXS heavy-wall
+                  options support high-pressure steam, hydraulic, and compressed
+                  air services to 200 bar (3000 PSI). Heat-treated alloy steel
+                  grades provide elevated temperature capability to 540°C in
+                  power generation applications.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🛡️">Corrosion Protection</h4>
+                <p>
+                  Hot-dip galvanizing provides 15-25 year outdoor service life
+                  with 50-85 micron zinc coating per ASTM A153. Stainless steel
+                  options eliminate corrosion concerns in aggressive chemical,
+                  marine, and food processing environments. Brass/bronze
+                  naturally resist dezincification and biological fouling in
+                  potable water. Electroless nickel plating offers extreme
+                  corrosion and wear resistance for demanding applications.
+                  Thread sealant compatibility with oxygen service available per
+                  CGA G-4.1.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSKjqSduX8lsI55eEvd-dxfbMdvooZViaRw&s"
+                  alt="Industrial Piping"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚙️ Industrial Piping Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://architectureideas.info/wp-content/uploads/2008/08/ARCHITECTURE-1024x682.jpeg"
+                  alt="Plumbing Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏢 Commercial Plumbing</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://gates.scene7.com/is/image/gates/india-heavy-machinery?$Image_Responsive_Preset$&scl=1"
+                  alt="Fire Protection"
+                />
+                <div class="app-image-overlay">
+                  <h4>🔥 Fire Protection Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.avanticorporate.com/wp-content/uploads/2022/01/commercial-kitchen-size-blog-header-scaled-e1645764462148.jpeg"
+                  alt="HVAC Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>❄️ HVAC & Refrigeration</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://assets.onestopndt.com/p/uploads/ndt-articles/original/how-the-oil-and-gas-industry-works-onestopndt.jpg"
+                  alt="Oil & Gas"
+                />
+                <div class="app-image-overlay">
+                  <h4>⛽ Oil & Gas Distribution</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.universalimplements.com/img/products/category/harrows.png"
+                  alt="Agricultural"
+                />
+                <div class="app-image-overlay">
+                  <h4>🚜 Agricultural Irrigation</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bushes Modal -->
+    <div class="modal" id="modal-bushes">
+      <div class="scroll-progress" id="scrollProgressBushes"></div>
+      <div class="modal-header">
+        <div class="container">
+          <h2>🔌 Bushes, Plugs, Caps</h2>
+          <button class="close-button" onclick="closeModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="container">
+          <div class="divider"></div>
+
+          <!-- Bush Types Section -->
+          <div class="spec-content spec-section">
+            <h3>Bush, Plug & Cap Types</h3>
+
+            <!-- Hex Bushings with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Hex Bushings (Reducing Bushings)</h4>
+                <p>
+                  <strong>Design:</strong> Male external threads on outside,
+                  female internal threads on inside, reducing to smaller size.
+                  Hex-shaped body provides wrench flats for installation.
+                  Designated by external x internal thread size (e.g., 2" x 1"
+                  bushing). Available in sizes from 1/4" x 1/8" through 4" x
+                  1/2" in all common combinations. Forged construction per ASME
+                  B16.11 (steel) or cast per ASME B16.3 (malleable iron).
+                </p>
+                <p>
+                  <strong>Applications:</strong> Thread size reduction at pipe
+                  ends, fittings, or equipment nozzles eliminating separate
+                  reducer and nipple. Compact length (typically 1-1.5D of larger
+                  size) fits tight spaces. Hex exterior enables installation
+                  torque without internal thread damage. Common in manifold
+                  assemblies reducing main header to branch takeoff sizes.
+                  Pressure classes 150#, 300#, 2000#, 3000#, 6000# depending on
+                  material and construction.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://5.imimg.com/data5/II/GV/MY-2620073/quick-change-coupling-500x500.jpg"
+                  alt="Hex Bushings"
+                />
+              </div>
+            </div>
+
+            <!-- Square Head Plugs with Image -->
+            <div class="config-row reverse">
+              <div class="config-image">
+                <img
+                  src="https://www.reloadingsolutions.com/cdn/shop/products/red-70030-1inch-Threaded-Bushing_800x800.jpg?v=1671117162"
+                  alt="Square Plugs"
+                />
+              </div>
+              <div class="config-text">
+                <h4>Square Head Plugs (Closures)</h4>
+                <p>
+                  <strong>Construction:</strong> Solid body with male external
+                  threads and square or hex head for wrench engagement. Closes
+                  unused pipe openings, fittings, or equipment nozzles. Head
+                  height 0.5-0.75D provides adequate wrench leverage. Available
+                  in sizes 1/8" to 4" with NPT, BSP, or BSPT threads. Forged bar
+                  stock (ASTM A105 carbon steel, A182 stainless) or
+                  impact-extruded brass/bronze construction.
+                </p>
+                <p>
+                  <strong>Installation Benefits:</strong> Square head prevents
+                  rounding during high-torque installation and removal. Raised
+                  head visible above surface indicating closed opening during
+                  system inspection. Drilled and tapped head accepts eye bolt or
+                  lifting lug for removal of large plugs. Counter-bored heads
+                  sit flush with surface in aesthetic applications. Soft copper
+                  crush washers or bonded seals enhance sealing in critical
+                  services.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pipe Caps with Image -->
+            <div class="config-row">
+              <div class="config-text">
+                <h4>Pipe Caps (Female Closures)</h4>
+                <p>
+                  <strong>Types:</strong> Threaded caps with internal female
+                  threads fitting over male pipe threads. Butt-weld caps with
+                  beveled edges for welding to pipe ends per ASME B16.9.
+                  Socket-weld caps with internal socket accepting pipe for
+                  fillet welding per ASME B16.11. Available in sizes 1/8"
+                  (threaded) to 48" NPS (butt-weld). Wall thickness matches
+                  connected pipe schedule (SCH 10 through XXS).
+                </p>
+                <p>
+                  <strong>Applications:</strong> Temporary or permanent closure
+                  of pipeline ends during construction, testing, or
+                  decommissioning. Pressure vessel and heat exchanger nozzles
+                  blanked during hydrostatic testing. Dead-end headers in
+                  manifold distribution systems. Weld-on caps provide permanent
+                  high-integrity seal versus threaded plugs. Ellipsoidal and
+                  hemispherical dished caps reduce weight and stress
+                  concentration in large diameter pressure closures.
+                </p>
+              </div>
+              <div class="config-image">
+                <img
+                  src="https://www.oepipe.com/uploads/12033/products/p2024041711410467238.jpg?size=450x0"
+                  alt="Pipe Caps"
+                />
+              </div>
+            </div>
+
+            <h4>Specialty Closures & Blanks</h4>
+            <p>
+              <strong>Countersunk Plugs:</strong> Conical head design sits flush
+              or below pipe/fitting surface for aesthetic appearance and safety
+              (no snagging hazard). Hex socket (Allen key) drive recessed in
+              cone eliminates protruding head. Used in food processing,
+              pharmaceutical clean rooms, and public access areas where hygiene
+              and safety are paramount. Stainless steel construction with
+              electropolished finish for sanitary applications per 3-A sanitary
+              standards.
+            </p>
+            <p>
+              <strong>Hollow Plugs (Bull Plugs):</strong> Threaded pipe section
+              with one end closed by welded cap. Provides extended thread
+              engagement (3-5 threads minimum per ASME B31.3) versus solid plug.
+              Used in high-vibration services where solid plug may loosen.
+              Internal cavity accessible via drilled hole in back allows
+              pressure equalization preventing plug ejection in thermal cycling.
+              Primarily used in steam service and high-temperature applications.
+            </p>
+            <p>
+              <strong>Spectacle Blinds & Spacers:</strong> Figure-8 shaped plate
+              with solid blank on one side, open spacer ring on other. Rotates
+              180° at flanged joint to open/close flow path without removing
+              assembly. Tapped handle facilitates rotation. Used in process
+              lines requiring frequent isolation (catalyst change-out, equipment
+              maintenance, safety shutdown). Material matches piping ASTM A105,
+              A182, with raised face matching flange facing and pressure class.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Materials & Standards -->
+          <div class="spec-content spec-section">
+            <h3>Materials, Standards & Applications</h3>
+
+            <h4>Material Specifications</h4>
+            <p>
+              <strong>Carbon Steel:</strong> ASTM A105 forged carbon steel for
+              socket-weld and threaded plugs/bushings in Class 2000# to 9000#
+              high-pressure services. A234 WPB seamless or welded butt-weld caps
+              for general refinery and chemical applications -29°C to +400°C.
+              Normalized heat treatment provides uniform mechanical properties.
+              Black oxide or zinc electroplate finishes for mild corrosion
+              protection. Hot-dip galvanizing per ASTM A153 for outdoor
+              installations.
+            </p>
+            <p>
+              <strong>Stainless Steel:</strong> ASTM A182 F304/F304L forged
+              stainless for plugs and bushings in corrosive and sanitary
+              services. A403 WP304/316 butt-weld caps for chemical processing,
+              food/beverage, pharmaceutical, and marine applications. Solution
+              annealed (1040°C-1150°C) optimizes corrosion resistance.
+              Passivated per ASTM A380 or electropolished (Ra 0.4-0.8 microns)
+              for ultra-clean requirements. F316/316L molybdenum-enhanced grade
+              resists pitting and crevice corrosion.
+            </p>
+            <p>
+              <strong>Malleable Iron:</strong> ASTM A197 malleable iron castings
+              for threaded plugs and bushings per ASME B16.3 in Class 150# and
+              300#. Annealing heat treatment converts brittle white cast iron to
+              tough, ductile material. Black finish or hot-dip galvanized per
+              ASTM A153. Maximum temperature 340°C due to graphitization above
+              this threshold. Economical choice for water, air, gas, and
+              low-pressure steam services in non-critical applications.
+            </p>
+            <p>
+              <strong>Brass & Bronze:</strong> Forged brass C37700 or bronze
+              C83600 threaded plugs and bushings for potable water, marine, and
+              non-sparking applications. Natural antimicrobial properties
+              inhibit bacterial growth. Lead-free brass (C89833) per NSF-61 for
+              drinking water contact. Dezincification-resistant (DZR) brass
+              resists selective leaching. Bronze provides superior seawater
+              resistance and mechanical strength versus brass in demanding
+              marine and offshore environments.
+            </p>
+
+            <h4>Design & Installation Standards</h4>
+            <p>
+              <strong>ASME B16.9 Caps:</strong> Factory-made wrought
+              butt-welding caps covering sizes 1/2" to 48" NPS. Wall thickness
+              matches standard pipe schedules (SCH 10, 40, 80, 160, XXS).
+              Material per ASTM A234 (carbon steel), A403 (stainless), A420
+              (low-temperature steel). Dimensions specify cap height and inside
+              diameter ensuring proper fit-up. Hydrostatic testing per MSS-SP-75
+              validates pressure integrity. Marking includes size, schedule,
+              material grade, heat number.
+            </p>
+            <p>
+              <strong>ASME B16.11 Forged Fittings:</strong> Socket-weld and
+              threaded caps, plugs, and bushings in Class 2000#, 3000#, 6000#,
+              9000#. Pressure-temperature ratings per tables. Materials ASTM
+              A105 (carbon steel), A182 F304/F316 (stainless), A350 LF2
+              (low-temperature carbon). Socket depth, thread length, and
+              hex/square dimensions standardized. Heavy-wall construction
+              resists thermal shock and pressure surges in severe services.
+            </p>
+            <p>
+              <strong>ASME B16.3 Malleable Fittings:</strong> Threaded plugs and
+              bushings in Class 150# and 300# malleable iron. Dimensional
+              compatibility with ASME B1.20.1 NPT threads. Pressure-temperature
+              ratings limited by material: 150 PSI saturated steam (150#), 300
+              PSI (300#). Black or galvanized finishes. Suitable for water, oil,
+              gas, air services below 340°C. Economical alternative to forged
+              steel in low-pressure, non-critical applications.
+            </p>
+
+            <h4>Sealing & Thread Compounds</h4>
+            <p>
+              <strong>Thread Sealants:</strong> PTFE tape (Teflon tape) 0.075mm
+              thick wrapped 2-4 turns in direction of thread advance for
+              pressures to 150 bar. Pipe dope (thread compound) based on PTFE,
+              graphite, or metal particles for higher temperatures and
+              pressures. Anaerobic liquid sealants cure in absence of air
+              providing superior seal and anti-galling properties. Selection
+              based on media compatibility: oxygen service requires CGA G-4.1
+              approved materials.
+            </p>
+            <p>
+              <strong>Gaskets & Seals:</strong> Bonded sealing washers (Dowty
+              seals) with metal washer and elastomer ring for BSPP parallel
+              threads. Copper crush washers for high-temperature applications
+              providing metal-to-metal backup seal. O-ring face seal (ORFS)
+              fittings per SAE J1453 use elastomer O-ring in machined groove.
+              Spiral-wound gaskets with stainless steel and graphite filler for
+              high-pressure flanged plug closures per ASME B16.20.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Features Section -->
+          <div class="features-section spec-section">
+            <h3>Key Features & Performance Benefits</h3>
+            <div class="feature-row">
+              <div class="feature-box">
+                <h4 data-icon="🔒">Secure Closure</h4>
+                <p>
+                  Threaded engagement per ASME B1.20.1 provides mechanical seal
+                  enhanced by thread sealant for leak-tight closure. Butt-weld
+                  caps offer permanent high-integrity seal withstanding full
+                  system pressure and temperature. Tapered NPT threads create
+                  interference fit tightening under pressure. Square/hex heads
+                  enable high installation torque without thread damage.
+                  Pressure testing validates seal integrity before service.
+                  Locking devices (jam nuts, lock wire) prevent loosening in
+                  vibration.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🔧">Easy Removal</h4>
+                <p>
+                  Square and hex heads accommodate standard wrenches for easy
+                  removal during maintenance. Raised heads provide visual
+                  indication of plug location and facilitate wrench engagement.
+                  Large plugs (2" to 4") feature eye bolt holes for pulling
+                  tools. Penetrating oil and heat application loosen seized
+                  threads. Spectacle blinds rotate open without bolt removal.
+                  Threaded closures removable without cutting versus permanent
+                  weld caps enabling system modifications and equipment
+                  additions.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="💰">Cost-Effective Solution</h4>
+                <p>
+                  Plugs and caps provide economical closure versus installing
+                  valves on every unused connection. Bushings eliminate separate
+                  reducer and nipple saving 40% fabrication cost and reducing
+                  weld joints. Malleable iron options offer 60% cost savings
+                  versus forged steel in low-pressure applications. Standard
+                  off-the-shelf availability reduces procurement lead time and
+                  inventory costs. Threaded installation requires no welding
+                  equipment, hot-work permits, or skilled welders reducing labor
+                  by 70%.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4 data-icon="🌐">Versatile Applications</h4>
+                <p>
+                  Available in all materials (carbon steel, stainless, brass,
+                  bronze, malleable iron) for diverse service conditions. Size
+                  range 1/8" to 48" accommodates all pipe diameters. Connection
+                  types (threaded, socket-weld, butt-weld) suit various
+                  installation methods and pressure classes. Temporary closures
+                  during construction, testing, commissioning. Permanent
+                  closures for abandoned services. Future connection points for
+                  system expansions. Pressure testing isolation points.
+                  Versatility reduces specialized fitting inventory.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Applications -->
+          <div class="applications-section spec-section">
+            <h3>Industry Applications</h3>
+            <div class="app-images-grid">
+              <div class="app-image-card">
+                <img
+                  src="https://assets.onestopndt.com/p/uploads/ndt-articles/original/how-the-oil-and-gas-industry-works-onestopndt.jpg"
+                  alt="Pipeline Systems"
+                />
+                <div class="app-image-overlay">
+                  <h4>🛢️ Pipeline Termination & Testing</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://assets.onestopndt.com/p/uploads/ndt-articles/original/how-the-oil-and-gas-industry-works-onestopndt.jpg"
+                  alt="Oil & Gas"
+                />
+                <div class="app-image-overlay">
+                  <h4>🛢️ Oil & Gas Pipeline Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://media.deloitte.com/is/image/deloitte/smart-automotive-manufacturing-2:Mobile?$Responsive$&fmt=webp&fit=stretch,1&dpr=on,2.625"
+                  alt="Power Plants"
+                />
+                <div class="app-image-overlay">
+                  <h4>⚡ Power Plant Steam Systems</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.general-steel.com/wp-content/uploads/2024/06/laser-cutting-machine-services.jpg"
+                  alt="Process Industries"
+                />
+                <div class="app-image-overlay">
+                  <h4>🏭 Chemical Process Industries</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://architectureideas.info/wp-content/uploads/2008/08/ARCHITECTURE-1024x682.jpeg"
+                  alt="Water Treatment"
+                />
+                <div class="app-image-overlay">
+                  <h4>💧 Water Treatment Facilities</h4>
+                </div>
+              </div>
+              <div class="app-image-card">
+                <img
+                  src="https://www.avanticorporate.com/wp-content/uploads/2022/01/commercial-kitchen-size-blog-header-scaled-e1645764462148.jpeg"
+                  alt="Food Processing"
+                />
+                <div class="app-image-overlay">
+                  <h4>🍽️ Food & Beverage Plants</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>About India Steel</h3>
+            <p>
+              Leading supplier of quality steel products in India. We provide
+              comprehensive steel solutions with international standard
+              compliance.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Service Categories</h3>
+            <ul>
+              <li><a href="#">Thread Cutting</a></li>
+              <li><a href="#">Welding Services</a></li>
+              <li><a href="#">Galvanizing</a></li>
+              <li><a href="#">Assembly & Spools</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Standards We Follow</h3>
+            <ul>
+              <li>ASTM Standards</li>
+              <li>API Specifications</li>
+              <li>IS Standards</li>
+              <li>BS Standards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 India Steel Industries. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Filter Products
+      function filterProducts(category) {
+        const items = document.querySelectorAll(".category-item");
+        const buttons = document.querySelectorAll(".filter-btn");
+        let visibleCount = 0;
+
+        // Update active button
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        event.target.classList.add("active");
+
+        // Clear search box
+        document.querySelector(".search-box input").value = "";
+
+        // Filter items
+        items.forEach((item) => {
+          if (category === "all" || item.dataset.category === category) {
+            item.classList.remove("hidden");
+            visibleCount++;
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+
+        // Update count
+        updateResultsCount(visibleCount);
+      }
+
+      // Search Products
+      function searchProducts(query) {
+        const items = document.querySelectorAll(".category-item");
+        const searchTerm = query.toLowerCase();
+        let visibleCount = 0;
+
+        // Reset filter buttons when searching
+        if (query.length > 0) {
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((btn) => btn.classList.remove("active"));
+        }
+
+        items.forEach((item) => {
+          const name = item.dataset.name.toLowerCase();
+          if (name.includes(searchTerm)) {
+            item.classList.remove("hidden");
+            visibleCount++;
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+
+        updateResultsCount(visibleCount);
+      }
+
+      // Update Results Count
+      function updateResultsCount(count) {
+        const resultsCount = document.getElementById("resultsCount");
+        resultsCount.textContent = `Showing ${count} product${
+          count !== 1 ? "s" : ""
+        }`;
+      }
+
+      // Open Modal with Scroll Animations
+      function openModal(id, card) {
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.remove("active"));
+        document
+          .querySelectorAll(".category-item")
+          .forEach((c) => c.classList.remove("selected"));
+
+        const modal = document.getElementById("modal-" + id);
+        modal.classList.add("active");
+        card.classList.add("selected");
+        document.body.style.overflow = "hidden";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+
+        // Initialize scroll animations
+        setTimeout(() => {
+          observeElements();
+
+          // Update scroll progress for the specific modal
+          if (id === "bolts") {
+            updateScrollProgress("scrollProgressBolts");
+          } else if (id === "rods") {
+            updateScrollProgress("scrollProgressRods");
+          } else if (id === "u-bolts") {
+            updateScrollProgress("scrollProgressUBolts");
+          }
+        }, 100);
+      }
+
+      // Close Modal
+      function closeModal() {
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.remove("active"));
+        document
+          .querySelectorAll(".category-item")
+          .forEach((c) => c.classList.remove("selected"));
+        document.body.style.overflow = "auto";
+      }
+
+      // Escape key to close modal
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeModal();
+        }
+      });
+
+      // Scroll Animation Observer
+      function observeElements() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px",
+          }
+        );
+
+        document.querySelectorAll(".spec-section").forEach((el) => {
+          observer.observe(el);
+        });
+      }
+
+      // Scroll Progress Bar
+      function updateScrollProgress(progressId) {
+        const modal = document.querySelector(".modal.active");
+        if (!modal) return;
+
+        modal.addEventListener("scroll", function () {
+          const scrollProgress = document.getElementById(progressId);
+          if (!scrollProgress) return;
+
+          const scrollTop = modal.scrollTop;
+          const scrollHeight = modal.scrollHeight - modal.clientHeight;
+          const progress = (scrollTop / scrollHeight) * 100;
+          scrollProgress.style.width = progress + "%";
+        });
+      }
+
+      // Smooth scroll for modals
+      document.querySelectorAll(".modal").forEach((modal) => {
+        modal.style.scrollBehavior = "smooth";
+      });
+    </script>
+  </body>
+</html>
